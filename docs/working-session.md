@@ -6,13 +6,13 @@
 
 ## Active Pass
 
-**Pass:** Pass B (Causal Tightening) — **COMPLETE**
+**Pass:** Pass C (Language & Load Balancing) — **COMPLETE**
 
 **Scope:** Full manuscript — 200 paragraphs
 
 **Started:** 2026-06-12
 
-**Status:** Pass B complete on all 200 paragraphs
+**Status:** Pass C complete on all 200 paragraphs
 
 ---
 
@@ -66,6 +66,34 @@
 - p109: Added "because" to explicitly connect evolution with reason it's needed
 
 **Compliance:** All Pass B requirements met. Manuscript now carries stronger causal continuity while preserving unresolvedness and spoken thinking.
+
+---
+
+## Pass C Completion Notes
+
+**Completion Date:** 2026-06-12
+
+**Scope:** Full manuscript (p1-p200) processed in 4 parallel sections
+
+**Key Adjustments Applied:**
+- **p1-p50**: Merged p33 ("Caring less is not the goal.") with p34 to eliminate unintentionally sparse single-sentence paragraph
+- **p51-p100**: Added closing sentence to p60 to give paragraph intentional weight and avoid abrupt ending
+- **p101-p150**: Split 23 overly dense paragraphs (p126-p130, p131-p137, p138-p140, p141, p143-p149) into 2-3 visual paragraphs each to reduce reading effort spikes
+- **p151-p200**: Removed mechanical sentence repetitions in p174, p178, p182, p183, p184 that created unnecessary density without conceptual justification
+
+**Load Balancing Strategy:**
+- Dense paragraphs given breathing room through visual breaks (not conceptual simplification)
+- Sparse paragraphs merged or expanded to carry appropriate weight
+- Sentence rhythm varied to prevent mechanical repetition
+- Reading effort spikes addressed where not conceptually justified
+
+**Preserved:**
+- All causal structure from Pass B
+- Legato pacing and long-sentence default
+- Section separators at original positions
+- No concepts simplified, no arguments reframed, no essay normalization
+
+**Compliance:** All Pass C requirements met. Manuscript now has balanced reading effort while preserving conceptual complexity and causal continuity.
 
 ---
 
