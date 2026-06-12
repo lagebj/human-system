@@ -6,13 +6,13 @@
 
 ## Active Pass
 
-**Pass:** Pass C (Language & Load Balancing) — **COMPLETE**
+**Pass:** Pass D (Continuity & Concept Return) — **COMPLETE**
 
 **Scope:** Full manuscript — 200 paragraphs
 
 **Started:** 2026-06-12
 
-**Status:** Pass C complete on all 200 paragraphs
+**Status:** Pass D complete on all 200 paragraphs
 
 ---
 
@@ -94,6 +94,61 @@
 - No concepts simplified, no arguments reframed, no essay normalization
 
 **Compliance:** All Pass C requirements met. Manuscript now has balanced reading effort while preserving conceptual complexity and causal continuity.
+
+---
+
+## Pass D Completion Notes
+
+**Completion Date:** 2026-06-12
+
+**Scope:** Full manuscript (p1-p200) processed in 4 parallel sections
+
+**Key Continuity Links Added:**
+
+**p1-p50:**
+- p2: "the weight you noticed on arrival" — connects to p1
+- p4: "where the weight you arrived to find lives" — acknowledges earlier treatment
+- p5: "the old competence you observed being made obsolete" — connects to p2
+- p6: "the kind of competence that becomes visible only when it is threatened" — carries competence thread
+- p11, p15: Protection framed as "the same protection you have already seen" — connects across levels
+- p43: "the weight you noticed on arrival and have been tracing through every layer" — brings weight full circle
+
+**p51-p100:**
+- p63: "the competence you encountered early" — links to p2, p5, p6
+- p65: "the same protection you saw forming around broken things when you arrived" — links to p1, p11, p14, p15
+- p71: "the way it has been shaping things since you arrived" — power as known territory
+- p87, p89: "weight" and "capability" preserved with accumulated meaning
+
+**p101-p150:**
+- Weight: "the weight carried from arrival," "weight of process," "weight of responsibility"
+- Competence: "the competence made obsolete," "competence that people protect"
+- Help: "the helping you have been examining from the beginning"
+- Protection/Resistance: "the same protection you noticed," "the resistance you learned to read"
+- Power: "the power you have been mapping," "the same decision you have made about how to relate to power"
+- Process: "the same pattern you noticed in the workarounds" — links to early sections
+
+**p151-p200:**
+- Weight: "the weight you noticed on arrival," "weight of carrying answers that did not fit," "weight of mistakes"
+- Competence: "the competence you questioned," "the competence that grows through not knowing"
+- Help: "the same ambiguity you discovered in p3 and p4 when you realized that help changes the system"
+- Protection: "the protection you learned to work around," "the same protection you mapped in p11 and p14 and p15"
+- Power: "the power you mapped without accusation," "the same power you mapped in p14 and p15"
+- Leaving: "the same leaving you learned to prepare for" — links p141-p150 back to p7-p8 arrival
+- Becoming (p191-p200): "the same becoming you have been moving toward through the entire walk" — culminates full journey
+
+**Continuity Strategy:**
+- Used backward-reference phrases: "the [X] you [Y]", "the same [X] you have [Y]", "and you have learned this"
+- Ensured concepts reappear carrying their full history, not reintroduced as new
+- Final section (p191-p200) reads as culmination of entire walk, not fresh material
+
+**Preserved:**
+- All causal structure from Pass B
+- Load balancing from Pass C
+- Legato pacing and long-sentence default
+- Section separators at original positions
+- No new conceptual material added
+
+**Compliance:** All Pass D requirements met. Manuscript now reads as one continuous walk where concepts accumulate meaning across the full 200 paragraphs.
 
 ---
 
