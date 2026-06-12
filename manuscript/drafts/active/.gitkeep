@@ -1,0 +1,10 @@
+# Active Draft Directory
+
+This directory holds the current working draft during an editing pass.
+
+When a pass begins:
+1. Copy `manuscript/human.md` to `manuscript/drafts/active/human.md`
+2. Work on the copy
+3. When the pass is complete, merge back to `manuscript/human.md`
+
+The `.gitkeep` ensures this directory exists in version control.
