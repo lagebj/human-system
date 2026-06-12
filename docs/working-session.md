@@ -6,13 +6,13 @@
 
 ## Active Pass
 
-**Pass:** Pass A (De-patterning) — **COMPLETE**
+**Pass:** Pass B (Causal Tightening) — **COMPLETE**
 
 **Scope:** Full manuscript — 200 paragraphs
 
 **Started:** 2026-06-12
 
-**Status:** Pass A complete on all 200 paragraphs
+**Status:** Pass B complete on all 200 paragraphs
 
 ---
 
@@ -22,7 +22,7 @@
 
 **Last modified:** 2026-06-12
 
-**State:** 200 numbered paragraphs — Pass A de-patterned complete
+**State:** 200 numbered paragraphs — Pass B causal tightening complete
 
 ---
 
@@ -42,6 +42,30 @@
 **Expansion Strategy:** Each removed pattern replaced with expanded causal reasoning, emotional consequences, systemic conditions, and causal chains while preserving spoken continuity.
 
 **Compliance:** All Pass A requirements met. See `docs/editing-log.md` for detailed pass records.
+
+---
+
+## Pass B Completion Notes
+
+**Completion Date:** 2026-06-12
+
+**Scope:** Full manuscript (p1-p200) processed in 4 parallel sections
+
+**Key Changes Applied:**
+- Strengthened weak causal connectors throughout ("and then" → "because", "so", "which means")
+- Converted episodic transitions into continuous thought movement
+- Tightened cause/effect relationships within and across paragraphs
+- Ensured concepts introduced early (weight, competence, protection, resistance, power, capacity) continue to act downstream
+- Preserved legato pacing with long, connected sentences
+- No new conceptual material added; no banned patterns reintroduced
+
+**Notable Tightening Examples:**
+- p1: "the workaround is no longer described as a workaround because it has become the way the thing works" (explicit causal link)
+- p101: "and it creates work" → "which creates work" (tighter causal link)
+- p108: Removed redundant restatement of three options (eliminated episodic repetition)
+- p109: Added "because" to explicitly connect evolution with reason it's needed
+
+**Compliance:** All Pass B requirements met. Manuscript now carries stronger causal continuity while preserving unresolvedness and spoken thinking.
 
 ---
 
