@@ -35,6 +35,7 @@ Use this for reusable patterns, movement models, operating models, or conceptual
 Current files:
 
 - `trojan_horse_movement_pattern.md` — internal movement pattern for modernization in place, capability transfer, and temporary embedded help.
+- `four-impulses-of-help.md` — the four impulses that activate when helping (way-driven, tension-absorbing, mission-driven, agency-building), their gifts, traps, and kryptonite.
 
 Add here when a resource defines a repeatable way of seeing or moving through work.
 
