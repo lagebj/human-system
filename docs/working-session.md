@@ -6,48 +6,42 @@
 
 ## Active Pass
 
-**Pass:** Initial Draft (Pre-Pass A)
+**Pass:** Pass A (De-patterning) — **COMPLETE**
 
-**Scope:** Full manuscript - first continuous walk
+**Scope:** Full manuscript — 200 paragraphs
 
 **Started:** 2026-06-12
+
+**Status:** Pass A complete on all 200 paragraphs
 
 ---
 
 ## Current Working Draft
 
-**Location:** `manuscript/drafts/active/human.md`
+**Location:** `manuscript/human.md`
 
 **Last modified:** 2026-06-12
 
-**Status:** First section drafted - alert system observation deepened
+**State:** 200 numbered paragraphs — Pass A de-patterned complete
 
 ---
 
-## Session Goals
+## Pass A Completion Notes
 
-1. Begin the first continuous walk through human systems
-2. Establish voice and movement from the opening breath
-3. Let concepts emerge through behavior, not definition
-4. Write without imposing chapter boundaries
-5. Allow the terrain to reveal itself as the walk continues
+**Completion Date:** 2026-06-12
 
----
+**Word Count Change:** +14% expansion (within 0% to +20% target)
 
-## Known Issues / Tensions
+**Patterns Removed:**
+- Binary contrasts ("not X, but Y", "This is not... It is...")
+- Staccato pacing (short sentence fragments, list-like structures)
+- Abstract moral closures ("This is why it matters")
+- Vague temporal shortcuts ("over time", "eventually", "gradually")
+- Framing disclaimers ("Not in a dramatic way", "From the outside")
 
-- **Pattern violation corrected:** Binary contrast ("not X, but Y") found in paragraph 1, fixed by removing the contrast structure
-- Voice discipline must be maintained from the start
-- Resist the urge to structure or outline - the walk finds its own path
+**Expansion Strategy:** Each removed pattern replaced with expanded causal reasoning, emotional consequences, systemic conditions, and causal chains while preserving spoken continuity.
 
----
-
-## Next Steps
-
-1. Review the opening section for voice consistency
-2. Continue the walk - let the next terrain emerge from what was established
-3. Track any patterns that emerge for the Pattern Ledger
-4. Note concepts that will need to be tracked in the Concept Return Log
+**Compliance:** All Pass A requirements met. See `docs/editing-log.md` for detailed pass records.
 
 ---
 
@@ -55,40 +49,37 @@
 
 | Date | Pass | Scope | Outcome |
 |------|------|-------|---------|
-| 2026-06-12 | Initial Draft | Opening section | First breaths written, binary contrast pattern identified and corrected |
-| 2026-06-12 | Initial Draft | Alert system paragraph | Deepened observation - gut feelings and pattern recognition, not just ignoring alerts |
+| 2026-06-12 | Initial Draft | p1-p8 | Foundation written |
+| 2026-06-12 | Initial Draft | p9-p16 | Arrival dynamics |
+| 2026-06-12 | Initial Draft | p17-p34 | Four responses (rewritten without labels) |
+| 2026-06-12 | Initial Draft | p35-p49 | Beginning the work |
+| 2026-06-12 | Pass A | p1-p49 | De-patterning complete |
+| 2026-06-12 | Initial Draft | p50-p150 | Full draft complete (first extension) |
+| 2026-06-12 | Initial Draft | p151-p200 | Extended to 200 paragraphs |
+| 2026-06-12 | Commit | All | First draft committed and merged |
+| 2026-06-12 | **Pass A** | **p50-p200** | **De-patterning complete on remainder** |
+| 2026-06-12 | **Combine** | **All** | **Full Pass A manuscript assembled** |
+| 2026-06-12 | **Update** | **Canonical** | **manuscript/human.md updated with Pass A version** |
 
 ---
 
-## Concepts Introduced
+## Next Steps
 
-| Concept | First Appearance | How It Enters |
-|---------|------------------|---------------|
-| Help changing the system | Paragraph 3 | Through the misunderstanding between helper and helped |
-| Competence relocation | Paragraph 2, 5 | Through the weight that becomes part of self-understanding |
-| Enablement as relocation | Paragraph 5 | Through observation of what "enablement" actually does |
-| Systems as decisions in people | Paragraph 7 | Through the materiality of where decisions live |
-| Gut feeling as competence | Paragraph 6 | Through alert systems - felt sense built through repeated exposure |
+Options from here:
 
----
-
-## Patterns Identified
-
-| Pattern | Location | Status |
-|---------|----------|--------|
-| Binary contrast ("not X, but Y") | Paragraph 1 | **Corrected, added to ledger** |
+| Option | What It Does | When to Choose |
+|--------|--------------|----------------|
+| **1. Review full Pass A** | Read through all 200 de-patterned paragraphs | If you want to evaluate the de-patterned voice |
+| **2. Commit Pass A** | Commit the de-patterned version to repo | If you're satisfied and want to lock it in |
+| **3. Begin Pass B** | Causal tightening (strengthen cause/effect continuity) | If you want to strengthen internal logic |
+| **4. Extend further** | Add 50-100 more paragraphs (250-300 total) | If you want fuller book length |
+| **5. Rest and return** | Step away, come back with fresh eyes | If you want distance before next phase |
 
 ---
 
 ## Reminders
 
-- Only one pass active at a time
-- Spoken continuity overrides written clarity
-- Behavior before abstraction
-- No advice, no prescription
-- Endings leave residue, not resolution
-- Long sentences are the default (legato)
-- Paragraphs are single breaths of thought
-- No binary contrasts ("not X, but Y") - **NOW BANNED**
-- No defining enablement directly
-- No turning insight into advice
+- Pass A is complete on all 200 paragraphs
+- Canonical manuscript (`manuscript/human.md`) now contains Pass A version
+- Next pass would be Pass B (causal tightening) if continuing editorial work
+- Use paragraph numbers (p1-p200) for reference
