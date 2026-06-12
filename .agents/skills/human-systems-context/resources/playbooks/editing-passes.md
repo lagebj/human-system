@@ -16,6 +16,22 @@ Never blend passes.
 
 If the user says `Mode: Pass A`, do Pass A only. If you notice an issue belonging to another pass, log it or defer it.
 
+## Output Format Rule (Mandatory)
+
+Manuscript output MUST contain ONLY paragraphs. Never include:
+- Pass completion summaries
+- Pattern removal logs
+- Word count analysis
+- Section headers beyond the original manuscript structure
+- Editorial commentary or analysis
+
+Editorial metadata belongs in:
+- `docs/working-session.md` (current state)
+- `docs/editing-log.md` (pass records)
+- `manuscript/notes/pattern-ledger.md` (pattern tracking)
+
+When delegating pass work, instructions must explicitly request "paragraphs only" output.
+
 ## Pass A — De-patterning
 
 Goal:

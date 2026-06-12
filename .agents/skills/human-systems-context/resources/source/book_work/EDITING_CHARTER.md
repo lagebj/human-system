@@ -24,6 +24,9 @@ If the two conflict, the Writing Working Agreement wins.
 
 ## Core Rules (Binding)
 
+0. **Manuscript Purity Rule**
+   Editorial metadata, pass completion notes, summary tables, pattern analysis, and process documentation must NEVER appear in manuscript files. Manuscript files contain ONLY the walking text (title, subtitle, section separators, and numbered paragraphs). Editorial state is tracked separately in `docs/working-session.md` and pass-specific logs.
+
 1. **Break symmetry aggressively**
    Repeating paragraph shapes, sentence mechanics, or rhythmic patterns are actively harmful and must be disrupted.
 
