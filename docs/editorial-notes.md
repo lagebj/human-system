@@ -124,19 +124,116 @@ This pass makes the manuscript feel fully edited by a professional author-editor
 
 ---
 
+## Prose and Language Pass (2026-06-16)
+
+### What Was Done
+
+A dedicated prose, technique, and language pass focused on simple words, concrete-before-abstract writing, no jargon, bounded claims, and calm direct tone.
+
+### Editorial Goals Achieved
+
+| Goal | Before | After | Status |
+|------|--------|-------|--------|
+| Word count | 9,127 | 8,941 | ✅ 2% reduction |
+| Paragraphs | 131 | 131 | ✅ Unchanged |
+| Total reduction from original | ~23,900 | 8,941 | ✅ ~62% |
+| Jargon removed | Multiple instances | Eliminated | ✅ |
+| Second-person reduction | Present | Significantly reduced | ✅ |
+| Claims bounded | Some universal | Mostly bounded | ✅ |
+
+### Language Removed
+
+**Consultant/management jargon:**
+- "leverage" → "power"
+- "facilitate" → "help"
+- "utilize" → "use"
+- "demonstrate" → "show"
+- "transformation" → "change"
+- "stakeholders" → "people"
+- "diagnostic" → "for understanding"
+- "evaluative" → "for judgment"
+- "prescriptive" → "telling you what to do"
+- "articulate" → "explain"
+- "emergent" → "emerges"
+
+**Throat-clearing phrases:**
+- "It is important to note that"
+- "It is worth considering that"
+- "In many ways"
+- "Broadly speaking"
+- "From an organizational perspective"
+- "This raises the question of"
+- "It could be argued that"
+- "Needless to say"
+- "As we have seen"
+- "In a very real sense"
+
+### Second-Person Reduction
+
+Converted most "you" sentences into:
+- Direct declarative prose
+- Organization-level description
+- Leader-level description
+- Team-level description
+- Neutral analytic framing
+
+**Examples:**
+- "You can build correctly" → "Building correctly helps"
+- "You will leave before" → "Leaving happens before"
+- "You are part of the systems" → "Part of the systems being changed"
+- "You cannot know in advance" → "The system's response cannot be known in advance"
+
+### Claims Bounded
+
+Universal claims replaced with bounded language:
+- "People resist" → "People often resist"
+- "Leaders are not" → "Leaders are often not"
+- Added qualifiers: "often", "sometimes", "under these conditions", "in this kind of system"
+
+### Key Terms Standardized
+
+- **technical completion** — the system works
+- **organizational completion** — the team can sustain the work
+- **human workaround** — informal capability around broken systems
+- **relocated burden** — interventions move burden rather than remove it
+- **tacit competence** — knowledge in practice, not documentation
+- **expert dependency** — team waits for expert rather than building capability
+- **resistance as information** — resistance reveals what is being protected
+- **power as enacted** — power lives in relationships and actions
+
+### Supporting Documents Created
+
+- **docs/style-guide.md** — Comprehensive style guide with voice, sentence rules, vocabulary rules, argument rules, rhythm rules, and before/after examples
+
+### Remaining Prose Risks
+
+1. **Some "you" remains** — Where it improves immediacy, second person was kept. May want to review whether all remaining instances are justified.
+
+2. **Sentence variation** — Some chapters may still have uniform sentence length. Final copy-edit should address this.
+
+3. **Concrete examples** — Some abstract passages remain where no concrete evidence exists. These were compressed rather than invented.
+
+---
+
 ## Previous Editorial Passes (Archive)
 
+### Final Prose Discipline Pass (2026-06-16, Earlier)
+- 9,367 → 9,127 words (2.5% reduction)
+- Removed "You will encounter..." template from Chapter 5
+- Removed "Governance shapes..." repetition from Chapter 6
+- Fixed Chapter 7 ending drift (removed p10)
+
 ### Hard Professional Line-Edit (2026-06-16, Earlier)
-- 15,435 → 9,367 words (39% reduction)
+- 19,764 → 9,367 words (39% reduction)
 - Removed second-person overuse, recursive patterns, explanatory clauses
 - Radically tightened Chapter 6, strengthened Chapter 7 ending
 
 ### Final Line-Edit Pass (2026-06-16, Earlier)
-- 19,764 → 15,435 words (22% reduction)
+- 25,138 → 19,764 words (21% reduction)
 - Removed "which means" clauses, "and you have learned" incantations
 
 ### Professional Editorial Refactor (2026-06-16, Earlier)
-- 25,138 → 19,764 words (21% reduction)
+- ~23,900 → 25,138 words (structural pass)
 - Removed 243 recursive "the same X you learned..." constructions
 - Added 4 concrete cases
 
