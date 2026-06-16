@@ -185,6 +185,14 @@ This book is in active development. The manuscript, source context, and working 
 
 The repository itself is part of the work — a living system that preserves and evolves reusable context for operating-model reasoning, modernization strategy, enablement, and writing work.
 
+### Manuscript State (as of 2026-06-16)
+
+- **Paragraphs:** 165
+- **Words:** 24,787
+- **Chapters:** 7 with titles and purpose statements
+- **Reduction:** 17.5% from original 30,312 words
+- **Latest Commit:** `0506a89` — fix(manuscript): restore full content and restructure with 17% reduction
+
 ---
 
 *"I make systems make sense."*
