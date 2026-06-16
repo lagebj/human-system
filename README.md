@@ -187,28 +187,29 @@ The repository itself is part of the work — a living system that preserves and
 
 ### Manuscript State (as of 2026-06-16)
 
-**Final prose discipline pass complete: template removal, ending control, and professional polish.**
+**Major restructure complete: chapter contracts met, material relocated, prose disciplined.**
 
-- **Paragraphs:** 131
-- **Words:** 9,127
-- **Chapters:** 7 with titles and purpose statements
-- **Reduction:** 2.5% from previous draft (~61% total from original)
+- **Starting word count:** ~23,900 words (original draft)
+- **Current word count:** 6,450 words
+- **Total reduction:** ~73% from original
+- **Chapters:** 7 with explicit contracts fulfilled
 - **Editorial improvements:**
-  - Removed "You will encounter..." template from Chapter 5 (p3-6)
-  - Removed "Governance shapes..." repetition from Chapter 6
-  - Removed "You will need to decide..." formulations
-  - Tightened Chapter 2 scaffolding (trust, patterns, ownership, uncertainty)
-  - Removed solemn restatement from Chapter 3
-  - Fixed Chapter 7 ending drift (removed p10, strengthened p9 as final paragraph)
-  - Removed trailing ceremonial language throughout
-  - Preserved 4 concrete cases (Chapters 3, 4, 5, 7)
-  - Preserved technical/organizational completion distinction
+  - Chapter 1: Removed intervention design material, focused on workaround/human load
+  - Chapter 2: Removed generic material, added three loss examples + six questions (competence, status, control, identity, risk, burden)
+  - Chapter 3: Restructured around explicit four pulls (useful, right, rescue, remain needed)
+  - Chapter 4: Removed capability/learning/departure material, added seven resistance categories + ten power forms
+  - Chapter 5: Preserved (strongest chapter, technical vs. organizational completion)
+  - Chapter 6: Removed repeated power definitions, governance used as example only
+  - Chapter 7: Added staged delegation, tolerable mistakes, learning transfer, departure, accountable stewardship ending
+  - Page markers removed throughout
+  - Grammar fixes applied (missing articles restored)
+  - Four concrete cases preserved and strengthened (Chapters 3, 4, 5, 7)
 
 **Positioning:** Literary organizational nonfiction for technical leaders.
 
 **Audience:** Staff-plus engineers, engineering managers, platform/product leaders, transformation leads in legacy-heavy environments.
 
-**Status:** Ready for final continuity read-through and publication workflow.
+**Status:** Chapter contracts met. Ready for case deepening, final continuity read-through, and publication workflow.
 
 ---
 
