@@ -187,11 +187,22 @@ The repository itself is part of the work — a living system that preserves and
 
 ### Manuscript State (as of 2026-06-16)
 
-- **Paragraphs:** 165
-- **Words:** 24,787
+**Professionally refactored for compression, cadence, and concrete embodiment.**
+
+- **Paragraphs:** 169
+- **Words:** 19,764
 - **Chapters:** 7 with titles and purpose statements
-- **Reduction:** 17.5% from original 30,312 words
-- **Latest Commit:** `0506a89` — fix(manuscript): restore full content and restructure with 17% reduction
+- **Reduction:** 21% from original 25,138 words (35% from original draft)
+- **Editorial improvements:**
+  - Removed 243 occurrences of recursive "the same X you learned..." constructions
+  - Added 4 concrete cases (Chapters 3, 4, 5, 7)
+  - Made technical vs. organizational completion distinction explicit
+  - Tightened claims, reduced universal language
+  - Preserved 7-chapter structure and core thesis
+
+**Positioning:** Literary organizational nonfiction for technical leaders.
+
+**Audience:** Staff-plus engineers, engineering managers, platform/product leaders, transformation leads in legacy-heavy environments.
 
 ---
 
