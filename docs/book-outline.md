@@ -155,27 +155,26 @@ The progression is not linear but spiral—concepts return at deeper levels as t
 
 ## Manuscript Status
 
-**As of 2026-06-16 (Hard Line-Edit Complete):**
+**As of 2026-06-16 (Final Prose Discipline Pass Complete):**
 
-- **Paragraphs:** 132
-- **Words:** 9,367
+- **Paragraphs:** 131
+- **Words:** 9,127
 - **Chapters:** 7 (all with titles, purpose statements, and concrete cases)
-- **Reduction:** 39% from previous draft, ~60% from original
-- **Editorial state:** Hard professional line-edit complete — decisive compression, second-person reduction, and ending control
+- **Reduction:** ~61% from original draft
+- **Editorial state:** Final prose discipline pass complete — template removal, ending control, and professional polish
 
-**Changes in this pass:**
-- Removed second-person overuse throughout (converted to declarative/analytic framing)
-- Removed "you will/you have" incantations
-- Removed recursive "the same X" patterns
-- Removed trailing explanatory clauses ("because", "since", "which means", "so", "yet", "while")
-- Removed clause-stacked sentences
-- Aggressive cuts to Chapters 2, 3, 4, 6, 7
-- Protected Chapter 5 (modernization case, technical/organizational distinction)
-- Radically tightened Chapter 6 (reduced to core governance/power/contradictions material)
-- Strengthened Chapter 7 ending (authority not drift)
+**Changes in this final pass:**
+- Removed "You will encounter..." template from Chapter 5 (p3-6)
+- Removed "Governance shapes..." repetition from Chapter 6
+- Removed "You will need to decide..." formulations
+- Tightened Chapter 2 scaffolding (trust, patterns, ownership, uncertainty)
+- Removed solemn restatement from Chapter 3
+- Fixed Chapter 7 ending drift (removed p10, strengthened p9 as final paragraph)
+- Removed trailing ceremonial language throughout
 - Preserved 4 concrete cases (Chapters 3, 4, 5, 7)
+- Preserved technical/organizational completion distinction
 
 **Ready for:**
 - Final continuity read-through
-- Copy-edit
+- Professional copy-edit
 - Publication workflow
