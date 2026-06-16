@@ -187,27 +187,28 @@ The repository itself is part of the work — a living system that preserves and
 
 ### Manuscript State (as of 2026-06-16)
 
-**Hard professional line-edit complete: decisive compression, second-person reduction, and ending control.**
+**Final prose discipline pass complete: template removal, ending control, and professional polish.**
 
-- **Paragraphs:** 132
-- **Words:** 9,367
+- **Paragraphs:** 131
+- **Words:** 9,127
 - **Chapters:** 7 with titles and purpose statements
-- **Reduction:** 39% from previous draft (~60% total from original)
+- **Reduction:** 2.5% from previous draft (~61% total from original)
 - **Editorial improvements:**
-  - Removed second-person overuse throughout (converted to declarative/analytic framing)
-  - Removed "you will/you have" incantations
-  - Removed recursive "the same X" patterns
-  - Removed trailing explanatory clauses ("because", "since", "which means", "so", "yet", "while")
-  - Removed clause-stacked sentences
-  - Aggressive cuts to Chapters 2, 3, 4, 6, 7
-  - Protected Chapter 5 (modernization case, technical/organizational distinction)
-  - Radically tightened Chapter 6 (reduced to core governance/power/contradictions material)
-  - Strengthened Chapter 7 ending (authority not drift)
+  - Removed "You will encounter..." template from Chapter 5 (p3-6)
+  - Removed "Governance shapes..." repetition from Chapter 6
+  - Removed "You will need to decide..." formulations
+  - Tightened Chapter 2 scaffolding (trust, patterns, ownership, uncertainty)
+  - Removed solemn restatement from Chapter 3
+  - Fixed Chapter 7 ending drift (removed p10, strengthened p9 as final paragraph)
+  - Removed trailing ceremonial language throughout
   - Preserved 4 concrete cases (Chapters 3, 4, 5, 7)
+  - Preserved technical/organizational completion distinction
 
 **Positioning:** Literary organizational nonfiction for technical leaders.
 
 **Audience:** Staff-plus engineers, engineering managers, platform/product leaders, transformation leads in legacy-heavy environments.
+
+**Status:** Ready for final continuity read-through and publication workflow.
 
 ---
 
