@@ -92,9 +92,9 @@ This book makes visible what typically remains invisible: how help, modernizatio
 
 **Function:** Tightens heavily. Keeps only contradictions that materially advance the thesis. Removes philosophical repetition.
 
-**Content:** Covers contradictions the helper navigates: caring without consuming, helping without creating dependency, naming power without accusation, building capability while honoring existing competence, leaving without abandoning. Addresses the tension between urgency and the pace that noticing requires, between speaking truth and preserving relationships, between holding boundaries and remaining useful.
+**Content:** Covers governance as deciding who decides (more important than the decisions themselves). Governance happens whether named or not (informal arrangements determine how work flows). Addresses whether to work within existing governance or change it. Covers how governance shapes what you can do, what governance to leave behind, how governance must evolve. Addresses how the work changes you, how you leave different than you arrived, what to do with activations and limits, what to do with learning when it emerges, what story to tell about the work.
 
-**Key insight:** Some tensions cannot be resolved. They must be held. The work is navigating them with judgment, not eliminating them.
+**Key insight:** Some tensions cannot be resolved. They must be held. The work is navigating them with judgment, not eliminating them. Governance is the work of deciding who decides—and this decision shapes everything that follows.
 
 ---
 
@@ -104,11 +104,11 @@ This book makes visible what typically remains invisible: how help, modernizatio
 
 **Function:** Ends with authority, not drift. Strengthens concrete capability-building examples. Finishes with earned synthesis, not generalized uplift.
 
-**Content:** Addresses the lack of clean endings, leaving before the work is done, the work continuing without you, carrying the work forward. Covers making the same mistakes in new contexts, making new mistakes through growth, finding worth in the work itself rather than outcomes. Ends with practices that support the work: arriving without answers, naming feelings, asking genuine questions, having difficult conversations, asking for help, saying no, ending relationships cleanly.
+**Content:** Addresses the lack of clean endings, leaving before the work is done, the work continuing without you, carrying the work forward. Covers making the same mistakes in new contexts, making new mistakes through growth, finding worth in the work itself rather than outcomes. Addresses the systems we work inside being us, the walk pausing as a breath not an ending. Covers the rhythm of work (arriving, proposing, working with resistance, momentum, implementation, capability transfer, leaving, integration). Ends with becoming someone who can hold tension, notice reactions, work with power, care without consuming, leave without abandoning.
 
 **Concrete case:** A staff engineer joins a team struggling with incident response. Her instinct: take over during outages (she's faster). She recognizes the dependency pattern. During the next incident, she sits beside the on-call engineer, asks questions, lets him drive. He makes mistakes. She doesn't take over. By the fourth incident, he doesn't call. The capability is his. "This is the discipline of capability-building: doing less so others can do more."
 
-**Key insight:** The quality of attention, care, and presence you bring is the point. These are choices you make. The quality is what makes the work worth doing, meaningful, human.
+**Key insight:** The walk continues in the work you do, in the systems you enter, in the people you work with. There is only the work and the people and the systems and the care. The walk continues.
 
 ---
 
@@ -155,15 +155,24 @@ The progression is not linear but spiral—concepts return at deeper levels as t
 
 ## Manuscript Status
 
-**As of 2026-06-16:**
+**As of 2026-06-16 (Final Line-Edit Complete):**
 
-- **Paragraphs:** 169
-- **Words:** 19,764
+- **Paragraphs:** 149
+- **Words:** 15,435
 - **Chapters:** 7 (all with titles, purpose statements, and concrete cases)
-- **Reduction:** 21% from previous draft, 35% from original
-- **Editorial state:** Professionally refactored for compression, cadence, and concrete embodiment
+- **Reduction:** 22% from previous draft, ~35% from original
+- **Editorial state:** Final line-edit complete — professional compression, cadence control, and prose discipline
 
-**Pending:**
-- Full continuity read-through
-- Optional: Additional case integration from inbox
-- Optional: Variation improvement in Chapters 3 and 4
+**Changes in this pass:**
+- Removed recursive "which means" explanatory clauses
+- Removed "and you have learned/seen/felt" incantations
+- Removed "the same X you noticed" patterns
+- Removed trailing "to understand/learn/accept" fragments
+- Aggressive cuts to Chapters 3, 6, 7 (introspective loops, philosophical repetition, reflective overrun)
+- Preserved Chapter 5 strength and concrete modernization case
+- Preserved 4 concrete cases (Chapters 3, 4, 5, 7)
+- Strengthened Chapter 7 ending with authority not drift
+
+**Ready for:**
+- Final continuity read-through
+- Publication workflow
