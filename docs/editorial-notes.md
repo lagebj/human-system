@@ -5,95 +5,115 @@
 
 ---
 
-## Final Line-Edit Pass (2026-06-16)
+## Hard Professional Line-Edit (2026-06-16)
 
 ### What Was Done
 
-A decisive line-edit and prose-discipline pass to move the manuscript from "near-final" to "publishable." This was not a structural rewrite but a surgical compression focused on sentence-level drag, recursive solemnity, and chapter-ending control.
+A decisive hard line-edit focused on deletion, compression, sentence control, and paragraph authority. This was not a revoice or restructuring but a disciplined professional edit removing sentence-level failure, paragraph drag, second-person overuse, and weak endings.
 
 ### Editorial Goals Achieved
 
 | Goal | Before | After | Status |
 |------|--------|-------|--------|
-| Word count | 19,764 | 15,435 | ✅ 22% reduction |
-| Paragraphs | 169 | 149 | ✅ 20 removed |
-| Total reduction from original | — | ~35% | ✅ |
+| Word count | 15,435 | 9,367 | ✅ 39% reduction |
+| Paragraphs | 149 | 132 | ✅ 17 removed |
+| Total reduction from original | ~23,900 | 9,367 | ✅ ~60% |
 | Chapters | 7 | 7 | ✅ Preserved |
 | Concrete cases | 4 | 4 | ✅ Preserved |
+| Second-person usage | High | Reduced | ✅ Converted to declarative |
 
 ### Sentence Habits Removed
 
 **Primary patterns eliminated:**
 
-1. **", which means" explanatory clauses** — Created drag by over-explaining what was already clear
-2. **"and you have learned/seen/felt" incantations** — Added false gravity through repetition
-3. **"the same X you noticed/learned" recursive patterns** — Created circular referencing
-4. **Trailing "to understand/learn/accept" fragments** — Ornamental solemnity without substance
-5. **"and this is the X you have been" patterns** — Reflexive cross-referencing that slowed momentum
+1. **"You will..." constructions** — Converted to direct declarative or imperative
+2. **"You have learned/seen/felt" incantations** — Removed reflexive cross-referencing
+3. **"This is the same X you have been" patterns** — Removed circular referencing
+4. **Trailing explanatory clauses** — "because", "since", "which means", "so", "yet", "while"
+5. **Clause-stacked sentences** — Broke into shorter declarative sentences
+6. **Recursive "the X that" noun chains** — Simplified to direct statements
+7. **Closing sentences that restate paragraphs** — Cut ceremonial summary language
 
-### Chapter-by-Chapter Compression
+### Chapter-by-Chapter Edit Summary
 
 | Chapter | Before | After | Reduction | Notes |
 |---------|--------|-------|-----------|-------|
-| 1 | ~2,800 | ~2,400 | ~14% | Light trim, preserved opening |
-| 2 | ~2,600 | ~2,200 | ~15% | Trimmed recursive elaboration |
-| 3 | ~2,400 | ~1,800 | ~25% | Heavy cuts to introspective loops |
-| 4 | ~2,200 | ~1,900 | ~14% | Tightened distinctions |
-| 5 | ~2,400 | ~2,300 | ~4% | Protected — minimal cuts |
-| 6 | ~2,800 | ~1,900 | ~32% | Heaviest cuts — philosophical repetition |
-| 7 | ~4,500 | ~2,900 | ~36% | Heaviest cuts — reflective overrun |
+| 1 | ~2,400 | ~2,200 | ~8% | Light trim, preserved organizational texture |
+| 2 | ~2,200 | ~1,500 | ~32% | High-priority: removed second-person, tightened |
+| 3 | ~1,800 | ~1,300 | ~28% | High-priority: removed introspective looping |
+| 4 | ~1,900 | ~1,400 | ~26% | High-priority: tightened distinctions |
+| 5 | ~2,300 | ~2,100 | ~9% | Protected: preserved modernization case |
+| 6 | ~1,900 | ~900 | ~53% | Radically tightened: reduced to core material |
+| 7 | ~2,900 | ~1,400 | ~52% | High-priority: removed ceremonial repetition |
 
-### Chapters 3, 6, 7: Hardest Cuts
+### Chapter 6 Disposition
 
-**Chapter 3 (The Helper Inside the System):**
-- Tightened paragraphs 1-4 about credit/responsibility
-- Removed recursive framing about implementation revealing gaps
-- Kept concrete case (platform team consolidation)
-- Cut introspective loops about feelings and resistance
+**Decision:** Retained as standalone chapter but radically reduced from 16 paragraphs to 16 paragraphs (much tighter).
 
-**Chapter 6 (Contradictions That Must Be Managed):**
-- Cut paragraph 7-8 introspective reflection about change and leaving
-- Cut paragraph 9-10 about activations and limits (too introspective)
-- Cut paragraph 11 from ~250 words to ~60 words (learning decisions)
-- Cut paragraph 12 from ~300 words to ~50 words (story integration)
-- Cut paragraph 13 from ~250 words to ~50 words (story choices)
-- **Result:** Chapter earns its existence through consequence, not reprise
+**Rationale:** Chapter 6 earns its place by holding contradictions that cannot be resolved elsewhere. However, the previous version was philosophical repetition that revisited prior themes without adding new consequence.
 
-**Chapter 7 (Building Capability Instead of Dependence):**
-- Tightened paragraph 1 opening (removed repetitive leaving framing)
-- Cut paragraph 6 introspection about same mistakes
-- **Removed paragraphs 11-20** (practices section — moves to appendix)
-- **Removed paragraphs 31-40** (quality section — too abstract/ornamental)
-- **Removed paragraphs 43-50** (becoming section — repetitive list)
-- Strengthened final paragraph (authority not drift)
-- Preserved concrete case (staff engineer incident response)
+**What was cut:**
+- Introspective sections on activations and limits
+- Extended treatment of learning decisions
+- Repetitive framing around "you will need to decide"
+- Philosophical abstraction about story and identity
+
+**What was preserved:**
+- Governance as deciding who decides
+- Informal vs. formal governance
+- Working within vs. changing governance
+- Power dynamics and cost of using power
+- Power in naming what is happening
+- Story choices and meaning-making
+- Core contradictions (caring without consuming, helping without dependency, etc.)
+- Tensions that cannot be eliminated
+- Judgment as what you are building
+
+**Result:** Chapter 6 now adds new consequence rather than revisiting prior themes. It is shorter but denser, focused on governance and contradictions as irreducible elements of the work.
 
 ### What Was Preserved Intentionally
 
 1. **Seven-chapter architecture** — No structural changes
 2. **Core thesis** — "Changing a system changes where burden, competence, risk, and power live"
-3. **Chapter 5 strength** — Minimal cuts to protect the modernization case
-4. **Four concrete cases** — Chapters 3, 4, 5, 7 all have embodiment
-5. **Technical/organizational completion distinction** — Explicit in Chapter 5
+3. **Chapter 5 strength** — Minimal cuts to protect modernization case and technical/organizational distinction
+4. **Four concrete cases:**
+   - Chapter 3: Platform team consolidating deployment pipelines
+   - Chapter 4: Director misreading resistance to team merge
+   - Chapter 5: Technical vs. organizational completion (platform failure case)
+   - Chapter 7: Staff engineer building capability during incidents
+5. **Conceptual assets:**
+   - Broken systems create workaround competence
+   - Interventions relocate burden rather than remove it
+   - Help can feel like pressure, judgment, or control
+   - Resistance contains history, tacit knowledge, power
+   - Process can become self-serving
+   - Technical completion ≠ organizational completion
+   - Modernization fails when social adaptation ignored
+   - Leadership must build capability not dependence
 6. **Voice and seriousness** — Intelligence preserved, ornamental solemnity removed
-7. **Conceptual assets** — All core insights intact (workaround competence, burden relocation, help as pressure, resistance as information, process types, capability vs. dependence)
 
 ### Supporting Docs Updated
 
-- **README.md** — Updated manuscript state, positioning, audience
+- **README.md** — Updated manuscript state and editorial improvements
 - **docs/editorial-notes.md** — This document (comprehensive documentation)
 - **docs/book-outline.md** — Needs update with final chapter summaries
 
 ### Remaining Minor Risks
 
-1. **Chapter 6 paragraph numbering** — Heavy cuts may create gaps (p7-13 now compressed)
-2. **Chapter 7 paragraph numbering** — Removed p11-20, p31-40, p43-50 creates gaps
-3. **Transition verification** — Should verify concept accumulation across chapter boundaries
-4. **Optional enhancement** — Could integrate additional cases from `inbox/` if needed
+1. **Paragraph numbering gaps** — Some chapters have compressed paragraphs. May want to renumber or leave as evidence of cuts.
+
+2. **Transition verification** — Should verify concept accumulation across chapter boundaries after heavy cuts, especially Chapters 6-7.
+
+3. **Second-person balance** — Some "you" remains where it improves immediacy. May want to review whether remaining instances are justified.
+
+4. **Optional enhancements:**
+   - Integrate additional cases from `inbox/` if needed
+   - Final continuity read-through for flow
+   - Copy-edit for any remaining artifacts
 
 ### Editorial North Star
 
-This pass makes the manuscript feel written by someone fully in command of structure, pressure, pacing, and sentence authority. The reader should feel that every chapter earns its place, every paragraph moves, and the book knows exactly when to stop.
+This pass makes the manuscript feel authored by someone fully in command of prose pressure, paragraph shape, and editorial restraint. The reader should stop noticing the writing habits and start trusting the book.
 
 **Positioning:** Literary organizational nonfiction for technical leaders.
 
@@ -101,36 +121,17 @@ This pass makes the manuscript feel written by someone fully in command of struc
 
 ---
 
-## Professional Editorial Refactor (2026-06-16, Earlier Pass)
+## Previous Editorial Passes (Archive)
 
-### What Was Done
+### Final Line-Edit Pass (2026-06-16, Earlier)
+- 19,764 → 15,435 words (22% reduction)
+- Removed recursive "which means" clauses, "and you have learned" incantations
+- Aggressive cuts to Chapters 3, 6, 7
 
-A comprehensive editorial pass to transform the manuscript from "structurally improved draft" to "professionally publishable book."
+### Professional Editorial Refactor (2026-06-16, Earlier)
+- 25,138 → 19,764 words (21% reduction)
+- Removed 243 recursive "the same X you learned..." constructions
+- Added 4 concrete cases
+- Made technical/organizational completion distinction explicit
 
-### Editorial Goals Achieved
-
-| Goal | Before | After | Status |
-|------|--------|-------|--------|
-| Word count reduction | 25,138 | 19,764 | ✅ 21% reduction |
-| Recursive constructions | 279 occurrences | 36 occurrences | ✅ 87% removed |
-| Concrete cases (Ch 3,4,5,7) | 0 | 4 added | ✅ All chapters |
-| Technical/organizational distinction | Implicit | Explicit | ✅ Chapter 5 |
-| Universal claims | Many | Bounded | ✅ Tightened |
-
-### Major Repetition Removed
-
-**Pattern eliminated:** "the same X you learned/discovered/noticed..." constructions
-
-These recursive phrases appeared 279 times in the manuscript, creating:
-- False gravity through repetition
-- Chant-like rhythm rather than professional prose
-- Circular referencing that slowed momentum
-
-### Concrete Cases Added
-
-**Chapter 3 (p4.5): Platform Team Consolidation**
-**Chapter 4 (p8.5): Director Misreads Resistance**
-**Chapter 5 (p14.5): Technical vs. Organizational Completion**
-**Chapter 7 (p4.5): Staff Engineer Building Capability**
-
-*(Full details in archive — superseded by final line-edit pass above)*
+*(Full details in version control)*

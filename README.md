@@ -187,22 +187,23 @@ The repository itself is part of the work — a living system that preserves and
 
 ### Manuscript State (as of 2026-06-16)
 
-**Final line-edit complete: professional compression, cadence control, and prose discipline.**
+**Hard professional line-edit complete: decisive compression, second-person reduction, and ending control.**
 
-- **Paragraphs:** 149
-- **Words:** 15,435
+- **Paragraphs:** 132
+- **Words:** 9,367
 - **Chapters:** 7 with titles and purpose statements
-- **Reduction:** 22% from previous draft (35% total from original)
+- **Reduction:** 39% from previous draft (~60% total from original)
 - **Editorial improvements:**
-  - Removed recursive "which means" explanatory clauses
-  - Removed "and you have learned/seen/felt" incantations
-  - Removed "the same X you noticed" recursive patterns
-  - Removed trailing "to understand/learn/accept" fragments
-  - Aggressive cuts to Chapters 3, 6, 7 (introspective loops, philosophical repetition, reflective overrun)
-  - Preserved Chapter 5 strength and concrete modernization case
+  - Removed second-person overuse throughout (converted to declarative/analytic framing)
+  - Removed "you will/you have" incantations
+  - Removed recursive "the same X" patterns
+  - Removed trailing explanatory clauses ("because", "since", "which means", "so", "yet", "while")
+  - Removed clause-stacked sentences
+  - Aggressive cuts to Chapters 2, 3, 4, 6, 7
+  - Protected Chapter 5 (modernization case, technical/organizational distinction)
+  - Radically tightened Chapter 6 (reduced to core governance/power/contradictions material)
+  - Strengthened Chapter 7 ending (authority not drift)
   - Preserved 4 concrete cases (Chapters 3, 4, 5, 7)
-  - Preserved technical vs. organizational completion distinction
-  - Strengthened Chapter 7 ending with authority not drift
 
 **Positioning:** Literary organizational nonfiction for technical leaders.
 
