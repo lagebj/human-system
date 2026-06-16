@@ -36,7 +36,7 @@ This book makes visible what typically remains invisible: how help, modernizatio
 
 **Function:** Makes the relocation thesis unmistakably clear. Establishes that help is not neutral—it changes where uncertainty, learning, and responsibility live.
 
-**Content:** Covers time horizons, trust asymmetry, deeply embedded vs. superficial patterns, momentum, setbacks, sustainability. Addresses measurement challenges, boundaries, distributed ownership, and inherent uncertainty. Ends with the observation that the first proposal will not be the one that lands—this belongs to learning where actual obstacles live.
+**Content:** Covers time horizons, trust asymmetry, deeply embedded vs. superficial patterns, momentum, setbacks, sustainability. Addresses measurement challenges, boundaries, distributed ownership, and inherent uncertainty. Covers decision-makers, safety, competence, and trust. Ends with the observation that the first proposal will not be the one that lands—this belongs to learning where actual obstacles live.
 
 **Key insight:** Moving someone requires understanding what they are protecting. The protection looks like resistance from one angle, responsibility from another. Both perspectives hold accuracy.
 
@@ -48,7 +48,7 @@ This book makes visible what typically remains invisible: how help, modernizatio
 
 **Function:** Turns the lens on the helper. Shows how credit, responsibility, implementation gaps, and shifting goals create temptations that must be navigated.
 
-**Content:** Addresses the temptation to claim credit, the difference between letting go of credit vs. responsibility, how implementation reveals proposal gaps, and why goals shift. Covers resistance as information, the four things resistance protects (competence, relationships, system stability, the helper from failure), and the discipline of working with feelings without being driven by them.
+**Content:** Addresses the temptation to claim credit, the difference between letting go of credit vs. responsibility, how implementation reveals proposal gaps, and why goals shift. Covers resistance as information, the four things resistance protects (competence, relationships, system stability, the helper from failure), and the discipline of working with feelings without being driven by them. Covers power mapping and using power strategically.
 
 **Concrete case:** A platform team lead proposes consolidating deployment pipelines. Resistance from three teams, each with different underlying concerns. She adjusts approach per team, not the proposal. Result: 6 months instead of 6 weeks, relationships survive.
 
@@ -90,9 +90,9 @@ This book makes visible what typically remains invisible: how help, modernizatio
 
 *Inherent tensions that cannot be solved, only held and navigated with judgment.*
 
-**Function:** Tightens heavily. Keeps only contradictions that materially advance the thesis. Removes philosophical repetition.
+**Function:** Holds contradictions that cannot be resolved elsewhere. Adds new consequence rather than revisiting prior themes.
 
-**Content:** Covers governance as deciding who decides (more important than the decisions themselves). Governance happens whether named or not (informal arrangements determine how work flows). Addresses whether to work within existing governance or change it. Covers how governance shapes what you can do, what governance to leave behind, how governance must evolve. Addresses how the work changes you, how you leave different than you arrived, what to do with activations and limits, what to do with learning when it emerges, what story to tell about the work.
+**Content:** Covers governance as deciding who decides (more important than the decisions themselves). Governance happens whether named or not (informal arrangements determine how work flows). Addresses whether to work within existing governance or change it. Covers how governance shapes what you can do, what governance to leave behind, how governance must evolve. Addresses power dynamics and the cost of using power. Covers power in naming what is happening. Addresses story choices and meaning-making. Holds core contradictions: caring without consuming, helping without creating dependency, naming power without accusation, building capability while honoring existing competence, leaving without abandoning. Addresses tensions that cannot be eliminated: urgency vs. noticing pace, truth vs. relationships, boundaries vs. usefulness. Builds judgment as the core capability being developed.
 
 **Key insight:** Some tensions cannot be resolved. They must be held. The work is navigating them with judgment, not eliminating them. Governance is the work of deciding who decides—and this decision shapes everything that follows.
 
@@ -102,9 +102,9 @@ This book makes visible what typically remains invisible: how help, modernizatio
 
 *Shifting from delivering solutions to transferring capability. Exit designed in from the start.*
 
-**Function:** Ends with authority, not drift. Strengthens concrete capability-building examples. Finishes with earned synthesis, not generalized uplift.
+**Function:** Ends with authority, not drift. Shows capability-building in action. Finishes with earned synthesis, not generalized uplift.
 
-**Content:** Addresses the lack of clean endings, leaving before the work is done, the work continuing without you, carrying the work forward. Covers making the same mistakes in new contexts, making new mistakes through growth, finding worth in the work itself rather than outcomes. Addresses the systems we work inside being us, the walk pausing as a breath not an ending. Covers the rhythm of work (arriving, proposing, working with resistance, momentum, implementation, capability transfer, leaving, integration). Ends with becoming someone who can hold tension, notice reactions, work with power, care without consuming, leave without abandoning.
+**Content:** Addresses the lack of clean endings, leaving before the work is done, the work continuing without you, carrying the work forward. Covers making the same mistakes in new contexts, making new mistakes through growth, finding worth in the work itself rather than outcomes. Addresses the systems we work inside being us. Ends with the walk pausing as a breath, not an ending.
 
 **Concrete case:** A staff engineer joins a team struggling with incident response. Her instinct: take over during outages (she's faster). She recognizes the dependency pattern. During the next incident, she sits beside the on-call engineer, asks questions, lets him drive. He makes mistakes. She doesn't take over. By the fourth incident, he doesn't call. The capability is his. "This is the discipline of capability-building: doing less so others can do more."
 
@@ -129,7 +129,7 @@ The book moves through three movements:
 **Movement 3 (Chapters 6-7): Integration**
 - Holds contradictions without resolving them
 - Shows capability-building in action
-- Ends with practices, not prescriptions
+- Ends with synthesis, not prescriptions
 
 The progression is not linear but spiral—concepts return at deeper levels as the walk continues.
 
@@ -155,24 +155,27 @@ The progression is not linear but spiral—concepts return at deeper levels as t
 
 ## Manuscript Status
 
-**As of 2026-06-16 (Final Line-Edit Complete):**
+**As of 2026-06-16 (Hard Line-Edit Complete):**
 
-- **Paragraphs:** 149
-- **Words:** 15,435
+- **Paragraphs:** 132
+- **Words:** 9,367
 - **Chapters:** 7 (all with titles, purpose statements, and concrete cases)
-- **Reduction:** 22% from previous draft, ~35% from original
-- **Editorial state:** Final line-edit complete — professional compression, cadence control, and prose discipline
+- **Reduction:** 39% from previous draft, ~60% from original
+- **Editorial state:** Hard professional line-edit complete — decisive compression, second-person reduction, and ending control
 
 **Changes in this pass:**
-- Removed recursive "which means" explanatory clauses
-- Removed "and you have learned/seen/felt" incantations
-- Removed "the same X you noticed" patterns
-- Removed trailing "to understand/learn/accept" fragments
-- Aggressive cuts to Chapters 3, 6, 7 (introspective loops, philosophical repetition, reflective overrun)
-- Preserved Chapter 5 strength and concrete modernization case
+- Removed second-person overuse throughout (converted to declarative/analytic framing)
+- Removed "you will/you have" incantations
+- Removed recursive "the same X" patterns
+- Removed trailing explanatory clauses ("because", "since", "which means", "so", "yet", "while")
+- Removed clause-stacked sentences
+- Aggressive cuts to Chapters 2, 3, 4, 6, 7
+- Protected Chapter 5 (modernization case, technical/organizational distinction)
+- Radically tightened Chapter 6 (reduced to core governance/power/contradictions material)
+- Strengthened Chapter 7 ending (authority not drift)
 - Preserved 4 concrete cases (Chapters 3, 4, 5, 7)
-- Strengthened Chapter 7 ending with authority not drift
 
 **Ready for:**
 - Final continuity read-through
+- Copy-edit
 - Publication workflow
