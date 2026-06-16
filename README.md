@@ -187,18 +187,22 @@ The repository itself is part of the work — a living system that preserves and
 
 ### Manuscript State (as of 2026-06-16)
 
-**Professionally refactored for compression, cadence, and concrete embodiment.**
+**Final line-edit complete: professional compression, cadence control, and prose discipline.**
 
-- **Paragraphs:** 169
-- **Words:** 19,764
+- **Paragraphs:** 149
+- **Words:** 15,435
 - **Chapters:** 7 with titles and purpose statements
-- **Reduction:** 21% from original 25,138 words (35% from original draft)
+- **Reduction:** 22% from previous draft (35% total from original)
 - **Editorial improvements:**
-  - Removed 243 occurrences of recursive "the same X you learned..." constructions
-  - Added 4 concrete cases (Chapters 3, 4, 5, 7)
-  - Made technical vs. organizational completion distinction explicit
-  - Tightened claims, reduced universal language
-  - Preserved 7-chapter structure and core thesis
+  - Removed recursive "which means" explanatory clauses
+  - Removed "and you have learned/seen/felt" incantations
+  - Removed "the same X you noticed" recursive patterns
+  - Removed trailing "to understand/learn/accept" fragments
+  - Aggressive cuts to Chapters 3, 6, 7 (introspective loops, philosophical repetition, reflective overrun)
+  - Preserved Chapter 5 strength and concrete modernization case
+  - Preserved 4 concrete cases (Chapters 3, 4, 5, 7)
+  - Preserved technical vs. organizational completion distinction
+  - Strengthened Chapter 7 ending with authority not drift
 
 **Positioning:** Literary organizational nonfiction for technical leaders.
 
