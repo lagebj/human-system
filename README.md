@@ -29,6 +29,14 @@ The questions this book holds:
 - Where does learning go when it drifts away from the work?
 - What makes modernization stick — and what makes it become theater?
 
+## Core Thesis
+
+**Change does not simply remove work. It changes who knows, who matters, who decides, who carries risk, and who must learn to operate without the old sources of competence.**
+
+A second core formulation:
+
+**Technical change moves human burden, skill, risk, status, and power. Leadership begins by seeing what moved, who now carries it, and what the organization must learn to sustain the change.**
+
 ## The Trojan Horse Movement Pattern
 
 Embedded in this work is a stance on how change can happen without creating dependency:
@@ -66,9 +74,21 @@ The author is a tech lead based in Norway, self-taught through troubleshooting, 
 
 ## How This Book Is Structured
 
-The manuscript is one continuous walk. Chapters are terrain changes, not topic boxes. Concepts do not restart at chapter boundaries — they accumulate meaning as the walk continues.
+### Seven Chapters
 
-The prose thinks in motion rather than explaining what it already knows. It leaves residue, not conclusions.
+1. **Broken Systems and the Human Load They Create** — How organizations build informal capability around broken systems, and why this competence becomes invisible. Features the Maria/finance case showing hidden human load.
+
+2. **Why Help Triggers Loss** — Interventions relocate burden, competence, risk, and power. The relocation is experienced as loss even when it is improvement. Features three loss examples and six diagnostic questions.
+
+3. **The Helper Inside the System** — Your position, your temptations, your blind spots. The four pulls of care (useful, right, rescue, remain needed) and how each can become a trap. Features a platform consolidation case with unresolved consequences.
+
+4. **Resistance, History, and Power** — Resistance often carries legitimate history. Power lives in relationships, not positions. Fifteen resistance categories and four power families. Features the principal engineer case with mixed motives.
+
+5. **Process, Modernization, and Adaptation** — Process can be remedy, scaffold, scar tissue, or theater. Modernization succeeds when it respects existing value. Features the payments migration case (partial success).
+
+6. **Contradictions That Must Be Managed** — Inherent tensions that cannot be solved, only navigated through concrete decisions. Five contradictions: speed vs. understanding, central control vs. local ownership, truth vs. relationship, help vs. dependence, consistency vs. adaptation.
+
+7. **Building Capability Instead of Dependence** — Shifting from delivering solutions to transferring capability. Exit designed in from the start. Features the incident response delegation case with thresholds and boundaries.
 
 ### Repository Structure
 
@@ -86,7 +106,8 @@ human-system/
 │   │   └── templates/                      # Reusable integration text
 │   └── SKILL.md                            # Skill activation instructions
 ├── docs/                                   # Working documentation
-└── README.md                               # This file
+└── manuscript/
+    └── human.md                            # Primary manuscript
 ```
 
 ### Source Priority
@@ -104,16 +125,13 @@ The local skill (`.agents/skills/human-systems-context/SKILL.md`) is the authori
 
 The manuscript follows specific constraints that preserve its character:
 
-- Spoken continuity overrides written clarity
-- Long, uneven paragraphs are normal; short paragraphs are exceptional
-- No punchlines, tidy landings, or rhetorical closures
-- No binary contrast patterns ("not X, but Y")
-- No direct definitions of enablement
-- No turning insight into advice
-- Behavior comes before abstraction
-- Editing passes are never blended
-
-These are not global constraints — they apply only when working on the manuscript itself.
+- Plain-language precision
+- Concrete before abstract
+- Observation before interpretation
+- Named actors before "the system"
+- No consultant language, academic display, or false depth
+- Calm, direct, serious, humane tone
+- Narrator must not sound superior
 
 ## Core Themes
 
@@ -185,31 +203,31 @@ This book is in active development. The manuscript, source context, and working 
 
 The repository itself is part of the work — a living system that preserves and evolves reusable context for operating-model reasoning, modernization strategy, enablement, and writing work.
 
-### Manuscript State (as of 2026-06-16)
+### Manuscript State (as of 2026-06-17)
 
-**Major restructure complete: chapter contracts met, material relocated, prose disciplined.**
+**Final editorial pass complete: all seven chapters rebuilt and refined.**
 
-- **Starting word count:** ~23,900 words (original draft)
-- **Current word count:** 6,450 words
-- **Total reduction:** ~73% from original
-- **Chapters:** 7 with explicit contracts fulfilled
-- **Editorial improvements:**
-  - Chapter 1: Removed intervention design material, focused on workaround/human load
-  - Chapter 2: Removed generic material, added three loss examples + six questions (competence, status, control, identity, risk, burden)
-  - Chapter 3: Restructured around explicit four pulls (useful, right, rescue, remain needed)
-  - Chapter 4: Removed capability/learning/departure material, added seven resistance categories + ten power forms
-  - Chapter 5: Preserved (strongest chapter, technical vs. organizational completion)
-  - Chapter 6: Removed repeated power definitions, governance used as example only
-  - Chapter 7: Added staged delegation, tolerable mistakes, learning transfer, departure, accountable stewardship ending
-  - Page markers removed throughout
-  - Grammar fixes applied (missing articles restored)
-  - Four concrete cases preserved and strengthened (Chapters 3, 4, 5, 7)
+- **Word count:** 8,961 words (from ~23,900 original = 63% total reduction)
+- **Chapters:** 7 (all contracts met)
+- **Cases:** 5 concrete cases with ambiguity/partial failure (Chapters 1, 3, 4, 5, 7)
+- **Editorial state:** Publication-ready manuscript
+
+**Changes in this final pass:**
+- Chapter 1: Rebuilt around Maria/finance case showing hidden human load
+- Chapter 2: Refined with bounded language and moral boundary
+- Chapter 3: Complicated case with unresolved consequences
+- Chapter 4: Restructured with 4 power families and principal engineer hard case
+- Chapter 5: Rewritten with sustained payments modernization case (partial success)
+- Chapter 6: Rebuilt with five decision-based contradictions
+- Chapter 7: Deepened with documentation synthesis and incident case revision
+- Compression: 7.6% reduction from previous draft
+- Grammar: All missing articles and clipped grammar fixed
 
 **Positioning:** Literary organizational nonfiction for technical leaders.
 
 **Audience:** Staff-plus engineers, engineering managers, platform/product leaders, transformation leads in legacy-heavy environments.
 
-**Status:** Chapter contracts met. Ready for case deepening, final continuity read-through, and publication workflow.
+**Status:** Publication-ready. Ready for professional copy-edit and publication workflow.
 
 ---
 
