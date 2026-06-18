@@ -1,61 +1,63 @@
 # Human Systems Agent Instructions
 
-This repository is the canonical repo-scoped context package for my human-systems, modernization, enablement, operating-model, and writing-work stance.
+This repository is the canonical repo-scoped context package for human-systems, modernization, enablement, operating-model, and writing-work stance.
 
 It is not a generic prompt collection.
 It is not a generic writing-style repo.
 It is not only a book project.
 It is not only a coding-agent helper.
 
-The repo contains a local agent skill that must be used as the authoritative source of project context:
+## Bootloader
 
-- `.agents/skills/human-systems-context/SKILL.md`
+This file is the bootloader only. It does not contain detailed editorial rules.
 
-If repo instructions, skill resources, README files, and generated outputs disagree, fix the mismatch before continuing.
+**Canonical behavioral rules live in:**
+- `.agents/skills/human-systems-context/SKILL.md` — routing, source selection, pass discipline
+- `.agents/skills/human-systems-context/resources/source/` — editorial and authorial rules
 
-Do not treat book-specific writing constraints as global constraints. They apply only when the task is explicitly about manuscript writing, book editing, chapter work, prose voice, or editing passes.
+Do not duplicate large instructions into this file.
 
-## Required skills
+---
+
+## Required Skills
 
 When working in this repository, always apply these skills in order:
 
-1. **`human-systems-context`** — repo-local source of stance, operating logic, project context, field patterns, and writing/book-specific rules where relevant.
-2. **`git-branch-commit-pr`** — for branch creation, commits, pushing, and pull requests.
-3. **`adr-governance`** — for durable repo structure, source hierarchy, skill architecture, or rules future agents must follow.
+1. **`human-systems-context`** — repo-local source of stance, operating logic, project context, field patterns, and writing/book-specific rules where relevant
+2. **`git-branch-commit-pr`** — for branch creation, commits, pushing, and pull requests
+3. **`adr-governance`** — for durable repo structure, source hierarchy, skill architecture, or rules future agents must follow
 
 Use global skills only when explicitly relevant.
-Do not assume global skills override this repository’s local instructions.
+Do not assume global skills override this repository's local instructions.
 
-## Mandatory coding-agent workflow
+---
 
-Before changing files, read:
+## Before Any Work
 
-- `.agents/skills/human-systems-context/SKILL.md`
-- `docs/working-session.md`
+**Mandatory reads:**
+1. `.agents/skills/human-systems-context/SKILL.md`
+2. `docs/current-state.md`
 
-Before implementation, identify which kind of change this is:
+**Determine task class:**
+- Class A: Repository/workflow maintenance (manuscript MUST NOT be edited)
+- Class B: Manuscript diagnosis (manuscript read only, not modified)
+- Class C: Bounded editorial pass (exactly one pass active)
+- Class D: Manuscript rewrite (must be explicitly requested with change map)
+- Class E: Publication preparation (separate from developmental editing)
 
-- skill structure change
-- source/context update
-- playbook/template update
-- book-specific workflow update
-- documentation-only change
-- repo governance change
+**Record before work:**
+- Task class
+- Whether manuscript edits are allowed
+- Active pass (if any)
+- Authoritative files read
+- Files expected to change
+- Explicit non-goals
+- Current revision or commit
+- Risks of instruction conflict
 
-Supporting documentation must be updated before implementation whenever the change affects:
+---
 
-- skill activation rules
-- source priority
-- resource structure
-- task routing
-- book-specific constraints
-- global-vs-local skill boundaries
-- reusable workflows
-- templates consumed by other repos or agents
-
-Every branch must remove stale, duplicated, or misleading context related to the change.
-
-## Source authority
+## Source Authority
 
 The local skill is the primary source of behavior:
 
@@ -77,11 +79,50 @@ Reusable snippets and integration templates live under:
 
 - `.agents/skills/human-systems-context/resources/templates/`
 
-Do not duplicate large instructions into `AGENTS.md`.
-`AGENTS.md` is the bootloader.
-The skill carries the weight.
+**Manuscript canonical path:** `manuscript/human.md`
 
-## Repo boundary
+**Stale snapshot:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (for context loading only, do not edit)
+
+---
+
+## Change Discipline
+
+When adding new material, place it according to this rule:
+
+- Long-lived stance → `resources/source/core_stance/`
+- Reusable movement pattern → `resources/source/field_patterns/`
+- General writing voice → `resources/source/writing_voice/`
+- Book/manuscript-only rules → `resources/source/book_work/`
+- Distilled project memory → `resources/context/`
+- Repeatable workflow → `resources/playbooks/`
+- Copy-paste integration text → `resources/templates/`
+
+If a new file changes how agents should behave, update:
+
+1. `.agents/skills/human-systems-context/SKILL.md`
+2. Relevant README or source map
+3. `docs/current-state.md` (if state-bearing)
+
+Do not leave hidden rules in random documents.
+
+---
+
+## Editorial Workflow
+
+Editorial workflow is defined in:
+- `docs/decisions/001-editorial-workflow-and-source-authority.md`
+
+Key rules:
+- Only one editorial pass may be active at a time
+- Pass blending is forbidden
+- Manuscript edits require explicit task class C, D, or E
+- Class A (workflow maintenance) MUST NOT materially edit manuscript
+- Current state lives in `docs/current-state.md` only
+- Historical reports are archived under `docs/reports/archive/`
+
+---
+
+## Repo Boundary
 
 This repo exists to preserve and evolve reusable context that can support:
 
@@ -102,22 +143,17 @@ This repo must not become:
 - a global style guide for every repo
 - a collection of one-off chat artifacts with no source hierarchy
 
-## Change discipline
+---
 
-When adding new material, place it according to this rule:
+## After Work
 
-- Long-lived stance → `resources/source/core_stance/`
-- Reusable movement pattern → `resources/source/field_patterns/`
-- General writing voice → `resources/source/writing_voice/`
-- Book/manuscript-only rules → `resources/source/book_work/`
-- Distilled project memory → `resources/context/`
-- Repeatable workflow → `resources/playbooks/`
-- Copy-paste integration text → `resources/templates/`
-
-If a new file changes how agents should behave, update:
-
-1. `AGENTS.md`
-2. `.agents/skills/human-systems-context/SKILL.md`
-3. relevant README or source map
-
-Do not leave hidden rules in random documents.
+**Verify:**
+- Changed files match task class
+- `docs/current-state.md` is accurate
+- README has no stale operational detail
+- Supporting docs do not contradict canonical sources
+- No manuscript content changed during workflow-only work
+- Git diff contains no accidental prose rewrite
+- All newly created instructions have a clear authority level
+- Historical files are labeled or archived
+- Final report distinguishes completed work from unresolved risks

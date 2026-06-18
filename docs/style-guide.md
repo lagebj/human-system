@@ -2,6 +2,33 @@
 
 **Purpose:** Define the prose style for "Human System" to ensure consistency, clarity, and credibility.
 
+**Last updated:** 2026-06-18
+**Status:** Active — revised to prevent mechanical template application
+
+---
+
+## Important: Techniques Are Options, Not Templates
+
+This guide describes techniques that have proven useful. **None are mandatory.**
+
+The prose movement must follow the material, not a template.
+
+**Explicitly allowed:**
+- A section without a scene
+- A paragraph that does not end with consequence
+- A chapter without a named case
+- Uneven paragraph lengths that follow thought
+- Long, winding sentences where the thinking requires them
+- Short paragraphs used deliberately, not as default
+- Unresolved endings where the subject remains unresolved
+
+**Explicitly forbidden:**
+- Turning any technique into a quota
+- Applying techniques mechanically
+- Creating a visible pattern through repeated application
+- Using a technique because "the guide says so"
+- Imitating the examples rather than understanding the principle
+
 ---
 
 ## Voice
@@ -39,6 +66,8 @@ Break sentences that carry several abstract claims.
 - Never choppy or childish
 - Never showy or complex for the sake of complexity
 
+**This is a tendency, not a rule.** If a paragraph needs three long sentences to think through something, use three long sentences.
+
 ### Active Voice
 
 Prefer active verbs over passive constructions.
@@ -69,6 +98,8 @@ Prefer active verbs over passive constructions.
 | start | commence |
 | end | terminate |
 | enough | sufficient (unless precision requires it) |
+
+**These are tendencies, not laws.** Use the word that fits. If "utilize" is actually the right word in a specific context, use it.
 
 ### Banned Consultant Phrases
 
@@ -114,6 +145,8 @@ These terms are central and must be used consistently:
 - **power as enacted** — power lives in relationships and actions, not only titles
 - **modernization as social adaptation** — not only software delivery
 
+**Use these sparingly.** They should appear when they earn their place, not on a schedule.
+
 ### Therapeutic Language
 
 Use carefully. Do not use as loose metaphors for ordinary discomfort.
@@ -152,6 +185,8 @@ Do not stop at description. Show cause and effect.
 **Example:**
 > "Leaders removed the manual step because it looked wasteful. The team had used that step to catch bad data. The system became faster and less safe."
 
+**This is not mandatory.** Some passages work better as observation without causal chains. Use judgment.
+
 ### Bound Claims
 
 Do not make universal claims where the evidence only supports a pattern.
@@ -187,6 +222,8 @@ Do not collapse these into one explanation:
 - resistance to being judged
 - practical knowledge that the proposed change ignores
 
+**You do not need to distinguish all of them every time.** Name what matters for the passage at hand.
+
 ---
 
 ## Rhythm Rules
@@ -201,12 +238,16 @@ Use these patterns only when they produce a clear and necessary distinction. Do 
 - "The question is not whether. The question is where."
 - "On the one hand... on the other hand..."
 
+**Occasional use is fine.** Repeated use becomes mechanical.
+
 ### Vary Paragraph Length
 
 - Some paragraphs are one sentence
 - Some paragraphs are five sentences
 - Most paragraphs are two to four sentences
 - Never mechanical uniformity
+
+**Let the thought decide.** If a paragraph needs to be eight sentences, make it eight sentences.
 
 ### Use Reversals Sparingly
 
@@ -221,15 +262,20 @@ A good reversal changes how the reader sees the issue.
 
 > "The expert solved the problem. The team learned to wait."
 
-Do not force a reversal into every paragraph.
+**Do not force a reversal into every paragraph.** One per section is often enough. Zero is sometimes right.
 
-### End Paragraphs with Consequence
+### End Paragraphs with Consequence (Optional)
 
-The last sentence of a paragraph should:
+The last sentence of a paragraph **may**:
 - state the consequence
 - sharpen the distinction
 - carry the argument forward
 - reveal the mechanism
+
+**It may also:**
+- leave something unresolved
+- circle back to an earlier observation
+- simply stop when the thought stops
 
 **Weak:**
 > "This is where the deeper work begins."
@@ -237,11 +283,14 @@ The last sentence of a paragraph should:
 **Better:**
 > "The software was ready. The people carrying the risk were not."
 
+**But also acceptable:**
+> "She documented this. She set a date for reassessment. The date passed. She was still needed for cascading failures. She accepted this."
+
 ---
 
-## Scene-to-Meaning Movement
+## Scene-to-Meaning Movement (Optional Technique)
 
-For important ideas, prefer this sequence:
+For important ideas, **consider** this sequence:
 
 1. Show a concrete moment
 2. Explain what is happening
@@ -252,11 +301,13 @@ For important ideas, prefer this sequence:
 **Example:**
 > "The manager answered every hard question. The team stopped trying first. His expertise solved the day's problem and became the next day's dependency."
 
+**This is not mandatory.** Some passages work better as direct observation or argument. Do not force every idea into a scene.
+
 ---
 
-## The Three-Step Descent
+## The Three-Step Descent (Optional Technique)
 
-A preferred technique for compression:
+A technique for compression:
 
 1. Visible action
 2. Hidden meaning
@@ -267,7 +318,7 @@ A preferred technique for compression:
 > It was where they still trusted their own judgment.
 > The new platform had replaced the task before the organization replaced the trust."
 
-Use where it improves clarity. Do not turn the entire manuscript into fragments.
+**Use where it improves clarity.** Do not turn the entire manuscript into fragments.
 
 ---
 
@@ -329,6 +380,7 @@ The prose fails if:
 - Nuance is removed in the name of simplicity
 - The prose becomes generic
 - Central concepts become inconsistent
+- **Any technique from this guide becomes a visible, repeated pattern**
 
 ---
 
@@ -341,7 +393,7 @@ The style draws from these thinkers without imitating their exact voice:
 - **Mary Parker Follett** — use tension and conflict to reveal a better frame
 - **Amy Edmondson** — move from scene to concept to practical meaning
 - **Karl Weick** — compress complex ideas into clear reversals
-- **Peter Senge** — make feedback loops and system effects visible
+- **Robert Senge** — make feedback loops and system effects visible
 - **Robert Kegan and Lisa Lahey** — show the hidden logic behind resistance
 - **Henry Mintzberg** — contrast official stories with how work actually happens
 
@@ -351,6 +403,7 @@ The final prose must sound like one author, not a mixture of borrowed styles.
 
 ## Editorial Status
 
-**Last Updated:** 2026-06-16
-**Manuscript:** 8,941 words, 131 paragraphs, 7 chapters
-**Current Pass:** Prose, technique, and language — simple words, concrete before abstract, no jargon, bounded claims
+**Last Updated:** 2026-06-18
+**Manuscript:** See `docs/current-state.md` for current word count and state
+**Current Pass:** none (awaiting user direction)
+**Direction:** Literary organizational nonfiction — prose before framework

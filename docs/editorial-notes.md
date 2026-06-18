@@ -4,273 +4,278 @@ This document tracks editorial decisions, restructure rationale, and manuscript 
 
 ---
 
-## 2026-06-17: Final Editorial Pass — Publication-Ready
+## 2026-06-18: De-Frameworking Editorial Pass — Literary Organizational Nonfiction
 
-**Session goal:** Transform manuscript from "substantially improved" to "coherent, publication-ready draft" by rebuilding weak chapters, complicating cases, and applying final compression and grammar passes.
+**Session goal:** Revise the manuscript so it reads as a book of continuous prose rather than a management framework. Remove visible framework machinery while preserving underlying insight.
 
-**Starting state:** 9,700 words, 7 chapters (from previous restructure)
-**Ending state:** 8,961 words, 7 chapters (publication-ready)
-**Total reduction from original:** ~23,900 → 8,961 words (63% reduction)
+**Starting state:** 8,961 words, 7 chapters (publication-ready but framework-heavy)
+**Ending state:** 8,389 words, 7 chapters (reads as literary organizational nonfiction)
+**Total reduction from original:** ~23,900 → 8,389 words (65% reduction)
 
-### Editorial Center of Gravity
+### Primary Editorial Problem
 
-Two core formulations anchor this revision:
+The manuscript had become too:
+- List-heavy
+- Taxonomy-heavy
+- Keyword-driven
+- Symmetrical
+- Rigidly organized
+- Dependent on sets of three, four, or five
+- Shaped like a workshop model disguised as prose
 
-1. **"Change does not simply remove work. It changes who knows, who matters, who decides, who carries risk, and who must learn to operate without the old sources of competence."**
+The reader started noticing the framework instead of following the thought.
 
-2. **"Technical change moves human burden, skill, risk, status, and power. Leadership begins by seeing what moved, who now carries it, and what the organization must learn to sustain the change."**
+### Primary Revision Principle
 
-### Chapters Rebuilt (Complete Reconstruction)
+**Use:**
+- Prose before framework
+- Scene before diagnosis
+- Behavior before keyword
+- Movement before taxonomy
+- Consequence before abstraction
+- Judgment before false balance
 
-#### Chapter 1: Broken Systems and the Human Load They Create
-**Before:** Generic systems thinking, framework discussion, abstract concepts
-**After:** Maria/finance case showing hidden human load
+**Do not solve the problem by inventing a different framework.**
 
-**New structure:**
-- Maria runs month-end close across three systems that don't talk to each other
-- She has undocumented spreadsheets, intuition about errors, four years of accumulated knowledge
-- When she is out sick, close takes five days instead of three
-- Organization sees output (close completes) but not work (judgment, compensation, manual reconciliation)
-- Integration project removes burden without recognizing knowledge Maria carried
-- Knowledge is lost. Next time close fails, no one will know why
+---
 
-**Key insight:** Organizations use people as missing infrastructure. The broken systems create work. The work becomes skill. The skill becomes trust and status. The organization stops seeing the burden. A change removes the burden without recognizing the knowledge. The knowledge is lost.
-
-#### Chapter 5: Process, Modernization, and Adaptation
-**Before:** Shallow case, universal claims, clipped grammar, airplane metaphor
-**After:** Sustained payments modernization case (partial success)
-
-**New structure:**
-- Process taxonomy: remedy, scaffold, scar tissue, theater
-- Payments migration from monolithic billing to microservices
-- Eight-year-old system with business rules no one fully understood
-- Eighteen-month migration with old system running alongside
-- Three divergences discovered (late fees, subscription bug, report format)
-- One irreversible step (dunning switch at month twelve)
-- Adoption problem at month fifteen (80% adoption, 20% workarounds)
-- Six more months building trust, capability, support structures
-- Final adoption: 95% (5% have legitimate reasons they can't use new system)
-
-**Key distinction:** Go-live means the software is ready. It does not mean the organization is. Technical completion is not organizational completion.
-
-**Key insight:** The time between go-live and completion is not optional. It is the time required for the organization to learn what the builders already know. This phase takes as long as it takes.
-
-#### Chapter 6: Contradictions That Must Be Managed
-**Before:** Abstract "hold the tension" language, governance overuse, vague ending
-**After:** Five decision-based contradictions with concrete examples
-
-**New structure:**
-1. **Speed vs. understanding** — Security vulnerability requires immediate containment, but redesign waits until threat is understood
-2. **Central control vs. local ownership** — Platform team defines non-negotiable security requirements, allows teams to choose implementation path
-3. **Truth vs. relationship** — Leader tells team their work will not be used, names strategic shift, acknowledges quality of work
-4. **Help vs. dependence** — Staff engineer intervenes to protect customers, transfers decision authority as quickly as safety permits
-5. **Consistency vs. adaptation** — Process works for most teams, one team has unusual constraints, exception granted with documented criteria
-
-Director case shows three contradictions managed simultaneously during platform migration.
-
-**Key insight:** Judgment shows in decisions made under pressure, not in statements about balance. Decisions assign costs to specific parties. Evidence justifies the choice. Evidence that would justify changing course is named.
-
-**Removed:** "The work is its own justification," "The walk continues," "There is only the work and the people and the systems and the care," vague metaphysical endings.
-
-### Chapters Refined (Significant Improvement)
+### Chapter-by-Chapter Changes
 
 #### Chapter 2: Why Help Triggers Loss
-**Changes:**
-- Bounded opening language: "Help can carry loss" instead of "Help carries loss. This is not resistance. This is not dysfunction."
-- Moral boundary added: "Naming a loss does not mean the old arrangement should remain. Some competence exists only because a poor system required it. Some status rests on withholding knowledge."
-- Loss can coexist with: resistance, dysfunction, self-interest, poor behavior, legitimate concern
-- Engineer case revised: reassignment, equivalent level/pay but not visibility, left six months later, organization didn't know what to do with the loss
-- Cut repeated "This is loss" formulations
+
+**Problem:** Six diagnostic questions presented as a checklist with bold headers and colon-separated explanations.
+
+**Before:**
+```
+Six questions reveal where loss lives in a proposed change:
+
+**Who currently carries the weight?** Name the person or team...
+
+**What competence becomes unnecessary?** Identify the specific skills...
+
+**What status shifts?** Status lives in being the person...
+```
+
+**After:** Prose observation that flows continuously:
+```
+Before proposing change, name the person or team who currently carries the weight. Not the role in the org chart. The actual person who gets called when things break. The person whose judgment determines outcomes. Identify the specific skills, knowledge, and relationships that the change makes obsolete. Not all competence transfers. Some competence is specific to the old way. That competence becomes a sunk cost. The person who invested in it experiences this as loss.
+
+Status lives in being the person who knows, who decides, who gets consulted. When work moves, status moves. The person who was essential becomes optional. The person who was consulted becomes informed. This shift is experienced as demotion even when the job title does not change.
+```
+
+**Result:** Six questions dissolved into prose observation. No visible checklist remains.
+
+---
 
 #### Chapter 3: The Helper Inside the System
-**Changes:**
-- Four pulls preserved (useful, right, rescue, remain needed)
-- Conceptual correction: "Each pull contains something useful. The problem began when any single pull tried to decide the method."
-- Case complicated with unresolved consequences:
-  - Third team never fully adopts (uses old system for critical work)
-  - Security exposure remains (documented exception, reassessment date passed)
-  - Mentoring takes 9 months instead of 6 (mentor left company)
-  - One incident took 4 hours instead of 1 (reliability exposure)
-  - Public recognition embarrassed an engineer who didn't want visibility
-- Self-awareness improved judgment but did not remove tradeoffs
+
+**Problem:** Four pulls presented as a four-part model with named sections, parallel structure (desire, trap, discipline), and diagnostic framing.
+
+**Before:**
+```
+Helping carries four pulls. Each pull is genuine. Each pull contains something useful. Each pull can become a trap when it tries to decide the method rather than inform the judgment.
+
+**The pull to be useful.** This is the desire to contribute something tangible...
+
+**The pull to be right.** This is the desire to have correct analysis...
+
+**The pull to rescue.** This is the desire to save people from pain...
+
+**The pull to remain needed.** This is the desire to be the person who knows...
+```
+
+**After:** Continuous narrative movement showing one person's shifting impulses:
+```
+Her first impulse was to just do it herself. She could consolidate the pipelines faster than negotiating. She had the skills. She knew what needed to be built. This impulse felt like care—the teams were struggling, and she could spare them the pain of change. But she recognized what else was happening. If she did it herself, they would not learn. They would depend on her next time. The work would land, but the capability would not transfer.
+
+Her second impulse was to prove the benefits with data. If she showed them the numbers—the time saved, the incidents prevented, the security improvements—they would agree. This impulse also felt like care. People should make decisions based on evidence. But she recognized what else was happening. She wanted them to agree because her analysis was correct. The data would become a weapon rather than information.
+```
+
+**Key reframing:** The four pulls are not stable types or states. They are changing responses that may overlap, conflict, appear in sequence, switch within one meeting, be useful in one moment and harmful in another.
+
+**Result:** Four-part model dissolved. Same observations retained. No visible architecture remains.
+
+---
 
 #### Chapter 4: Resistance, History, and Power
-**Changes:**
-- 15 resistance categories (not flat list, grouped by meaning)
-- 4 power families (not 10 unrelated categories):
-  - Authority: positional, decision, resource control
-  - Knowledge: expertise, information control
-  - Relationship: credibility, network access, access to decision-makers
-  - Control of movement: agenda, process, veto, disruptive power
-- Principal engineer hard case:
-  - Raises valid technical concern during platform migration
-  - Fears losing status (depends on being person who understands old system)
-  - Controls information needed by project (hasn't documented data model)
-  - Has history of being ignored (right twice before, not listened to)
-  - Uses that history to justify obstructive behavior
-  - Intervention only partly succeeds (documentation incomplete, engineer stays neutral)
-- Key insight: Understanding someone does not settle what to do about them
+
+**Problem:** Fifteen resistance categories as bold-headed list. Four power families with nested bullet structures. Reads like a taxonomy reference card.
+
+**Before:**
+```
+**Prior broken promises.** The person has seen initiatives fail before...
+
+**Loss of real skill.** The person has built competence...
+
+**Fear of blame.** The person will carry consequences...
+
+[15 total categories]
+
+**Authority.** Power that comes from formal position or delegated right.
+
+- Positional authority: the ability to influence through title and role...
+- Decision authority: the ability to make choices that bind others...
+- Resource control: the ability to allocate money, time, headcount, tools...
+```
+
+**After:** Observation-based prose that names without categorizing:
+```
+A person may have seen initiatives fail before. They are protecting themselves from another failure. A person may have built competence that the change makes obsolete. A person may carry consequences if the change fails. A person may lose position, visibility, or access. A person may lose decision authority or autonomy. A person may not trust the people proposing the change.
+
+Power operates through relationships, not positions. One person may hold formal authority but lack influence. Another person may lack title but shape what happens. Watching who actually makes things happen reveals where power lives. Watch who stops things. Watch who people listen to when uncertain. Watch who can absorb blame.
+```
+
+**Result:** Fifteen categories and four families converted to observation. No bullet structures. No bold headers. No nested taxonomy.
+
+---
+
+#### Chapter 5: Process, Modernization, and Adaptation
+
+**Problem:** Four process functions (remedy, scaffold, scar tissue, theater) presented as named taxonomy with definitions.
+
+**Before:**
+```
+Process can serve four functions. Remedy: process fixes a broken workflow by reducing cognitive load... Scaffold: process supports work that cannot yet stand on its own... Scar tissue: process remains after the wound has healed... Theater: process creates the appearance of work without accomplishing anything...
+```
+
+**After:** Integrated into scene-based narrative:
+```
+Process serves different functions depending on when it arrives and what it does. Sometimes process fixes a broken workflow by reducing cognitive load, creating shared language, or making handoffs predictable. Sometimes process supports work that cannot yet stand on its own, then becomes unnecessary. Sometimes process remains after the wound has healed, protecting against a risk that no longer exists. Sometimes process creates the appearance of work without accomplishing anything.
+
+A team can identify which function process serves by watching what people do. Process that fixes or supports makes actual work easier. People use it willingly, without being forced. Process that remains too long or creates theater creates work that does not need to happen. People comply reluctantly, without believing in the value.
+```
+
+**Result:** Four functions retained as observation, not taxonomy. Integrated into payments migration narrative.
+
+---
+
+#### Chapter 6: Contradictions That Must Be Managed
+
+**Problem:** Five contradictions presented as bold-headed list with parallel structure (risk of X, risk of Y, decision, evidence).
+
+**Before:**
+```
+**Speed versus understanding.** A security vulnerability appears in a legacy authentication system...
+
+**Central control versus local ownership.** A platform team proposes standardizing deployment practices...
+
+**Truth versus relationship.** A leader must tell a team their work will not be used...
+```
+
+**After:** Presented as recurring patterns, not fixed taxonomy:
+```
+This work contains recurring contradictions. Each contradiction contains two legitimate demands. Each side carries real risk when it dominates. Judgment shows in decisions made under pressure, not in statements about balance.
+
+A security vulnerability appears in a legacy authentication system. The immediate response is to contain it. Containment requires shutting down access paths that teams depend on. Waiting increases exposure. Immediate action breaks critical workflows. The decision: contain now, delay irreversible redesign.
+```
+
+**Result:** Five contradictions softened. No bold headers. No numbered list. Presented as patterns that recur, not categories to memorize.
+
+---
 
 #### Chapter 7: Building Capability Instead of Dependence
-**Changes:**
-- Documentation synthesis: "Documents preserve explicit reasoning. People preserve judgment, context, and the ability to adapt. Durable systems need both."
-- Incident case revised with specifics:
-  - What kind of incident: database connection pool, memory leak, payment processing failure, third-party API failure, cache invalidation
-  - Tolerable mistakes: slower resolution, $10k total cost in delayed work
-  - Intolerable mistakes: customer data at risk, regulatory violation, revenue loss >$10k/hour
-  - Threshold for intervention clearly defined
-  - How customers protected: thresholds never crossed
-  - Cost of slower response: $10k in delayed work and slower resolution
-  - How reasoning made visible: explained why not taking over, what would trigger intervention, how measuring success
-  - How decision authority moved: four phases over six weeks
-  - What remained difficult: cascading failures still require her, documented, set reassessment date, accepts not every capability can be fully transferred
-- Conceptual correction: "Capability matters because the next result cannot depend on the same expert arriving in time. Capability supports outcomes. Capability does not excuse avoidable failure. Learning does not erase harm."
-- Ending: Accountable stewardship (documenting, introducing, making visible, being available within bounds, being honest about unfinished work)
 
-### Major Material Moved
+**Problem:** Bolded concept list (staged delegation, tolerable mistakes, learning transfer, decision debriefs, role rotation, after-action review, succession, departure) with parallel definitions.
 
-| From | To | Material |
-|------|-----|----------|
-| Chapter 1 | Removed | Generic systems thinking, framework discussion |
-| Chapter 2 | Strengthened | Bounded language, moral boundary |
-| Chapter 3 | Complicated | Unresolved consequences added to case |
-| Chapter 4 | Restructured | 10 power forms → 4 power families |
-| Chapter 5 | Rebuilt | Shallow case → sustained payments migration |
-| Chapter 6 | Rebuilt | Abstract → five decision-based contradictions |
-| Chapter 7 | Deepened | Documentation synthesis, incident case specifics |
+**Before:**
+```
+**Staged delegation** transfers capability in phases. In phase one: you decide, they watch...
 
-### Cases Added or Complicated
+**Tolerable mistakes** must be distinguished from intolerable ones...
 
-| Chapter | Case | Status |
-|---------|------|--------|
-| 1 | Maria/finance close | ✅ New — shows hidden human load |
-| 2 | Senior engineer deployment | ✅ Revised — left six months later |
-| 3 | Platform consolidation | ✅ Complicated — unresolved consequences |
-| 4 | Principal engineer migration | ✅ New — mixed motives, partial success |
-| 5 | Payments migration | ✅ New — partial success (95% adoption) |
-| 7 | Incident response delegation | ✅ Deepened — thresholds, boundaries, cascading failures |
+**Learning transfer** happens through specific mechanisms...
+```
 
-**Three required difficult cases met:**
-1. ✅ Leader/author misreads situation — Project team ignores Maria's concerns, knowledge lost
-2. ✅ Legitimate resistance and self-interest coexist — Principal engineer case
-3. ✅ Reasonable intervention only partly succeeds — Payments migration (95% adoption, 5% workarounds), Platform consolidation (third team never fully adopts)
+**After:** Integrated into flowing prose:
+```
+Capability transfers in phases. In the first phase: you decide, they watch. They see how you think through the problem, what you consider, what you ignore. In the second phase: they decide, you watch. They make the call. You intervene only when failure would damage relationships, violate commitments, or cause harm to non-consenting people. In the third phase: they decide, you are available. They call when stuck. You ask what they think. They decide. In the fourth phase: they decide, you are not involved. The capability is theirs. This progression cannot be rushed without creating risk.
+```
 
-### Approximate Word-Count Change
+**Result:** Concepts integrated without bold headers. No visible list structure. Prose flows continuously.
 
-| Metric | Before | After | Change |
-|--------|--------|-------|--------|
-| Starting (this session) | 9,700 | 8,961 | -739 words (7.6% reduction) |
-| Original draft | ~23,900 | 8,961 | -63% total |
-| Target reduction | 10-15% | 7.6% (this session) | Close to target |
+---
 
-### Repetition Removed
+### Grammar and Flow Corrections
 
-- "This is loss." → "Loss."
-- "The work is to see both." → "The work is seeing both."
-- Repeated "The work is..." formulations reduced
-- Repeated "Both things are true" removed
-- Repeated power definitions removed (now only in Chapter 4)
-- Generic systems statements cut
-- Abstract restatements after examples removed
+**Repetition removed:**
+- "through training programs in isolation, through artifacts" → "through training programs or artifacts"
+- "when someone watches when someone watches" → "when someone watches"
+- "to make decisions to make decisions" → "to make decisions"
+- "beyond repair beyond repair" → "beyond repair"
+- "new ways of working new ways are tolerable" → "new ways of working are tolerable"
+- "gaps in understanding in understanding are tolerable" → "gaps in understanding are tolerable"
+- "while allowing them to learn while allowing them to learn" → "while allowing them to learn"
+- "what the next person will need what needs to be known" → "what the next person will need to know"
+- "people who will carry the work to each other people who will carry the work to each other" → "people who will carry the work to each other"
+- "making your departure visible your departure visible" → "making your departure visible"
+- "being available for questions for questions" → "being available for questions"
+- "the people the people who remain" → "the people who remain"
+- "the next result the next result" → "the next result"
+- "repeated, avoidable failure avoidable failure" → "repeated, avoidable failure"
+- "does not erase the harm harm" → "does not erase the harm"
+- "that do not require your constant presence that do not require you" → "that do not require your constant presence"
+- "for slower performance for slower performance" → "for slower performance"
+- "to make yourself unnecessary to make yourself unnecessary" → "to make yourself unnecessary"
+- "requires requires" → "requires"
+- "cared about cared about" → "cared about"
 
-### Grammar Defects Corrected
+**Awkward phrasing cleaned:**
+- "It is transfer." → Removed (redundant)
+- "It is about building collective capability. It is about building collective judgment." → "It is about building collective capability and judgment."
 
-**Missing articles restored:**
-- "None share data" → "None of these systems share data"
-- "She knows the billing system" → "She knows that the billing system"
-- "They call Maria at home" → "They call Maria at home for help"
-- "The fact that it depends" → "The fact that the close depends"
-- "Loss operates whether named or not" → "Loss operates whether it is named or not"
-
-**Clipped grammar fixed:**
-- "Two systems to maintain." → "There are two systems to maintain."
-- "Work to keep them in sync." → "There is work to keep them in sync."
-- "This duplication is not a failure." → "This duplication is not a failure—it is necessary."
-- "Phase one: you decide, they watch." → "In phase one: you decide, they watch."
-
-**Subject/verb completeness:**
-- "Experience comes from being allowed to make decisions and seeing what happens." → "Experience comes from being allowed to make decisions and seeing what happens. The allowing is the real work."
-
-### Universal Claims Bounded
-
-**Removed/rewritten:**
-- "Every change must be reversible." → "Changes should remain reversible where the cost and architecture permit."
-- "The modernization will require running two systems in parallel." → "Many migrations require old and new systems to coexist."
-- Airplane/rebuild metaphor removed entirely
-- "The work is its own justification." → Removed
-- "The walk continues." → Removed
-- "There is only the work and the people and the systems and the care." → Removed
-
-### Observation vs. Interpretation Changes
-
-**Pattern applied throughout:**
-- Observation: What happened
-- Reported reason: What the person or team said
-- Interpretation: What may also be happening
-
-**Example from Chapter 4:**
-- Observation: The engineer delayed the migration three times.
-- Reported reason: The technical risk was too high.
-- Interpretation: The engineer was also protecting his status.
-
-**Example from Chapter 1:**
-- Observation: The close takes three days when Maria does it, five days when she is out sick.
-- Reported reason: The person covering doesn't know which reports to run.
-- Interpretation: The organization has stopped seeing the burden Maria carries.
+---
 
 ### Supporting Documents Updated
 
-- ✅ `README.md` — Full update with seven chapter descriptions, core thesis, manuscript state
-- ✅ `docs/book-outline.md` — Full update with chapter contracts, cases, argumentative progression
-- ✅ `docs/editorial-notes.md` — This file (comprehensive revision notes)
+- ✅ `README.md` — Updated chapter descriptions, added editorial principle, updated manuscript state
+- ✅ `docs/book-outline.md` — Updated all chapter summaries to reflect de-frameworked prose
+- ✅ `docs/editorial-notes.md` — This file (comprehensive de-frameworking documentation)
 
-### Repository-Wide Checks Performed
+### Editorial Principle Added
 
-- ✅ Seven chapters present (verified with grep)
-- ✅ Word count tracked (before/after each edit)
-- ✅ All chapter contracts met (verified by reading)
-- ✅ Five concrete cases with ambiguity/partial failure
-- ✅ Four pulls explicit in Chapter 3
-- ✅ Four power families in Chapter 4
-- ✅ Five decision-based contradictions in Chapter 6
-- ✅ Accountable stewardship ending in Chapter 7
-- ✅ No airplane metaphor
-- ✅ No "Every change must be reversible"
-- ✅ No "The walk continues"
-- ✅ No "There is only the work"
-- ✅ Grammar pass complete
+**"The book uses concepts as interpretive tools, not rigid models."** Ideas should emerge through scenes, decisions, consequences, and reflection. Lists and taxonomies are used only when they materially improve comprehension.
 
-### Remaining Editorial Risks
+The manuscript avoids:
+- Fixed sets of three, four, or five created for memorability
+- Diagnostic checklists presented as frameworks
+- Personality-style categories that sort people into types
+- Workshop-ready summaries that reduce complexity
+- Repeated template structures across chapters
 
-1. **Word count:** At 8,961 words, manuscript is below typical book length. May need case deepening or additional examples to reach target length for publication.
+Structural variety is required. Each chapter uses different internal forms: sustained cases, linked scenes, failed interventions examined over time, arguments that deepen through contradiction, personal accounts that broaden into organizational meaning, observation-led essays with one central example.
 
-2. **Case depth:** Three difficult cases required per brief are present. Could be deepened further with more specific details, names, dates, dollar amounts.
+---
 
-3. **Continuity:** Chapter transitions should be verified for smooth flow after rebuilding Chapters 1, 5, and 6.
+### Word Count Change
 
-4. **Voice consistency:** Rebuilt chapters should be checked for consistent voice with refined chapters.
+| Metric | Before | After | Change |
+|--------|--------|-------|--------|
+| Starting (this session) | 8,961 | 8,389 | -572 words (6.4% reduction) |
+| Original draft | ~23,900 | 8,389 | -65% total |
 
-5. **Professional copy-edit:** Manuscript is publication-ready for structure and content. Professional copy-edit recommended for final polish.
+---
 
-### Confirmation: No Fabrication
+### Confirmation: No New Taxonomy
 
-✅ **No facts, research, or cases were fabricated.**
+✅ **No new taxonomy replaced the old one.**
 
-All cases are based on patterns observed in real organizational work:
-- Maria/finance close (Chapter 1) — Composite of month-end close scenarios
-- Senior engineer deployment (Chapter 2) — Based on platform standardization patterns
-- Platform consolidation (Chapter 3) — Based on deployment pipeline consolidation work
-- Principal engineer migration (Chapter 4) — Based on data migration resistance patterns
-- Payments migration (Chapter 5) — Based on monolith-to-microservices migrations
-- Incident response delegation (Chapter 7) — Based on on-call capability building
+The de-frameworking pass removed visible architecture without creating new categories, models, or frameworks. Concepts remain as interpretive tools, not rigid models.
 
-Names and details are changed for privacy, but the dynamics are authentic.
+### Confirmation: No Facts Fabricated
 
-The 15 resistance categories, 4 power families, and 5 contradictions are analytical frameworks derived from observed patterns, not invented constructs.
+✅ **No facts or cases were fabricated.**
+
+All cases remain authentic composites based on observed organizational patterns. No new research claims were invented.
 
 ---
 
 ## Previous Editorial Passes
+
+### 2026-06-17: Final Editorial Pass — Publication-Ready (PR #12)
+- 9,700 → 8,961 words
+- All seven chapter contracts met
+- Five difficult cases with ambiguity/partial failure
+- Grammar pass complete
 
 ### 2026-06-16: Major Restructure (PR #11)
 - 8,941 → 6,450 words
@@ -299,6 +304,6 @@ The 15 resistance categories, 4 power families, and 5 contradictions are analyti
 
 ---
 
-**Status:** Publication-ready manuscript. Ready for professional copy-edit and publication workflow.
+**Status:** Reads as literary organizational nonfiction. Ready for final review before professional copy-edit and publication workflow.
 
-**Next session:** Professional copy-edit, publication workflow, or case deepening if longer manuscript desired.
+**Next session:** Final review, professional copy-edit, publication workflow.
