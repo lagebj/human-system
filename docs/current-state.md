@@ -1,14 +1,41 @@
 # Current State
 
 **Last verified:** 2026-06-18
-**Revision:** editorial/de-frameworking-pass (pending PR #13)
+**Revision:** editorial/pass-e-final-read-integrity
+
+**Pass A complete:** De-frameworking and continuity — frameworks dissolved, cases centered. Word count: 8,389 → 7,436 (−953 words, −11%)
+
+**Pass B complete:** Causal tightening — strengthened cause/effect continuity. Word count: 7,436 → 7,389 (−47 words)
+
+**Pass C complete:** Language and load balancing — sentence rhythm and paragraph density verified as appropriate. No material changes required.
+
+**Pass D complete:** Continuity and concept return — concepts now accumulate meaning across chapters. Word count: 7,389 → 7,551 (+162 words)
+
+Key concept returns added:
+- Chapter 3: Loss concept from Chapter 2 returned in helper context
+- Chapter 6: Loss concept returned, connecting Maria, senior engineer, principal engineer
+- Chapter 7: Helper discipline from Chapter 3 returned; final paragraph connects all chapters
+
+**Pass E complete:** Final read integrity — no accidental pattern reintroduction detected. No material edits required. Word count: 7,551 (unchanged)
+
+Pass E verification:
+- No four-part models reintroduced
+- No disguised lists in paragraphs
+- No templated mini-cases
+- No prefatory catalogues
+- No explicit stage sequences
+- Prose remains precise
+- Distinctions preserved
+- No new aphorisms or manufactured closure
+- Concept returns accumulate meaning
+- Sections end in residue, not closure
 
 ---
 
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 8,389
+- **Word count:** 7,551
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
@@ -27,21 +54,28 @@
 - Structural variety between chapters
 - No fixed sets of three, four, or five
 - No checklist-heavy or workshop-ready prose
+- Cases carry argument without recap
+- Sections may end in residue rather than closure
+- Interpretation visibly separate from observation
+- Precision not simulated through invented numbers
+- Collective action appears alongside individual psychology
 
 ---
 
 ## Pass Status
 
-- **Last completed pass:** De-frameworking pass (Pass A variant) — 2026-06-18
+- **Last completed pass:** Pass E final read integrity — 2026-06-18
 - **Active pass:** none
-- **Next eligible pass:** Awaiting user direction
+- **Next eligible pass:** Editorial sequence complete
 
 **Available passes:**
-- Pass A: De-patterning / structural prose release
-- Pass B: Causal tightening
-- Pass C: Language and load balancing
-- Pass D: Continuity and concept return
-- Pass E: Final read integrity
+- Pass A: De-patterning / structural prose release ✅
+- Pass B: Causal tightening ✅
+- Pass C: Language and load balancing ✅
+- Pass D: Continuity and concept return ✅
+- Pass E: Final read integrity ✅
+
+**Editorial sequence status:** All five passes complete. Manuscript ready for PR review and merge.
 
 ---
 
@@ -108,8 +142,9 @@ The following files contain useful historical information but should not be trea
 
 - [x] One current-state file exists
 - [x] Manuscript path is explicit
-- [x] Word count matches manuscript (8,389)
-- [x] Active pass is declared (none)
+- [x] Word count matches manuscript (7,551)
+- [x] All five editorial passes complete
 - [x] Stale reports are identified
 - [ ] README updated to match current direction
 - [ ] Skill resource copy marked as stale snapshot
+- [x] Validation script passes
