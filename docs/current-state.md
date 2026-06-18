@@ -3,22 +3,36 @@
 **Last verified:** 2026-06-18
 **Revision:** editorial/pass-f-epistemic-humility-rhythm
 
-**Pass A complete:** De-frameworking and continuity — frameworks dissolved, cases centered. Word count: 8,389 → 7,436 (−953 words, −11%)
+---
 
-**Pass B complete:** Causal tightening — strengthened cause/effect continuity. Word count: 7,436 → 7,389 (−47 words)
+## Editorial Direction
 
-**Pass C complete:** Language and load balancing — sentence rhythm and paragraph density verified as appropriate. No material changes required.
+**Current focus:** Literary organizational nonfiction — continuous prose following the author's recursive thought patterns, not framework delivery or externally-imposed brevity.
 
-**Pass D complete:** Continuity and concept return — concepts now accumulate meaning across chapters. Word count: 7,389 → 7,551 (+162 words)
+**Editorial principle:** Length is an outcome of the material, not a success metric. The manuscript should follow the author's way of thinking, not an external ideal of brevity.
 
-Key concept returns added:
+**Objective:** Proportion — enough space for the reader to follow the thought, enough detail for the interpretation to feel earned, enough restraint that the prose does not explain after the meaning has landed.
+
+---
+
+## Completed Passes
+
+**Pass A:** De-frameworking and continuity — frameworks dissolved, cases centered. Manuscript restructured as continuous prose rather than taxonomy delivery.
+
+**Pass B:** Causal tightening — strengthened cause/effect continuity throughout.
+
+**Pass C:** Language and load balancing — sentence rhythm and paragraph density verified as appropriate.
+
+**Pass D:** Continuity and concept return — concepts now accumulate meaning across chapters through developmental recurrence.
+
+Key concept returns:
 - Chapter 3: Loss concept from Chapter 2 returned in helper context
 - Chapter 6: Loss concept returned, connecting Maria, senior engineer, principal engineer
 - Chapter 7: Helper discipline from Chapter 3 returned; final paragraph connects all chapters
 
-**Pass E complete:** Final read integrity — no accidental pattern reintroduction detected. No material edits required. Word count: 7,551 (unchanged)
+**Pass E:** Final read integrity — no accidental pattern reintroduction detected.
 
-Pass E verification:
+Verification:
 - No four-part models reintroduced
 - No disguised lists in paragraphs
 - No templated mini-cases
@@ -27,54 +41,79 @@ Pass E verification:
 - Prose remains precise
 - Distinctions preserved
 - No new aphorisms or manufactured closure
-- Concept returns accumulate meaning
+- Concept returns accumulate meaning (developmental recurrence, not static repetition)
 - Sections end in residue, not closure
 
-**Pass F complete:** Epistemic humility and sentence rhythm — interpretive overconfidence reduced, staccato sequences combined, narrator self-implication added. Word count: 7,551 → 7,600 (+49 words)
+**Pass F:** Epistemic humility and sentence rhythm — interpretive overconfidence reduced, staccato sequences combined, narrator self-implication added.
 
-**Post-pass integration:** Orchestration system case study integrated into Chapter 5 from inbox file. Word count: 7,600 → 8,301 (+701 words). Case demonstrates simplification requiring shared understanding, six months of discussion as "the work," and movement from vendor-owned black box to internal capability.
-
-Pass F changes:
-- "Underneath this lives" → "Underneath this may live... although another reading is also possible"
-- "This is the work" → "What remains for the helper"
-- "This was the best outcome" → "It was the best outcome available under those conditions"
-- "This is the normal state" → "This may be the normal state" (2 occurrences)
-- "This was the cost" → "It was the cost"
-- "This is the discipline" → "It is one discipline"
-- "This was luck" → retained (directly evidenced)
-- Combined 40+ staccato sentence sequences into connected prose
+Key changes:
+- "Underneath this lives" → "Underneath this may live... although another reading is also possible" (Chapter 2)
+- "This is the work" → "What remains for the helper" (Chapter 3)
+- "This was the best outcome" → "It was the best outcome available under those conditions" (Chapter 4)
+- "This is the normal state" → "This may be the normal state" (Chapters 5, 6)
+- "This was the cost" → "It was the cost" (Chapter 7)
+- "This is the discipline" → "It is one discipline" (Chapter 7)
+- Combined staccato sentence sequences into connected prose
 - Added causal connectors (but, and, although, so that, which meant)
 - Preserved short sentences for emphasis, reduced mechanical repetition
+
+---
+
+## Post-Pass Integration
+
+**Orchestration system case study** integrated into Chapter 5 from inbox file. Case demonstrates:
+- Simplification requiring shared understanding, not just technical design
+- Six months of discussion as "the work" rather than delay
+- Movement from vendor-owned black box to internal capability
+- Aligns with Chapter 5 themes: modernization in place, duplication as necessary cost, go-live vs completion
+
+**Developmental recurrence restoration (Chapter 7):** Chapter 7 ending rewritten to weave general principles into staff engineer narrative with concept returns to Chapters 1, 3, 4, 5. Removed 12 standalone principle paragraphs (workshop-handout style). Added recursive reflection connecting staff engineer to Maria, payments team, principal engineer, platform team lead. Word count: 8,301 → 8,387 (+86 words).
+
+---
+
+## Editorial Discipline Going Forward
+
+**Developmental recurrence (preserve or expand):**
+- Adds a cause
+- Introduces doubt
+- Changes scale
+- Reveals a consequence
+- Connects an earlier idea to a later one
+- Revises the author's interpretation
+- Lets the reader experience how judgment forms
+
+**Static repetition (remove):**
+- Restates the same conclusion
+- Repeats the same abstraction
+- Summarizes a case that has already landed
+- Adds emphasis without new meaning
+- Reproduces a rhetorical pattern without advancing the thought
+
+**When prose feels too long, diagnose before cutting:**
+- Duplicated meaning
+- Weak sequence
+- Misplaced material
+- Taxonomy disguised as prose
+- Unnecessary summary
+- Insufficiently concrete writing
+- An idea that actually needs more room, not less
+
+**Do not:**
+- Use word-count reduction as an editorial target
+- Assume shorter is stronger
+- Compress complex passages into slogans, frameworks, checklists, or conclusion-only paragraphs
+- Remove developmental recurrence in service of brevity
+- Prioritize external ideals of brevity over the author's way of thinking
 
 ---
 
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 8,301
+- **Word count:** 8,387 (recorded for reference, not a target)
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
-
----
-
-## Editorial Direction
-
-**Current focus:** Literary organizational nonfiction — continuous prose, not framework delivery.
-
-**Key properties:**
-- Ideas emerge through scenes, decisions, consequences, and reflection
-- Concepts used as interpretive tools, not rigid taxonomies
-- Behavior before abstraction
-- Observation before interpretation
-- Structural variety between chapters
-- No fixed sets of three, four, or five
-- No checklist-heavy or workshop-ready prose
-- Cases carry argument without recap
-- Sections may end in residue rather than closure
-- Interpretation visibly separate from observation
-- Precision not simulated through invented numbers
-- Collective action appears alongside individual psychology
 
 ---
 
@@ -92,7 +131,7 @@ Pass F changes:
 - Pass E: Final read integrity ✅
 - Pass F: Epistemic humility and sentence rhythm ✅
 
-**Editorial sequence status:** All six passes complete. Manuscript ready for PR review and merge.
+**Editorial sequence status:** All six passes complete. Manuscript on main branch.
 
 ---
 
@@ -145,13 +184,12 @@ The following files contain useful historical information but should not be trea
 
 ---
 
-## Next Actions Required
+## Next Actions (Optional)
 
-1. Merge PR #13 (de-frameworking pass)
-2. Update README.md to remove framework-heavy chapter metadata
-3. Update or archive stale editorial reports
-4. Clarify manuscript canonical-source policy
-5. Remove "publication-ready" claims until externally verified
+- [ ] Update README.md to remove framework-heavy chapter metadata
+- [ ] Archive or update stale editorial reports (deleted files: editing-log.md, final-editorial-report.md, restructure-report.md)
+- [ ] Verify validation script passes on main
+- [ ] Consider next editorial cycle or publication preparation
 
 ---
 
@@ -159,10 +197,11 @@ The following files contain useful historical information but should not be trea
 
 - [x] One current-state file exists
 - [x] Manuscript path is explicit
-- [x] Word count matches manuscript (7,600)
+- [x] Word count recorded (not a target)
 - [x] All six editorial passes complete
 - [x] Stale reports are identified
 - [ ] README updated to match current direction
 - [ ] Skill resource copy marked as stale snapshot
 - [x] Validation script passes
 - [x] Epistemic humility pass executed
+- [x] Editorial discipline updated: proportion over brevity, developmental recurrence preserved
