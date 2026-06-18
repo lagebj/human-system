@@ -78,17 +78,17 @@ The author is a tech lead based in Norway, self-taught through troubleshooting, 
 
 1. **Broken Systems and the Human Load They Create** — How organizations build informal capability around broken systems, and why this competence becomes invisible. Features the Maria/finance case showing hidden human load.
 
-2. **Why Help Triggers Loss** — Interventions relocate burden, competence, risk, and power. The relocation is experienced as loss even when it is improvement. Features three loss examples and six diagnostic questions.
+2. **Why Help Triggers Loss** — Interventions relocate burden, competence, risk, and power. The relocation is experienced as loss even when it is improvement. Features three loss examples and prose exploration of what to name before proposing change.
 
-3. **The Helper Inside the System** — Your position, your temptations, your blind spots. The four pulls of care (useful, right, rescue, remain needed) and how each can become a trap. Features a platform consolidation case with unresolved consequences.
+3. **The Helper Inside the System** — How your own needs enter the work and what to do when you notice them. Features a platform consolidation case where the lead recognized her own impulses and adjusted, with incomplete results.
 
-4. **Resistance, History, and Power** — Resistance often carries legitimate history. Power lives in relationships, not positions. Fifteen resistance categories and four power families. Features the principal engineer case with mixed motives.
+4. **Resistance, History, and Power** — Resistance often carries legitimate history. Power lives in relationships, not positions. Features observation-based exploration of resistance forms and power dynamics through the principal engineer case with mixed motives.
 
-5. **Process, Modernization, and Adaptation** — Process can be remedy, scaffold, scar tissue, or theater. Modernization succeeds when it respects existing value. Features the payments migration case (partial success).
+5. **Process, Modernization, and Adaptation** — Process can be remedy, scaffold, scar tissue, or theater. Modernization succeeds when it respects existing value. Features the payments migration case (eighteen months, partial success, ninety-five percent adoption).
 
-6. **Contradictions That Must Be Managed** — Inherent tensions that cannot be solved, only navigated through concrete decisions. Five contradictions: speed vs. understanding, central control vs. local ownership, truth vs. relationship, help vs. dependence, consistency vs. adaptation.
+6. **Contradictions That Must Be Managed** — Recurring tensions that cannot be solved, only navigated through concrete decisions. Features a director managing three contradictions simultaneously during platform migration.
 
-7. **Building Capability Instead of Dependence** — Shifting from delivering solutions to transferring capability. Exit designed in from the start. Features the incident response delegation case with thresholds and boundaries.
+7. **Building Capability Instead of Dependence** — Shifting from delivering solutions to transferring capability. Exit designed in from the start. Features the incident response delegation case with thresholds, boundaries, and honest acknowledgment of what could not be transferred.
 
 ### Repository Structure
 
@@ -132,6 +132,24 @@ The manuscript follows specific constraints that preserve its character:
 - No consultant language, academic display, or false depth
 - Calm, direct, serious, humane tone
 - Narrator must not sound superior
+- Prose before framework
+- Movement before taxonomy
+- Scene before diagnosis
+- Behavior before keyword
+- Judgment before false balance
+
+## Editorial Principle
+
+**The book uses concepts as interpretive tools, not rigid models.** Ideas should emerge through scenes, decisions, consequences, and reflection. Lists and taxonomies are used only when they materially improve comprehension.
+
+The manuscript avoids:
+- Fixed sets of three, four, or five created for memorability
+- Diagnostic checklists presented as frameworks
+- Personality-style categories that sort people into types
+- Workshop-ready summaries that reduce complexity
+- Repeated template structures across chapters
+
+Structural variety is required. Each chapter uses different internal forms: sustained cases, linked scenes, failed interventions examined over time, arguments that deepen through contradiction, personal accounts that broaden into organizational meaning, observation-led essays with one central example.
 
 ## Core Themes
 
@@ -203,31 +221,29 @@ This book is in active development. The manuscript, source context, and working 
 
 The repository itself is part of the work — a living system that preserves and evolves reusable context for operating-model reasoning, modernization strategy, enablement, and writing work.
 
-### Manuscript State (as of 2026-06-17)
+### Manuscript State (as of 2026-06-18)
 
-**Final editorial pass complete: all seven chapters rebuilt and refined.**
+**De-frameworking editorial pass complete: all seven chapters revised to remove visible framework machinery.**
 
-- **Word count:** 8,961 words (from ~23,900 original = 63% total reduction)
-- **Chapters:** 7 (all contracts met)
-- **Cases:** 5 concrete cases with ambiguity/partial failure (Chapters 1, 3, 4, 5, 7)
-- **Editorial state:** Publication-ready manuscript
+- **Word count:** 8,389 words
+- **Chapters:** 7 (all revised for continuous prose)
+- **Cases:** 5 concrete cases with ambiguity/partial failure
+- **Editorial state:** Reads as literary organizational nonfiction, not framework delivery
 
-**Changes in this final pass:**
-- Chapter 1: Rebuilt around Maria/finance case showing hidden human load
-- Chapter 2: Refined with bounded language and moral boundary
-- Chapter 3: Complicated case with unresolved consequences
-- Chapter 4: Restructured with 4 power families and principal engineer hard case
-- Chapter 5: Rewritten with sustained payments modernization case (partial success)
-- Chapter 6: Rebuilt with five decision-based contradictions
-- Chapter 7: Deepened with documentation synthesis and incident case revision
-- Compression: 7.6% reduction from previous draft
-- Grammar: All missing articles and clipped grammar fixed
+**Changes in this de-frameworking pass:**
+- Chapter 2: Six diagnostic questions dissolved into prose observation
+- Chapter 3: Four pulls framework rewritten as continuous narrative movement showing one person's shifting impulses
+- Chapter 4: Fifteen resistance categories and four power families converted to observation-based prose
+- Chapter 5: Four process functions integrated into scene-based narrative
+- Chapter 6: Five contradictions framing softened, presented as recurring patterns not fixed taxonomy
+- Chapter 7: Bolded concept list integrated into flowing prose
+- Grammar: Repetition and awkward phrasing cleaned throughout
 
 **Positioning:** Literary organizational nonfiction for technical leaders.
 
 **Audience:** Staff-plus engineers, engineering managers, platform/product leaders, transformation leads in legacy-heavy environments.
 
-**Status:** Publication-ready. Ready for professional copy-edit and publication workflow.
+**Status:** Ready for final review before professional copy-edit and publication workflow.
 
 ---
 
