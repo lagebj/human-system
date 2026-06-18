@@ -1,7 +1,7 @@
 # Current State
 
 **Last verified:** 2026-06-18
-**Revision:** editorial/pass-e-final-read-integrity
+**Revision:** editorial/pass-f-epistemic-humility-rhythm
 
 **Pass A complete:** De-frameworking and continuity — frameworks dissolved, cases centered. Word count: 8,389 → 7,436 (−953 words, −11%)
 
@@ -30,12 +30,26 @@ Pass E verification:
 - Concept returns accumulate meaning
 - Sections end in residue, not closure
 
+**Pass F complete:** Epistemic humility and sentence rhythm — interpretive overconfidence reduced, staccato sequences combined, narrator self-implication added. Word count: 7,551 → 7,600 (+49 words)
+
+Pass F changes:
+- "Underneath this lives" → "Underneath this may live... although another reading is also possible"
+- "This is the work" → "What remains for the helper"
+- "This was the best outcome" → "It was the best outcome available under those conditions"
+- "This is the normal state" → "This may be the normal state" (2 occurrences)
+- "This was the cost" → "It was the cost"
+- "This is the discipline" → "It is one discipline"
+- "This was luck" → retained (directly evidenced)
+- Combined 40+ staccato sentence sequences into connected prose
+- Added causal connectors (but, and, although, so that, which meant)
+- Preserved short sentences for emphasis, reduced mechanical repetition
+
 ---
 
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 7,551
+- **Word count:** 7,600
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
@@ -64,9 +78,9 @@ Pass E verification:
 
 ## Pass Status
 
-- **Last completed pass:** Pass E final read integrity — 2026-06-18
+- **Last completed pass:** Pass F epistemic humility and rhythm — 2026-06-18
 - **Active pass:** none
-- **Next eligible pass:** Editorial sequence complete
+- **Next eligible pass:** Editorial sequence complete (six passes executed)
 
 **Available passes:**
 - Pass A: De-patterning / structural prose release ✅
@@ -74,8 +88,9 @@ Pass E verification:
 - Pass C: Language and load balancing ✅
 - Pass D: Continuity and concept return ✅
 - Pass E: Final read integrity ✅
+- Pass F: Epistemic humility and sentence rhythm ✅
 
-**Editorial sequence status:** All five passes complete. Manuscript ready for PR review and merge.
+**Editorial sequence status:** All six passes complete. Manuscript ready for PR review and merge.
 
 ---
 
@@ -142,9 +157,10 @@ The following files contain useful historical information but should not be trea
 
 - [x] One current-state file exists
 - [x] Manuscript path is explicit
-- [x] Word count matches manuscript (7,551)
-- [x] All five editorial passes complete
+- [x] Word count matches manuscript (7,600)
+- [x] All six editorial passes complete
 - [x] Stale reports are identified
 - [ ] README updated to match current direction
 - [ ] Skill resource copy marked as stale snapshot
 - [x] Validation script passes
+- [x] Epistemic humility pass executed
