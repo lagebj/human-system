@@ -88,7 +88,7 @@ The public recognition for the first team embarrassed one of the engineers. He h
 
 Self-awareness improved judgment. It did not remove tradeoffs. She made decisions that assigned costs to specific parties. The consolidation was completed. The success was partial, not complete. The residual costs remained visible. She lived with them.
 
-This is the work inside the helper: recognizing the impulses, holding them without letting any single one decide, adjusting based on what you learn, and accepting that the outcome will be incomplete even when you do it well.
+This is the work inside the helper: recognizing the impulses, holding them without letting any single one decide, adjusting based on what you learn, and accepting that the outcome will be incomplete even when you do it well. The same loss that operates in the senior engineer operates in the helper too—the loss of being the person who carries this, who knows, who decides. The helper must grieve this competence before it can transfer.
 
 Questions, listening, and observation create space between impulse and action. Good questions are specific and open-ended without being leading. They invite explanation rather than yes-or-no answers. Listening requires attention to what people say and what they do not say. Observation means watching what actually happens rather than what is supposed to happen. Watch how decisions get made, not how they are described in process documents. Watch who people go to for advice, not who has the title.
 
@@ -232,7 +232,7 @@ Evidence mattered throughout. The threat assessment justified the timeline. The 
 
 The work ended with residue, not resolution. The vulnerability was closed. The migration completed. The session-handling fix shipped. But the underlying tensions remained. The security team still wanted faster patching. The product teams still wanted more control over timing. The engineering team still wanted more testing time.
 
-This is the normal state of managing contradictions. They do not disappear. They are navigated through concrete decisions that name the costs and live with the consequences.
+This is the normal state of managing contradictions. They do not disappear. They are navigated through concrete decisions that name the costs and live with the consequences. The same loss that appeared in Maria's spreadsheets, in the senior engineer's departure, in the principal engineer's neutrality—this loss appears again here, distributed across the security team, the product teams, the engineering team, the director. Each carries what the change makes obsolete. Each must decide what knowledge still matters and what can disappear.
 
 ---
 
@@ -252,7 +252,7 @@ After the incident, they reviewed together. What went well. What to adjust. He h
 
 The next incident, she sat in a different room. He called when stuck. She asked what he thought. He decided. The incident: a third-party API failure. He diagnosed it in twenty minutes. He implemented a workaround in forty. The workaround was not elegant. It worked. Customers were not affected.
 
-By the fourth incident, he did not call. The incident: a cache invalidation problem. He diagnosed it. He fixed it. He documented it. The capability was his. She had built it by not doing the work herself. This is the discipline of capability-building: doing less so others can do more.
+By the fourth incident, he did not call. The incident: a cache invalidation problem. He diagnosed it. He fixed it. He documented it. The capability was his. She had built it by not doing the work herself. This is the discipline of capability-building: doing less so others can do more. The same discipline the platform team lead practiced in Chapter 3, now practiced here—the helper subordinating her needs to the needs of the change, grieving the competence that made her essential.
 
 The mistakes were tolerable. The payment incident cost the company money in delayed transactions. No customers were permanently affected. The benefit: the team could handle incidents without her. The next result could not depend on the same expert arriving in time.
 
@@ -294,4 +294,4 @@ Accountable stewardship also requires being honest about what remains unfinished
 
 The true measure of success is whether the system can continue without you. This measure is fundamentally different from whether the change succeeded. A change can succeed on paper and still create dependency. A change can fail to meet its goals and still leave capability behind. Capability matters because the next result cannot depend on the same expert arriving in time. Capability supports better outcomes. Capability does not excuse repeated, avoidable failure. Learning from failure does not erase the harm.
 
-This is the essential work: building systems that do not require your constant presence, transferring capability that does not depend on your continued involvement, leaving behind people who can carry the work forward without you. This work is worth doing even when you will not be there to see it continue.
+This is the essential work: building systems that do not require your constant presence, transferring capability that does not depend on your continued involvement, leaving behind people who can carry the work forward without you. This work is worth doing even when you will not be there to see it continue. The same work Maria's organization did not do, the same work the platform team lead learned to do, the same work the staff engineer practiced with the on-call engineer. The work accumulates. The capability transfers. The loss is acknowledged. The system continues.

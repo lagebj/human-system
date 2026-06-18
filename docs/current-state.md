@@ -1,11 +1,18 @@
 # Current State
 
 **Last verified:** 2026-06-18
-**Revision:** editorial/pass-c-language-balancing
+**Revision:** editorial/pass-d-continuity-concept-return
 
 **Pass B complete:** Causal tightening — strengthened cause/effect continuity. Word count: 7,436 → 7,389 (−47 words)
 
-**Pass C complete:** Language and load balancing — sentence rhythm and paragraph density verified as appropriate. No material changes required. Short paragraphs are intentional. Conceptual load preserved.
+**Pass C complete:** Language and load balancing — sentence rhythm and paragraph density verified as appropriate. No material changes required.
+
+**Pass D complete:** Continuity and concept return — concepts now accumulate meaning across chapters. Word count: 7,389 → 7,551 (+162 words)
+
+Key concept returns added:
+- Chapter 3: Loss concept from Chapter 2 returned in helper context
+- Chapter 6: Loss concept returned, connecting Maria, senior engineer, principal engineer
+- Chapter 7: Helper discipline from Chapter 3 returned; final paragraph connects all chapters
 
 ---
 
