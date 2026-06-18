@@ -401,9 +401,40 @@ The final prose must sound like one author, not a mixture of borrowed styles.
 
 ---
 
+## De-Frameworking Rules (Current Direction)
+
+**The manuscript should preserve distinctions without displaying the full machinery used to derive them.**
+
+Concepts should emerge through:
+- situations
+- decisions
+- consequences
+- revised judgment
+
+Frameworks belong in editorial analysis unless the reader genuinely needs them.
+
+**Specific rules:**
+- Cases may carry the argument without recap
+- Sections may end in residue rather than closure
+- Not every chapter needs a named framework
+- Not every distinction needs a label
+- No repeated internal chapter template
+- Syntactic variety should follow thought
+- Interpretation must remain visibly separate from observation
+- Precision must not be simulated through invented numbers
+- Collective action should appear alongside individual psychology
+- Disguised lists must be rewritten as causal sequences
+- Binary formulations ("both things are true") used sparingly, not as default
+- Inferred motives not stated as facts
+- Manufactured closure replaced with concrete residue
+
+**Test for disguised lists:** If the sentences in a paragraph can be rearranged freely without changing the meaning, the passage is probably a list. Rewrite so each sentence changes what the next sentence means.
+
+---
+
 ## Editorial Status
 
 **Last Updated:** 2026-06-18
 **Manuscript:** See `docs/current-state.md` for current word count and state
-**Current Pass:** none (awaiting user direction)
+**Current Pass:** De-frameworking and continuity pass complete
 **Direction:** Literary organizational nonfiction — prose before framework

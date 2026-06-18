@@ -1,14 +1,14 @@
 # Current State
 
 **Last verified:** 2026-06-18
-**Revision:** editorial/de-frameworking-pass (pending PR #13)
+**Revision:** editorial/de-frameworking-pass (PR #13 merged)
 
 ---
 
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 8,389
+- **Word count:** 7436
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
@@ -27,17 +27,22 @@
 - Structural variety between chapters
 - No fixed sets of three, four, or five
 - No checklist-heavy or workshop-ready prose
+- Cases carry argument without recap
+- Sections may end in residue rather than closure
+- Interpretation visibly separate from observation
+- Precision not simulated through invented numbers
+- Collective action appears alongside individual psychology
 
 ---
 
 ## Pass Status
 
-- **Last completed pass:** De-frameworking pass (Pass A variant) — 2026-06-18
+- **Last completed pass:** De-frameworking and continuity pass — 2026-06-18
 - **Active pass:** none
 - **Next eligible pass:** Awaiting user direction
 
 **Available passes:**
-- Pass A: De-patterning / structural prose release
+- Pass A: De-patterning / structural prose release (complete)
 - Pass B: Causal tightening
 - Pass C: Language and load balancing
 - Pass D: Continuity and concept return
@@ -108,7 +113,7 @@ The following files contain useful historical information but should not be trea
 
 - [x] One current-state file exists
 - [x] Manuscript path is explicit
-- [x] Word count matches manuscript (8,389)
+- [x] Word count matches manuscript (7,436)
 - [x] Active pass is declared (none)
 - [x] Stale reports are identified
 - [ ] README updated to match current direction
