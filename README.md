@@ -76,19 +76,19 @@ The author is a tech lead based in Norway, self-taught through troubleshooting, 
 
 ### Seven Chapters
 
-1. **Broken Systems and the Human Load They Create** — How organizations build informal capability around broken systems, and why this competence becomes invisible. Features the Maria/finance case showing hidden human load.
+1. **Broken Systems and the Human Load They Create** — A finance analyst runs month-end close across three systems that don't talk to each other. She has built undocumented spreadsheets and developed intuition about where errors appear. When she is out sick, the close takes five days instead of three. An integration project removes the burden without recognizing the knowledge she carried. The knowledge is lost.
 
-2. **Why Help Triggers Loss** — Interventions relocate burden, competence, risk, and power. The relocation is experienced as loss even when it is improvement. Features three loss examples and prose exploration of what to name before proposing change.
+2. **Why Help Triggers Loss** — Three examples show how interventions relocate burden, competence, risk, and power. A senior engineer whose deployment expertise becomes obsolete. A team lead whose stakeholder relationships no longer determine access. A manager whose layoff-navigation skills become irrelevant. The prose explores what to name before proposing change.
 
-3. **The Helper Inside the System** — How your own needs enter the work and what to do when you notice them. Features a platform consolidation case where the lead recognized her own impulses and adjusted, with incomplete results.
+3. **The Helper Inside the System** — A platform team lead proposes consolidating deployment pipelines. She encounters resistance. Her first impulse is to just do it herself. Her second is to prove the benefits with data. Her third is to take over completely. Her fourth is to stay involved indefinitely. All four impulses operate at once. She adjusts her approach by asking each team lead what would make consolidation work for them. The deployments consolidate. The relationships survive. It is also incomplete.
 
-4. **Resistance, History, and Power** — Resistance often carries legitimate history. Power lives in relationships, not positions. Features observation-based exploration of resistance forms and power dynamics through the principal engineer case with mixed motives.
+4. **Resistance, History, and Power** — A principal engineer raises a valid technical concern during a platform migration. He fears losing status. He controls information needed by the project. He has a history of being ignored. He uses that history to justify obstructive behavior. The intervention only partly succeeds. Understanding someone does not settle what to do about them.
 
-5. **Process, Modernization, and Adaptation** — Process can be remedy, scaffold, scar tissue, or theater. Modernization succeeds when it respects existing value. Features the payments migration case (eighteen months, partial success, ninety-five percent adoption).
+5. **Process, Modernization, and Adaptation** — A payments team migrates from a monolithic billing system to microservices. The old system ran for eight years. The migration takes eighteen months. Three divergences are discovered. One irreversible step is taken. Adoption reaches eighty percent, then ninety-five percent after six more months building trust and support structures. Go-live means the software is ready. It does not mean the organization is.
 
-6. **Contradictions That Must Be Managed** — Recurring tensions that cannot be solved, only navigated through concrete decisions. Features a director managing three contradictions simultaneously during platform migration.
+6. **Contradictions That Must Be Managed** — A director faces three contradictions simultaneously during a platform migration. The security team demands immediate containment of a vulnerability. The product teams need time to adapt their workflows. The platform team wants consistent adoption. One team has legitimate reasons they cannot meet the standard timeline. The director's decisions assign costs to specific parties.
 
-7. **Building Capability Instead of Dependence** — Shifting from delivering solutions to transferring capability. Exit designed in from the start. Features the incident response delegation case with thresholds, boundaries, and honest acknowledgment of what could not be transferred.
+7. **Building Capability Instead of Dependence** — A staff engineer joins a team struggling with incident response. Her instinct is to take over. She could move faster. She recognizes the pattern. She changes approach. She sits beside the on-call engineer. She lets him drive. He makes mistakes. She doesn't take over. The capability becomes his. Not every capability can be fully transferred. Some expertise takes years to build.
 
 ### Repository Structure
 
@@ -106,20 +106,27 @@ human-system/
 │   │   └── templates/                      # Reusable integration text
 │   └── SKILL.md                            # Skill activation instructions
 ├── docs/                                   # Working documentation
+│   ├── current-state.md                    # Current operational state (single source)
+│   ├── decisions/                          # Decision records (ADR-style)
+│   ├── reports/archive/                    # Historical reports
+│   └── logs/                               # Dated session records
 └── manuscript/
-    └── human.md                            # Primary manuscript
+    └── human.md                            # Primary manuscript (canonical)
 ```
 
-### Source Priority
+### Source Authority
 
 For agents and collaborators working in this repository:
 
-1. **Binding sources** live under `resources/source/` — these define stance and constraints
-2. **Distilled context** lives under `resources/context/` — operational memory
-3. **Workflows** live under `resources/playbooks/` — repeatable processes
-4. **Manuscript work** has specific constraints under `resources/source/book_work/`
+1. **Start here:** `AGENTS.md` (bootloader) and `docs/current-state.md` (current state)
+2. **Skill routing:** `.agents/skills/human-systems-context/SKILL.md`
+3. **Canonical rules:** `.agents/skills/human-systems-context/resources/source/`
+4. **Workflows:** `.agents/skills/human-systems-context/resources/playbooks/`
+5. **Manuscript:** `manuscript/human.md` (canonical for editing)
 
-The local skill (`.agents/skills/human-systems-context/SKILL.md`) is the authoritative source for how to behave when working in this repository.
+The local skill is the authoritative source for how to behave when working in this repository.
+
+**Manuscript note:** A mirror copy exists at `.agents/skills/human-systems-context/resources/source/book_work/human.md`. This is a stale snapshot for context loading only. Do not edit it.
 
 ## Writing Approach
 
@@ -190,14 +197,19 @@ This repository is the canonical source of context for the human-systems stance.
 
 ### For Agents
 
-When working in this repository, always apply these skills in order:
+**Before any work:**
+1. Read `AGENTS.md` (this file)
+2. Read `docs/current-state.md` (current operational state)
+3. Load `.agents/skills/human-systems-context/SKILL.md` for detailed routing
 
-1. **`human-systems-context`** — Primary source of behavior and stance
-2. **`git-branch-commit-pr`** — For branches, commits, and pull requests
-3. **`adr-governance`** — For durable architecture decisions
+**Determine task class:**
+- Class A: Repository/workflow maintenance (manuscript MUST NOT be edited)
+- Class B: Manuscript diagnosis (read only, not modified)
+- Class C: Bounded editorial pass (exactly one pass active)
+- Class D: Manuscript rewrite (must be explicitly requested)
+- Class E: Publication preparation (separate from developmental editing)
 
-Read the skill instructions before making changes. Place new material according to the change type:
-
+**Place new material according to the change type:**
 - Long-lived stance → `resources/source/core_stance/`
 - Reusable movement pattern → `resources/source/field_patterns/`
 - General writing voice → `resources/source/writing_voice/`
@@ -210,40 +222,38 @@ Read the skill instructions before making changes. Place new material according 
 
 If you are working on the manuscript, editing, or extending the source context:
 
-1. Read `docs/working-session.md` for current working agreements
+1. Read `docs/current-state.md` for current state
 2. Understand which kind of change you are making (skill structure, source update, book work, etc.)
 3. Update supporting documentation before implementation when the change affects agent behavior
 4. Remove stale, duplicated, or misleading context in every branch
 
 ## Status
 
-This book is in active development. The manuscript, source context, and working agreements evolve as the thinking evolves.
+This book is in active editorial development. The manuscript, source context, and working agreements evolve as the thinking evolves.
 
 The repository itself is part of the work — a living system that preserves and evolves reusable context for operating-model reasoning, modernization strategy, enablement, and writing work.
 
 ### Manuscript State (as of 2026-06-18)
 
-**De-frameworking editorial pass complete: all seven chapters revised to remove visible framework machinery.**
+**De-frameworking editorial pass complete.** Manuscript reads as literary organizational nonfiction.
 
 - **Word count:** 8,389 words
 - **Chapters:** 7 (all revised for continuous prose)
 - **Cases:** 5 concrete cases with ambiguity/partial failure
-- **Editorial state:** Reads as literary organizational nonfiction, not framework delivery
+- **Editorial direction:** Prose before framework, movement before taxonomy, scene before diagnosis
 
-**Changes in this de-frameworking pass:**
-- Chapter 2: Six diagnostic questions dissolved into prose observation
-- Chapter 3: Four pulls framework rewritten as continuous narrative movement showing one person's shifting impulses
-- Chapter 4: Fifteen resistance categories and four power families converted to observation-based prose
-- Chapter 5: Four process functions integrated into scene-based narrative
-- Chapter 6: Five contradictions framing softened, presented as recurring patterns not fixed taxonomy
-- Chapter 7: Bolded concept list integrated into flowing prose
-- Grammar: Repetition and awkward phrasing cleaned throughout
+**Current pass:** none (awaiting user direction)
 
-**Positioning:** Literary organizational nonfiction for technical leaders.
+**Last completed pass:** De-frameworking pass (Pass A variant) — removed visible framework machinery, dissolved taxonomies into prose, converted diagnostic questions to observation
 
-**Audience:** Staff-plus engineers, engineering managers, platform/product leaders, transformation leads in legacy-heavy environments.
+**Next eligible pass:** User direction required (Pass B: causal tightening, Pass C: language balancing, Pass D: continuity, or Pass E: final read)
 
-**Status:** Ready for final review before professional copy-edit and publication workflow.
+**Known risks:**
+- Manuscript below typical book length (may need case deepening)
+- Two manuscript copies exist (only `manuscript/human.md` is canonical for editing)
+- Some historical reports contain stale "publication-ready" claims (archived)
+
+**Ready for:** User direction on next editorial pass or repository workflow work
 
 ---
 
