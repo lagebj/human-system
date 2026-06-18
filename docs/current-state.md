@@ -32,6 +32,8 @@ Pass E verification:
 
 **Pass F complete:** Epistemic humility and sentence rhythm — interpretive overconfidence reduced, staccato sequences combined, narrator self-implication added. Word count: 7,551 → 7,600 (+49 words)
 
+**Post-pass integration:** Orchestration system case study integrated into Chapter 5 from inbox file. Word count: 7,600 → 8,301 (+701 words). Case demonstrates simplification requiring shared understanding, six months of discussion as "the work," and movement from vendor-owned black box to internal capability.
+
 Pass F changes:
 - "Underneath this lives" → "Underneath this may live... although another reading is also possible"
 - "This is the work" → "What remains for the helper"
@@ -49,7 +51,7 @@ Pass F changes:
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 7,600
+- **Word count:** 8,301
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
