@@ -8,25 +8,25 @@
 
 *How organizations build informal capability around broken systems, and why this competence becomes invisible.*
 
-A finance team runs month-end close across three systems that do not talk to each other. The ERP holds general ledger data. The billing system holds customer invoices. The procurement system holds vendor payments. None of these systems share data automatically. The close requires someone to move numbers from one system to another, verify they match, and explain the differences.
+A finance team runs month-end close across three systems that do not talk to each other. The ERP holds general ledger data. The billing system holds customer invoices. The procurement system holds vendor payments. None of these systems share data automatically, so the close requires someone to move numbers from one system to another, verify they match, and explain the differences.
 
-Maria has done this close for four years. She knows where the numbers live. She knows which reports to run. She knows the passwords for all three systems. She knows that the billing system sometimes double-counts partial-month subscriptions. She knows that the procurement system excludes taxes from the totals. She knows that the ERP requires a specific format for journal entries. She has built spreadsheets that compensate for each quirk. The spreadsheets are not documented. They live on her laptop.
+Maria has done this close for four years. She knows where the numbers live, which reports to run, the passwords for all three systems. She knows that the billing system sometimes double-counts partial-month subscriptions, that the procurement system excludes taxes from the totals, that the ERP requires a specific format for journal entries. She has built spreadsheets that compensate for each quirk. The spreadsheets are not documented. They live on her laptop.
 
-The close takes three days when Maria does it. She starts on day one by pulling reports from all three systems. She runs her spreadsheets. She finds the differences. She investigates each difference. Some are timing issues. Some are data errors. Some are system quirks she has learned to expect. She documents the findings in an email to the controller. Day two is corrections. Day three is final reconciliation and sign-off.
+The close takes three days when Maria does it. She starts on day one by pulling reports from all three systems, running her spreadsheets, finding the differences. She investigates each difference—some are timing issues, some are data errors, some are system quirks she has learned to expect. She documents the findings in an email to the controller. Day two is corrections. Day three is final reconciliation and sign-off.
 
-When Maria is out sick, the close takes five days. The person covering her does not know which reports to run. They do not know about the double-counted subscriptions. They do not know the tax exclusion. They do not have her spreadsheets. They call Maria at home for help. Maria talks them through the steps. The close completes. The controller notes the delay.
+When Maria is out sick, the close takes five days. The person covering her does not know which reports to run, about the double-counted subscriptions, the tax exclusion, or have her spreadsheets. They call Maria at home for help. Maria talks them through the steps. The close completes. The controller notes the delay.
 
-The organization has stopped seeing the burden Maria carries. The close is a routine task. It happens every month. It is on the calendar. The fact that the close depends on one person's undocumented knowledge is invisible. The organization sees only the output: the close completes. The organization does not see the actual work: the judgment, the compensation, the manual reconciliation, the translation between systems.
+The organization has stopped seeing the burden Maria carries. The close is a routine task on the calendar, and the fact that it depends on one person's undocumented knowledge has become invisible. The organization sees only the output: the close completes. It does not see the actual work: the judgment, the compensation, the manual reconciliation, the translation between systems.
 
-A project to integrate the three systems begins. The business case is clear. Manual reconciliation creates risk. Errors go undetected. The close takes too long. The organization depends on one person. The integration would automate the data flow. The close would take one day. Anyone could run it.
+A project to integrate the three systems begins. The business case is clear: manual reconciliation creates risk, errors go undetected, the close takes too long, the organization depends on one person. The integration would automate the data flow. The close would take one day. Anyone could run it.
 
-Maria is assigned to the project. She is the subject matter expert. She knows what needs to be automated. She knows the quirks the system must handle. She attends the kickoff. She provides her input. The project team takes notes. They tell her they will follow up.
+Maria is assigned to the project as the subject matter expert. She knows what needs to be automated, the quirks the system must handle. She attends the kickoff, provides her input. The project team takes notes. They tell her they will follow up.
 
-The project team designs the integration without Maria. They read the system documentation. They talk to the system vendors. They design a solution that works in theory. The solution does not handle the double-counted subscriptions. It does not exclude taxes. It does not compensate for the timing differences. It assumes the systems are correct. They are not.
+The project team designs the integration without Maria. They read the system documentation, talk to the system vendors, design a solution that works in theory. The solution does not handle the double-counted subscriptions, exclude taxes, or compensate for the timing differences. It assumes the systems are correct. They are not.
 
-Maria sees the design. She raises concerns. The project team listens. They note the concerns. They say they will address them. They do not. The design proceeds. The integration is built. It is tested with sample data. The sample data is clean. The real data is not.
+Maria sees the design and raises concerns. The project team listens, notes the concerns, says they will address them. They do not. The design proceeds. The integration is built and tested with sample data. The sample data is clean. The real data is not.
 
-The integration goes live. The first close fails. The numbers do not match. The differences are large. The project team investigates. They find and fix the double-counted subscriptions. They find and fix the tax exclusion. They find and fix the timing differences. They fix the integration. The next close works. The close now takes one day. Maria is no longer needed.
+The integration goes live. The first close fails. The numbers do not match. The differences are large. The project team investigates and finds the double-counted subscriptions, the tax exclusion, the timing differences. They fix the integration. The next close works. The close now takes one day. Maria is no longer needed.
 
 The organization celebrates. The project succeeded. The risk is reduced. Maria is reassigned to a different team. Her spreadsheet stays on her laptop. The knowledge she built over four years is no longer necessary. The organization sees only what was gained: speed, consistency, reduced risk. It does not see what was lost.
 
@@ -37,6 +37,7 @@ The integration was necessary. The work is to see what the person carried and to
 Maria leaves. The spreadsheets remain on her laptop. The integration works. Nobody has decided what knowledge still matters.
 
 ---
+
 ## Chapter 2: Why Help Triggers Loss
 
 *Interventions relocate burden, competence, risk, and power. The relocation is experienced as loss even when it is improvement.*
@@ -60,6 +61,7 @@ A platform team standardized deployments across twelve teams. The senior enginee
 The improvement may also be real. The work is navigating the transition in a way that acknowledges loss while moving forward. This requires honesty about what is being lost. It requires compassion for the people losing it. It requires patience with the time it takes to grieve competence that is no longer needed. It also requires the willingness to proceed when the loss cannot be fully resolved.
 
 ---
+
 ## Chapter 3: The Helper Inside the System
 
 *How your own needs enter the work and what to do when you notice them.*
@@ -91,6 +93,9 @@ This is the work inside the helper: recognizing the impulses, holding them witho
 Questions, listening, and observation create space between impulse and action. Good questions are specific and open-ended without being leading. They invite explanation rather than yes-or-no answers. Listening requires attention to what people say and what they do not say. Observation means watching what actually happens rather than what is supposed to happen. Watch how decisions get made, not how they are described in process documents. Watch who people go to for advice, not who has the title.
 
 These tools serve the change when they are used to understand rather than to validate. They become traps when they are performed rather than practiced. The discipline is genuine curiosity. Enter situations not knowing what you will find. Let your understanding change based on what you learn. Let your recommendations change based on what you observe. This is how the impulses are managed: by subordinating your needs to the needs of the change.
+
+---
+
 ## Chapter 4: Resistance, History, and Power
 
 *Resistance often carries legitimate history. Power lives in relationships, not positions.*
@@ -124,6 +129,9 @@ Some people shape how work proceeds. They decide what gets discussed and when. T
 These forms of power are distributed unevenly. One person may hold multiple forms simultaneously. Using power requires understanding the cost. Every time power is used, credibility, relationships, and patience are spent. They can be recovered, but it takes time. Using power too quickly can exhaust the credibility needed to finish. Using power too slowly leaves work stuck.
 
 There is power in naming what is happening. Naming creates shared language. Shared language makes coordinated action possible. The naming must be accurate enough that people recognize themselves. Generous enough that people do not feel attacked. Specific enough that it points to something addressable.
+
+---
+
 ## Chapter 5: Process, Modernization, and Adaptation
 
 *Process can be remedy, scaffold, scar tissue, or theater. Modernization succeeds when it respects existing value.*
@@ -173,6 +181,7 @@ One team lead later described a conversation she had during the migration. The p
 The old system is gone. The new system works. One team still carries duplicate work. One policy decision remains contested. One workaround persists in a form the platform team knows about but has chosen not to pursue. The work does not end cleanly. It enters a different phase: the organization must learn what the builders already know. This phase takes as long as it takes.
 
 ---
+
 ## Chapter 6: Contradictions That Must Be Managed
 
 *Inherent tensions that cannot be solved, only navigated through concrete decisions.*
@@ -224,6 +233,9 @@ Evidence mattered throughout. The threat assessment justified the timeline. The 
 The work ended with residue, not resolution. The vulnerability was closed. The migration completed. The session-handling fix shipped. But the underlying tensions remained. The security team still wanted faster patching. The product teams still wanted more control over timing. The engineering team still wanted more testing time.
 
 This is the normal state of managing contradictions. They do not disappear. They are navigated through concrete decisions that name the costs and live with the consequences.
+
+---
+
 ## Chapter 7: Building Capability Instead of Dependence
 
 *Shifting from delivering solutions to transferring capability that does not depend on your continued involvement. Exit designed in from the start.*

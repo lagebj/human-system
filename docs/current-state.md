@@ -1,14 +1,16 @@
 # Current State
 
 **Last verified:** 2026-06-18
-**Revision:** editorial/de-frameworking-pass (PR #13 merged)
+**Revision:** editorial/pass-b-causal-tightening
+
+**Pass B complete:** Causal tightening — strengthened cause/effect continuity, removed explanatory scaffolding, tightened causal chains. Word count: 7,436 → 7,389 (−47 words)
 
 ---
 
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 7436
+- **Word count:** 7,389
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
