@@ -1,9 +1,11 @@
 # Current State
 
 **Last verified:** 2026-06-18
-**Revision:** editorial/pass-b-causal-tightening
+**Revision:** editorial/pass-c-language-balancing
 
-**Pass B complete:** Causal tightening — strengthened cause/effect continuity, removed explanatory scaffolding, tightened causal chains. Word count: 7,436 → 7,389 (−47 words)
+**Pass B complete:** Causal tightening — strengthened cause/effect continuity. Word count: 7,436 → 7,389 (−47 words)
+
+**Pass C complete:** Language and load balancing — sentence rhythm and paragraph density verified as appropriate. No material changes required. Short paragraphs are intentional. Conceptual load preserved.
 
 ---
 
