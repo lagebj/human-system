@@ -67,7 +67,7 @@ Key changes:
 - Movement from vendor-owned black box to internal capability
 - Aligns with Chapter 5 themes: modernization in place, duplication as necessary cost, go-live vs completion
 
-**Developmental recurrence restoration (Chapter 7):** Chapter 7 ending rewritten to weave general principles into staff engineer narrative with concept returns to Chapters 1, 3, 4, 5. Removed 12 standalone principle paragraphs (workshop-handout style). Added recursive reflection connecting staff engineer to Maria, payments team, principal engineer, platform team lead. Word count: 8,301 → 8,387 (+86 words).
+**Developmental recurrence restoration (Chapter 7):** Chapter 7 ending rewritten to weave general principles into staff engineer narrative with concept returns to Chapters 1, 3, 4, 5. Removed 12 standalone principle paragraphs (workshop-handout style). Added recursive reflection connecting staff engineer to Maria, payments team, principal engineer, platform team lead. (+86 words).
 
 ---
 
@@ -110,7 +110,7 @@ Key changes:
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 8,387 (recorded for reference, not a target)
+- **Word count:** 8387 (recorded for reference, not a target)
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
