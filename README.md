@@ -74,21 +74,9 @@ The author is a tech lead based in Norway, self-taught through troubleshooting, 
 
 ## How This Book Is Structured
 
-### Seven Chapters
+The book is one continuous walk through seven chapters. Each chapter carries cases that return and accumulate meaning. Concepts are used as interpretive tools, not rigid models. The structure resists framework delivery: no fixed sets, no diagnostic checklists, no workshop-ready summaries.
 
-1. **Broken Systems and the Human Load They Create** — A finance analyst runs month-end close across three systems that don't talk to each other. She has built undocumented spreadsheets and developed intuition about where errors appear. When she is out sick, the close takes five days instead of three. An integration project removes the burden without recognizing the knowledge she carried. The knowledge is lost.
-
-2. **Why Help Triggers Loss** — Three examples show how interventions relocate burden, competence, risk, and power. A senior engineer whose deployment expertise becomes obsolete. A team lead whose stakeholder relationships no longer determine access. A manager whose layoff-navigation skills become irrelevant. The prose explores what to name before proposing change.
-
-3. **The Helper Inside the System** — A platform team lead proposes consolidating deployment pipelines. She encounters resistance. Her first impulse is to just do it herself. Her second is to prove the benefits with data. Her third is to take over completely. Her fourth is to stay involved indefinitely. All four impulses operate at once. She adjusts her approach by asking each team lead what would make consolidation work for them. The deployments consolidate. The relationships survive. It is also incomplete.
-
-4. **Resistance, History, and Power** — A principal engineer raises a valid technical concern during a platform migration. He fears losing status. He controls information needed by the project. He has a history of being ignored. He uses that history to justify obstructive behavior. The intervention only partly succeeds. Understanding someone does not settle what to do about them.
-
-5. **Process, Modernization, and Adaptation** — A payments team migrates from a monolithic billing system to microservices. The old system ran for eight years. The migration takes eighteen months. Three divergences are discovered. One irreversible step is taken. Adoption reaches eighty percent, then ninety-five percent after six more months building trust and support structures. Go-live means the software is ready. It does not mean the organization is.
-
-6. **Contradictions That Must Be Managed** — A director faces three contradictions simultaneously during a platform migration. The security team demands immediate containment of a vulnerability. The product teams need time to adapt their workflows. The platform team wants consistent adoption. One team has legitimate reasons they cannot meet the standard timeline. The director's decisions assign costs to specific parties.
-
-7. **Building Capability Instead of Dependence** — A staff engineer joins a team struggling with incident response. Her instinct is to take over. She could move faster. She recognizes the pattern. She changes approach. She sits beside the on-call engineer. She lets him drive. He makes mistakes. She doesn't take over. The capability becomes his. Not every capability can be fully transferred. Some expertise takes years to build.
+The chapters build on each other. Chapter 1 introduces loss through Maria's spreadsheets. Chapter 2 names loss as a force that operates whether it is named or not. Chapter 3 shows the helper grieving the competence that made her essential. Chapter 4 shows loss distributed across a migration team. Chapter 5 shows loss in modernization's go-live versus completion gap. Chapter 6 shows loss navigated through concrete decisions. Chapter 7 shows loss acknowledged as the capability transfers and the system continues.
 
 ### Repository Structure
 
@@ -233,27 +221,32 @@ This book is in active editorial development. The manuscript, source context, an
 
 The repository itself is part of the work — a living system that preserves and evolves reusable context for operating-model reasoning, modernization strategy, enablement, and writing work.
 
-### Manuscript State (as of 2026-06-18)
+### Manuscript State (as of 2026-06-19)
 
-**De-frameworking editorial pass complete.** Manuscript reads as literary organizational nonfiction.
+**Editorial sequence complete.** Manuscript reads as literary organizational nonfiction — continuous prose following the author's recursive thought patterns.
 
-- **Word count:** 8,389 words
-- **Chapters:** 7 (all revised for continuous prose)
-- **Cases:** 5 concrete cases with ambiguity/partial failure
-- **Editorial direction:** Prose before framework, movement before taxonomy, scene before diagnosis
+- **Word count:** 8,387 words
+- **Chapters:** 7 (all revised for continuous prose with developmental recurrence)
+- **Cases:** Maria (Ch1), senior engineer (Ch2), platform team lead (Ch3), principal engineer (Ch4), payments migration + orchestration replacement (Ch5), security vulnerability (Ch6), staff engineer/incident response (Ch7)
+- **Editorial direction:** Prose before framework, movement before taxonomy, scene before diagnosis, proportion over brevity
 
-**Current pass:** none (awaiting user direction)
+**Completed passes:**
+- Pass A: De-frameworking and continuity
+- Pass B: Causal tightening
+- Pass C: Language balancing verification
+- Pass D: Continuity and concept return
+- Pass E: Final read integrity
+- Pass F: Epistemic humility and sentence rhythm
 
-**Last completed pass:** De-frameworking pass (Pass A variant) — removed visible framework machinery, dissolved taxonomies into prose, converted diagnostic questions to observation
-
-**Next eligible pass:** User direction required (Pass B: causal tightening, Pass C: language balancing, Pass D: continuity, or Pass E: final read)
+**Post-pass integration:**
+- Orchestration system case study (Chapter 5)
+- Developmental recurrence restoration (Chapter 7)
 
 **Known risks:**
-- Manuscript below typical book length (may need case deepening)
 - Two manuscript copies exist (only `manuscript/human.md` is canonical for editing)
 - Some historical reports contain stale "publication-ready" claims (archived)
 
-**Ready for:** User direction on next editorial pass or repository workflow work
+**Ready for:** Publication preparation or next editorial cycle as directed
 
 ---
 
