@@ -244,7 +244,11 @@ The director scheduled a call with the security lead, the product leads, and the
 
 The director listened. She asked questions. How likely was exploitation targeting their specific deployment? The security lead could not say, although the likelihood was elevated. How much revenue was at risk? The product leads estimated a low single-digit percentage of the total campaign value. The absolute number was large enough to matter. How confident were they that the session-handling issue would not cause broader problems? The principal engineer said he could not be fully confident without another week of testing.
 
-The decision came after the call ended. The director chose a fourth option that none of the participants had proposed. She would patch the old system in stages. The maintenance window would run for thirty minutes per region instead of two hours for all regions at once. The first region would be the smallest by transaction volume. The team would monitor for problems. If the patch caused issues, they could roll back before touching larger regions. The campaign would continue in regions that had not yet entered the maintenance window. The exposure would close within forty-eight hours as the security team required.
+The decision came after the call ended. The director chose a fourth option that none of the participants had proposed. She would patch the old system in stages.
+
+I was not in that call. I do not know whether the director experienced the decision as a synthesis of competing valid concerns or as a compromise that would leave everyone partially dissatisfied. She may have experienced both. The staged approach gave each party something: the security team got closure within forty-eight hours, the product teams got control over regional timing, the engineering team got to ship with the gap they had already identified. It also gave each party something they did not want: the security team got extended exposure, the product teams got four maintenance windows instead of one, the engineering team got less testing time than requested.
+
+The maintenance window would run for thirty minutes per region instead of two hours for all regions at once. The first region would be the smallest by transaction volume. The team would monitor for problems. If the patch caused issues, they could roll back before touching larger regions. The campaign would continue in regions that had not yet entered the maintenance window. The exposure would close within forty-eight hours as the security team required.
 
 This decision created its own costs. The platform team would have to manage four separate maintenance windows across four regions. The migration would slip by two weeks. The security team accepted this. The product leads accepted this. The principal engineer did not: he wanted the extra testing time, and he did not get it.
 
@@ -253,6 +257,8 @@ The first maintenance window ran on Wednesday night. The patch applied cleanly. 
 The campaign completed with minor disruption in two regions. The partners were informed in advance, and they adjusted their promotional spend. The revenue impact was smaller than it would have been with a full outage. The security team monitored threat intelligence throughout. No exploitation attempts targeted the payments platform during the exposure window. This was luck, not judgment.
 
 The migration slipped by two weeks as predicted. The session-handling issue surfaced during the first week of production traffic on the new system. A small number of users were logged out during a failover event. The support team handled the tickets. The principal engineer had been right to raise the concern. He had not been able to prevent the decision to ship with the gap. He documented the issue, set a date for the fix, and when the date passed, the fix was implemented. The tickets stopped.
+
+At the time, I read the principal engineer's acceptance as resignation. Later, I wondered whether it was something else: the recognition that his concern had been heard and documented, even though it had not prevented the decision. He may have experienced the documentation as its own form of validation. He may have experienced it as cold comfort. I do not know. The tickets stopped. The issue was fixed. He stayed neutral, not advocate, not opponent. This may have been the best outcome available under those conditions. It may also have been a loss the organization did not know how to acknowledge.
 
 ---
 
@@ -299,6 +305,8 @@ The next incident, she sat in a different room. He called when stuck. She asked 
 By the fourth incident, he did not call. The incident: a cache invalidation problem. He diagnosed it, fixed it, and documented it. The capability was his. She had built it by not doing the work herself. It is one discipline of capability-building: doing less so others can do more. The same discipline the platform team lead practiced in Chapter 3, now practiced here—the helper subordinating her needs to the needs of the change, grieving the competence that made her essential.
 
 The mistakes were tolerable. The payment incident cost the company money in delayed transactions. No customers were permanently affected. The benefit: the team could handle incidents without her. The next result could not depend on the same expert arriving in time.
+
+I do not know whether the on-call engineer experienced the slower diagnosis as learning or as frustration. He may have experienced both. The organization had not staffed the team with redundancy for this expertise, which meant the learning period created real customer cost. This cost was borne by customers who experienced delayed checkout, not by the staff engineer who was building capability. She may have known this. She may not have. The decision to let him drive assigned costs to parties who did not choose them. This is sometimes necessary. It should be named.
 
 The threshold for intervention was clear: customer data at risk, regulatory violation, significant revenue loss. None of these thresholds were crossed. The slower response created cost, but the cost was tolerable. The learning was real.
 
