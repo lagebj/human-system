@@ -72,6 +72,19 @@ Key additions by chapter:
 
 Word count: 8,387 → 9,659 (+1,272 words)
 
+**Pass H:** Depth, humility, and interpretive movement — full restoration of nuance without vagueness. Manufactured closure removed. Outcomes no longer treated as proof. Group dynamics clarified. Chapter endings revised to proportionate residue.
+
+Key changes by chapter:
+- Ch1: False certainty about future failures removed; Maria's experience and departure left uncertain; some knowledge may have been obsolete; both original risks AND new gaps are real
+- Ch2: What acknowledgment might have required added (involvement, retraining, dignity); these responses conflict; proceeding may be necessary and still handled badly
+- Ch3: Teams revealed as non-uniform (within-team disagreement, embarrassed engineer, resentful mentees); categories helped her act but also hid what she wasn't seeing
+- Ch4: Categorical motive labels removed; 'appeared to protect privilege' vs 'protected privilege'; engineer's experience of mandate uncertain; outcome did not settle choice
+- Ch5: 'That was success' qualified; absence of harm may have reflected luck; outcome cannot settle whether choice was right
+- Ch6: Forced callbacks to earlier chapters removed; chapter remains about responsibility under incomplete evidence
+- Ch7: 'The capability was his' → 'One successful incident does not prove durable judgment'; regression would reveal what transferred; 'The capability may have transferred'; 'The system continued, or it did not'
+
+Word count: 9,659 → 10,213 (+554 words)
+
 ---
 
 ## Post-Pass Integration
