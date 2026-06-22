@@ -1,7 +1,7 @@
 # Current State
 
-**Last verified:** 2026-06-18
-**Revision:** editorial/pass-f-epistemic-humility-rhythm
+**Last verified:** 2026-06-22
+**Revision:** editorial/pass-g-epistemic-depth
 
 ---
 
@@ -12,6 +12,8 @@
 **Editorial principle:** Length is an outcome of the material, not a success metric. The manuscript should follow the author's way of thinking, not an external ideal of brevity.
 
 **Objective:** Proportion — enough space for the reader to follow the thought, enough detail for the interpretation to feel earned, enough restraint that the prose does not explain after the meaning has landed.
+
+**Epistemic stance (Pass G):** The narrator speaks from experience, observation, participation, memory, and later reflection — not as all-seeing authority. Inferred motives marked as inference. Incomplete evidence leaves conclusions incomplete. Ambiguity preserved when the situation remained ambiguous.
 
 ---
 
@@ -56,6 +58,19 @@ Key changes:
 - Combined staccato sentence sequences into connected prose
 - Added causal connectors (but, and, although, so that, which meant)
 - Preserved short sentences for emphasis, reduced mechanical repetition
+
+**Pass G:** Epistemic depth and structural context — narrator positioned as participant-observer, inferred motives marked as inference, structural conditions shown alongside individual psychology, cases deepened with conflicting motives and incomplete information.
+
+Key additions by chapter:
+- Ch1: Project team's choice explained through structural constraints; Maria's experience left uncertain
+- Ch2: Engineer's resistance read as genuine concern AND status protection; organization had no process for acknowledging obsolete competence
+- Ch3: Platform lead's recognition came after preparation; motivation uncertain even to narrator
+- Ch4: Migration's fixed deadline and executive sponsorship shown as conditions making conflict likely
+- Ch5: Adoption problem reframed as organizational discovery failure, not resistance
+- Ch6: Director's decision experience uncertain; principal engineer's acceptance read as possibly resignation, possibly validation
+- Ch7: On-call engineer's experience uncertain; learning cost borne by customers, not staff engineer
+
+Word count: 8,387 → 9,659 (+1,272 words)
 
 ---
 
@@ -119,9 +134,9 @@ Key changes:
 
 ## Pass Status
 
-- **Last completed pass:** Pass F epistemic humility and rhythm — 2026-06-18
-- **Active pass:** none
-- **Next eligible pass:** Editorial sequence complete (six passes executed)
+- **Last completed pass:** Pass G epistemic depth and structural context — in progress
+- **Active pass:** Pass G
+- **Next eligible pass:** Editorial sequence complete (seven passes planned)
 
 **Available passes:**
 - Pass A: De-patterning / structural prose release ✅
@@ -130,8 +145,9 @@ Key changes:
 - Pass D: Continuity and concept return ✅
 - Pass E: Final read integrity ✅
 - Pass F: Epistemic humility and sentence rhythm ✅
+- Pass G: Epistemic depth and structural context ⚠️ In Progress
 
-**Editorial sequence status:** All six passes complete. Manuscript on main branch.
+**Editorial sequence status:** Six passes complete, Pass G in progress.
 
 ---
 
@@ -156,6 +172,7 @@ Key changes:
 - `.agents/skills/human-systems-context/resources/source/book_work/EDITING_CHARTER.md`
 - `.agents/skills/human-systems-context/resources/source/book_work/writing-working-agreement.md`
 - `.agents/skills/human-systems-context/resources/source/writing_voice/author-voice-guide.md`
+- `.agents/skills/human-systems-context/resources/source/writing_voice/epistemic-stance.md` (Pass G guidance)
 
 **Execution procedures:**
 - `.agents/skills/human-systems-context/resources/playbooks/editing-passes.md`
@@ -167,11 +184,11 @@ Key changes:
 
 The following files contain useful historical information but should not be treated as current instructions:
 
-- `docs/final-editorial-report.md` — 2026-06-17 report (contains stale "publication-ready" claim)
-- `docs/editorial-notes.md` — Editorial history (needs update to reflect de-frameworking pass)
-- `docs/working-session.md` — Historical session record from 2026-06-16 restructure
-- `docs/restructure-report.md` — Historical restructure documentation
-- `docs/concept-return-log.md` — Concept tracking (sparse, needs use or archive)
+- `docs/reports/archive/final-editorial-report.md` — 2026-06-17 report (contains stale "publication-ready" claim)
+- `docs/reports/archive/editorial-notes.md` — Editorial history (needs update to reflect de-frameworking pass)
+- `docs/reports/archive/working-session.md` — Historical session record from 2026-06-16 restructure
+- `docs/reports/archive/restructure-report.md` — Historical restructure documentation
+- `docs/reports/archive/concept-return-log.md` — Concept tracking (sparse, needs use or archive)
 - `manuscript/notes/pattern-ledger.md` — Pattern tracking from Pass A work
 
 ---
@@ -186,10 +203,10 @@ The following files contain useful historical information but should not be trea
 
 ## Next Actions (Optional)
 
-- [ ] Update README.md to remove framework-heavy chapter metadata
-- [ ] Archive or update stale editorial reports (deleted files: editing-log.md, final-editorial-report.md, restructure-report.md)
+- [ ] Complete Pass G epistemic depth pass
+- [ ] Update README.md to match current direction
 - [ ] Verify validation script passes on main
-- [ ] Consider next editorial cycle or publication preparation
+- [ ] Consider publication preparation
 
 ---
 
@@ -203,5 +220,6 @@ The following files contain useful historical information but should not be trea
 - [ ] README updated to match current direction
 - [ ] Skill resource copy marked as stale snapshot
 - [x] Validation script passes
-- [x] Epistemic humility pass executed
+- [x] Epistemic humility pass executed (Pass F)
 - [x] Editorial discipline updated: proportion over brevity, developmental recurrence preserved
+- [ ] Pass G epistemic depth complete
