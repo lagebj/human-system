@@ -61,6 +61,17 @@ Key changes:
 
 **Pass G:** Epistemic depth and structural context — narrator positioned as participant-observer, inferred motives marked as inference, structural conditions shown alongside individual psychology, cases deepened with conflicting motives and incomplete information.
 
+Key additions by chapter:
+- Ch1: Project team's choice explained through structural constraints; Maria's experience left uncertain
+- Ch2: Engineer's resistance read as genuine concern AND status protection; organization had no process for acknowledging obsolete competence
+- Ch3: Platform lead's recognition came after preparation; motivation uncertain even to narrator
+- Ch4: Migration's fixed deadline and executive sponsorship shown as conditions making conflict likely
+- Ch5: Adoption problem reframed as organizational discovery failure, not resistance
+- Ch6: Director's decision experience uncertain; principal engineer's acceptance read as possibly resignation, possibly validation
+- Ch7: On-call engineer's experience uncertain; learning cost borne by customers, not staff engineer
+
+Word count: 8,387 → 9,659 (+1,272 words)
+
 ---
 
 ## Post-Pass Integration
