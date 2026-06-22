@@ -1,7 +1,7 @@
 # Current State
 
 **Last verified:** 2026-06-22
-**Revision:** editorial/pass-g-epistemic-depth
+**Revision:** targeted-patch-7-edits
 
 ---
 
@@ -85,6 +85,19 @@ Key changes by chapter:
 
 Word count: 9,659 → 10,213 (+554 words)
 
+**Targeted Patch:** Seven bounded editorial corrections — specific issues corrected without manuscript-wide revision. Not a developmental pass.
+
+Key changes:
+- Ch1: Duplicate prediction removed; controlled drift passage added ("This is where my thinking tends to drift..."); integration necessity qualified
+- Ch2: Final paragraph replaced with loss/recognition exploration; no "both things are true" closure
+- Ch3: Duplicate paragraph removed; ending replaced with incomplete mapping (no direct reader address)
+- Ch4: Power taxonomy replaced with migration-specific analysis; ending revised to unresolved relationship
+- Ch6: Chapter ending replaced with director decision aftermath; no forced callbacks to other chapters
+
+Controlled drift passages added: 5 (Ch1, Ch2, Ch3, Ch4, Ch6). All return to concrete experience.
+
+Word count: 10,213 → 11,440 (+1,227 words)
+
 ---
 
 ## Post-Pass Integration
@@ -138,7 +151,7 @@ Word count: 9,659 → 10,213 (+554 words)
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 8387 (recorded for reference, not a target)
+- **Word count:** 11,440 (recorded for reference, not a target)
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
@@ -147,9 +160,9 @@ Word count: 9,659 → 10,213 (+554 words)
 
 ## Pass Status
 
-- **Last completed pass:** Pass G epistemic depth and structural context — in progress
-- **Active pass:** Pass G
-- **Next eligible pass:** Editorial sequence complete (seven passes planned)
+- **Last completed pass:** Targeted Patch (seven bounded corrections)
+- **Active pass:** None
+- **Next eligible pass:** Publication preparation or additional editorial pass (as directed)
 
 **Available passes:**
 - Pass A: De-patterning / structural prose release ✅
@@ -158,9 +171,11 @@ Word count: 9,659 → 10,213 (+554 words)
 - Pass D: Continuity and concept return ✅
 - Pass E: Final read integrity ✅
 - Pass F: Epistemic humility and sentence rhythm ✅
-- Pass G: Epistemic depth and structural context ⚠️ In Progress
+- Pass G: Epistemic depth and structural context ✅
+- Pass H: Depth, humility, interpretive movement ✅
+- Targeted Patch: Seven bounded corrections ✅
 
-**Editorial sequence status:** Six passes complete, Pass G in progress.
+**Editorial sequence status:** All eight passes complete. Targeted patch complete. Manuscript at 11,440 words.
 
 ---
 
