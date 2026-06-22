@@ -1,7 +1,7 @@
 # Current State
 
 **Last verified:** 2026-06-22
-**Revision:** targeted-patch-7-edits
+**Revision:** seam-pass-invisible-drift
 
 ---
 
@@ -98,6 +98,19 @@ Controlled drift passages added: 5 (Ch1, Ch2, Ch3, Ch4, Ch6). All return to conc
 
 Word count: 10,213 → 11,440 (+1,227 words)
 
+**Seam Pass:** Remove announced drift and legacy worksheet analysis — make reflective movement invisible.
+
+Key changes:
+- Removed 7 editorial signage phrases ("This is where my thinking tends to drift", "I find myself drifting", "The deeper movement was", etc.)
+- Removed Chapter 4 legacy worksheet labels ("The observation:", "The interpretation:", "The self-interest:")
+- Removed verdict language ("protected privilege", "Both can be true", "best outcome available")
+- Bounded Chapter 5 categorical time claims (3 occurrences of "takes as long as it takes")
+- Replaced Chapter 6 pre-closure with "The decision produced a plan..."
+
+Reflective passages preserved; announcements removed. Drift remains but is not named.
+
+Word count: 11,440 → 11,188 (−252 words)
+
 ---
 
 ## Post-Pass Integration
@@ -151,7 +164,7 @@ Word count: 10,213 → 11,440 (+1,227 words)
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 11,440 (recorded for reference, not a target)
+- **Word count:** 11,188 (recorded for reference, not a target)
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
@@ -160,7 +173,7 @@ Word count: 10,213 → 11,440 (+1,227 words)
 
 ## Pass Status
 
-- **Last completed pass:** Targeted Patch (seven bounded corrections)
+- **Last completed pass:** Seam Pass (invisible drift, legacy analysis removal)
 - **Active pass:** None
 - **Next eligible pass:** Publication preparation or additional editorial pass (as directed)
 
@@ -174,8 +187,9 @@ Word count: 10,213 → 11,440 (+1,227 words)
 - Pass G: Epistemic depth and structural context ✅
 - Pass H: Depth, humility, interpretive movement ✅
 - Targeted Patch: Seven bounded corrections ✅
+- Seam Pass: Remove announced drift + legacy analysis ✅
 
-**Editorial sequence status:** All eight passes complete. Targeted patch complete. Manuscript at 11,440 words.
+**Editorial sequence status:** All eight passes + targeted patch + seam pass complete. Manuscript at 11,188 words.
 
 ---
 
