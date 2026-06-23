@@ -1,27 +1,34 @@
 # Current State
 
 **Last verified:** 2026-06-23
-**Revision:** canonical-manuscript-recovery
+**Revision:** anti-appendix-integration
+
+---
+
+## Anti-Appendix Integration (2026-06-23)
+
+**Starting commit:** eeeb1a267d58b1e7c6dee47427290aaec82239bb
+**Starting word count:** 9,541 words
+**Ending word count:** 9,022 words
+**Reduction:** −519 words
+
+**Goal:** Remove appended doctrinal material that explains what cases have already demonstrated.
+
+**Corrections applied:**
+- Chapter 1: Removed mini-framework "Do not over-psychologize the problem"
+- Chapter 4: Removed generalized power list, replaced with case-linked bridge
+- Chapter 5: Consolidated completion doctrine (removed "The first was necessary...")
+- Chapter 6: Deleted second ending ("Do not accept the stated objective uncritically...")
+- Chapter 7: Removed post-ending doctrine (withdrawal diagnostic, participation framework)
+- Chapter 7: Bounded cost claim ("It was the cost." → "Customers carried part of the cost...")
+
+**Validation:** All prohibited phrase searches return zero matches. Final line verified. SHA verification complete.
+
+**Status:** Anti-appendix integration complete. All 16 editorial passes complete.
 
 ---
 
 ## Canonical Manuscript Recovery (2026-06-23)
-
-**Starting commit:** 05f5745af4595d6ef4b482046109b2a39abb5dcb
-**Starting word count:** 9,786 words
-**Ending word count:** 9,541 words
-**Reduction:** −245 words
-
-**Forensic finding:** PR #22 (Inbox Integration) reintroduced two prohibited phrases in Chapter 2 that should have been removed in PR #21 (Final Corrective Integration):
-1. "Both perspectives contain truth." — false symmetry claim
-2. "Loss operates whether it is named or not." — universal loss claim
-3. Instructional block beginning "Before proposing change, name the person or team..." — turns insight into advice
-
-**Correction applied:** Removed 13 lines from Chapter 2, replaced with bounded ending from Final Corrective Integration Pass.
-
-**Validation:** All prohibited phrase searches return zero matches. Final line verified. SHA verification complete.
-
-**Status:** Canonical manuscript recovered and verified. All 15 editorial passes complete.
 
 ---
 
@@ -219,7 +226,7 @@ Word count: 10,173 → 8,957 (−1,216 words)
 
 ## Pass Status
 
-- **Last completed pass:** Canonical Manuscript Recovery (remove prohibited phrases reintroduced in PR #22)
+- **Last completed pass:** Anti-Appendix Integration (remove appended doctrine after chapter endings)
 - **Active pass:** None
 - **Next eligible pass:** Publication preparation or additional editorial pass (as directed)
 
@@ -238,19 +245,21 @@ Word count: 10,173 → 8,957 (−1,216 words)
 - Final Corrective Integration: Exact bounded corrections with validation ✅
 - Inbox Integration: Behavioral systems reasoning woven throughout ✅
 - Canonical Manuscript Recovery: Remove prohibited phrases from Chapter 2 ✅
+- Anti-Appendix Integration: Remove post-ending doctrine ✅
 
-**Editorial sequence status:** All 15 passes complete. Manuscript validated against prohibited phrase search. All required strings verified. Chapter 3 and Chapter 7 endings verified. Manuscript at 9,541 words.
+**Editorial sequence status:** All 16 passes complete. Manuscript validated against prohibited phrase search. All required strings verified. Chapter 6 and Chapter 7 endings verified. Manuscript at 9,022 words.
 
-**Superseded claims:** All prior completion claims from Integration Pass (PR #19), Corrective Verification Pass (PR #20), and Final Corrective Integration Pass verified and corrected. This recovery pass executed with exact boundaries and mandatory post-edit validation.
+**Superseded claims:** All prior completion claims from Integration Pass (PR #19), Corrective Verification Pass (PR #20), Final Corrective Integration Pass (PR #21), and Canonical Manuscript Recovery (PR #24) verified and corrected. This pass executed with exact boundaries and mandatory post-edit validation.
 
 ---
 
 ## Known Unresolved Risks
 
 1. **Manuscript duplication:** Two copies exist (`manuscript/human.md` and skill resource copy). Only the manuscript path is canonical for editing.
-2. **Stale statistics:** README.md and todo list contain outdated word count (9,786 vs. current 9,541).
+2. **Stale statistics:** README.md and todo list contain outdated word count (9,541 vs. current 9,022).
 3. **Status claims:** Archived reports contain premature finality claims from previous editorial direction (marked as historical).
 4. **PR #22 overlap:** Inbox Integration pass overlaid material that should have remained deleted from PR #21. Future inbox processing should search for prohibited phrases before integrating.
+5. **Post-ending doctrine:** Chapter 6 had a second ending, Chapter 7 had withdrawal doctrine after the final line — both removed in this pass.
 
 ---
 

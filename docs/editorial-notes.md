@@ -4,6 +4,79 @@ This document tracks editorial decisions, restructure rationale, and manuscript 
 
 ---
 
+## 2026-06-23: Anti-Appendix Integration Verification
+
+**Session goal:** Remove appended doctrinal material that explains what cases have already demonstrated. Preserve strongest case movement, remove post-ending frameworks.
+
+**Starting commit:** eeeb1a267d58b1e7c6dee47427290aaec82239bb
+**Starting word count:** 9,541 words
+**Ending word count:** 9,022 words
+**Reduction:** −519 words
+
+### Superseded Claims
+
+The prior "Canonical Manuscript Recovery" section claimed all post-ending doctrine was removed. This pass completes additional work: Chapter 6 had a second ending, Chapter 7 had withdrawal doctrine and participation framework after the verified final line.
+
+### Exact Corrections Applied
+
+#### Chapter 1: Mini-Framework Removed
+- **Removed:** "Do not over-psychologize the problem. Understanding every deep cause..." through "Change the closest actionable condition, but remain alert to the wider structure..."
+- **Result:** Project structure reflection connects directly to integration going live
+
+#### Chapter 2: Verified Clean
+- "Both perspectives contain truth." — already removed in prior pass ✅
+- "Loss operates whether it is named or not." — already removed ✅
+- "Before proposing change, name..." — already removed ✅
+- No additional changes needed
+
+#### Chapter 4: Power List Removed
+- **Removed:** "Power must be included in the model. Behavioral models can become too clean..." through "Sometimes the intervention is not coaching the team. It is changing who is allowed to decide."
+- **Replaced with:** "The team had authority to proceed. The engineer had enough knowledge to make proceeding without him unsafe. Neither form of power appeared fully in the org chart."
+
+#### Chapter 5: Completion Doctrine Consolidated
+- **Removed:** "The first was necessary. The second determined whether the modernization actually succeeded."
+- **Replaced with:** "Technical completion made the migration usable. Whether the organization could sustain the new work would become visible later."
+- Preserved single occurrence: "Go-live meant the software was ready. It did not mean the organization was."
+
+#### Chapter 6: Second Ending Deleted
+- **Removed:** "Do not accept the stated objective uncritically..." through "Optimising behavior around a false objective makes the system more efficient at producing the wrong result."
+- **Chapter 6 now ends with:** "The record shows what was chosen and what followed. It does not resolve what another decision would have cost."
+
+#### Chapter 7: Post-Ending Doctrine Deleted
+- **Removed:** "Withdrawal reveals what was load-bearing..." (3 paragraphs on withdrawal as diagnostic, change half-life, participation framework)
+- **Removed:** "The difference is between designing people and designing with people."
+- **Cost correction:** "It was the cost." → "Customers carried part of the cost while the engineer learned under support."
+- **Final two paragraphs:**
+  ```
+  She documented the conditions under which she should still be contacted after leaving and the point at which those exceptions would end. The arrangement might support the transfer. It might also delay the moment when the team had to discover what remained missing.
+
+  Departure would reveal what had actually been built.
+  ```
+
+### Validation Results
+
+**Prohibited phrase search:** No matches
+
+**Required string counts:**
+- "Go-live meant the software was ready. It did not mean the organization was.": 1 ✅
+- "Better tools, earlier involvement, clearer migration paths, and more support can shorten parts of the transition.": 1 ✅
+- "Departure would reveal what had actually been built.": 1 ✅
+
+**Chapter 6 ending verified:** Ends with "The record shows what was chosen and what followed. It does not resolve what another decision would have cost." ✅
+
+**Chapter 7 final line verified:** "Departure would reveal what had actually been built." ✅
+
+**No prose after final line:** Verified ✅
+
+**SHA verification:**
+- Worktree SHA: 739a235dcac8d12809af89d8a7c286c749409e2f8cb73a7eeefc664f5878aefe
+- Staged SHA: 739a235dcac8d12809af89d8a7c286c749409e2f8cb73a7eeefc664f5878aefe
+- Committed SHA: 739a235dcac8d12809af89d8a7c286c749409e2f8cb73a7eeefc664f5878aefe
+
+All three SHAs match ✅
+
+---
+
 ## 2026-06-23: Canonical Manuscript Recovery and Verified Corrective Integration
 
 **Session goal:** Forensic recovery of canonical manuscript after prior completion claims did not match merged text. Remove remaining prohibited phrases from Chapter 2.
