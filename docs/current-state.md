@@ -1,7 +1,28 @@
 # Current State
 
 **Last verified:** 2026-06-23
-**Revision:** anti-appendix-integration
+**Revision:** final-integration-line-readiness
+
+---
+
+## Final Integration and Line-Readiness (2026-06-23)
+
+**Starting commit:** 9a3d5413bd26b2312553d57d7abaa96e103dd145
+**Starting word count:** 9,022 words
+**Ending word count:** 8,574 words
+**Reduction:** −448 words
+
+**Goal:** Make manuscript ready for true line edit by removing duplicated thought, resolving chapter proportion, clarifying endings, integrating propositions, varying repetitive patterns.
+
+**Corrections applied:**
+- Chapter 1: Ending consolidated (hypothetical failure moved before final sentence)
+- Chapter 2: Duplication removed, capability proposition integrated into case
+- Chapter 5: Abstract restatement removed, orchestration case transition added
+- All chapter subtitles revised to remove taxonomy language
+
+**Validation:** All prohibited phrase searches return zero matches. Seven chapter endings audited. SHA verification complete.
+
+**Status:** Developmental integration complete; manuscript ready for dedicated line-edit review. All 17 editorial passes complete.
 
 ---
 
@@ -226,9 +247,9 @@ Word count: 10,173 → 8,957 (−1,216 words)
 
 ## Pass Status
 
-- **Last completed pass:** Anti-Appendix Integration (remove appended doctrine after chapter endings)
+- **Last completed pass:** Final Integration and Line-Readiness (remove duplicated thought, resolve chapter proportion, integrate propositions)
 - **Active pass:** None
-- **Next eligible pass:** Publication preparation or additional editorial pass (as directed)
+- **Next eligible pass:** Publication preparation (dedicated line-edit review)
 
 **Available passes:**
 - Pass A: De-patterning / structural prose release ✅
@@ -246,20 +267,22 @@ Word count: 10,173 → 8,957 (−1,216 words)
 - Inbox Integration: Behavioral systems reasoning woven throughout ✅
 - Canonical Manuscript Recovery: Remove prohibited phrases from Chapter 2 ✅
 - Anti-Appendix Integration: Remove post-ending doctrine ✅
+- Final Integration: Line-readiness preparation ✅
 
-**Editorial sequence status:** All 16 passes complete. Manuscript validated against prohibited phrase search. All required strings verified. Chapter 6 and Chapter 7 endings verified. Manuscript at 9,022 words.
+**Editorial sequence status:** All 17 passes complete. Manuscript validated against prohibited phrase search. All required strings verified. All seven chapter endings audited. Manuscript at 8,574 words.
 
-**Superseded claims:** All prior completion claims from Integration Pass (PR #19), Corrective Verification Pass (PR #20), Final Corrective Integration Pass (PR #21), and Canonical Manuscript Recovery (PR #24) verified and corrected. This pass executed with exact boundaries and mandatory post-edit validation.
+**Superseded claims:** All prior completion claims from Integration Pass (PR #19), Corrective Verification Pass (PR #20), Final Corrective Integration Pass (PR #21), Canonical Manuscript Recovery (PR #24), and Anti-Appendix Integration (PR #25) verified and corrected. This pass executed with exact boundaries and mandatory post-edit validation.
 
 ---
 
 ## Known Unresolved Risks
 
 1. **Manuscript duplication:** Two copies exist (`manuscript/human.md` and skill resource copy). Only the manuscript path is canonical for editing.
-2. **Stale statistics:** README.md and todo list contain outdated word count (9,541 vs. current 9,022).
+2. **Stale statistics:** README.md and todo list contain outdated word count (9,022 vs. current 8,574).
 3. **Status claims:** Archived reports contain premature finality claims from previous editorial direction (marked as historical).
 4. **PR #22 overlap:** Inbox Integration pass overlaid material that should have remained deleted from PR #21. Future inbox processing should search for prohibited phrases before integrating.
-5. **Post-ending doctrine:** Chapter 6 had a second ending, Chapter 7 had withdrawal doctrine after the final line — both removed in this pass.
+5. **Post-ending doctrine:** Chapter 6 had a second ending, Chapter 7 had withdrawal doctrine after the final line — both removed in Anti-Appendix pass.
+6. **Line-edit readiness:** Manuscript is ready for dedicated line-edit review. This has not yet been performed.
 
 ---
 
