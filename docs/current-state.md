@@ -1,7 +1,7 @@
 # Current State
 
-**Last verified:** 2026-06-22
-**Revision:** integration-and-seams
+**Last verified:** 2026-06-23
+**Revision:** corrective-integration-verification
 
 ---
 
@@ -178,7 +178,7 @@ Word count: 11,188 → 10,173 (−1,015 words)
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 10,173 (recorded for reference, not a target)
+- **Word count:** 9,602 (recorded for reference, not a target)
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
@@ -187,7 +187,7 @@ Word count: 11,188 → 10,173 (−1,015 words)
 
 ## Pass Status
 
-- **Last completed pass:** Integration Pass (seams, callbacks, duplication removal)
+- **Last completed pass:** Corrective Integration Verification (remaining defects verified and fixed)
 - **Active pass:** None
 - **Next eligible pass:** Publication preparation or additional editorial pass (as directed)
 
@@ -203,8 +203,11 @@ Word count: 11,188 → 10,173 (−1,015 words)
 - Targeted Patch: Seven bounded corrections ✅
 - Seam Pass: Remove announced drift + legacy analysis ✅
 - Integration Pass: Merge duplicated analyses, remove chapter callbacks ✅
+- Corrective Verification: Complete remaining integration defects ✅
 
-**Editorial sequence status:** All eight passes + targeted patch + seam pass + integration pass complete. Manuscript at 10,173 words.
+**Editorial sequence status:** All passes complete. Manuscript verified against claimed corrections. Manuscript at 9,602 words.
+
+**Superseded claims:** Previous completion claims from Integration Pass (PR #19) verified and corrected where manuscript did not match documentation.
 
 ---
 

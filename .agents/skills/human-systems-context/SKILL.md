@@ -77,10 +77,13 @@ Read in this order:
 3. `resources/source/book_work/EDITING_CHARTER.md` if editing passes, paragraph operations, or manuscript transformation are requested
 4. `resources/source/book_work/PATTERN_LEDGER.md` if Pass A, de-patterning, repeated structures, or ledger updates are involved
 5. `resources/context/OPERATING_CONTEXT.md` sections on manuscript work and core concepts
-6. `resources/source/book_work/human.md` only when the current manuscript text is needed
-7. `resources/playbooks/book-manuscript-workflow.md` or `resources/playbooks/editing-passes.md` depending on the task
+6. `manuscript/human.md` when current manuscript text is needed
+7. `resources/source/book_work/human.md` only as historical context when explicitly needed
+8. `resources/playbooks/book-manuscript-workflow.md` or `resources/playbooks/editing-passes.md` depending on the task
 
 Book-specific constraints are not global constraints. They should not be imposed on work messages, coding prompts, strategy memos, or other communication unless the user asks for that exact voice.
+
+**Canonical manuscript rule:** `manuscript/human.md` is the current manuscript. Do not treat `resources/source/book_work/human.md` as current text.
 
 ## How to behave
 
