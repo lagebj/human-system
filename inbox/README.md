@@ -131,7 +131,8 @@ See `inbox/daily/README.md` for the daily notes template.
 
 | File | Captured | Topic | Status |
 |------|----------|-------|--------|
-| — | — | — | — |
+| 2026-06-12-alert-gut-feelings.md | 2026-06-12 | Alert systems, pattern recognition, gut feeling as competence | Processed — concept present in Ch7 |
+| 2026-06-23-behaviour-changes-through-the-system-around-it.md | 2026-06-23 | Behavioral systems reasoning, capability/opportunity/motivation, power analysis | Processed — integrated throughout all 7 chapters (2026-06-23) |
 
 *Update this table when adding significant items.*
 
