@@ -176,10 +176,6 @@ The project ended with the system changed and the relationship largely unresolve
 
 *What remains unfinished after the new system works.*
 
-Process serves different functions depending on when it arrives and what it does. Sometimes process fixes a broken workflow by reducing cognitive load, creating shared language, or making handoffs predictable. Sometimes process supports work that cannot yet stand on its own, then becomes unnecessary. Sometimes process remains after the wound has healed, protecting against a risk that no longer exists. Sometimes process creates the appearance of work without accomplishing anything.
-
-A team can identify which function process serves by watching what people do. Process that fixes or supports makes actual work easier. People use it willingly, without being forced. Process that remains too long or creates theater creates work that does not need to happen. People comply reluctantly, without believing in the value. A process that started as remedy can drift into scar tissue. This drift happens so slowly that no one notices until the process has become its own justification.
-
 Modernization happens in place, not in isolation. This constraint carries real weight: the system cannot stop. Customers depend on it every day. The business must continue operating. The work of modernization includes keeping the system running, and this work takes time away from the modernization itself.
 
 Many migrations require old and new systems to coexist. When they do, the organization must fund the duplicated work rather than treating it as avoidable inefficiency. There are two systems to maintain, work to keep them in sync, and translation work between them. This duplication is not a failure. It is necessary. It is the cost of changing a system that cannot stop.
@@ -204,15 +200,15 @@ Month fifteen brought the adoption problem. The technical work was complete. The
 
 At the time, the platform team read this as resistance to change. Later, they wondered whether they had built a system that required teams to abandon working practices without offering a clear path forward. The finance team's report format requirement was not nostalgia. It was the cost of retraining their audit processes. The team that refused migration had legitimate integrations the new system did not support. The platform team had not known about these integrations because they had not asked before building. This was not malicious. It was the normal result of staffing a migration for technical execution rather than organizational discovery.
 
-Behavior can change before belief does. Organisations often wait for complete agreement, motivation, confidence, or emotional commitment before changing how work happens. This reverses the relationship. People may develop confidence after successfully doing the work. They may begin to believe in a new approach after experiencing that it works. A team may become more willing to take ownership after it has been given a safe opportunity to exercise ownership. Action can produce learning. Learning can change belief.
+The teams began using the new process before they trusted it. Confidence followed some successful use; it did not precede it.
 
 Month eighteen brought the decision. The old system would be shut down. The new system would be mandatory. The platform team expected resistance, and they got it. One team refused to migrate: they had custom integrations with the old system, and the new system did not support them. The platform team had to decide: build the custom support or mandate the migration. They chose to mandate. The team lost two weeks rebuilding their integrations. They lost trust in the platform team. The migration completed. The old system was turned off.
 
-Go-live meant the software was ready. It did not mean the organization was. Technical completion asked: does it work. Organizational completion asked: can the team sustain this work without the original builders. Technical completion made the migration usable. Whether the organization could sustain the new work would become visible later.
+Go-live meant the software was ready. It did not mean the organization was. Technical completion made the migration usable. Whether the organization could sustain the new work would become visible later.
 
-The payments modernization succeeded technically: the new system processed payments correctly, and the old system was turned off. The organization did not complete. The finance team still wanted the old report format. The one team still resented the forced migration. The platform team still fielded questions about how to use the new system.
+The payments modernization succeeded technically: the new system processed payments correctly, and the old system was turned off. The finance team still wanted the old report format. The one team still resented the forced migration. The platform team still fielded questions about how to use the new system.
 
-Six months after shutdown, most teams had adopted the new system. Some teams still used workarounds, some used the old system through backchannels, some used spreadsheets, and some used scripts the platform team did not know about. The system worked. The organization had not completed.
+Six months after shutdown, most teams had adopted the new system. Some teams still used workarounds, some used the old system through backchannels, some used spreadsheets, and some used scripts the platform team did not know about.
 
 The platform team spent another six months building what they should have built in parallel: trust, capability, support structures. They trained the teams who had resisted. They documented the workarounds and either supported them or eliminated them. They hired support staff. Most teams adopted the new system. The remaining holdouts were teams with legitimate reasons they could not use the new system.
 

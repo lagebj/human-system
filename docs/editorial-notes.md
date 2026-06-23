@@ -4,6 +4,83 @@ This document tracks editorial decisions, restructure rationale, and manuscript 
 
 ---
 
+## 2026-06-23: Exact Final Integration Repair
+
+**Session goal:** Apply bounded repairs to Chapters 1, 2, and 5 using exact deletion, movement, replacement, count, and committed-file validation rules. Previous agents repeatedly reported fixes that were not present in the canonical manuscript after merge.
+
+**Starting commit:** 94e1776bac4bb610f6a296f7feed4380a0467e92
+**Starting word count:** 8,574 words
+**Ending word count:** 8,335 words
+**Reduction:** −239 words
+
+### Exact Manuscript Operations
+
+#### Chapter 1: Verified No Changes Needed
+- Subtitle already correct: "What routine work carries before anyone decides to replace it."
+- Ending already consolidated with hypothetical before final sentence
+- Final sentence verified: "The question was not simply whether Maria should have been involved. It was what the organization was prepared to learn from the work before making that work unnecessary."
+
+#### Chapter 2: Verified No Changes Needed
+- Subtitle already correct: "What changes when experience no longer holds the same place."
+- Duplicate reflection already removed in prior pass
+- Capability framework already replaced with case-linked paragraph
+
+#### Chapter 5: Opening Taxonomy Removed
+- **Removed:** "Process serves different functions depending on when it arrives and what it does. Sometimes process fixes a broken workflow by reducing cognitive load, creating shared language, or making handoffs predictable. Sometimes process supports work that cannot yet stand on its own, then becomes unnecessary. Sometimes process remains after the wound has healed, protecting against a risk that no longer exists. Sometimes process creates the appearance of work without accomplishing anything."
+- **Removed:** "A team can identify which function process serves by watching what people do. Process that fixes or supports makes actual work easier. People use it willingly, without being forced. Process that remains too long or creates theater creates work that does not need to happen. People comply reluctantly, without believing in the value. A process that started as remedy can drift into scar tissue. This drift happens so slowly that no one notices until the process has become its own justification."
+- **Result:** Chapter opens with "Modernization happens in place, not in isolation."
+
+#### Chapter 5: Completion Repetition Removed
+- **Removed:** "Technical completion asked: does it work. Organizational completion asked: can the team sustain this work without the original builders."
+- **Removed:** "The organization did not complete."
+- **Removed:** "The system worked. The organization had not completed."
+- **Retained once:** "Go-live meant the software was ready. It did not mean the organization was. Technical completion made the migration usable. Whether the organization could sustain the new work would become visible later."
+- **Retained facts:** "The finance team still wanted the old report format. The one team still resented the forced migration. The platform team still fielded questions about how to use the new system."
+
+#### Chapter 5: Behavior Proposition Integrated
+- **Removed:** "Behavior can change before belief does. Organisations often wait for complete agreement, motivation, confidence, or emotional commitment before changing how work happens. This reverses the relationship. People may develop confidence after successfully doing the work. They may begin to believe in a new approach after experiencing that it works. A team may become more willing to take ownership after it has been given a safe opportunity to exercise ownership. Action can produce learning. Learning can change belief."
+- **Replaced with:** "The teams began using the new process before they trusted it. Confidence followed some successful use; it did not precede it."
+
+### Validation Evidence
+
+**Prohibited phrase search (all zero matches):**
+```
+rg "Process serves different functions" — 0
+rg "Technical completion asked:" — 0
+rg "The organization did not complete\." — 0
+rg "The system worked\. The organization had not completed\." — 0
+rg "Behavior can change before belief does\." — 0
+```
+
+**Exact count results (all 1):**
+```
+rg "What routine work carries before anyone decides to replace it\." — 1
+rg "The question was not simply whether Maria should have been involved\. It was what the organization was prepared to learn from the work before making that work unnecessary\." — 1
+rg "What changes when experience no longer holds the same place\." — 1
+rg "Knowledge alone would not have determined what he could do next\. Access, authority, practice, and a role in which the knowledge still mattered would shape whether another capability could take its place\." — 1
+rg "Go-live meant the software was ready\. It did not mean the organization was\." — 1
+rg "Technical completion made the migration usable\. Whether the organization could sustain the new work would become visible later\." — 1
+rg "The teams began using the new process before they trusted it\. Confidence followed some successful use; it did not precede it\." — 1
+rg "Better tools, earlier involvement, clearer migration paths, and more support can shorten parts of the transition\." — 1
+rg "Modernization happens in place, not in isolation\." — 1
+```
+
+**Unchanged chapters verification:**
+- Chapter 3: unchanged
+- Chapter 4: unchanged
+- Chapter 6: unchanged
+- Chapter 7: unchanged
+
+**Manuscript identity verification:**
+- Pre-edit SHA: 68ad48dbb01f945eab2340c479c4b3c8ddf2113a8a8303d32ad8c53f7b590e8b
+- Post-edit SHA: f91af3e7f5b1eb4bdd9649cc7cd55f37540913dd32b6e40871dd978a8f298f9b
+
+### Superseded Claims
+
+The prior "Final Integration and Line-Readiness Pass" section claimed Chapter 5 opening taxonomy was removed and behavior proposition was integrated. This pass confirms and completes those corrections with exact validation against the committed canonical file.
+
+---
+
 ## 2026-06-23: Final Integration and Line-Readiness Pass
 
 **Session goal:** Make manuscript ready for true line edit by removing duplicated thought, resolving chapter proportion, clarifying endings, integrating propositions, varying repetitive patterns.

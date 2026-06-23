@@ -1,28 +1,29 @@
 # Current State
 
 **Last verified:** 2026-06-23
-**Revision:** final-integration-line-readiness
+**Revision:** exact-final-integration-repair
 
 ---
 
-## Final Integration and Line-Readiness (2026-06-23)
+## Exact Final Integration Repair (2026-06-23)
 
-**Starting commit:** 9a3d5413bd26b2312553d57d7abaa96e103dd145
-**Starting word count:** 9,022 words
-**Ending word count:** 8,574 words
-**Reduction:** −448 words
+**Starting commit:** 94e1776bac4bb610f6a296f7feed4380a0467e92
+**Starting word count:** 8,574 words
+**Ending word count:** 8,335 words
+**Reduction:** −239 words
 
-**Goal:** Make manuscript ready for true line edit by removing duplicated thought, resolving chapter proportion, clarifying endings, integrating propositions, varying repetitive patterns.
+**Goal:** Apply bounded repairs to Chapters 1, 2, and 5 using exact deletion, movement, replacement, count, and committed-file validation rules. Previous agents repeatedly reported fixes that were not present in the canonical manuscript after merge.
 
 **Corrections applied:**
-- Chapter 1: Ending consolidated (hypothetical failure moved before final sentence)
-- Chapter 2: Duplication removed, capability proposition integrated into case
-- Chapter 5: Abstract restatement removed, orchestration case transition added
-- All chapter subtitles revised to remove taxonomy language
+- Chapter 1: Verified no changes needed (subtitle and ending already correct from prior passes)
+- Chapter 2: Verified no changes needed (subtitle, duplicate removal, capability replacement already correct)
+- Chapter 5: Opening taxonomy removed (process remedy/scaffold/scar tissue/theater framework)
+- Chapter 5: Completion repetition removed (deleted "Technical completion asked:", "The organization did not complete.", "The system worked. The organization had not completed.")
+- Chapter 5: Behavior proposition integrated into case ("The teams began using the new process before they trusted it. Confidence followed some successful use; it did not precede it.")
 
-**Validation:** All prohibited phrase searches return zero matches. Seven chapter endings audited. SHA verification complete.
+**Validation:** All prohibited phrase searches return zero matches. Exact counts verified. Chapters 3, 4, 6, 7 unchanged. SHA verification complete.
 
-**Status:** Developmental integration complete; manuscript ready for dedicated line-edit review. All 17 editorial passes complete.
+**Status:** Developmental corrections applied and verified; manuscript ready for dedicated line-edit review. All 18 editorial passes complete.
 
 ---
 
