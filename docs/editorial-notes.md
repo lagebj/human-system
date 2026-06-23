@@ -4,6 +4,68 @@ This document tracks editorial decisions, restructure rationale, and manuscript 
 
 ---
 
+## 2026-06-23: Final Integration and Line-Readiness Pass
+
+**Session goal:** Make manuscript ready for true line edit by removing duplicated thought, resolving chapter proportion, clarifying endings, integrating propositions, varying repetitive patterns.
+
+**Starting commit:** 9a3d5413bd26b2312553d57d7abaa96e103dd145
+**Starting word count:** 9,022 words
+**Ending word count:** 8,574 words
+**Reduction:** −448 words
+
+### Exact Corrections Applied
+
+#### Chapter 1: Ending Consolidated
+- Moved hypothetical failure reflection before final sentence
+- Final sentence: "The question was not simply whether Maria should have been involved. It was what the organization was prepared to learn from the work before making that work unnecessary."
+- Removed duplicate ending structure
+
+#### Chapter 2: Duplication Removed
+- Removed duplicated reflection (standardization removed cost, organization knew gain not ending, uncertainty about engineer's experience, recognition arriving late)
+- Integrated capability proposition into case: "Knowledge alone would not have determined what he could do next. Access, authority, practice, and a role in which the knowledge still mattered would shape whether another capability could take its place."
+- Removed isolated "Capability requires more than knowledge." framework list
+
+#### Chapter 5: Rebalanced
+- Removed abstract restatement: "The modernization taught a distinction that the team now uses for every major change. Go-live is not completion..."
+- Removed "The old system is gone. The new system works. The organization is still learning how to use it. This may be the normal state of modernization."
+- Added transition to orchestration case: "A second migration exposed a different part of the same difficulty: deciding which complexity carried value and which complexity survived only because nobody had yet removed it."
+
+#### Chapter Subtitles Revised
+- Ch1: "What routine work carries before anyone decides to replace it."
+- Ch2: "What changes when experience no longer holds the same place."
+- Ch3: "How intervention changes the person intervening."
+- Ch4: "When authority and necessary knowledge sit in different places."
+- Ch5: "What remains unfinished after the new system works."
+- Ch6: "Choosing among risks that cannot all be removed."
+- Ch7: "What departure reveals about the capability left behind."
+
+### Validation Results
+
+**Prohibited phrase search:** No matches
+
+**Required string counts:**
+- "Go-live meant the software was ready. It did not mean the organization was.": 1 ✅
+- "Better tools, earlier involvement, clearer migration paths, and more support can shorten parts of the transition.": 1 ✅
+- "Departure would reveal what had actually been built.": 1 ✅
+
+**Seven-chapter ending audit:**
+- Ch1: Ends with what organization was prepared to learn ✅
+- Ch2: Ends with how change proceeds becoming visible ✅
+- Ch3: Ends with first explanation being too small ✅
+- Ch4: Ends with system changed and relationship unresolved ✅
+- Ch5: Ends with concrete consequence, not repeated doctrine ✅
+- Ch6: Ends with unresolvable cost of unchosen path ✅
+- Ch7: Ends with single line, no prose follows ✅
+
+**SHA verification:**
+- Worktree SHA: 68ad48dbb01f945eab2340c479c4b3c8ddf2113a8a8303d32ad8c53f7b590e8b
+- Staged SHA: 68ad48dbb01f945eab2340c479c4b3c8ddf2113a8a8303d32ad8c53f7b590e8b
+- Committed SHA: 68ad48dbb01f945eab2340c479c4b3c8ddf2113a8a8303d32ad8c53f7b590e8b
+
+All three SHAs match ✅
+
+---
+
 ## 2026-06-23: Anti-Appendix Integration Verification
 
 **Session goal:** Remove appended doctrinal material that explains what cases have already demonstrated. Preserve strongest case movement, remove post-ending frameworks.
