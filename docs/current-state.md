@@ -1,7 +1,27 @@
 # Current State
 
 **Last verified:** 2026-06-23
-**Revision:** final-corrective-integration
+**Revision:** canonical-manuscript-recovery
+
+---
+
+## Canonical Manuscript Recovery (2026-06-23)
+
+**Starting commit:** 05f5745af4595d6ef4b482046109b2a39abb5dcb
+**Starting word count:** 9,786 words
+**Ending word count:** 9,541 words
+**Reduction:** −245 words
+
+**Forensic finding:** PR #22 (Inbox Integration) reintroduced two prohibited phrases in Chapter 2 that should have been removed in PR #21 (Final Corrective Integration):
+1. "Both perspectives contain truth." — false symmetry claim
+2. "Loss operates whether it is named or not." — universal loss claim
+3. Instructional block beginning "Before proposing change, name the person or team..." — turns insight into advice
+
+**Correction applied:** Removed 13 lines from Chapter 2, replaced with bounded ending from Final Corrective Integration Pass.
+
+**Validation:** All prohibited phrase searches return zero matches. Final line verified. SHA verification complete.
+
+**Status:** Canonical manuscript recovered and verified. All 15 editorial passes complete.
 
 ---
 
@@ -199,7 +219,7 @@ Word count: 10,173 → 8,957 (−1,216 words)
 
 ## Pass Status
 
-- **Last completed pass:** Final Corrective Integration Pass (exact boundaries, mandatory validation)
+- **Last completed pass:** Canonical Manuscript Recovery (remove prohibited phrases reintroduced in PR #22)
 - **Active pass:** None
 - **Next eligible pass:** Publication preparation or additional editorial pass (as directed)
 
@@ -216,18 +236,21 @@ Word count: 10,173 → 8,957 (−1,216 words)
 - Seam Pass: Remove announced drift + legacy analysis ✅
 - Integration Pass: Merge duplicated analyses, remove chapter callbacks ✅
 - Final Corrective Integration: Exact bounded corrections with validation ✅
+- Inbox Integration: Behavioral systems reasoning woven throughout ✅
+- Canonical Manuscript Recovery: Remove prohibited phrases from Chapter 2 ✅
 
-**Editorial sequence status:** All passes complete. Manuscript validated against prohibited phrase search. All required strings verified. Chapter 3 and Chapter 7 endings verified. Manuscript at 8,957 words.
+**Editorial sequence status:** All 15 passes complete. Manuscript validated against prohibited phrase search. All required strings verified. Chapter 3 and Chapter 7 endings verified. Manuscript at 9,541 words.
 
-**Superseded claims:** All prior completion claims from Integration Pass (PR #19) and Corrective Verification Pass verified and corrected. This pass executed with exact boundaries and mandatory post-edit validation.
+**Superseded claims:** All prior completion claims from Integration Pass (PR #19), Corrective Verification Pass (PR #20), and Final Corrective Integration Pass verified and corrected. This recovery pass executed with exact boundaries and mandatory post-edit validation.
 
 ---
 
 ## Known Unresolved Risks
 
 1. **Manuscript duplication:** Two copies exist (`manuscript/human.md` and skill resource copy). Only the manuscript path is canonical for editing.
-2. **Stale statistics:** Some docs files contain outdated word counts from previous passes.
+2. **Stale statistics:** README.md and todo list contain outdated word count (9,786 vs. current 9,541).
 3. **Status claims:** Archived reports contain premature finality claims from previous editorial direction (marked as historical).
+4. **PR #22 overlap:** Inbox Integration pass overlaid material that should have remained deleted from PR #21. Future inbox processing should search for prohibited phrases before integrating.
 
 ---
 
