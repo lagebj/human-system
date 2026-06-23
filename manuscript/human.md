@@ -6,7 +6,7 @@
 
 ## Chapter 1: Broken Systems and the Human Load They Create
 
-*How organizations build informal capability around broken systems, and why this competence becomes invisible.*
+*What routine work carries before anyone decides to replace it.*
 
 A finance team runs month-end close across three systems that do not talk to each other. The ERP holds general ledger data, the billing system holds customer invoices, and the procurement system holds vendor payments. None of these systems share data automatically, so the close requires someone to move numbers from one system to another, verify they match, and explain the differences.
 
@@ -52,19 +52,17 @@ A spreadsheet built to cover a temporary gap can remain long enough to become ro
 
 That may be too large a pattern to place onto Maria's case. The meeting itself was simpler. The project team needed a decision about the integration, and Maria was still the person who knew where the close usually broke.
 
-More time might have helped the team see what the integration was removing, what it was encoding, and what would remain dependent on judgment after the old work disappeared. It might also have delayed a change the organization had already decided it needed. The question was not simply whether Maria should have been involved. It was what the organization was prepared to learn from the work before making that work unnecessary.
+More time might have helped the team see what the integration was removing, what it was encoding, and what would remain dependent on judgment after the old work disappeared. It might also have delayed a change the organization had already decided it needed. The organization had committed to replacing the old system. What remained less clear was how much of the judgment surrounding the old work should have been examined before the work itself disappeared.
 
-If the integration later fails in a way Maria would have recognized, the team may have to recover knowledge the project never identified as knowledge. Some of that recovery may be straightforward debugging. Some may require learning again how the systems behave under conditions the sample data did not represent.
+If the integration later fails in a way Maria would have recognized, the team may have to recover knowledge the project never identified as knowledge. Some of that recovery may be straightforward debugging. Some may require learning again how the systems behave under conditions the sample data did not represent. The organization may never pay that cost. The integration may have encoded enough of what mattered, and the remaining knowledge may belong only to problems that no longer exist. At the time of Maria's reassignment, nobody could know which possibility would matter later.
 
-The organization may never pay that cost. The integration may have encoded enough of what mattered, and the remaining knowledge may belong only to problems that no longer exist. At the time of Maria's reassignment, nobody could know which possibility would matter later.
-
-The organization had committed to replacing the old system. What remained less clear was how much of the judgment surrounding the old work should have been examined before the work itself disappeared.
+The question was not simply whether Maria should have been involved. It was what the organization was prepared to learn from the work before making that work unnecessary.
 
 ---
 
 ## Chapter 2: Why Help Triggers Loss
 
-*Interventions relocate burden, competence, risk, and power. The relocation is experienced as loss even when it is improvement.*
+*What changes when experience no longer holds the same place.*
 
 Help can carry loss. What looks like resistance may begin with the recognition that valued work is ending. This is not always dysfunction. This is what happens when work that has been carried by one person or team moves to another. The identity built around carrying that work does not move with it. It becomes unnecessary.
 
@@ -80,6 +78,8 @@ A manager has kept her team stable through two rounds of layoffs. She knows whic
 
 The change may be experienced as loss, relief, diminished status, or a narrower role. The organization did not know which description fit him, and it did not ask.
 
+Knowledge alone would not have determined what he could do next. Access, authority, practice, and a role in which the knowledge still mattered would shape whether another capability could take its place.
+
 I do not know whether he experienced the change mainly as loss, relief, or a narrowing of the role he wanted to have. He left without saying. The organization did not ask, and by the time he left, the answer may no longer have changed the decision.
 
 Recognition can arrive too late to alter anything. It can become ceremonial honesty: accurate, perhaps sincere, but detached from authority, timing, and future work. Its absence creates another distortion. The organization tells itself that it removed waste when it also removed a role, a source of status, and perhaps a future the person had expected to keep.
@@ -88,23 +88,11 @@ Acknowledging that does not require preserving the arrangement that created it. 
 
 Retraining may preserve dignity without producing work the person wants. Honesty may clarify the future and hasten a departure. More time may allow adjustment or merely prolong an arrangement the organization has already chosen to end. The change may still proceed. How it proceeds becomes part of what the organization is willing to make visible.
 
-Capability requires more than knowledge. For an action to occur, several conditions usually need to exist: the skill and understanding, the time and access and authority, and the expectation that acting will matter. These conditions interact. A highly motivated person may still be unable to act because they lack access or authority. A capable person may stop trying because each initiative is overridden. A person may appear unmotivated after repeatedly learning that effort changes nothing. The visible behavior is real, but the explanation may live elsewhere in the system.
-
-The standardization removed real cost. It also changed the value of the engineer's experience. The organization knew how to describe what it had gained: fewer manual steps, fewer exceptions, less dependence on one person. It had less language for what had ended.
-
-I do not know whether he experienced the change mainly as loss, relief, or a narrowing of the role he wanted to have. He left without saying. The organization did not ask, and by the time he left, the answer may no longer have changed the decision.
-
-Recognition can arrive too late to alter anything. It can become ceremonial honesty: accurate, perhaps sincere, but detached from authority, timing, and future work. Its absence creates another distortion. The organization tells itself that it removed waste when it also removed a role, a source of status, and perhaps a future the person had expected to keep.
-
-That does not make the question irrelevant. Acknowledging a loss does not require preserving the arrangement that created it, and recognition does not guarantee that another role exists. It may still alter how the transition is handled: whether the person is invited into the redesign, whether their contribution is named, whether they are given time to learn something new, or whether everyone quietly waits for them to leave.
-
-None of those responses is sufficient on its own. Retraining may preserve dignity without producing work the person wants. Honesty may clarify the future and hasten a departure. More time may allow adjustment or merely prolong an arrangement the organization has already chosen to end. The change may still need to proceed. How it proceeds becomes part of what the organization is willing to make visible.
-
 ---
 
 ## Chapter 3: The Helper Inside the System
 
-*How your own needs enter the work and what to do when you notice them.*
+*How intervention changes the person intervening.*
 
 A platform team lead proposed consolidating deployment pipelines across twelve teams. The proposal was sound: reduce cognitive load, standardize practices, improve security. She had done this before at another company. It worked there.
 
@@ -152,7 +140,7 @@ She had learned more than she knew at the start. She had also learned that curio
 
 ## Chapter 4: Resistance, History, and Power
 
-*Resistance often carries legitimate history. Power lives in relationships, not positions.*
+*When authority and necessary knowledge sit in different places.*
 
 A principal engineer raised a valid technical concern during a platform migration. The migration would move customer data from an old storage system to a new one. The old system had known limitations. The new system would scale better. The organization had committed to replacing the old system.
 
@@ -186,7 +174,7 @@ The project ended with the system changed and the relationship largely unresolve
 
 ## Chapter 5: Process, Modernization, and Adaptation
 
-*Process can be remedy, scaffold, scar tissue, or theater. Modernization succeeds when it respects existing value.*
+*What remains unfinished after the new system works.*
 
 Process serves different functions depending on when it arrives and what it does. Sometimes process fixes a broken workflow by reducing cognitive load, creating shared language, or making handoffs predictable. Sometimes process supports work that cannot yet stand on its own, then becomes unnecessary. Sometimes process remains after the wound has healed, protecting against a risk that no longer exists. Sometimes process creates the appearance of work without accomplishing anything.
 
@@ -228,15 +216,15 @@ Six months after shutdown, most teams had adopted the new system. Some teams sti
 
 The platform team spent another six months building what they should have built in parallel: trust, capability, support structures. They trained the teams who had resisted. They documented the workarounds and either supported them or eliminated them. They hired support staff. Most teams adopted the new system. The remaining holdouts were teams with legitimate reasons they could not use the new system.
 
-The modernization taught a distinction that the team now uses for every major change. Go-live is not completion. Go-live means the software is ready. Completion means the organization can sustain the work. The time between go-live and completion is not optional: it is the time required for the organization to learn what the builders already know. Better tools, earlier involvement, clearer migration paths, and more support can shorten parts of the transition. They cannot remove the need for people to discover how the new system changes their work.
+Better tools, earlier involvement, clearer migration paths, and more support can shorten parts of the transition. They cannot remove the need for people to discover how the new system changes their work.
 
 The payments team now plans for the time between go-live and completion. They budget for it, staff for it, and measure adoption, not just uptime. They accept that technical correctness does not drive adoption. They accept that some teams will resist for reasons that are legitimate from where those teams stand. They accept that modernization changes who has power, who has work, and who has to learn new skills.
 
-The old system is gone. The new system works. The organization is still learning how to use it. This may be the normal state of modernization.
-
 One team lead later described a conversation she had during the migration. The platform team had discovered a workaround that one group was using to bypass the new dunning system. The workaround was not compliant. It created regulatory exposure. Naming it publicly would have forced the team to shut it down immediately, and it would have also exposed the group to audit findings. The platform lead chose to address it privately. She worked with the team lead to build a compliant alternative. The workaround was closed. The regulatory exposure was never documented in the migration status reports. The transparency had a cost. The cost was borne by the platform lead, who absorbed the risk of not escalating. The work continued. The relationship survived. The exposure closed.
 
-The old system is gone. The new system works. One team still carries duplicate work. One policy decision remains contested. One workaround persists in a form the platform team knows about but has chosen not to pursue. The work does not end cleanly.
+One team still carries duplicate work. One policy decision remains contested. One workaround persists in a form the platform team knows about but has chosen not to pursue. The work does not end cleanly.
+
+A second migration exposed a different part of the same difficulty: deciding which complexity carried value and which complexity survived only because nobody had yet removed it.
 
 An orchestration system had reached end of life. The vendor would no longer maintain it, so its functionality had to be replaced. The system managed the flow of artifacts through a controlled processing lifecycle, coordinating inputs, processing steps, validation, packaging, storage, and distribution. It had operated largely as a black box: internal competence was limited, detailed knowledge was held by a small number of people at the vendor, and the implementation consisted of scripts written in several languages buried beneath multiple layers of configuration.
 
@@ -260,7 +248,7 @@ The visible outcome was a replacement for an orchestration system. The movement 
 
 ## Chapter 6: Contradictions That Must Be Managed
 
-*Inherent tensions that cannot be solved, only navigated through concrete decisions.*
+*Choosing among risks that cannot all be removed.*
 
 The security alert arrived on a Tuesday morning: a vulnerability in the authentication layer used by the payments platform. The advisory was marked critical. Exploitation had been observed in the wild.
 
@@ -304,7 +292,7 @@ I was not in the room when the director made the call. I do not know whether she
 
 ## Chapter 7: Building Capability Instead of Dependence
 
-*Shifting from delivering solutions to transferring capability that does not depend on your continued involvement. Exit designed in from the start.*
+*What departure reveals about the capability left behind.*
 
 A staff engineer joined a team struggling with incident response. The team had no formal process. Incidents were handled by whoever was available. Response times varied. Customers experienced inconsistent service. The engineer had built incident response systems before. Her instinct was to take over: she could move faster.
 
