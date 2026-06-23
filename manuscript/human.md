@@ -18,6 +18,8 @@ When Maria is out sick, the close takes five days. The person covering her does 
 
 The organization has stopped seeing the burden Maria carries. The close is a routine task on the calendar, and the fact that it depends on one person's undocumented knowledge has become invisible. The organization sees only the output: the close completes. It does not see the actual work: the judgment, the compensation, the manual reconciliation, the translation between systems.
 
+Outcomes arrive too late to manage directly. The successful close is a consequence of many actions interacting over time. Managing only through the completed close means looking at the system after the work has already happened.
+
 A project to integrate the three systems begins. The business case is clear: manual reconciliation creates risk, errors go undetected, the close takes too long, the organization depends on one person. The integration would automate the data flow, the close would take one day, and anyone could run it.
 
 Maria is assigned to the project as the subject matter expert. She knows what needs to be automated, the quirks the system must handle. She attends the kickoff and provides her input. The project team takes notes and tells her they will follow up.
@@ -29,6 +31,8 @@ I was not in the room when they made this choice. I do not know whether they dec
 Maria sees the design and raises concerns. The project team listens, notes the concerns, and says they will address them. They do not. The design proceeds, and the integration is built and tested with sample data. The sample data is clean, but the real data is not.
 
 At the time, I read this as the project team dismissing Maria's expertise. Later, I wondered whether something else was also happening. The team had been staffed for a technical integration, not for the work of extracting undocumented knowledge. Their timeline assumed the systems were the problem, not the gap between the systems and how people actually used them. They may have understood Maria's concerns and lacked the time, budget, or mandate to address them. This does not excuse what happened. It makes the failure less about individual dismissal and more about a project structure that could not see what Maria carried.
+
+Do not over-psychologize the problem. Understanding every deep cause of a person's behavior is neither possible nor appropriate. The useful focus is on actionable conditions around the work. A team's behavior may be shaped by ownership boundaries, incentives, hierarchy, access controls, budget, or platform constraints. These are not personal traits. They are features of the operating system. Change the closest actionable condition, but remain alert to the wider structure that may reproduce the same problem elsewhere.
 
 The integration goes live. The first close fails: the numbers do not match, and the differences are large. The project team investigates and finds the double-counted subscriptions, the tax exclusion, the timing differences. They fix the integration. The next close works. The close now takes one day.
 
@@ -90,6 +94,8 @@ What acknowledgment might have required: involvement in designing the replacemen
 
 The organization had decided to standardize deployments. The loss was real. The organization did not know what to do with it.
 
+Capability requires more than knowledge. For an action to occur, several conditions usually need to exist: the skill and understanding, the time and access and authority, and the expectation that acting will matter. These conditions interact. A highly motivated person may still be unable to act because they lack access or authority. A capable person may stop trying because each initiative is overridden. A person may appear unmotivated after repeatedly learning that effort changes nothing. The visible behavior is real, but the explanation may live elsewhere in the system.
+
 The standardization removed real cost. It also changed the value of the engineer's experience. The organization knew how to describe what it had gained: fewer manual steps, fewer exceptions, less dependence on one person. It had less language for what had ended.
 
 I do not know whether he experienced the change mainly as loss, relief, or a narrowing of the role he wanted to have. He left without saying. The organization did not ask, and by the time he left, the answer may no longer have changed the decision.
@@ -123,6 +129,8 @@ She adjusted her approach. She asked each team lead what would make consolidatio
 The first team had just achieved reliable deployments after eighteen months of work. They needed recognition before change. She celebrated their achievement publicly before asking them to adopt new pipelines. The second team was missing a critical skill. They needed support, not pressure. She paired them with mentors from teams who had already mastered the work. The third team did not trust the platform team's timeline. They had been burned by optimistic estimates before. They needed input. She shared draft timelines and asked for their estimates.
 
 The proposal did not change. The approach did. The deployments consolidated over six months instead of six weeks. The relationships survived. The teams owned the change. She was not needed to run it.
+
+Reinforcement is often built into the work itself, whether deliberately or not. When someone takes initiative and a leader immediately takes over, dependence is reinforced. When a team solves a problem and is then given greater trust, ownership is reinforced. When every failure produces another approval gate, avoidance is reinforced. The strongest reinforcement is not always praise or reward. It may be the continued right to act.
 
 It was also incomplete. The third team never fully adopted the new pipelines. They used them for new services but kept the old system for critical work. She knew this, and she accepted it. Pushing further would have required using authority she did not want to use. The security exposure from the old system remained. The risk was small, but it was not zero. She documented the exception. She set a date for reassessment. The date passed. The exception remained.
 
@@ -159,6 +167,8 @@ The principal engineer said the migration plan was wrong. The data could not be 
 The engineer delayed the migration three times. He found new issues each time. The technical risk was real: the data could be corrupted, customers would be affected. He had been ignored before and was right twice. He was also the person who understood the old system, and the migration made that knowledge less valuable. He controlled information about the data model. He had not documented it. He was the only person who could answer certain questions.
 
 The migration team read his behavior through their timeline and mandate. He read their proposal through two previous failures and five years of accumulated knowledge about how this data actually behaved. Neither had full access to the other's position. The structural conditions mattered: the migration had executive sponsorship, a fixed deadline, and a budget that did not include extended discovery. His concerns would have required all three to change.
+
+Power must be included in the model. Behavioral models can become too clean. Organisations are not neutral environments. Some people can approve, block, fund, redefine, reward, punish, or ignore. Others carry responsibility without authority. Some teams are told to own outcomes while remaining dependent on groups with different incentives. Any analysis of behavior at work must therefore include formal authority, informal influence, decision rights, veto points, access boundaries, status, career incentives, budget ownership, leadership behavior, and the personal cost of acting. A team cannot behave its way out of a structure that prevents action. Sometimes the intervention is not coaching the team. It is changing who is allowed to decide.
 
 The intervention only partly succeeded. The migration proceeded with modifications. The principal engineer's concerns were addressed where they were valid: the sequence was changed, the testing was expanded, the rollback plan was strengthened. The documentation requirement was mandated. He resisted. He complied. The documentation was incomplete.
 
@@ -211,6 +221,8 @@ The team called it success. Later, they became less certain that the outcome pro
 Month fifteen brought the adoption problem. The technical work was complete. The new system processed payments correctly. Teams had to choose which system to use. Most chose the old system: it was familiar, and it worked. The new system required learning. The platform team had built capability to operate the new system, but they had not built adoption. They had not trained the teams, created documentation, or identified champions. They had assumed technical correctness would drive adoption. It did not.
 
 At the time, the platform team read this as resistance to change. Later, they wondered whether they had built a system that required teams to abandon working practices without offering a clear path forward. The finance team's report format requirement was not nostalgia. It was the cost of retraining their audit processes. The team that refused migration had legitimate integrations the new system did not support. The platform team had not known about these integrations because they had not asked before building. This was not malicious. It was the normal result of staffing a migration for technical execution rather than organizational discovery.
+
+Behavior can change before belief does. Organisations often wait for complete agreement, motivation, confidence, or emotional commitment before changing how work happens. This reverses the relationship. People may develop confidence after successfully doing the work. They may begin to believe in a new approach after experiencing that it works. A team may become more willing to take ownership after it has been given a safe opportunity to exercise ownership. Action can produce learning. Learning can change belief.
 
 Month eighteen brought the decision. The old system would be shut down. The new system would be mandatory. The platform team expected resistance, and they got it. One team refused to migrate: they had custom integrations with the old system, and the new system did not support them. The platform team had to decide: build the custom support or mandate the migration. They chose to mandate. The team lost two weeks rebuilding their integrations. They lost trust in the platform team. The migration completed. The old system was turned off.
 
@@ -294,6 +306,8 @@ What remained was uneven. The configuration drift was documented. The session pr
 
 I was not in the room when the director made the call. I do not know whether she experienced it as judgment, compromise, or the least damaging option available. The record shows what was chosen and what followed. It does not resolve what another decision would have cost.
 
+Do not accept the stated objective uncritically. Many behavior-change approaches begin with an organisational objective and work backward. This assumes the objective is valid. The stated goal may be a proxy, a symptom, or a politically acceptable version of the real problem. "Deliver faster" may conceal unsafe release mechanisms. "Improve collaboration" may conceal fragmented ownership. "Build a platform" may conceal repeated coordination failure. "Create accountability" may conceal unclear authority. "Change the culture" may conceal leadership behavior nobody wants to confront. Before asking what people should do differently, examine whether the organisation is solving the right problem. Optimising behavior around a false objective makes the system more efficient at producing the wrong result.
+
 ---
 
 ## Chapter 7: Building Capability Instead of Dependence
@@ -325,5 +339,11 @@ Her continued availability complicated the evidence. When she answered quickly, 
 A clean departure would create risk. A long, undefined transition could preserve the same dependency under another name. The organization had to choose a boundary without knowing exactly what the boundary would expose.
 
 She documented the conditions under which she should still be contacted after leaving and the point at which those exceptions would end. The arrangement might support the transfer. It might also delay the moment when the team had to discover what remained missing.
+
+Withdrawal reveals what was load-bearing. External support can create a false picture of capability. A team may appear independent while an experienced person is framing every decision, noticing every risk, maintaining stakeholder relationships, preparing every difficult conversation, correcting work before failure becomes visible, or carrying the mental model for the whole system. The real test begins when that support recedes. If the behavior disappears, the team has not failed. The system has revealed which scaffold was still carrying weight. Withdrawal is therefore not only an exit activity. It is a diagnostic method.
+
+Change has a speed and a half-life. Moving too slowly can preserve harmful conditions. Moving too quickly can create imitation without understanding, compliance without ownership, or dependence on the people driving the intervention. Initial movement is not proof of durable change. The test is what happens after the intervention becomes quieter. A behavior may stabilise, disappear, reverse, continue beyond its useful level, survive only while external support remains, or evolve into a locally owned practice.
+
+The people doing the work must participate. Behavioral precision must not become behavioral control. The organisation should not define a list of desired actions from a distance and then treat employees as targets to be adjusted. The people doing the work understand constraints, trade-offs, and consequences that are invisible from above. They must participate in defining the problem, identifying the relevant actions, describing the blockers, interpreting current behavior, designing changes to the environment, deciding how progress will be recognised, and evaluating whether the intervention helps. The difference is between designing people and designing with people.
 
 Departure would reveal what had actually been built.
