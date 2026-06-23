@@ -4,6 +4,81 @@ This document tracks editorial decisions, restructure rationale, and manuscript 
 
 ---
 
+## 2026-06-23: Canonical Manuscript Recovery and Verified Corrective Integration
+
+**Session goal:** Forensic recovery of canonical manuscript after prior completion claims did not match merged text. Remove remaining prohibited phrases from Chapter 2.
+
+**Starting commit:** 05f5745af4595d6ef4b482046109b2a39abb5dcb
+**Starting word count:** 9,786 words
+**Ending word count:** 9,541 words
+**Reduction:** −245 words
+
+### Repository Forensic Finding
+
+PR #22 (Inbox Integration) merged behavioral systems reasoning throughout all 7 chapters. However, the merge reintroduced two prohibited phrases in Chapter 2 that should have been removed in PR #21 (Final Corrective Integration):
+
+1. "Both perspectives contain truth." — false symmetry claim
+2. "Loss operates whether it is named or not." — universal loss claim
+3. Instructional block beginning "Before proposing change, name the person or team who currently carries the weight..." — turns insight into advice
+
+These phrases were absent in the PR #21 branch but present after PR #22 merge, indicating the Inbox Integration pass overlaid material that should have remained deleted.
+
+### Exact Corrections Applied
+
+#### Chapter 2: Remove False Symmetry
+- **Removed:** "Both perspectives contain truth. What is also true: the standardization makes his hard-won competence less valuable."
+- **Replaced with:** "The standardization removed real cost. It also changed the value of the engineer's experience. The organization could describe the gain more easily than it could describe what had ended."
+
+#### Chapter 2: Remove Universal Loss Claim
+- **Removed:** Entire instructional block (13 lines) beginning "Loss operates whether it is named or not..."
+- **Replaced with:** Bounded Chapter 2 ending from Final Corrective Integration Pass:
+  - "The change may be experienced as loss, relief, diminished status, or a narrower role."
+  - Recognition can arrive too late
+  - Acknowledgment does not require preserving the arrangement
+  - How the change proceeds becomes part of what the organization makes visible
+
+### Validation Results
+
+**Prohibited phrase search (committed manuscript):** No matches
+
+```
+"Both perspectives contain truth" — 0
+"Loss operates whether it is named or not" — 0
+"The person who invested in it experiences this as loss" — 0
+"The helper must grieve" — 0
+"Good questions are specific" — 0
+"The observation:" — 0
+"Both can be true" — 0
+"Power operates through relationships, not positions" — 0
+"This time cannot be compressed by working harder" — 0
+"This was luck, not judgment" — 0
+"The learning transferred" — 0
+"The cost was tolerable" — 0
+"Leaving would feel like loss" — 0
+"The true measure of success" — 0
+"Name the specific work" — 0
+```
+
+**Required string counts:**
+- "Departure would reveal what had actually been built.": 1 ✅
+- "Go-live meant the software was ready. It did not mean the organization was.": 1 ✅
+
+**Final line verified:** "Departure would reveal what had actually been built." ✅
+
+**No prose after final line:** Verified ✅
+
+**git diff --check:** Clean ✅
+
+**SHA verification:**
+- Pre-edit worktree SHA: 8ca51a14b67ea8949e2c647b8301afe6113d0123c6f9a0f81805bc8a876a2a9f
+- Post-edit committed SHA: 0cb0bc020b18b0093f546951954deb52e1faca1d6ed8a9b2d248e4bc16637343
+
+### Superseded Claims
+
+The prior "Final Corrective Integration Pass" section above claimed all prohibited material was removed. This recovery pass confirms the canonical manuscript on main contained two prohibited phrases after PR #22 merge. This pass completes the actual work.
+
+---
+
 ## 2026-06-23: Final Corrective Integration Pass
 
 **Session goal:** Execute bounded corrections with exact deletion and replacement boundaries. No discretion to preserve legacy passages. Mandatory post-edit validation before documentation updates.
