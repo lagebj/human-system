@@ -231,26 +231,34 @@ This book is in active editorial development. The manuscript, source context, an
 
 The repository itself is part of the work — a living system that preserves and evolves reusable context for operating-model reasoning, modernization strategy, enablement, and writing work.
 
-### Manuscript State (as of 2026-06-19)
+### Manuscript State (as of 2026-06-23)
 
 **Editorial sequence complete.** Manuscript reads as literary organizational nonfiction — continuous prose following the author's recursive thought patterns.
 
-- **Word count:** 8,387 words
+- **Word count:** 9,786 words (+1,397 from original 8,389)
 - **Chapters:** 7 (all revised for continuous prose with developmental recurrence)
 - **Cases:** Maria (Ch1), senior engineer (Ch2), platform team lead (Ch3), principal engineer (Ch4), payments migration + orchestration replacement (Ch5), security vulnerability (Ch6), staff engineer/incident response (Ch7)
 - **Editorial direction:** Prose before framework, movement before taxonomy, scene before diagnosis, proportion over brevity
 
-**Completed passes:**
-- Pass A: De-frameworking and continuity
-- Pass B: Causal tightening
-- Pass C: Language balancing verification
-- Pass D: Continuity and concept return
-- Pass E: Final read integrity
-- Pass F: Epistemic humility and sentence rhythm
+**Completed passes (14 total):**
+- Passes A-H (8 developmental passes)
+- Targeted Patch (7 bounded corrections)
+- Seam Pass (remove announced drift + legacy analysis)
+- Integration Pass (merge duplicated analyses, remove callbacks)
+- Final Corrective Integration Pass (exact bounded corrections with mandatory validation)
+- Inbox Integration (behavioral systems reasoning woven throughout all chapters)
 
-**Post-pass integration:**
-- Orchestration system case study (Chapter 5)
-- Developmental recurrence restoration (Chapter 7)
+**Integrated concepts:**
+- Outcomes arrive too late to manage directly
+- Do not over-psychologize — focus on actionable conditions
+- Capability requires more than knowledge (capability/opportunity/motivation)
+- Reinforcement is built into the work
+- Power must be included in the model
+- Behavior can change before belief does
+- Do not accept stated objective uncritically
+- Withdrawal as diagnostic method
+- Change has speed and half-life
+- Participation vs. behavioral control
 
 **Known risks:**
 - Two manuscript copies exist (only `manuscript/human.md` is canonical for editing)

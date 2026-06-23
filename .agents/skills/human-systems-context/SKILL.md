@@ -80,6 +80,21 @@ Read in this order:
 6. `manuscript/human.md` when current manuscript text is needed
 7. `resources/source/book_work/human.md` only as historical context when explicitly needed
 8. `resources/playbooks/book-manuscript-workflow.md` or `resources/playbooks/editing-passes.md` depending on the task
+9. `inbox/` when processing raw captured ideas for integration
+
+### For inbox processing
+
+When the user requests inbox processing:
+
+1. Read `inbox/README.md` for inbox workflow
+2. Read each inbox item to be processed
+3. Determine if concept is already present in manuscript (search before integrating)
+4. If present: mark as processed with location reference
+5. If absent and valuable: weave into existing chapters as underlying reasoning, not new framework
+6. Update `inbox/README.md` status table
+7. Update `README.md` manuscript state section if integration occurred
+
+Inbox integration should preserve continuous prose style. Do not create new cases, characters, or framework structures. Concepts should serve as reasoning beneath existing stories.
 
 Book-specific constraints are not global constraints. They should not be imposed on work messages, coding prompts, strategy memos, or other communication unless the user asks for that exact voice.
 

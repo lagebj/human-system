@@ -14,6 +14,6 @@ This gut feeling is a form of competence that lives in the person, not in the sy
 
 ---
 
-**Status:** Raw → Ready to weave into manuscript
+**Status:** Raw → Processed
 
-**Sorted:** 2026-06-12 → manuscript/drafts/active/human.md
+**Sorted:** 2026-06-23 → Concept already present in Chapter 7 (pattern recognition in incident response). No additional integration needed.
