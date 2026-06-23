@@ -1,7 +1,7 @@
 # Current State
 
 **Last verified:** 2026-06-23
-**Revision:** corrective-integration-verification
+**Revision:** final-corrective-integration
 
 ---
 
@@ -125,6 +125,18 @@ Key changes:
 
 Word count: 11,188 → 10,173 (−1,015 words)
 
+**Final Corrective Integration Pass:** Execute bounded corrections with exact deletion and replacement boundaries. Mandatory validation before documentation updates.
+
+Key changes:
+- Chapter 1: Removed "Both sets of problems were real" symmetry → replaced with bounded integration explanation
+- Chapter 4: Deleted "The migration succeeded." verdict (no replacement)
+- Chapter 5: Removed "A different modernization case shows the same pattern from another angle." classification sentence
+- Chapter 6: Replaced "This was luck, not judgment." with "That absence could not validate the decision."
+- Chapter 7: Replaced entire second half (from "The capability for routine incidents may have transferred..." through end) with exact 13-line replacement
+- Chapter 7 removed: "Leaving would feel like loss", "Name the specific work/risks/decisions", all recap of earlier chapters, all verdict language
+
+Word count: 10,173 → 8,957 (−1,216 words)
+
 ---
 
 ## Post-Pass Integration
@@ -178,7 +190,7 @@ Word count: 11,188 → 10,173 (−1,015 words)
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 9,602 (recorded for reference, not a target)
+- **Word count:** 8,957 (recorded for reference, not a target)
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
@@ -187,7 +199,7 @@ Word count: 11,188 → 10,173 (−1,015 words)
 
 ## Pass Status
 
-- **Last completed pass:** Corrective Integration Verification (remaining defects verified and fixed)
+- **Last completed pass:** Final Corrective Integration Pass (exact boundaries, mandatory validation)
 - **Active pass:** None
 - **Next eligible pass:** Publication preparation or additional editorial pass (as directed)
 
@@ -203,11 +215,11 @@ Word count: 11,188 → 10,173 (−1,015 words)
 - Targeted Patch: Seven bounded corrections ✅
 - Seam Pass: Remove announced drift + legacy analysis ✅
 - Integration Pass: Merge duplicated analyses, remove chapter callbacks ✅
-- Corrective Verification: Complete remaining integration defects ✅
+- Final Corrective Integration: Exact bounded corrections with validation ✅
 
-**Editorial sequence status:** All passes complete. Manuscript verified against claimed corrections. Manuscript at 9,602 words.
+**Editorial sequence status:** All passes complete. Manuscript validated against prohibited phrase search. All required strings verified. Chapter 3 and Chapter 7 endings verified. Manuscript at 8,957 words.
 
-**Superseded claims:** Previous completion claims from Integration Pass (PR #19) verified and corrected where manuscript did not match documentation.
+**Superseded claims:** All prior completion claims from Integration Pass (PR #19) and Corrective Verification Pass verified and corrected. This pass executed with exact boundaries and mandatory post-edit validation.
 
 ---
 
