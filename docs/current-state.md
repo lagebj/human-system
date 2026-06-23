@@ -1,7 +1,7 @@
 # Current State
 
 **Last verified:** 2026-06-22
-**Revision:** seam-pass-invisible-drift
+**Revision:** integration-and-seams
 
 ---
 
@@ -111,6 +111,20 @@ Reflective passages preserved; announcements removed. Drift remains but is not n
 
 Word count: 11,440 → 11,188 (−252 words)
 
+**Integration Pass:** Merge duplicated analyses, remove chapter callbacks, consolidate repeated language — make manuscript feel written once.
+
+Key changes:
+- Chapter 4: Merged duplicated power analysis (removed 18-paragraph restart)
+- Chapter 6: Removed duplicated factual retelling (one narration only)
+- Chapter 7: Removed explicit chapter callbacks ("Maria from Chapter 1" → "spreadsheets that stayed on a laptop")
+- Chapter 7: Removed verdict closures ("The true measure of success", "This was the essential work")
+- Chapter 5: Consolidated repeated completion language (3 occurrences → 1)
+- Chapters 1-2: Bounded necessity claims ("was necessary" → "organization had committed")
+- Chapter 2: Revised future certainty about engineer's employment
+- Chapter 3: Revised "helper must grieve" language
+
+Word count: 11,188 → 10,173 (−1,015 words)
+
 ---
 
 ## Post-Pass Integration
@@ -164,7 +178,7 @@ Word count: 11,440 → 11,188 (−252 words)
 ## Manuscript
 
 - **Path:** `manuscript/human.md`
-- **Word count:** 11,188 (recorded for reference, not a target)
+- **Word count:** 10,173 (recorded for reference, not a target)
 - **Chapter count:** 7
 - **Canonical copy:** `manuscript/human.md` (this file only)
 - **Mirror copy:** `.agents/skills/human-systems-context/resources/source/book_work/human.md` (stale snapshot, not for editing)
@@ -173,7 +187,7 @@ Word count: 11,440 → 11,188 (−252 words)
 
 ## Pass Status
 
-- **Last completed pass:** Seam Pass (invisible drift, legacy analysis removal)
+- **Last completed pass:** Integration Pass (seams, callbacks, duplication removal)
 - **Active pass:** None
 - **Next eligible pass:** Publication preparation or additional editorial pass (as directed)
 
@@ -188,8 +202,9 @@ Word count: 11,440 → 11,188 (−252 words)
 - Pass H: Depth, humility, interpretive movement ✅
 - Targeted Patch: Seven bounded corrections ✅
 - Seam Pass: Remove announced drift + legacy analysis ✅
+- Integration Pass: Merge duplicated analyses, remove chapter callbacks ✅
 
-**Editorial sequence status:** All eight passes + targeted patch + seam pass complete. Manuscript at 11,188 words.
+**Editorial sequence status:** All eight passes + targeted patch + seam pass + integration pass complete. Manuscript at 10,173 words.
 
 ---
 

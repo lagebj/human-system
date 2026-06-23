@@ -4,7 +4,144 @@ This document tracks editorial decisions, restructure rationale, and manuscript 
 
 ---
 
-## 2026-06-18: De-Frameworking Editorial Pass — Literary Organizational Nonfiction
+## 2026-06-22: Integration and Seam Pass — One Continuous Movement
+
+**Session goal:** Make the manuscript feel written once rather than visibly revised in layers. Remove duplicated analysis, announced drift, explicit chapter callbacks, and verdict-heavy closures.
+
+**Starting state:** 11,188 words (after Seam Pass)
+**Ending state:** 10,173 words
+**Reduction:** −1,015 words (from removing duplication, not compressing thought)
+
+### Primary Editorial Problem
+
+The manuscript contained visible revision layers:
+- Duplicated case analysis (Chapter 4 had two power analyses)
+- Duplicated factual retelling (Chapter 6 narrated the incident twice)
+- Explicit chapter callbacks (Chapter 7: "Maria from Chapter 1", "payments team in Chapter 5", etc.)
+- Announced reflective movement ("This is where my thinking tends to drift")
+- Verdict-heavy closures ("The true measure of success", "This was the essential work")
+- Repeated completion language (Chapter 5: "Better tools, earlier involvement..." appeared 3 times)
+- Unsupported necessity claims ("The migration was necessary")
+- Future certainty about characters ("He will still be employed")
+
+### Primary Revision Principle
+
+**One continuous movement per chapter.**
+
+- One case narration, not retelling
+- One ending, not pre-closure followed by extended reflection
+- Natural drift without announcement
+- Recurring ideas through image and consequence, not chapter-number callbacks
+- Bounded necessity (organization committed vs. was necessary)
+- Uncertainty preserved where evidence does not support certainty
+
+---
+
+### Chapter-by-Chapter Changes
+
+#### Chapter 1
+- Removed "This is where my thinking tends to drift" announcement
+- Preserved reflection on spreadsheets becoming routine/expertise
+- Bounded necessity claim ("The integration was necessary" → "The organization had decided...")
+
+#### Chapter 2
+- Removed "I keep thinking about" announcement
+- Revised future certainty ("He will still be employed. He will still be respected." → "He may keep his title and place in the organization. He will no longer hold the same role in other people's work.")
+- Preserved uncertainty about engineer's experience
+
+#### Chapter 3
+- Revised helper language ("The helper must grieve" → "Letting go of the competence that made you essential may be required")
+- Removed instructional ending layer
+- Preserved uncertain closing: "She did not yet know whether the revised approach was enough. She only knew that the first explanation had been too small."
+
+#### Chapter 4
+- **Merged duplicated power analysis** — removed 18-paragraph restart beginning with "Power did not follow the org chart"
+- Removed worksheet labels ("The observation:", "The interpretation:", "The self-interest:")
+- Removed verdict language ("protected privilege", "Both can be true", "best outcome available")
+- Preserved uncertainty about motive
+- Single ending: "The project ended with the system changed and the relationship largely unresolved."
+
+#### Chapter 5
+- **Consolidated repeated completion language** — "Better tools, earlier involvement..." appeared 3 times, now appears once
+- Removed "The deeper movement was" announcement
+- Preserved distinction between go-live and completion
+- Removed redundant restatements of adaptation time
+
+#### Chapter 6
+- **Removed duplicated factual retelling** — incident narrated once, not twice
+- Removed pre-closure paragraph ("This may have been the best outcome available")
+- Preserved hindsight reflection: "Once the outcome is known, the earlier choices begin to look as though they led toward it."
+- Single ending: "The record shows what was chosen and what followed. It does not resolve what another decision would have cost."
+
+#### Chapter 7
+- **Removed explicit chapter callbacks:**
+  - "Maria from Chapter 1" → "the spreadsheets that stayed on a laptop when someone left"
+  - "The payments team in Chapter 5" → "Another team had learned the same lesson"
+  - "The principal engineer from Chapter 4" → "Another engineer had controlled information"
+  - "The platform team lead from Chapter 3" → "Another team lead had learned"
+- Removed verdict language:
+  - "The true measure of success was" → "Whether the system could continue without her was the question that mattered"
+  - "This was the essential work" → "The work was"
+  - "The capability transferred. The loss was acknowledged. The system continued, or it did not." → removed
+- Final line preserved: "Departure would reveal what had actually been built."
+- No sentence follows.
+
+---
+
+### Supporting Documents to Update
+
+- [ ] `docs/current-state.md` — record integration pass completion
+- [ ] `README.md` — update manuscript state word count
+- [ ] `.agents/skills/human-systems-context/resources/source/book_work/EDITING_CHARTER.md` — if needed
+
+---
+
+### Word Count Change
+
+| Metric | Before | After | Change |
+|--------|--------|-------|--------|
+| Starting (this session) | 11,188 | 10,173 | −1,015 words (9% reduction) |
+| Original draft | ~23,900 | 10,173 | −57% total |
+
+---
+
+### Confirmation: No New Taxonomy
+
+✅ **No new taxonomy replaced the old one.**
+
+The integration pass removed visible architecture without creating new categories, models, or frameworks.
+
+### Confirmation: No Facts Fabricated
+
+✅ **No facts or cases were fabricated.**
+
+All cases remain authentic composites. No new research claims invented.
+
+### Confirmation: No Word-Count Target
+
+✅ **Reduction was outcome of removing duplication, not a compression target.**
+
+---
+
+## 2026-06-22: Seam Pass — Remove Announced Drift
+
+**Session goal:** Remove language that announces reflective movement while preserving the movement itself.
+
+**Starting state:** 11,440 words
+**Ending state:** 11,188 words
+**Reduction:** −252 words
+
+### Changes
+
+- Removed 7 editorial signage phrases ("This is where my thinking tends to drift", "I find myself drifting", "The deeper movement was", etc.)
+- Removed Chapter 4 legacy worksheet labels ("The observation:", "The interpretation:")
+- Removed verdict language ("protected privilege", "Both can be true")
+- Bounded Chapter 5 categorical time claims (3 occurrences)
+- Replaced Chapter 6 pre-closure
+
+---
+
+## Previous Editorial Passes
 
 **Session goal:** Revise the manuscript so it reads as a book of continuous prose rather than a management framework. Remove visible framework machinery while preserving underlying insight.
 
