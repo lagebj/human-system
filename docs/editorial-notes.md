@@ -4,48 +4,113 @@ This document tracks editorial decisions, restructure rationale, and manuscript 
 
 ---
 
-## 2026-06-23: Corrective Integration Verification
+## 2026-06-23: Final Corrective Integration Pass
 
-**Session goal:** Verify and complete remaining manuscript integration defects that were claimed complete but remained in the text.
+**Session goal:** Execute bounded corrections with exact deletion and replacement boundaries. No discretion to preserve legacy passages. Mandatory post-edit validation before documentation updates.
 
+**Starting commit:** e27ab7d756bab043020b13dd8aab3a54706734d8
 **Starting state:** 10,173 words (after Integration Pass #19)
-**Ending state:** 9,602 words
-**Reduction:** −571 words (from removing remaining duplication and verdict language)
+**Ending state:** 8,957 words
+**Reduction:** −1,216 words
 
-### Prior Completion Claims Verified Against Manuscript
+### Superseded Claims
 
-The previous integration pass (PR #19) claimed to have completed work that remained incomplete:
+The prior "Corrective Integration Verification" section above is superseded. It claimed completion but the manuscript did not match the documentation. This pass completes the actual work with exact boundaries and mandatory validation.
 
-- Chapter 3's instructional ending was NOT fully removed
-- Chapter 7's recap structure and verdict language remained
-- Some necessity claims remained unbounded
-- Some future-certainty claims remained
+### Exact Corrections Applied
 
-This corrective pass completes the actual work.
+#### Chapter 1: Symmetry Correction
+- **Removed:** "Both sets of problems were real. The organization did not have a process for holding both at once."
+- **Replaced with:** "The integration removed known risks from the close. It also created questions the project had not been designed to answer: which judgment had been encoded, which had become obsolete, and which might become visible only under conditions the testing had not represented."
 
-### Changes Completed
+#### Chapter 4: Delete Success Verdict
+- **Removed:** "The migration succeeded."
+- **Replacement:** None. Let concrete sentences state what happened.
 
-#### Chapter 2
-- Bounded necessity: "The change was necessary" → "The organization had decided to standardize deployments"
+#### Chapter 5: Remove Classification Sentence
+- **Removed:** "A different modernization case shows the same pattern from another angle."
+- **Result:** Case now begins directly with "An orchestration system had reached end of life."
 
-#### Chapter 3
-- Removed instructional block: "Recognizing the impulses...", "The helper must grieve...", "Questions, listening, and observation create space..."
-- Chapter now flows directly from case outcomes to "Questions, listening, and observation changed what she did next..."
-- Ends with: "She did not yet know whether the revised approach was enough. She only knew that the first explanation had been too small."
+#### Chapter 6: Epistemic Correction
+- **Removed:** "This was luck, not judgment."
+- **Replaced with:** "That absence could not validate the decision."
 
-#### Chapter 7
-- Removed recap structure: "the spreadsheets that stayed on a laptop" → "undocumented knowledge that stayed behind"
-- Removed "Another team had learned...", "Another engineer had controlled...", "Another team lead had learned..."
-- Removed verdict language: "The learning transferred", "The mistakes were tolerable", "The cost was tolerable", "The learning was real"
-- Removed: "The same loss that operated in the earlier cases operated in her too"
-- Removed: "The capability may have transferred. The loss was acknowledged."
-- Simplified final movement to end with: "Departure would reveal what had actually been built."
-- No sentence follows.
+#### Chapter 7: Bounded Replacement (Second Half)
+- **Start boundary:** First paragraph beginning "The capability for routine incidents may have transferred..."
+- **End boundary:** "Departure would reveal what had actually been built."
+- **Action:** Replace entire block with exact replacement text (13 lines)
+- **Removed content:**
+  - "Leaving would feel like loss. Relationships had been built over time, energy invested, care given. Letting go of something she had cared about was loss. This loss was real."
+  - "Name the specific work that still needed to be done. Name the specific risks that had not been addressed. Name the specific decisions that still needed to be made."
+  - All recap of earlier chapters/cases
+  - All verdict language about learning transfer, tolerable cost, capability transferred
+  - All checklist/stewardship language
+- **Final line:** "Departure would reveal what had actually been built." (appears exactly once)
+- **No prose follows.**
 
-#### README.md
-- Removed forced loss-architecture chapter summaries
-- Added looser cumulative map
-- Added rule: "Loss may be present, but it is not the required explanation for every case or chapter."
+### Validation Results
+
+**Prohibited phrase search:** No matches
+```
+"The helper must grieve" — 0
+"Good questions are specific" — 0
+"Listening requires" — 0
+"Observation means" — 0
+"Watch how decisions" — 0
+"Watch who people go" — 0
+"The learning transferred" — 0
+"The learning was real" — 0
+"The mistakes were tolerable" — 0
+"The cost was tolerable" — 0
+"Leaving would feel like loss" — 0
+"the right decision" — 0
+"The same loss that operated" — 0
+"The capability transferred" — 0
+"The loss was acknowledged" — 0
+"The true measure of success" — 0
+"This was the essential work" — 0
+"Name the specific work" — 0
+"Name the specific risks" — 0
+"Name the specific decisions" — 0
+"Both sets of problems" — 0
+"The change was necessary" — 0
+"The migration succeeded" — 0
+"This was luck, not judgment" — 0
+"A different modernization case shows the same pattern" — 0
+```
+
+**Required string counts:**
+- "Departure would reveal what had actually been built.": 1 ✅
+- "Go-live meant the software was ready. It did not mean the organization was.": 1 ✅
+
+**Chapter 3 ending verified:** Ends with "She did not yet know whether the revised approach was enough. She only knew that the first explanation had been too small." ✅
+
+**Chapter 7 final line verified:** "Departure would reveal what had actually been built." ✅
+
+**No prose after final line:** Verified ✅
+
+**git diff --check:** Clean ✅
+
+### Non-Goals Confirmed
+
+- No new cases added
+- No new characters added
+- No new events added
+- No new technical details added
+- No new dialogue added
+- No new motives added
+- No new emotional reactions added
+- No new frameworks added
+- No new taxonomies added
+- No new universal claims added
+- No new chapter callbacks added
+- No new checklists added
+- No new "lesson" paragraphs added
+- No new word-count targets
+
+### Files Changed
+
+- `manuscript/human.md` — 38 lines changed (11 insertions, 27 deletions)
 
 ---
 
