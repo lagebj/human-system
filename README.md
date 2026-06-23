@@ -76,7 +76,17 @@ The author is a tech lead based in Norway, self-taught through troubleshooting, 
 
 The book is one continuous walk through seven chapters. Each chapter carries cases that return and accumulate meaning. Concepts are used as interpretive tools, not rigid models. The structure resists framework delivery: no fixed sets, no diagnostic checklists, no workshop-ready summaries.
 
-The chapters build on each other. Chapter 1 introduces loss through Maria's spreadsheets. Chapter 2 names loss as a force that operates whether it is named or not. Chapter 3 shows the helper grieving the competence that made her essential. Chapter 4 shows loss distributed across a migration team. Chapter 5 shows loss in modernization's go-live versus completion gap. Chapter 6 shows loss navigated through concrete decisions. Chapter 7 shows loss acknowledged as the capability transfers and the system continues.
+The chapters accumulate rather than repeat a single interpretive key:
+
+- hidden compensating work and knowledge embedded in routine
+- competence, status, and role under standardization
+- the helper's implication in the systems they are trying to change
+- power created by concentrated knowledge and incomplete alternatives
+- organizational adaptation after technical implementation
+- judgment under competing risks and incomplete evidence
+- capability that may or may not survive an expert's departure
+
+Loss may be present, but it is not the required explanation for every case or chapter.
 
 ### Repository Structure
 

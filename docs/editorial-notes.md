@@ -4,6 +4,51 @@ This document tracks editorial decisions, restructure rationale, and manuscript 
 
 ---
 
+## 2026-06-23: Corrective Integration Verification
+
+**Session goal:** Verify and complete remaining manuscript integration defects that were claimed complete but remained in the text.
+
+**Starting state:** 10,173 words (after Integration Pass #19)
+**Ending state:** 9,602 words
+**Reduction:** −571 words (from removing remaining duplication and verdict language)
+
+### Prior Completion Claims Verified Against Manuscript
+
+The previous integration pass (PR #19) claimed to have completed work that remained incomplete:
+
+- Chapter 3's instructional ending was NOT fully removed
+- Chapter 7's recap structure and verdict language remained
+- Some necessity claims remained unbounded
+- Some future-certainty claims remained
+
+This corrective pass completes the actual work.
+
+### Changes Completed
+
+#### Chapter 2
+- Bounded necessity: "The change was necessary" → "The organization had decided to standardize deployments"
+
+#### Chapter 3
+- Removed instructional block: "Recognizing the impulses...", "The helper must grieve...", "Questions, listening, and observation create space..."
+- Chapter now flows directly from case outcomes to "Questions, listening, and observation changed what she did next..."
+- Ends with: "She did not yet know whether the revised approach was enough. She only knew that the first explanation had been too small."
+
+#### Chapter 7
+- Removed recap structure: "the spreadsheets that stayed on a laptop" → "undocumented knowledge that stayed behind"
+- Removed "Another team had learned...", "Another engineer had controlled...", "Another team lead had learned..."
+- Removed verdict language: "The learning transferred", "The mistakes were tolerable", "The cost was tolerable", "The learning was real"
+- Removed: "The same loss that operated in the earlier cases operated in her too"
+- Removed: "The capability may have transferred. The loss was acknowledged."
+- Simplified final movement to end with: "Departure would reveal what had actually been built."
+- No sentence follows.
+
+#### README.md
+- Removed forced loss-architecture chapter summaries
+- Added looser cumulative map
+- Added rule: "Loss may be present, but it is not the required explanation for every case or chapter."
+
+---
+
 ## 2026-06-22: Integration and Seam Pass — One Continuous Movement
 
 **Session goal:** Make the manuscript feel written once rather than visibly revised in layers. Remove duplicated analysis, announced drift, explicit chapter callbacks, and verdict-heavy closures.
