@@ -32,8 +32,6 @@ Maria sees the design and raises concerns. The project team listens, notes the c
 
 At the time, I read this as the project team dismissing Maria's expertise. Later, I wondered whether something else was also happening. The team had been staffed for a technical integration, not for the work of extracting undocumented knowledge. Their timeline assumed the systems were the problem, not the gap between the systems and how people actually used them. They may have understood Maria's concerns and lacked the time, budget, or mandate to address them. This does not excuse what happened. It makes the failure less about individual dismissal and more about a project structure that could not see what Maria carried.
 
-Do not over-psychologize the problem. Understanding every deep cause of a person's behavior is neither possible nor appropriate. The useful focus is on actionable conditions around the work. A team's behavior may be shaped by ownership boundaries, incentives, hierarchy, access controls, budget, or platform constraints. These are not personal traits. They are features of the operating system. Change the closest actionable condition, but remain alert to the wider structure that may reproduce the same problem elsewhere.
-
 The integration goes live. The first close fails: the numbers do not match, and the differences are large. The project team investigates and finds the double-counted subscriptions, the tax exclusion, the timing differences. They fix the integration. The next close works. The close now takes one day.
 
 Maria is reassigned to a different team. Her spreadsheet stays on her laptop. The project team celebrates: the integration succeeded, the close time dropped from three days to one, the single-point dependency was removed. Maria's manager told her the reassignment was lateral—same level, same pay, different work. I do not know whether she experienced it as a promotion, a demotion, or neither. She did not document the spreadsheets before leaving. She may have intended to. She may have decided the knowledge belonged to the old system and the old system was gone. She may have wanted the project team to ask for it, so they would understand what they had not built. They did not ask.
@@ -164,7 +162,7 @@ The engineer delayed the migration three times. He found new issues each time. T
 
 The migration team read his behavior through their timeline and mandate. He read their proposal through two previous failures and five years of accumulated knowledge about how this data actually behaved. Neither had full access to the other's position. The structural conditions mattered: the migration had executive sponsorship, a fixed deadline, and a budget that did not include extended discovery. His concerns would have required all three to change.
 
-Power must be included in the model. Behavioral models can become too clean. Organisations are not neutral environments. Some people can approve, block, fund, redefine, reward, punish, or ignore. Others carry responsibility without authority. Some teams are told to own outcomes while remaining dependent on groups with different incentives. Any analysis of behavior at work must therefore include formal authority, informal influence, decision rights, veto points, access boundaries, status, career incentives, budget ownership, leadership behavior, and the personal cost of acting. A team cannot behave its way out of a structure that prevents action. Sometimes the intervention is not coaching the team. It is changing who is allowed to decide.
+The team had authority to proceed. The engineer had enough knowledge to make proceeding without him unsafe. Neither form of power appeared fully in the org chart.
 
 The intervention only partly succeeded. The migration proceeded with modifications. The principal engineer's concerns were addressed where they were valid: the sequence was changed, the testing was expanded, the rollback plan was strengthened. The documentation requirement was mandated. He resisted. He complied. The documentation was incomplete.
 
@@ -222,7 +220,7 @@ Behavior can change before belief does. Organisations often wait for complete ag
 
 Month eighteen brought the decision. The old system would be shut down. The new system would be mandatory. The platform team expected resistance, and they got it. One team refused to migrate: they had custom integrations with the old system, and the new system did not support them. The platform team had to decide: build the custom support or mandate the migration. They chose to mandate. The team lost two weeks rebuilding their integrations. They lost trust in the platform team. The migration completed. The old system was turned off.
 
-Go-live meant the software was ready. It did not mean the organization was. Technical completion asked: does it work. Organizational completion asked: can the team sustain this work without the original builders. The first was necessary. The second determined whether the modernization actually succeeded.
+Go-live meant the software was ready. It did not mean the organization was. Technical completion asked: does it work. Organizational completion asked: can the team sustain this work without the original builders. Technical completion made the migration usable. Whether the organization could sustain the new work would become visible later.
 
 The payments modernization succeeded technically: the new system processed payments correctly, and the old system was turned off. The organization did not complete. The finance team still wanted the old report format. The one team still resented the forced migration. The platform team still fielded questions about how to use the new system.
 
@@ -302,8 +300,6 @@ What remained was uneven. The configuration drift was documented. The session pr
 
 I was not in the room when the director made the call. I do not know whether she experienced it as judgment, compromise, or the least damaging option available. The record shows what was chosen and what followed. It does not resolve what another decision would have cost.
 
-Do not accept the stated objective uncritically. Many behavior-change approaches begin with an organisational objective and work backward. This assumes the objective is valid. The stated goal may be a proxy, a symptom, or a politically acceptable version of the real problem. "Deliver faster" may conceal unsafe release mechanisms. "Improve collaboration" may conceal fragmented ownership. "Build a platform" may conceal repeated coordination failure. "Create accountability" may conceal unclear authority. "Change the culture" may conceal leadership behavior nobody wants to confront. Before asking what people should do differently, examine whether the organisation is solving the right problem. Optimising behavior around a false objective makes the system more efficient at producing the wrong result.
-
 ---
 
 ## Chapter 7: Building Capability Instead of Dependence
@@ -316,7 +312,7 @@ She did this twice. The first incident: a database connection pool exhausted dur
 
 After the second incident, she recognized the pattern: the team relied on her more each time. They did not learn. They waited for her.
 
-During the next incident, she sat beside the on-call engineer. The incident: a payment processing failure affecting checkout. The engineer drove. She asked questions. "What do you see?" "What do you think is happening?" "What would you try?" He made mistakes. He checked the wrong logs first. He missed the error pattern. She did not take over. She let him find it. He found it in thirty minutes. The fix took another twenty. The customer impact was larger than it would have been if she had driven. It was the cost.
+During the next incident, she sat beside the on-call engineer. The incident: a payment processing failure affecting checkout. The engineer drove. She asked questions. "What do you see?" "What do you think is happening?" "What would you try?" He made mistakes. He checked the wrong logs first. He missed the error pattern. She did not take over. She let him find it. He found it in thirty minutes. The fix took another twenty. The customer impact was larger than it would have been if she had driven. Customers carried part of the cost while the engineer learned under support.
 
 After the incident, they reviewed together. What went well. What to adjust. He had diagnosed the problem correctly; he had just taken longer. The review made the reasoning visible. She explained what she would have done differently. He explained what he was thinking. Something had changed in how he approached the next incident. Whether that change would hold under less familiar conditions remained untested.
 
@@ -335,11 +331,5 @@ Her continued availability complicated the evidence. When she answered quickly, 
 A clean departure would create risk. A long, undefined transition could preserve the same dependency under another name. The organization had to choose a boundary without knowing exactly what the boundary would expose.
 
 She documented the conditions under which she should still be contacted after leaving and the point at which those exceptions would end. The arrangement might support the transfer. It might also delay the moment when the team had to discover what remained missing.
-
-Withdrawal reveals what was load-bearing. External support can create a false picture of capability. A team may appear independent while an experienced person is framing every decision, noticing every risk, maintaining stakeholder relationships, preparing every difficult conversation, correcting work before failure becomes visible, or carrying the mental model for the whole system. The real test begins when that support recedes. If the behavior disappears, the team has not failed. The system has revealed which scaffold was still carrying weight. Withdrawal is therefore not only an exit activity. It is a diagnostic method.
-
-Change has a speed and a half-life. Moving too slowly can preserve harmful conditions. Moving too quickly can create imitation without understanding, compliance without ownership, or dependence on the people driving the intervention. Initial movement is not proof of durable change. The test is what happens after the intervention becomes quieter. A behavior may stabilise, disappear, reverse, continue beyond its useful level, survive only while external support remains, or evolve into a locally owned practice.
-
-The people doing the work must participate. Behavioral precision must not become behavioral control. The organisation should not define a list of desired actions from a distance and then treat employees as targets to be adjusted. The people doing the work understand constraints, trade-offs, and consequences that are invisible from above. They must participate in defining the problem, identifying the relevant actions, describing the blockers, interpreting current behavior, designing changes to the environment, deciding how progress will be recognised, and evaluating whether the intervention helps. The difference is between designing people and designing with people.
 
 Departure would reveal what had actually been built.
