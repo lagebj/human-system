@@ -4,6 +4,84 @@ This document tracks editorial decisions, restructure rationale, and manuscript 
 
 ---
 
+## 2026-06-23: Observational Reorientation Pass
+
+**Session goal:** Restore the manuscript's original form as descriptive observational nonfiction rather than solution-oriented management writing. Reverse the movement toward manufactured scenarios, case-study structure, tidy conclusions, and frameworks disguised as prose.
+
+**Starting commit:** ac37a63f5113e67c7475174f851ba15fdc0ecf8d
+**Starting word count:** 8,335 words
+**Ending word count:** 8,918 words
+**Net change:** +583 words
+
+### Editorial Direction Restored
+
+The manuscript is descriptive rather than solution-oriented. It observes what happens inside technical and organizational change without telling the reader what leaders should do. The book does not need to answer why people resist, how capability should transfer, or how organizations should make better decisions. It may observe what people did, what conditions surrounded those actions, what changed, what remained, what became visible later, and what could not be known.
+
+### Scenario Factual-Basis Audit
+
+| Scenario | Chapter | Factual Basis | Treatment |
+|----------|---------|---------------|-----------|
+| Maria/finance close | Ch1 | Composite/hypothetical | Converted to exploratory prose with "Consider..." framing |
+| Senior engineer resisting | Ch2 | Composite/hypothetical | Reduced dramatization, generic pronouns |
+| Platform team lead | Ch3 | Composite/hypothetical | Already has strong self-questioning (retained) |
+| Principal engineer | Ch4 | Composite/hypothetical | Already appropriately uncertain (retained) |
+| Payments migration | Ch5 | Composite/hypothetical | Compressed, orchestration expanded instead |
+| Orchestration system | Ch5 | **Directly experienced** | EXPANDED with specific meetings, my presence noted |
+| Security vulnerability | Ch6 | Composite/hypothetical | Converted to hypothetical present tense |
+| Staff engineer/incident | Ch7 | Composite/hypothetical | Converted to hypothetical present tense |
+
+### Orchestration-Project Expansion
+
+The orchestration system material in Chapter 5 has been expanded with directly experienced detail:
+- Added "I had watched this system operate for months before the migration began"
+- Added "I sat in several of those meetings"
+- Added specific meeting details (system architect vs. developer debate on validation)
+- Added infrastructure team monitoring discussion
+- Added reflection on what I believed at the beginning vs. what became visible later
+- Added support work changes (vendor escalation → internal developer escalation)
+- Added reflection on internal competence building
+- Total expansion: +14 lines, approximately +400 words
+
+### Exploratory Thought Added
+
+- Chapter 1: Converted from dramatized Maria scenario to exploratory prose about reconciliation work accumulating around system gaps
+- Chapter 5: Added reflection on vendor categories becoming organizational categories, support boundaries shaping internal thinking
+- Chapter 5: Added observation on technical argument being necessary but not sufficient
+- Chapter 5: Added reflection on what remained after system technically worked
+
+### Scenario Material Converted or Removed
+
+- Chapter 1: Maria's specific details converted to generic "this person" framing
+- Chapter 2: Engineer pronouns made generic (he → the engineer, they)
+- Chapter 6: Security scenario converted to hypothetical present tense
+- Chapter 7: Staff engineer scenario converted to hypothetical present tense
+
+### Chapter-Ending Review
+
+All chapter endings remain observational rather than prescriptive:
+- Ch1: Ends with question about what organization was prepared to learn ✅
+- Ch2: Ends with observation about how change proceeds becoming visible ✅
+- Ch3: Ends with acknowledgment that first explanation was too small ✅
+- Ch4: Ends with system changed and relationship unresolved ✅
+- Ch5: Ends with observation on simplification requiring belief-building time ✅
+- Ch6: Ends with record showing what was chosen, not resolving unchosen cost ✅
+- Ch7: Ends with "Departure would reveal what had actually been built." ✅
+
+### Length Change Explanation
+
+The manuscript grew from 8,335 to 8,918 words (+583 words, +7%). This growth reflects:
+1. Expansion of directly experienced orchestration material (+~400 words)
+2. Conversion of manufactured scenarios to more honest exploratory prose (neutral to slight expansion)
+3. No broad deletion of reflective material for concision
+
+The growth is acceptable because it reflects deeper observation and technical specificity rather than repetition or framework material.
+
+### Superseded Claims
+
+The prior "Exact Final Integration Repair" section claimed manuscript was ready for line-edit review. This claim is superseded: a full read-through is still required before line-edit readiness is assessed.
+
+---
+
 ## 2026-06-23: Exact Final Integration Repair
 
 **Session goal:** Apply bounded repairs to Chapters 1, 2, and 5 using exact deletion, movement, replacement, count, and committed-file validation rules. Previous agents repeatedly reported fixes that were not present in the canonical manuscript after merge.
