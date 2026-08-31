@@ -4,7 +4,7 @@ Use this only when the user declares Pass A, B, C, D, or E for manuscript work.
 
 ## Required reading
 
-1. `resources/source/writing_voice/author-voice-guide.md`
+1. `resources/source/writing_voice/manuscript-voice-guide.md`
 2. `resources/source/book_work/writing-working-agreement.md`
 3. `resources/source/book_work/EDITING_CHARTER.md`
 4. `resources/source/book_work/PATTERN_LEDGER.md`

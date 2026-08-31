@@ -31,7 +31,8 @@ human-systems-context/
     │   │   ├── trojan_horse_movement_pattern.md
     │   │   └── four-impulses-of-help.md
     │   ├── writing_voice/
-    │   │   └── author-voice-guide.md
+    │   │   ├── public-language.md
+    │   │   └── manuscript-voice-guide.md
     │   └── book_work/
     │       ├── writing-working-agreement.md
     │       ├── EDITING_CHARTER.md

@@ -1,6 +1,8 @@
-# Author Voice Guide - Spoken Thinking in Motion
+# Manuscript Voice Guide - Spoken Thinking in Motion
 
-This document describes the writing voice to be used consistently across all writing. It is not a style for presentation or persuasion. It is a way of thinking on the page.
+**Scope:** This voice is for the book manuscript (`manuscript/human.md`) only. It does not govern public papers, essays, notes, or web pages. Those use `public-language.md`.
+
+This document describes the writing voice for the manuscript. It is not a style for presentation or persuasion. It is a way of thinking on the page.
 
 The voice should read as if an experienced person is walking alongside someone else, speaking while thinking, without stopping to polish, explain, or perform certainty.
 

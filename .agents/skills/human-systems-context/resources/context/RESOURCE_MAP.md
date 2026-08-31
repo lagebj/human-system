@@ -59,9 +59,10 @@ Use this for general voice resources that can apply across writing contexts.
 
 Current files:
 
-- `author-voice-guide.md` — spoken thinking in motion; the broad writing voice.
+- `public-language.md` — reader-facing authorship model for public Human System material (papers, essays, notes, web pages). Covers epistemic stance, uncertainty, sentence construction, lists, headings, closure, humour, metaphor, and AI-shaped prose patterns to guard against.
+- `manuscript-voice-guide.md` — manuscript-specific voice for `manuscript/human.md` only. Spoken thinking in motion; does not govern public material.
 
-Add here when a resource affects tone, rhythm, language, or how the user's thinking should sound outside strict manuscript work.
+Add here when a resource affects tone, rhythm, language, or how the user's thinking should sound. Distinguish between general public authorship and manuscript-only constraints.
 
 ## `resources/source/book_work/`
 

@@ -91,22 +91,20 @@ manuscript changes.
 Plan, draft, revise, source-check, challenge a narrow paper.
 
 1. `resources/source/core_stance/contextual-intervention.md` for current thinking
-2. `resources/source/writing_voice/author-voice-guide.md` for voice
-3. `resources/playbooks/writing-voice-workflow.md`
+2. `resources/source/writing_voice/public-language.md` for reader-facing authorship
+3. `resources/playbooks/writing-voice-workflow.md` for general voice workflow (not manuscript-specific)
 4. The source files relevant to the paper's subject
 
-Use `author-voice-guide.md` for tone and rhythm, not as a ban on explanation: a
-paper may state propositions directly, explain reasoning, cite literature,
-discuss counterexamples, distinguish observation from hypothesis, and expose
-uncertainty. Do **not** load the manuscript-only Writing Working Agreement,
-Editing Charter, or Pattern Ledger. Development is not publication.
+Use `public-language.md` for the reader-facing authorship model: epistemic stance, uncertainty, sentence construction, lists, headings, closure. Do **not** load the manuscript-only Manuscript Voice Guide, Writing Working Agreement, Editing Charter, or Pattern Ledger. Development is not publication.
+
+For reader-facing prose, prefer the `public-writing` skill which orchestrates this capability.
 
 ### Class 5 — Manuscript Work
 
 Diagnosis, bounded editorial pass, rewrite, or integration into
 `manuscript/human.md`. **Explicit user request required.**
 
-1. `resources/source/writing_voice/author-voice-guide.md`
+1. `resources/source/writing_voice/manuscript-voice-guide.md` for the manuscript-specific voice
 2. `resources/source/book_work/writing-working-agreement.md`
 3. `resources/source/book_work/EDITING_CHARTER.md` for a bounded pass
 4. `resources/source/book_work/PATTERN_LEDGER.md` for de-patterning / pass work
@@ -119,6 +117,8 @@ Diagnosis, bounded editorial pass, rewrite, or integration into
 Manuscript prose constraints (spoken continuity, long uneven paragraphs, no
 tidy landings, no "not X but Y", no direct definition of enablement, behaviour
 before abstraction, one pass at a time, never blended) apply **only here**.
+
+Do not load these constraints for class 2 (concept development), class 4 (paper development), or class 6 (publication preparation) work.
 
 ### Class 6 — Publication Preparation
 

@@ -102,7 +102,7 @@ Preserving the user's thinking and voice without turning it into generic advice,
 
 Main resources:
 
-- `resources/source/writing_voice/author-voice-guide.md`
+- `resources/source/writing_voice/manuscript-voice-guide.md`
 - `resources/playbooks/writing-voice-workflow.md`
 
 Book/manuscript-specific resources:
