@@ -4,6 +4,8 @@ set -Eeuo pipefail
 workspace="${CODESPACE_VSCODE_FOLDER:-$(git rev-parse --show-toplevel 2>/dev/null || pwd)}"
 cd "$workspace"
 
+bash .devcontainer/fix-volume-permissions.sh
+
 echo "[devcontainer] Synchronising OpenCode agent skills..."
 bash .devcontainer/sync-agent-skills.sh --required
 
