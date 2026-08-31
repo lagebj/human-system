@@ -2,6 +2,7 @@
 
 **Last verified:** 2026-08-31
 **Operating model:** `docs/decisions/002-repository-operating-model-and-source-authority.md` (Accepted)
+**Foundation:** `docs/decisions/003-agent-skill-and-repository-foundation.md` (Accepted)
 
 This file is a mandatory read before any work. Keep it short. Update it only
 when its subject changes (ADR 002 §8), not after every conceptual note.
@@ -31,17 +32,35 @@ thread.
 - Dedicated devcontainer is operational (Node 24, non-root `node` user,
   `git`/`gh`/`jq`/`ripgrep`, OpenCode CLI, Claude Code).
 - Claude Code and OpenCode are both available, with agent-skill parity between
-  them.
+  them, including three **pinned** upstream skills (`research`,
+  `grounded-citations`, `writing-for-agents`) synced by commit SHA.
 - No application stack (no database, web framework, CMS, or app server). This is
   a workshop for future work.
 
 ## Active
 
-- ADR 002 operating model and the two-kinds-of-authority split.
-- `AGENTS.md` bootloader + task classes 1–7.
-- `human-systems-context` skill routing by task class.
+- ADR 002 operating model (task classes 1–7); ADR 003 skill/licensing/workflow/
+  validation foundation.
+- `AGENTS.md` bootloader → `.agents/workflow.json` (authoritative task-class →
+  skill-activation map).
+- Skills: `human-systems-context` plus Human System-owned `concept-development`,
+  `research-pressure-test` (wraps pinned `research`), `paper-development`,
+  `reader-test`, `publication-review`; pinned upstream `research`,
+  `grounded-citations`, `writing-for-agents`.
+- Multi-license model: `REUSE.toml` + `LICENSE.md` (MPL-2.0 tooling;
+  CC-BY-NC-SA-4.0 for future published material; all-rights-reserved working
+  material and manuscript; upstream terms for third-party).
+- `CONTRIBUTING.md`, `SECURITY.md`, `CITATION.cff`, `THIRD_PARTY_NOTICES.md`,
+  issue templates.
+- One validator: `bash scripts/validate.sh` (also run by
+  `.github/workflows/validate.yml` on PRs to and pushes to `main`).
 - Working-session playbook (`resources/playbooks/working-session.md`).
-- Repository validation (`scripts/validate-repo.sh`).
+- `main` protection (existing ruleset "default", unchanged): PR required,
+  force-push blocked, deletion blocked, linear history. The `validate` status
+  check is intentionally **not** required yet (ADR 003 §5).
+- Security: Dependabot alerts + dependency graph, Dependabot security fixes, and
+  private vulnerability reporting are enabled. A Dependabot version-update
+  config is deferred (no package manifests). Agent Skills have no auto-updater.
 
 ## Inactive
 
@@ -53,8 +72,9 @@ thread.
 
 ## Operationally authoritative files
 
-`AGENTS.md` → `.agents/skills/human-systems-context/SKILL.md` → `docs/decisions/`
-(ADR 002 current; ADR 001 superseded except manuscript pass mechanics) →
+`AGENTS.md` → `.agents/workflow.json` →
+`.agents/skills/human-systems-context/SKILL.md` → `docs/decisions/` (ADR 002 +
+ADR 003 current; ADR 001 superseded except manuscript pass mechanics) →
 `docs/current-state.md` → `resources/playbooks/working-session.md`.
 
 Canonical manuscript: `manuscript/human.md`. The copy at
@@ -75,7 +95,11 @@ Canonical manuscript: `manuscript/human.md`. The copy at
 
 ## Likely next work
 
-- Draft the first short paper to test the Class 4 workflow.
+- After the `validate` workflow shows several stable green runs: make the
+  `validate` status check **required** on `main` (ADR 003 §5). That is the only
+  remaining bootstrap step.
+- Draft the first short paper to test the Class 4 workflow (and, in practice,
+  `research-pressure-test`, `grounded-citations`, `reader-test`).
 - A Class 3 pass mapping `contextual-intervention.md` propositions against
   established theory.
 - Decide the fate of the inherited non-human-systems domains in the skill.

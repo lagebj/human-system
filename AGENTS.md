@@ -24,12 +24,15 @@ knowledge base dump, or a book-only workspace.
 In this order, for *how work is done* (not for what is true about human systems):
 
 1. `AGENTS.md` — this bootloader.
-2. `.agents/skills/human-systems-context/SKILL.md` — routing to the smallest
-   sufficient context.
-3. `docs/decisions/` — accepted ADRs. **ADR 002** is the current operating
-   model; ADR 001 is superseded except for its manuscript editing-pass mechanics.
-4. `docs/current-state.md` — current project state (mandatory read).
-5. `.agents/skills/human-systems-context/resources/playbooks/working-session.md`
+2. `.agents/workflow.json` — **authoritative** task-class → skill-activation map
+   (required / conditional / excluded skills, wrappers, explicit-intent gates).
+3. `.agents/skills/human-systems-context/SKILL.md` — how to load the smallest
+   sufficient context for a class.
+4. `docs/decisions/` — accepted ADRs. **ADR 002** is the operating model
+   (task classes); **ADR 003** covers the agent-skill and foundation decisions.
+   ADR 001 is superseded except its manuscript editing-pass mechanics.
+5. `docs/current-state.md` — current project state (mandatory read).
+6. `.agents/skills/human-systems-context/resources/playbooks/working-session.md`
    — the working-session flow.
 
 Everything under `resources/source/` and `resources/context/` (outside
@@ -40,20 +43,28 @@ acquire authority just from where they are filed. See ADR 002 §2.
 ## Before any work
 
 1. Read `docs/current-state.md`.
-2. Classify the task (ADR 002 §4):
+2. **Classify the task** (ADR 002 §4):
 
-   | Class | Work | Manuscript edits | Publication |
-   |---|---|---|---|
-   | 1 Repository / Tooling | devcontainer, skills, instructions, automation, structure, workflows | no | no |
-   | 2 Concept Development | capture/develop/connect ideas, find contradictions | no (unless asked) | no |
-   | 3 Research / Pressure Testing | compare with theory, counterexamples, falsification, boundary conditions | no | no |
-   | 4 Paper Development | plan/draft/revise/source-check a narrow paper | no | no |
-   | 5 Manuscript Work | diagnosis / bounded pass / rewrite / integration of `manuscript/human.md` | **only with explicit request** | no |
-   | 6 Publication Preparation | copy edit, references, metadata, formatting, preview prep | per artifact | no (prep only) |
-   | 7 Publication | expose a specific artifact as public website content | per artifact | **explicit, artifact-named instruction only** |
+   | Class | Work |
+   |---|---|
+   | 1 Repository / Tooling | devcontainer, skills, instructions, automation, structure, workflow config |
+   | 2 Concept Development | capture/develop/connect ideas, find contradictions |
+   | 3 Research / Pressure Testing | collide a claim with evidence and theory; counterexamples; falsifiers; boundary conditions |
+   | 4 Paper Development | plan/draft/revise/source-check a narrow paper |
+   | 5 Manuscript Work | diagnosis / bounded pass / rewrite / integration of `manuscript/human.md` |
+   | 6 Publication Preparation | copy edit, references, metadata, formatting, preview prep |
+   | 7 Publication | expose a specific artifact as public website content |
 
-3. Load context for that class via `SKILL.md`. Use the smallest sufficient set.
-   Do not load manuscript-only rules for Class 1–4, 6, 7.
+3. **Resolve the class in `.agents/workflow.json`.** Load its `required` skills.
+4. Load a `conditional` skill only when its `when` trigger actually applies.
+5. Respect `excluded`. In particular, `reader-test` never receives
+   `human-systems-context` or project-internal context (`clean_reader`).
+6. Respect `requires_explicit_user_intent` — true for **manuscript-work** and
+   **publication**. Do not proceed on those without an explicit, artifact-named
+   instruction.
+7. `load_manuscript_rules` is true only for class 5; never load Author Voice
+   Guide / Editing Charter / Pattern Ledger for other classes.
+8. Do the work, then run repository validation (below).
 
 ## Permissions
 
@@ -83,6 +94,9 @@ Use `adr-governance` when the change decides durable structure or authority.
 - `docs/current-state.md` is accurate (update only if its subject changed;
   avoid documentation churn — ADR 002 §8).
 - Referenced instruction/source paths resolve.
-- `bash scripts/validate-repo.sh` passes, or the failure is reported with output.
+- `bash scripts/validate.sh` passes, or the failure is reported with its output.
+  This is the one canonical validator; CI runs the same command.
+- Files carry correct REUSE/SPDX licensing (`REUSE.toml`; `LICENSE.md` explains
+  the multi-license model).
 - The final report separates completed work from unresolved risks, and does not
-  describe the operating model as final.
+  describe the operating model or this foundation as final.

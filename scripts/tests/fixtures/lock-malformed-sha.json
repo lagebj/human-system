@@ -1,0 +1,45 @@
+{
+  "$comment": "PINNED upstream Agent Skills. The sync mechanism checks out exactly these commits. Regenerate deliberately via docs/development/agent-skill-update-workflow.md; never auto-advance. Inspected and pinned 2026-08-31.",
+  "generated": "2026-08-31",
+  "sources": [
+    {
+      "id": "researcher-agent",
+      "repository": "https://github.com/drader/researcher_agent.git",
+      "commit": "deadbeef",
+      "skills": [
+        {
+          "path": "skills/research",
+          "name": "research"
+        }
+      ],
+      "license": "CC-BY-NC-4.0",
+      "provenance": "docs/development/agent-skill-provenance.md#researcher-agent"
+    },
+    {
+      "id": "hermes-agent",
+      "repository": "https://github.com/NousResearch/hermes-agent.git",
+      "commit": "3aee290899e478c5fdfb6a241ef62758a49829b3",
+      "skills": [
+        {
+          "path": "skills/research/grounded-citations",
+          "name": "grounded-citations"
+        }
+      ],
+      "license": "MIT",
+      "provenance": "docs/development/agent-skill-provenance.md#hermes-agent"
+    },
+    {
+      "id": "mattpocock-skills",
+      "repository": "https://github.com/mattpocock/skills.git",
+      "commit": "6654f6b60cd9d5be8b54c6fafe44346dabeb3b76",
+      "skills": [
+        {
+          "path": "skills/productivity/writing-for-agents",
+          "name": "writing-for-agents"
+        }
+      ],
+      "license": "MIT",
+      "provenance": "docs/development/agent-skill-provenance.md#mattpocock-skills"
+    }
+  ]
+}

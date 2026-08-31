@@ -1,0 +1,41 @@
+{
+  "$comment": "Desired upstream Agent Skill sources for Human System. This file states INTENT. The resolved commit SHAs live in agent-skills.lock.json and are the only thing the sync mechanism executes. Update flow: docs/development/agent-skill-update-workflow.md. Never point runtime at an unpinned branch.",
+  "sources": [
+    {
+      "id": "researcher-agent",
+      "repository": "https://github.com/drader/researcher_agent.git",
+      "skills": [
+        {
+          "path": "skills/research/SOMETHING-ELSE",
+          "name": "research"
+        }
+      ],
+      "license": "CC-BY-NC-4.0",
+      "purpose": "Generic research mechanics: literature search, source verification, PRISMA review, Socratic question-formulation, claim-by-claim fact-check. Wrapped by the Human System-owned research-pressure-test skill."
+    },
+    {
+      "id": "hermes-agent",
+      "repository": "https://github.com/NousResearch/hermes-agent.git",
+      "skills": [
+        {
+          "path": "skills/research/grounded-citations",
+          "name": "grounded-citations"
+        }
+      ],
+      "license": "MIT",
+      "purpose": "Deterministic evidence and citation provenance: register sources at retrieval time, render the Sources block mechanically, verify claim-to-evidence integrity."
+    },
+    {
+      "id": "mattpocock-skills",
+      "repository": "https://github.com/mattpocock/skills.git",
+      "skills": [
+        {
+          "path": "skills/productivity/writing-for-agents",
+          "name": "writing-for-agents"
+        }
+      ],
+      "license": "MIT",
+      "purpose": "Writing agent-facing operational material only: AGENTS.md, SKILL.md, workflow config, playbooks, context pointers. Never routes Human System prose, papers, or manuscript."
+    }
+  ]
+}

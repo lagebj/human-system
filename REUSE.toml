@@ -1,0 +1,51 @@
+version = 1
+
+SPDX-PackageName = "Human System"
+SPDX-PackageSupplier = "Lage Berger-Brendryen <lage.berger-brendryen@outlook.com>"
+SPDX-PackageDownloadLocation = "https://github.com/lagebj/human-system"
+
+# Within this file, the LAST matching [[annotations]] table wins for a file.
+# Rule 1 is the default; later rules override it for their paths.
+
+# --- Rule 1: default — working / manuscript / conceptual intellectual material.
+[[annotations]]
+path = "**"
+SPDX-FileCopyrightText = "2026 Lage Berger-Brendryen"
+SPDX-License-Identifier = "LicenseRef-All-Rights-Reserved"
+
+# --- Rule 2: Human System-authored software, tooling, and operational docs.
+[[annotations]]
+path = [
+  ".devcontainer/**",
+  "scripts/**",
+  ".github/**",
+  ".gitattributes",
+  ".gitignore",
+  ".env.example",
+  "CLAUDE.md",
+  "AGENTS.md",
+  "README.md",
+  "CONTRIBUTING.md",
+  "SECURITY.md",
+  "LICENSE.md",
+  "THIRD_PARTY_NOTICES.md",
+  "CITATION.cff",
+  "REUSE.toml",
+  ".agents/workflow.json",
+  ".agents/skills/concept-development/**",
+  ".agents/skills/research-pressure-test/**",
+  ".agents/skills/paper-development/**",
+  ".agents/skills/reader-test/**",
+  ".agents/skills/publication-review/**",
+  "docs/decisions/**",
+  "docs/development/**",
+  "docs/current-state.md",
+]
+SPDX-FileCopyrightText = "2026 Lage Berger-Brendryen"
+SPDX-License-Identifier = "MPL-2.0"
+
+# --- Rule 3: the manuscript stays all rights reserved (re-asserted explicitly).
+[[annotations]]
+path = "manuscript/**"
+SPDX-FileCopyrightText = "2026 Lage Berger-Brendryen"
+SPDX-License-Identifier = "LicenseRef-All-Rights-Reserved"

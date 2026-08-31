@@ -34,6 +34,8 @@ readonly instruction_file="$instruction_root/human-system-agent-skills.md"
 readonly manifest_file="$installation_root/managed-skills.txt"
 readonly workspace="${CODESPACE_VSCODE_FOLDER:-$(git rev-parse --show-toplevel 2>/dev/null || pwd)}"
 readonly claude_skills_root="$workspace/.claude/skills"
+readonly pinned_lock_file="$workspace/.devcontainer/agent-skills.lock.json"
+readonly pinned_repositories_root="$installation_root/pinned"
 
 readonly addy_repository="${ADDY_AGENT_SKILLS_REPOSITORY:-https://github.com/addyosmani/agent-skills.git}"
 readonly addy_ref="${ADDY_AGENT_SKILLS_REF:-main}"
@@ -42,6 +44,7 @@ readonly lage_ref="${LAGE_AGENT_SKILLS_REF:-main}"
 
 mkdir -p \
   "$repositories_root" \
+  "$pinned_repositories_root" \
   "$opencode_skills_root" \
   "$instruction_root" \
   "$claude_skills_root"
@@ -246,6 +249,126 @@ link_repo_local_skill() {
   done < <(find "$repo_local_skills" -mindepth 2 -maxdepth 2 -type f -name SKILL.md -print0 | sort -z)
 }
 
+sync_pinned_repository() {
+  # Fetch a repository and check out an EXACT commit. No branch tracking.
+  local id="$1"
+  local url="$2"
+  local commit="$3"
+  local directory="$pinned_repositories_root/$id"
+
+  if [[ ! "$commit" =~ ^[0-9a-f]{40}$ ]]; then
+    printf '[agent-skills] Pinned source %s has a non-SHA commit: %s\n' "$id" "$commit" >&2
+    return 1
+  fi
+
+  if [[ ! -d "$directory/.git" ]]; then
+    rm -rf "$directory"
+    mkdir -p "$directory"
+    git -C "$directory" init --quiet
+    git -C "$directory" remote add origin "$url"
+  else
+    git -C "$directory" remote set-url origin "$url"
+  fi
+
+  if git -C "$directory" cat-file -e "${commit}^{commit}" 2>/dev/null; then
+    : # commit already present; no fetch needed
+  else
+    log "Fetching pinned $id @ $commit"
+    if ! git -C "$directory" fetch --quiet --depth 1 origin "$commit" 2>/dev/null; then
+      # Some servers reject fetch-by-sha; fall back to a shallow history fetch.
+      git -C "$directory" fetch --quiet --prune origin || {
+        if [[ -d "$directory/.git" ]] && git -C "$directory" cat-file -e "${commit}^{commit}" 2>/dev/null; then
+          warn "Could not fetch $id; using cached objects."
+        else
+          printf '[agent-skills] Failed to fetch pinned %s from %s.\n' "$id" "$url" >&2
+          return 1
+        fi
+      }
+    fi
+  fi
+
+  if ! git -C "$directory" checkout --quiet --detach "$commit" 2>/dev/null; then
+    printf '[agent-skills] Pinned commit %s not found for %s.\n' "$commit" "$id" >&2
+    return 1
+  fi
+  git -C "$directory" reset --quiet --hard "$commit"
+}
+
+link_pinned_skill() {
+  local id="$1"
+  local skill_path="$2"
+  local skill_name="$3"
+  local skill_directory="$pinned_repositories_root/$id/$skill_path"
+
+  if [[ ! -f "$skill_directory/SKILL.md" ]]; then
+    printf '[agent-skills] Pinned %s: %s has no SKILL.md\n' "$id" "$skill_path" >&2
+    return 1
+  fi
+
+  local opencode_target="$opencode_skills_root/$skill_name"
+  local claude_target="$claude_skills_root/$skill_name"
+  local resolved
+
+  for target in "$opencode_target" "$claude_target"; do
+    if [[ -L "$target" ]]; then
+      resolved="$(readlink -f "$target" 2>/dev/null || true)"
+      if [[ "$resolved" == "$installation_root"/* ]]; then
+        rm -f "$target"
+      else
+        warn "Keeping unmanaged skill '$skill_name' at $target."
+        continue
+      fi
+    elif [[ -e "$target" ]]; then
+      warn "Keeping unmanaged skill '$skill_name' at $target."
+      continue
+    fi
+    ln -s "$skill_directory" "$target"
+  done
+
+  printf '%s\n' "$skill_name" >> "$manifest_file.next"
+}
+
+sync_pinned_skills() {
+  [[ -f "$pinned_lock_file" ]] || return 0
+
+  if ! command -v jq >/dev/null 2>&1; then
+    warn "jq not available; cannot process $pinned_lock_file"
+    return 1
+  fi
+
+  local failure=0
+  local rows
+  rows="$(jq -r '.sources[] | @base64' "$pinned_lock_file")"
+
+  local row
+  while IFS= read -r row; do
+    [[ -n "$row" ]] || continue
+    local json id url commit
+    json="$(printf '%s' "$row" | base64 -d)"
+    id="$(printf '%s' "$json" | jq -r '.id')"
+    url="$(printf '%s' "$json" | jq -r '.repository')"
+    commit="$(printf '%s' "$json" | jq -r '.commit')"
+
+    if ! sync_pinned_repository "$id" "$url" "$commit"; then
+      failure=1
+      continue
+    fi
+
+    local skill_rows skill_row
+    skill_rows="$(printf '%s' "$json" | jq -r '.skills[] | @base64')"
+    while IFS= read -r skill_row; do
+      [[ -n "$skill_row" ]] || continue
+      local sjson spath sname
+      sjson="$(printf '%s' "$skill_row" | base64 -d)"
+      spath="$(printf '%s' "$sjson" | jq -r '.path')"
+      sname="$(printf '%s' "$sjson" | jq -r '.name')"
+      link_pinned_skill "$id" "$spath" "$sname" || failure=1
+    done <<< "$skill_rows"
+  done <<< "$rows"
+
+  return "$failure"
+}
+
 write_opencode_instructions() {
   cat > "$instruction_file" <<'INSTRUCTIONS'
 # Automatic agent-skill use
@@ -272,6 +395,8 @@ link_skill_source "addyosmani-agent-skills"
 link_skill_source "lagebj-agent-skills"
 
 link_repo_local_skill
+
+sync_pinned_skills || sync_failure=1
 
 sort -u "$manifest_file.next" > "$manifest_file"
 rm -f "$manifest_file.next"

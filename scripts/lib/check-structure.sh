@@ -9,7 +9,7 @@
 #
 # Exit 0 = all checks passed. Exit 1 = one or more checks failed.
 #
-# Usage: bash scripts/validate-repo.sh
+# Usage: bash scripts/lib/check-structure.sh  (or via scripts/validate.sh)
 
 set -Eeuo pipefail
 
@@ -29,18 +29,49 @@ required=(
   "AGENTS.md"
   "CLAUDE.md"
   "README.md"
+  "LICENSE.md"
+  "CONTRIBUTING.md"
+  "SECURITY.md"
+  "CITATION.cff"
+  "THIRD_PARTY_NOTICES.md"
+  "REUSE.toml"
+  "LICENSES/MPL-2.0.txt"
+  "LICENSES/LicenseRef-All-Rights-Reserved.txt"
   "manuscript/human.md"
   "docs/current-state.md"
   "docs/decisions/001-editorial-workflow-and-source-authority.md"
   "docs/decisions/002-repository-operating-model-and-source-authority.md"
+  "docs/decisions/003-agent-skill-and-repository-foundation.md"
+  "docs/development/agent-skill-provenance.md"
+  "docs/development/agent-skill-update-workflow.md"
+  "docs/development/research-writing-agent-workflow.md"
+  ".agents/workflow.json"
   ".agents/skills/human-systems-context/SKILL.md"
   ".agents/skills/human-systems-context/resources/context/RESOURCE_MAP.md"
   ".agents/skills/human-systems-context/resources/source/core_stance/contextual-intervention.md"
   ".agents/skills/human-systems-context/resources/playbooks/working-session.md"
+  ".agents/skills/concept-development/SKILL.md"
+  ".agents/skills/research-pressure-test/SKILL.md"
+  ".agents/skills/paper-development/SKILL.md"
+  ".agents/skills/reader-test/SKILL.md"
+  ".agents/skills/publication-review/SKILL.md"
+  ".devcontainer/agent-skills.json"
+  ".devcontainer/agent-skills.lock.json"
+  ".github/workflows/validate.yml"
 )
 for f in "${required[@]}"; do
   if [[ -f "$f" ]]; then ok "$f"; else fail "missing required file: $f"; fi
 done
+printf '\n'
+
+# 1b. Repository hygiene — no runtime/auth/generated state committed ---------
+echo '--- Repository hygiene ---'
+hygiene_hits="$(git ls-files | grep -E '(^|/)\.env$|(^|/)settings\.local\.json$|^\.claude/skills/|human-system-agent-skills/|(^|/)devcontainer-lock\.json$' || true)"
+if [[ -z "$hygiene_hits" ]]; then
+  ok "no runtime/auth/generated state is tracked"
+else
+  fail "tracked files that should not be committed:"$'\n'"$hygiene_hits"
+fi
 printf '\n'
 
 # 2. Referenced instruction/source paths resolve ----------------------------

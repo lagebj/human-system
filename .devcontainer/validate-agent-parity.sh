@@ -123,6 +123,35 @@ else
   printf '[WARN] Repo-local human-systems-context skill not yet linked for Claude Code (run sync-agent-skills.sh)\n'
 fi
 
+# 6b. Pinned upstream skills are linked for both agents, from the locked SHAs
+pinned_lock="$workspace/.devcontainer/agent-skills.lock.json"
+if [[ -f "$pinned_lock" ]] && command -v jq >/dev/null 2>&1; then
+  pinned_root="$data_home/human-system-agent-skills/pinned"
+  while IFS=$'\t' read -r p_id p_commit p_name; do
+    [[ -n "$p_name" ]] || continue
+    for agent_root in "$opencode_skills:OpenCode" "$claude_skills:Claude"; do
+      root_dir="${agent_root%%:*}"; label="${agent_root##*:}"
+      if [[ -L "$root_dir/$p_name" ]]; then
+        printf '[OK] Pinned skill "%s" linked for %s\n' "$p_name" "$label"
+      else
+        printf '[FAIL] Pinned skill "%s" not linked for %s\n' "$p_name" "$label" >&2
+        errors=$((errors + 1))
+      fi
+    done
+    if [[ -d "$pinned_root/$p_id/.git" ]]; then
+      actual="$(git -C "$pinned_root/$p_id" rev-parse HEAD 2>/dev/null || echo none)"
+      if [[ "$actual" == "$p_commit" ]]; then
+        printf '[OK] Pinned source %s at locked commit %s\n' "$p_id" "${p_commit:0:12}"
+      else
+        printf '[FAIL] Pinned source %s at %s, expected %s\n' "$p_id" "${actual:0:12}" "${p_commit:0:12}" >&2
+        errors=$((errors + 1))
+      fi
+    fi
+  done < <(jq -r '.sources[] | .id as $i | .commit as $c | .skills[] | [$i, $c, .name] | @tsv' "$pinned_lock")
+else
+  printf '[INFO] Pinned skill lock not evaluated (missing lock file or jq)\n'
+fi
+
 # 7. Mutable state isolation checks
 claude_config="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
 if [[ "$claude_config" == "$HOME/.claude" ]]; then
