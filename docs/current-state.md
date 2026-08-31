@@ -95,27 +95,29 @@ public website. `papers/working/`, `manuscript/`, `inbox/`, `.agents/`, and
 - `SKILL.md` and `resources/context/OPERATING_CONTEXT.md` still carry unrelated
   personal domains (youth football, Matchboard) inherited from the broader
   context package; whether they belong in this repository is undecided.
-- No paper exists yet, so the paper-development workflow (Class 4) is untested in
-  practice.
 - Publication architecture is implemented but not yet proven in production (no
   papers published yet, GitHub Pages deployment not yet tested on merge).
 - Public authorship model is newly implemented; existing working papers may
   need remediation to align with `public-language.md`.
+
+## Active paper development
+
+- **"It Depends" series** — Working draft of Paper 1 exists
+  (`papers/working/it-depends/paper-01-it-depends.md`). Series map and research
+  notes in place. Load-bearing claims identified for pressure-testing. Not for
+  publication.
 
 ## Likely next work
 
 - After the `validate` workflow shows several stable green runs: make the
   `validate` status check **required** on `main` (ADR 003 §5). That is the only
   remaining bootstrap step.
-- Draft the first short paper to test the Class 4 workflow (and, in practice,
-  `research-pressure-test`, `grounded-citations`, `reader-test`).
-- A Class 3 pass mapping `contextual-intervention.md` propositions against
-  established theory.
-- Decide the fate of the inherited non-human-systems domains in the skill.
+- Pressure-test load-bearing claims in Paper 1 using `research-pressure-test`
+  and `grounded-citations` skills.
+- Run `reader-test` on Paper 1 draft (clean context).
 - Verify GitHub Pages deployment succeeds on merge and the deployed site is
   accessible at `https://lagebj.github.io/human-system/`.
-- Run reader-test on Home and About pages in a clean session before or after
-  merge.
+- Decide whether to continue refining Paper 1 or begin Paper 2 (Best Practice).
 
 ---
 
