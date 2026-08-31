@@ -78,6 +78,29 @@ authentication flow.
 
 ### OpenCode
 
+The project default model is `ollama/qwen3.5:27b` (local Ollama), controlled by
+`opencode.json`. Users can explicitly override it with `/model` or the `-m`
+flag. Ollama Cloud (`ollama-cloud/glm-5.1:cloud`) remains available as an
+alternative provider.
+
+#### Local Ollama
+
+OpenCode connects to a local Ollama instance running on the host at
+`http://host.docker.internal:11434/v1`. This works automatically on macOS and
+Windows (Docker Desktop). On Linux, `host.docker.internal` may need
+`--add-host=host.docker.internal:host-gateway` in `devcontainer.json`
+`runArgs`.
+
+The model `qwen3.5:27b` must be pulled on the Ollama host before use:
+
+```bash
+ollama pull qwen3.5:27b
+```
+
+The devcontainer does not automatically download models.
+
+#### Ollama Cloud
+
 OpenCode authenticates to Ollama Cloud using `OLLAMA_API_KEY`:
 
 - **Local devcontainer**: put it in `.env` (loaded on boot)

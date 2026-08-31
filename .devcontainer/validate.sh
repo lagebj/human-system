@@ -218,23 +218,31 @@ else
   printf '[INFO] no .env file (expected in Codespaces; use Codespaces secrets)\n'
 fi
 
-# 11. Ollama Cloud provider configuration
-printf '%s\n' '--- Ollama Cloud Config ---'
+# 11. OpenCode provider configuration
+printf '%s\n' '--- OpenCode Provider Config ---'
 if [[ -f opencode.json ]]; then
-  # Verify the provider references OLLAMA_API_KEY via env: interpolation (not a literal key).
-  if grep -q '"apiKey".*"{env:OLLAMA_API_KEY}"' opencode.json; then
-    printf '[OK] opencode.json references OLLAMA_API_KEY via env: interpolation\n'
+  # Verify the default model.
+  default_model="$(jq -r '.model // empty' opencode.json 2>/dev/null || echo '')"
+  if [[ -n "$default_model" ]]; then
+    printf '[OK] default model: %s\n' "$default_model"
   else
-    printf '[FAIL] opencode.json does not reference OLLAMA_API_KEY via {env:...} interpolation\n' >&2
+    printf '[FAIL] no default model set in opencode.json\n' >&2
     errors=$((errors + 1))
   fi
 
-  # Verify the default model is ollama-cloud (not local ollama).
-  default_model="$(jq -r '.model // empty' opencode.json 2>/dev/null || echo '')"
-  if [[ "$default_model" == ollama-cloud/* ]]; then
-    printf '[OK] default model is ollama-cloud: %s\n' "$default_model"
+  # Verify local Ollama provider is configured.
+  if jq -e '.provider.ollama' opencode.json >/dev/null 2>&1; then
+    printf '[OK] local Ollama provider configured\n'
   else
-    printf '[FAIL] default model should be ollama-cloud/*, got: %s\n' "$default_model" >&2
+    printf '[FAIL] local Ollama provider missing in opencode.json\n' >&2
+    errors=$((errors + 1))
+  fi
+
+  # Verify Ollama Cloud provider references OLLAMA_API_KEY via env: interpolation.
+  if grep -q '"apiKey".*"{env:OLLAMA_API_KEY}"' opencode.json; then
+    printf '[OK] Ollama Cloud provider references OLLAMA_API_KEY via env: interpolation\n'
+  else
+    printf '[FAIL] Ollama Cloud provider does not reference OLLAMA_API_KEY via {env:...} interpolation\n' >&2
     errors=$((errors + 1))
   fi
 

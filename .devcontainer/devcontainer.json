@@ -35,7 +35,7 @@
   "containerEnv": {
     "CLAUDE_CONFIG_DIR": "/home/node/.claude",
     "OPENCODE_SERVER_USERNAME": "lagebj",
-    "OLLAMA_MODEL": "glm-5.1:cloud",
+    "OLLAMA_MODEL": "qwen3.5:27b",
     "OPENCODE_MODEL_CONTEXT": "202752",
     "OPENCODE_MODEL_OUTPUT": "32768",
     "ADDY_AGENT_SKILLS_REF": "main",
