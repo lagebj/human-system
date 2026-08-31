@@ -24,7 +24,7 @@ Routing (see the skill's `SKILL.md` for the full task-class map):
 - Concept / research / strategy work: `resources/source/core_stance/contextual-intervention.md`,
   then `resources/source/core_stance/`, then `resources/source/field_patterns/`
   when enablement or modernization is involved.
-- Writing voice: `resources/source/writing_voice/author-voice-guide.md`.
+- Writing voice (general): `resources/source/writing_voice/public-language.md` for reader-facing material; `resources/source/writing_voice/manuscript-voice-guide.md` for manuscript work only.
 - Manuscript work only: `resources/source/book_work/` plus the manuscript
   playbooks.
 - Coding-agent prompts: `resources/playbooks/coding-agent-workflow.md`.

@@ -24,5 +24,5 @@ Generated inventory of the skill package.
 - `resources/source/core_stance/who_am_i.md` — 8219 bytes — sha256:96e55d3a89e6e9c0
 - `resources/source/field_patterns/four-impulses-of-help.md` — 18948 bytes — sha256:99d24593e06bfd7c
 - `resources/source/field_patterns/trojan_horse_movement_pattern.md` — 58120 bytes — sha256:7950d1ae7c4555cd
-- `resources/source/writing_voice/author-voice-guide.md` — 4388 bytes — sha256:8ecaa8fbec611f0c
+- `resources/source/writing_voice/manuscript-voice-guide.md` — 4388 bytes — sha256:8ecaa8fbec611f0c
 - `resources/templates/AGENTS_SNIPPET.md` — 1870 bytes — sha256:7e229e6b3154dbae

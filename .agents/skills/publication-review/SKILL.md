@@ -30,10 +30,22 @@ part of preparation and read its findings into this review.
 7. **Public/private boundary.** No unpublished conceptual material, private
    client detail, personal data, internal notes, or manuscript content leaks
    into an artifact headed for a public location.
-8. **Residual uncertainty.** State plainly what the artifact does not resolve,
-   so a "ready with caveats" verdict can name the caveats.
-9. **Reader-test findings.** Summarise what the clean reader flagged and whether
-   it was addressed.
+8. **Agent scaffolding leakage.** No references to `AGENTS.md`, `SKILL.md`,
+   `.agents/`, workflow JSON, task classes, skill-loading instructions, prompt
+   fragments, validation implementation details, agent-specific comments,
+   editorial metadata, internal status bookkeeping, or reader-test procedures
+   unless the page is intentionally about those mechanisms.
+9. **AI-shaped structural regularity.** Excessive headings, repeated section
+   templates, automatic conclusions, listification of reasoning, content-
+   marketing cadence, every thought turned into advice, every uncertainty
+   resolved.
+10. **Epistemic drift.** Uncertainty that disappeared during editing, source
+    claims upgraded beyond evidence, hedging that became false certainty,
+    first-person stance hidden behind fake institutional neutrality.
+11. **Residual uncertainty.** State plainly what the artifact does not resolve,
+    so a "ready with caveats" verdict can name the caveats.
+12. **Reader-test findings.** Summarise what the clean reader flagged and whether
+    it was addressed.
 
 ## Verdict
 

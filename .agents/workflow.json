@@ -7,6 +7,7 @@
     "concept-development": { "kind": "human-system-owned", "source": ".agents/skills/concept-development" },
     "research-pressure-test": { "kind": "human-system-owned", "source": ".agents/skills/research-pressure-test", "wraps": ["research", "grounded-citations"] },
     "paper-development": { "kind": "human-system-owned", "source": ".agents/skills/paper-development" },
+    "public-writing": { "kind": "human-system-owned", "source": ".agents/skills/public-writing" },
     "reader-test": { "kind": "human-system-owned", "source": ".agents/skills/reader-test" },
     "publication-review": { "kind": "human-system-owned", "source": ".agents/skills/publication-review" },
     "research": { "kind": "pinned-upstream", "lock": ".devcontainer/agent-skills.lock.json#researcher-agent", "note": "drader/researcher_agent skills/research, CC-BY-NC-4.0" },
@@ -16,6 +17,7 @@
     "adr-governance": { "kind": "repo-collection", "source": "lagebj/agent-skills" }
   },
   "manuscript_rules_note": "There is no separate manuscript-writing skill. Manuscript voice and editing-pass rules live inside human-systems-context (its class 5 routing) and resources/source/book_work/. 'load_manuscript_rules' controls whether that routing is engaged. Only manuscript-work engages it.",
+  "public_writing_note": "The public-writing skill governs reader-facing Human System prose (papers, essays, notes, web pages). It loads public-language.md for authorship principles. It does not load manuscript-only constraints. Paper development uses public-writing as the prose layer and adds claim-testing, evidence registration, and reader-testing.",
   "task_classes": {
     "repository-tooling": {
       "adr002_class": 1,
@@ -60,7 +62,7 @@
     },
     "paper-development": {
       "adr002_class": 4,
-      "required": ["human-systems-context", "paper-development"],
+      "required": ["human-systems-context", "paper-development", "public-writing"],
       "conditional": [
         { "skill": "research-pressure-test", "when": "load-bearing claims need testing" },
         { "skill": "research", "when": "literature search or fact-check mechanics are needed" },
@@ -87,7 +89,7 @@
     },
     "publication-preparation": {
       "adr002_class": 6,
-      "required": ["human-systems-context", "publication-review", "reader-test"],
+      "required": ["human-systems-context", "publication-review", "reader-test", "public-writing"],
       "conditional": [
         { "skill": "grounded-citations", "when": "the artifact cites external evidence" },
         { "skill": "research-pressure-test", "when": "a reviewer challenge needs re-testing" },
@@ -117,12 +119,20 @@
   "sequences": {
     "research-backed-paper": [
       "human-systems-context",
+      "public-writing (prose layer)",
       "paper-development",
       "research-pressure-test (when claims require testing)",
       "grounded-citations (when evidence is gathered)",
-      "paper-development",
+      "public-writing (revision)",
       "reader-test (when independently readable)",
       "publication-review (publication preparation)",
+      "explicit human publish decision"
+    ],
+    "public-essay-or-note": [
+      "human-systems-context",
+      "public-writing",
+      "reader-test (when independently readable)",
+      "publication-review (optional, when preparing for publication)",
       "explicit human publish decision"
     ]
   },

@@ -309,7 +309,7 @@ Known manuscript source:
 
 Binding source order for manuscript work:
 
-1. `resources/source/writing_voice/author-voice-guide.md`
+1. `resources/source/writing_voice/manuscript-voice-guide.md`
 2. `resources/source/book_work/writing-working-agreement.md`
 3. `resources/source/book_work/EDITING_CHARTER.md` when editing
 4. `resources/source/book_work/PATTERN_LEDGER.md` when de-patterning or pass work is involved

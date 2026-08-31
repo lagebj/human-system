@@ -33,6 +33,15 @@ no project background), the reader reports:
 - implications present in the text but never stated
 - what they think the author wants them to conclude
 - what is left unresolved
+- **Does this sound like a person exploring a view or an organisation declaring policy?**
+- **Which statements did they read as established facts?**
+- **Where did the writer appear more certain than the evidence justified?**
+- **Where did they feel the text had been organised for them rather than thought through with them?**
+- **Did any list or heading structure feel mechanical?**
+- **What appears unresolved? Did unresolved material feel intentional or merely incomplete?**
+- **What do they think the author's own position is?**
+- **Did any humour or sarcasm alter how they interpreted the author's stance?**
+- **Did they notice any references to internal agent processes, workflows, or validation?**
 
 It does **not** rewrite, edit, or "improve" the artifact. Findings are a list
 for the author to act on.

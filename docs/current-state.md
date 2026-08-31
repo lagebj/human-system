@@ -4,6 +4,7 @@
 **Operating model:** `docs/decisions/002-repository-operating-model-and-source-authority.md` (Accepted)
 **Foundation:** `docs/decisions/003-agent-skill-and-repository-foundation.md` (Accepted)
 **Publication architecture:** `docs/decisions/004-public-site-and-publication-architecture.md` (Proposed)
+**Public authorship:** `docs/decisions/005-public-authorship-and-language-programme.md` (Proposed)
 
 This file is a mandatory read before any work. Keep it short. Update it only
 when its subject changes (ADR 002 §8), not after every conceptual note.
@@ -40,13 +41,14 @@ thread.
 - GitHub Pages deployment via GitHub Actions (deploys only from `main` branch).
 
 - ADR 002 operating model (task classes 1–7); ADR 003 skill/licensing/workflow/
-  validation foundation; ADR 004 publication architecture (proposed).
+  validation foundation; ADR 004 publication architecture (proposed); ADR 005
+  public authorship and language programme (proposed).
 - `AGENTS.md` bootloader → `.agents/workflow.json` (authoritative task-class →
   skill-activation map).
 - Skills: `human-systems-context` plus Human System-owned `concept-development`,
   `research-pressure-test` (wraps pinned `research`), `paper-development`,
-  `reader-test`, `publication-review`; pinned upstream `research`,
-  `grounded-citations`, `writing-for-agents`.
+  `public-writing`, `reader-test`, `publication-review`; pinned upstream
+  `research`, `grounded-citations`, `writing-for-agents`.
 - Multi-license model: `REUSE.toml` + `LICENSE.md` (MPL-2.0 tooling;
   CC-BY-NC-SA-4.0 for published material; all-rights-reserved working
   material and manuscript; upstream terms for third-party).
@@ -97,6 +99,8 @@ public website. `papers/working/`, `manuscript/`, `inbox/`, `.agents/`, and
   practice.
 - Publication architecture is implemented but not yet proven in production (no
   papers published yet, GitHub Pages deployment not yet tested on merge).
+- Public authorship model is newly implemented; existing working papers may
+  need remediation to align with `public-language.md`.
 
 ## Likely next work
 

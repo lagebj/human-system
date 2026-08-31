@@ -6,7 +6,7 @@ The manuscript is one expression of the skill's content. Do not let manuscript-s
 
 ## Required reading
 
-1. `resources/source/writing_voice/author-voice-guide.md`
+1. `resources/source/writing_voice/manuscript-voice-guide.md`
 2. `resources/source/book_work/writing-working-agreement.md`
 3. `resources/context/OPERATING_CONTEXT.md` sections 2, 10, 11, and 12
 4. `resources/source/book_work/human.md` when continuing or revising existing manuscript
