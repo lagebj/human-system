@@ -182,6 +182,24 @@ else
   errors=$((errors + 1))
 fi
 
+# Verify load-dotenv.sh has the Codespaces guard.
+if [[ -f .devcontainer/load-dotenv.sh ]] \
+   && grep -qF 'CODESPACES' .devcontainer/load-dotenv.sh; then
+  printf '[OK] load-dotenv.sh has Codespaces guard\n'
+else
+  printf '[FAIL] load-dotenv.sh is missing Codespaces guard\n' >&2
+  errors=$((errors + 1))
+fi
+
+# Verify load-dotenv.sh respects environment precedence (does not overwrite).
+if [[ -f .devcontainer/load-dotenv.sh ]] \
+   && grep -qF '!__hs_key+x' .devcontainer/load-dotenv.sh; then
+  printf '[OK] load-dotenv.sh respects environment precedence\n'
+else
+  printf '[FAIL] load-dotenv.sh does not guard against overwriting existing env vars\n' >&2
+  errors=$((errors + 1))
+fi
+
 hook_marker='# >>> human-system dotenv auto-load >>>'
 hook_found=0
 for rc in "$HOME/.bashrc" "$HOME/.profile" /etc/profile.d/99-human-system-dotenv.sh; do
@@ -198,6 +216,47 @@ if [[ -f .env ]]; then
   printf '[OK] .env present (local devcontainer)\n'
 else
   printf '[INFO] no .env file (expected in Codespaces; use Codespaces secrets)\n'
+fi
+
+# 11. Ollama Cloud provider configuration
+printf '%s\n' '--- Ollama Cloud Config ---'
+if [[ -f opencode.json ]]; then
+  # Verify the provider references OLLAMA_API_KEY via env: interpolation (not a literal key).
+  if grep -q '"apiKey".*"{env:OLLAMA_API_KEY}"' opencode.json; then
+    printf '[OK] opencode.json references OLLAMA_API_KEY via env: interpolation\n'
+  else
+    printf '[FAIL] opencode.json does not reference OLLAMA_API_KEY via {env:...} interpolation\n' >&2
+    errors=$((errors + 1))
+  fi
+
+  # Verify the default model is ollama-cloud (not local ollama).
+  default_model="$(jq -r '.model // empty' opencode.json 2>/dev/null || echo '')"
+  if [[ "$default_model" == ollama-cloud/* ]]; then
+    printf '[OK] default model is ollama-cloud: %s\n' "$default_model"
+  else
+    printf '[FAIL] default model should be ollama-cloud/*, got: %s\n' "$default_model" >&2
+    errors=$((errors + 1))
+  fi
+
+  # Verify no literal API key in opencode.json.
+  if grep -qE '"apiKey".*"[0-9a-f]{8,}"' opencode.json; then
+    printf '[FAIL] opencode.json contains a literal API key (should use {env:...})\n' >&2
+    errors=$((errors + 1))
+  else
+    printf '[OK] no literal API key in opencode.json\n'
+  fi
+else
+  printf '[FAIL] opencode.json missing\n' >&2
+  errors=$((errors + 1))
+fi
+
+# 12. .env is gitignored
+printf '%s\n' '--- .env Gitignore ---'
+if git check-ignore .env >/dev/null 2>&1; then
+  printf '[OK] .env is gitignored\n'
+else
+  printf '[FAIL] .env is not gitignored (secrets must not be tracked)\n' >&2
+  errors=$((errors + 1))
 fi
 
 printf '\n=== Validation Complete ===\n'
