@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
+bash .devcontainer/fix-volume-permissions.sh
+
 state_dir="${XDG_STATE_HOME:-$HOME/.local/state}/human-system"
 mkdir -p "$state_dir"
 

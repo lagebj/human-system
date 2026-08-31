@@ -38,13 +38,56 @@ fi
 
 printf '\n'
 
-# 3. Agent parity validation
+# 3. Volume ownership check
+printf '--- Volume Ownership ---\n'
+for dir in \
+  "$HOME/.claude" \
+  "$HOME/.config/opencode"
+do
+  if [[ -d "$dir" ]]; then
+    dir_owner="$(stat -c '%u:%g' "$dir" 2>/dev/null || stat -f '%u:%g' "$dir" 2>/dev/null || echo 'unknown')"
+    if [[ "$dir_owner" == "$(id -u):$(id -g)" ]]; then
+      printf '[OK] %s owned by %s\n' "$dir" "$dir_owner"
+    else
+      printf '[FAIL] %s owned by %s (expected %s:%s)\n' "$dir" "$dir_owner" "$(id -u)" "$(id -g)" >&2
+      errors=$((errors + 1))
+    fi
+  else
+    printf '[INFO] %s does not exist yet\n' "$dir"
+  fi
+done
+
+for dir in \
+  "$HOME/.config/opencode/skills" \
+  "$HOME/.config/opencode/instructions"
+do
+  if [[ -d "$dir" ]]; then
+    if [[ -w "$dir" ]]; then
+      printf '[OK] %s is writable\n' "$dir"
+    else
+      printf '[FAIL] %s is not writable by current user\n' "$dir" >&2
+      errors=$((errors + 1))
+    fi
+  else
+    if touch "$dir" 2>/dev/null; then
+      rmdir "$dir"
+      printf '[OK] %s can be created\n' "$dir"
+    else
+      printf '[FAIL] Cannot create %s — permission denied\n' "$dir" >&2
+      errors=$((errors + 1))
+    fi
+  fi
+done
+
+printf '\n'
+
+# 4. Agent parity validation
 printf '--- Agent Parity ---\n'
 bash .devcontainer/validate-agent-parity.sh || errors=$((errors + $?))
 
 printf '\n'
 
-# 4. Worktree integrity — no tracked changes introduced by lifecycle
+# 5. Worktree integrity — no tracked changes introduced by lifecycle
 printf '--- Worktree Integrity ---\n'
 git_status="$(git status --porcelain)"
 if [[ -z "$git_status" ]]; then
@@ -57,7 +100,7 @@ fi
 
 printf '\n'
 
-# 5. No secrets in tracked files
+# 6. No secrets in tracked files
 printf '--- Secret Scan ---\n'
 secret_patterns=(
   'ANTHROPIC_API_KEY=sk-'
@@ -77,7 +120,7 @@ printf '[OK] No hardcoded secrets found in tracked files\n'
 
 printf '\n'
 
-# 6. Manuscript untouched
+# 7. Manuscript untouched
 printf '--- Manuscript Integrity ---\n'
 manuscript_head="$(git show HEAD:manuscript/human.md 2>/dev/null | sha256sum || echo 'N/A')"
 manuscript_disk="$(sha256sum < manuscript/human.md 2>/dev/null || echo 'N/A')"
@@ -89,7 +132,7 @@ fi
 
 printf '\n'
 
-# 7. Mutable state isolation — check that agent config points to Human System scoped paths
+# 8. Mutable state isolation — check that agent config points to Human System scoped paths
 printf '--- State Isolation ---\n'
 claude_config="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
 printf 'Claude config dir: %s\n' "$claude_config"
@@ -111,7 +154,7 @@ fi
 
 printf '\n'
 
-# 8. No application infrastructure
+# 9. No application infrastructure
 printf '--- Application Infrastructure Check ---\n'
 for pkg in postgresql-client prisma vercel brevo astro; do
   if command -v "$pkg" >/dev/null 2>&1; then

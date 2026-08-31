@@ -134,6 +134,12 @@ fi
 opencode_config="$config_home/opencode"
 if [[ -d "$opencode_config" ]]; then
   printf '[OK] OpenCode config directory: %s\n' "$opencode_config"
+  if [[ -w "$opencode_config" ]]; then
+    printf '[OK] OpenCode config directory is writable\n'
+  else
+    printf '[FAIL] OpenCode config directory is not writable by current user\n' >&2
+    errors=$((errors + 1))
+  fi
 else
   printf '[INFO] OpenCode config directory not yet created: %s (created on first run)\n' "$opencode_config"
 fi
