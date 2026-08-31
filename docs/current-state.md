@@ -3,6 +3,7 @@
 **Last verified:** 2026-08-31
 **Operating model:** `docs/decisions/002-repository-operating-model-and-source-authority.md` (Accepted)
 **Foundation:** `docs/decisions/003-agent-skill-and-repository-foundation.md` (Accepted)
+**Publication architecture:** `docs/decisions/004-public-site-and-publication-architecture.md` (Proposed)
 
 This file is a mandatory read before any work. Keep it short. Update it only
 when its subject changes (ADR 002 §8), not after every conceptual note.
@@ -34,13 +35,12 @@ thread.
 - Claude Code and OpenCode are both available, with agent-skill parity between
   them, including three **pinned** upstream skills (`research`,
   `grounded-citations`, `writing-for-agents`) synced by commit SHA.
-- No application stack (no database, web framework, CMS, or app server). This is
-  a workshop for future work.
-
-## Active
+- Astro static site in `site/` for public publication (no backend, no component
+  framework, no analytics).
+- GitHub Pages deployment via GitHub Actions (deploys only from `main` branch).
 
 - ADR 002 operating model (task classes 1–7); ADR 003 skill/licensing/workflow/
-  validation foundation.
+  validation foundation; ADR 004 publication architecture (proposed).
 - `AGENTS.md` bootloader → `.agents/workflow.json` (authoritative task-class →
   skill-activation map).
 - Skills: `human-systems-context` plus Human System-owned `concept-development`,
@@ -48,12 +48,13 @@ thread.
   `reader-test`, `publication-review`; pinned upstream `research`,
   `grounded-citations`, `writing-for-agents`.
 - Multi-license model: `REUSE.toml` + `LICENSE.md` (MPL-2.0 tooling;
-  CC-BY-NC-SA-4.0 for future published material; all-rights-reserved working
+  CC-BY-NC-SA-4.0 for published material; all-rights-reserved working
   material and manuscript; upstream terms for third-party).
 - `CONTRIBUTING.md`, `SECURITY.md`, `CITATION.cff`, `THIRD_PARTY_NOTICES.md`,
   issue templates.
 - One validator: `bash scripts/validate.sh` (also run by
-  `.github/workflows/validate.yml` on PRs to and pushes to `main`).
+  `.github/workflows/validate.yml` on PRs to and pushes to `main`). Validation
+  includes site build and publication-boundary regression test.
 - Working-session playbook (`resources/playbooks/working-session.md`).
 - `main` protection (existing ruleset "default", unchanged): PR required,
   force-push blocked, deletion blocked, linear history. The `validate` status
@@ -66,19 +67,21 @@ thread.
 
 - Manuscript editorial passes. No pass is active. `manuscript/human.md` is
   preserved and not being edited.
-- Publication / website implementation. Not established. Not in scope until
-  explicitly started.
 - The five-class editorial task model from ADR 001 (superseded).
 
 ## Operationally authoritative files
 
 `AGENTS.md` → `.agents/workflow.json` →
 `.agents/skills/human-systems-context/SKILL.md` → `docs/decisions/` (ADR 002 +
-ADR 003 current; ADR 001 superseded except manuscript pass mechanics) →
-`docs/current-state.md` → `resources/playbooks/working-session.md`.
+ADR 003 current; ADR 001 superseded except manuscript pass mechanics; ADR 004
+proposed) → `docs/current-state.md` → `resources/playbooks/working-session.md`.
 
 Canonical manuscript: `manuscript/human.md`. The copy at
 `resources/source/book_work/human.md` is a stale snapshot, context-loading only.
+
+Publication boundary: `papers/published/` is the only content eligible for the
+public website. `papers/working/`, `manuscript/`, `inbox/`, `.agents/`, and
+`resources/` are structurally excluded from the site build.
 
 ## Unresolved tensions
 
@@ -92,6 +95,8 @@ Canonical manuscript: `manuscript/human.md`. The copy at
   context package; whether they belong in this repository is undecided.
 - No paper exists yet, so the paper-development workflow (Class 4) is untested in
   practice.
+- Publication architecture is implemented but not yet proven in production (no
+  papers published yet, GitHub Pages deployment not yet tested on merge).
 
 ## Likely next work
 
@@ -103,6 +108,10 @@ Canonical manuscript: `manuscript/human.md`. The copy at
 - A Class 3 pass mapping `contextual-intervention.md` propositions against
   established theory.
 - Decide the fate of the inherited non-human-systems domains in the skill.
+- Verify GitHub Pages deployment succeeds on merge and the deployed site is
+  accessible at `https://lagebj.github.io/human-system/`.
+- Run reader-test on Home and About pages in a clean session before or after
+  merge.
 
 ---
 
