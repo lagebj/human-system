@@ -1,63 +1,97 @@
 # Current State
 
-**Last verified:** 2026-06-23
-**Revision:** observational-reorientation
+**Last verified:** 2026-08-31
+**Operating model:** `docs/decisions/002-repository-operating-model-and-source-authority.md` (Accepted)
+
+This file is a mandatory read before any work. Keep it short. Update it only
+when its subject changes (ADR 002 §8), not after every conceptual note.
 
 ---
 
-## Observational Reorientation (2026-06-23)
+## What this project is
 
-**Starting commit:** ac37a63f5113e67c7475174f851ba15fdc0ecf8d
-**Starting word count:** 8,335 words
-**Ending word count:** 8,918 words
-**Net change:** +583 words (+7%)
+The working home for an evolving body of thought about understanding and
+intervening responsibly in human systems when the right action depends on
+context. The recurring entrypoint is consulting and technical/organizational
+work. "It depends, therefore identify what it depends upon" is a recurring
+thread.
 
-**Goal:** Restore the manuscript's original form as descriptive observational nonfiction rather than solution-oriented management writing. Reverse the movement toward manufactured scenarios, case-study structure, tidy conclusions, and frameworks disguised as prose.
+## Current direction
 
-**Corrections applied:**
-- Scenario factual-basis audit completed for all 8 major scenarios
-- Orchestration system project expanded as directly experienced experiential spine (specific meetings, my presence noted, support work changes)
-- Manufactured scenarios converted to exploratory prose or hypothetical framing (Ch1 Maria, Ch2 engineer, Ch6 security, Ch7 staff engineer)
-- Chapter endings verified as observational rather than prescriptive
-- No new frameworks, taxonomies, or answers introduced
-- Length allowed to grow where thought required it (+583 words from expanded orchestration material)
+- Shorter, narrower papers are the intended near-term way of testing ideas.
+- The book manuscript is preserved as one possible future synthesis. It is not
+  the primary output and is inactive by default.
+- Enablement and the Trojan Horse Movement Pattern are treated as applied
+  consequences of the thinking, not its centre.
+- The newer conceptual direction lives in
+  `resources/source/core_stance/contextual-intervention.md`.
 
-**Validation:** Manual-voice search shows one match ("the framework had blinded her") which is descriptive self-critique, not prescription. All scenarios honestly framed. Orchestration project has greater depth and recurrence. Chapters 3, 4 unchanged.
+## Development environment
 
-**Status:** Observational reorientation completed; manuscript requires full read-through before line-edit readiness is declared. All 19 editorial passes complete.
+- Dedicated devcontainer is operational (Node 24, non-root `node` user,
+  `git`/`gh`/`jq`/`ripgrep`, OpenCode CLI, Claude Code).
+- Claude Code and OpenCode are both available, with agent-skill parity between
+  them.
+- No application stack (no database, web framework, CMS, or app server). This is
+  a workshop for future work.
 
-**Current principles:**
-- The book describes observations rather than answering organizational questions
-- Directly experienced material carries the strongest authority
-- Composites and hypotheticals must be identified honestly
-- Exploratory thought may remain unresolved
-- Chapter length is not a reduction target
-- Recurring material must add changed perception
-- The orchestration project is the principal experiential spine
-- `manuscript/human.md` is canonical
+## Active
+
+- ADR 002 operating model and the two-kinds-of-authority split.
+- `AGENTS.md` bootloader + task classes 1–7.
+- `human-systems-context` skill routing by task class.
+- Working-session playbook (`resources/playbooks/working-session.md`).
+- Repository validation (`scripts/validate-repo.sh`).
+
+## Inactive
+
+- Manuscript editorial passes. No pass is active. `manuscript/human.md` is
+  preserved and not being edited.
+- Publication / website implementation. Not established. Not in scope until
+  explicitly started.
+- The five-class editorial task model from ADR 001 (superseded).
+
+## Operationally authoritative files
+
+`AGENTS.md` → `.agents/skills/human-systems-context/SKILL.md` → `docs/decisions/`
+(ADR 002 current; ADR 001 superseded except manuscript pass mechanics) →
+`docs/current-state.md` → `resources/playbooks/working-session.md`.
+
+Canonical manuscript: `manuscript/human.md`. The copy at
+`resources/source/book_work/human.md` is a stale snapshot, context-loading only.
+
+## Unresolved tensions
+
+- Which established traditions the thinking overlaps, and where its framing is
+  actually distinctive, is not yet worked out (see
+  `contextual-intervention.md` → "Relationship to established traditions").
+- The operational/intellectual authority split relies on judgment, not a
+  mechanical rule.
+- `SKILL.md` and `resources/context/OPERATING_CONTEXT.md` still carry unrelated
+  personal domains (youth football, Matchboard) inherited from the broader
+  context package; whether they belong in this repository is undecided.
+- No paper exists yet, so the paper-development workflow (Class 4) is untested in
+  practice.
+
+## Likely next work
+
+- Draft the first short paper to test the Class 4 workflow.
+- A Class 3 pass mapping `contextual-intervention.md` propositions against
+  established theory.
+- Decide the fate of the inherited non-human-systems domains in the skill.
 
 ---
 
-## Historical and Superseded Pass Record
+## History
 
-### Exact Final Integration Repair (2026-06-23)
+Historical manuscript-pass narrative is not kept on this surface. See:
 
-**Starting commit:** 94e1776bac4bb610f6a296f7feed4380a0467e92
-**Starting word count:** 8,574 words
-**Ending word count:** 8,335 words
-**Reduction:** −239 words
+- `docs/editorial-notes.md` — full editorial pass history
+- `docs/logs/editing-log.md` — dated pass log
+- `docs/reports/archive/` — archived historical reports
+- Git history
 
-**Goal:** Apply bounded repairs to Chapters 1, 2, and 5 using exact deletion, movement, replacement, count, and committed-file validation rules. Previous agents repeatedly reported fixes that were not present in the canonical manuscript after merge.
-
-**Corrections applied:**
-- Chapter 1: Verified no changes needed (subtitle and ending already correct from prior passes)
-- Chapter 2: Verified no changes needed (subtitle, duplicate removal, capability replacement already correct)
-- Chapter 5: Opening taxonomy removed (process remedy/scaffold/scar tissue/theater framework)
-- Chapter 5: Completion repetition removed (deleted "Technical completion asked:", "The organization did not complete.", "The system worked. The organization had not completed.")
-- Chapter 5: Behavior proposition integrated into case ("The teams began using the new process before they trusted it. Confidence followed some successful use; it did not precede it.")
-
-**Validation:** All prohibited phrase searches return zero matches. Exact counts verified. Chapters 3, 4, 6, 7 unchanged. SHA verification complete.
-
-**Status:** Superseded by Observational Reorientation pass. Manuscript requires full read-through before line-edit readiness is assessed.
-
----
+Last manuscript state recorded before this reset: revision
+"observational-reorientation", 8,918 words, 7 chapters, all editorial passes
+complete, full read-through still pending. That state is unchanged by this
+reset; it is simply no longer tracked here while manuscript work is inactive.

@@ -1,270 +1,69 @@
 # Human System
 
-A book about the real work of enablement, modernization, and change in complex organizations.
+A working body of thought about understanding and intervening responsibly in
+human systems when the right action depends on context.
 
-## What This Is
+## What this is
 
-This repository contains the working manuscript and source context for **"Human System"** — a book that explores how human systems actually behave when help, modernization, pressure, governance, responsibility, and learning interact.
+Human System is where an evolving set of observations, hypotheses, and
+propositions is kept and developed. The subject is roughly: how to understand a
+human system you have entered, and how to act in it, when the correct action
+depends on the situation and the situation can never be fully known.
 
-This is not:
-- A framework book
-- A leadership manual
-- Advice literature
-- A transformation playbook
-- A collection of best practices
+The author's recurring entrypoint is consulting and technical/organizational
+work — repeatedly entering systems that existed before you and will continue
+after you, while being expected to provide answers because of prior experience.
+The broader subject is not consulting itself.
 
-This is an uninterrupted walk through the lived experience of systems that are trying to change while continuing to operate. It makes the reader notice how systems learn, hesitate, adapt, and become dependent without anyone explicitly deciding that they should.
+## A recurring thread: "it depends"
 
-## Core Premise
+"It depends" is treated as the start of an answer, not the end of one. The
+stronger form is: it depends, therefore identify what it depends upon.
 
-**Help always changes the system it enters.**
+Experience is understood to improve the quality of questions and hypotheses. It
+does not remove the need to understand the current context. Prior resemblance to
+a past situation offers hypotheses, not automatic prescriptions.
 
-When we embed ourselves in organizations — as consultants, platform teams, enablement units, or well-meaning colleagues — we don't just add capability. We reshape where uncertainty lives, where learning happens, and where responsibility settles.
+Some other threads: observing a system changes it, so discovery is already
+intervention; abstractions are useful but dangerous when trusted over the
+reality they stand for; relationships are living infrastructure carrying far
+more than information and trust; and interventions should carry expectations
+that reality is allowed to contradict.
 
-The questions this book holds:
+## What is in the repository
 
-- What happens when help repeatedly absorbs uncertainty that the system should learn to carry?
-- Why do smooth operations sometimes hide borrowed stability?
-- How does capability become dependency without anyone choosing it?
-- Where does learning go when it drifts away from the work?
-- What makes modernization stick — and what makes it become theater?
+- **Conceptual sources** — the current stance and the newer contextual-
+  intervention thinking, held as provisional working context, not doctrine.
+- **Field patterns** — applied patterns from particular experience, including
+  the Trojan Horse Movement Pattern for modernization in place. These are prior
+  experience and boundary-bound, not a universal theory.
+- **Writing voice** — how the author's thinking should sound on the page.
+- **An existing book manuscript** (`manuscript/human.md`) — preserved as one
+  possible future synthesis of the thinking. It is not the primary output and is
+  not being actively edited.
 
-## Core Thesis
+Shorter, narrower papers are expected to be the nearer-term way of testing the
+ideas. The project deliberately avoids turning the observations into a branded
+framework, method, or maturity model before that testing has happened.
 
-**Change does not simply remove work. It changes who knows, who matters, who decides, who carries risk, and who must learn to operate without the old sources of competence.**
+## Related traditions
 
-A second core formulation:
+The thinking plausibly overlaps established work — Deming, systems thinking,
+socio-technical systems, complexity, cybernetics, organizational learning, and
+psychology among others. Where it overlaps, no originality is claimed. Sorting
+out where the framing is actually distinctive is future work.
 
-**Technical change moves human burden, skill, risk, status, and power. Leadership begins by seeing what moved, who now carries it, and what the organization must learn to sustain the change.**
+## A note on "public"
 
-## The Trojan Horse Movement Pattern
+The repository may be public. Being present in Git does not mean any particular
+piece of material has been deliberately published to a public website. No such
+website exists yet.
 
-Embedded in this work is a stance on how change can happen without creating dependency:
+## Working in this repository
 
-A small, senior unit embeds where work is stuck, helps the customer's teams make safe progress, transfers mental models and practices, then exits. Modernization happens **in place**, where value already lives.
-
-**What it is:**
-- Modernization as the anchor
-- Customer ownership from day one
-- Advisory and enabling, not managerial
-- Exit designed in from the start
-- Capability transfer as the only meaningful success metric
-
-**What it is not:**
-- Feature factory
-- Framework rollout
-- Sidecar platform
-- Long-term staff augmentation
-- "We'll do it so you don't have to change"
-
-This pattern is not branded or foregrounded unless explicitly requested. It operates underneath the answer, shaping recommendations without becoming the product.
-
-## Author's Stance
-
-The author is a tech lead based in Norway, self-taught through troubleshooting, infrastructure, operations, consulting, and systems work. The perspective comes from:
-
-- Listening deeply before intervening
-- Seeing systems early — recognizing patterns before they become failures
-- Making precise adjustments that reduce friction and increase understanding
-- Preferring simplicity, reversibility, and visible trade-offs over grand certainty
-- Distrusting process unless it removes friction
-- Valuing conversations because alignment lives between people, not inside tools
-
-**Some people build systems. Some people operate systems. This book is about making systems make sense.**
-
-## How This Book Is Structured
-
-The book is one continuous walk through seven chapters. Each chapter carries cases that return and accumulate meaning. Concepts are used as interpretive tools, not rigid models. The structure resists framework delivery: no fixed sets, no diagnostic checklists, no workshop-ready summaries.
-
-The chapters accumulate rather than repeat a single interpretive key:
-
-- hidden compensating work and knowledge embedded in routine
-- competence, status, and role under standardization
-- the helper's implication in the systems they are trying to change
-- power created by concentrated knowledge and incomplete alternatives
-- organizational adaptation after technical implementation
-- judgment under competing risks and incomplete evidence
-- capability that may or may not survive an expert's departure
-
-Loss may be present, but it is not the required explanation for every case or chapter.
-
-### Repository Structure
-
-```
-human-system/
-├── .agents/skills/human-systems-context/   # Local agent skill with full context
-│   ├── resources/
-│   │   ├── source/                         # Binding source documents
-│   │   │   ├── core_stance/                # Author's operating stance
-│   │   │   ├── field_patterns/             # Trojan Horse and other patterns
-│   │   │   ├── writing_voice/              # Voice and style guidance
-│   │   │   └── book_work/                  # Manuscript-specific constraints
-│   │   ├── context/                        # Distilled operational context
-│   │   ├── playbooks/                      # Repeatable workflows
-│   │   └── templates/                      # Reusable integration text
-│   └── SKILL.md                            # Skill activation instructions
-├── docs/                                   # Working documentation
-│   ├── current-state.md                    # Current operational state (single source)
-│   ├── decisions/                          # Decision records (ADR-style)
-│   ├── reports/archive/                    # Historical reports
-│   └── logs/                               # Dated session records
-└── manuscript/
-    └── human.md                            # Primary manuscript (canonical)
-```
-
-### Source Authority
-
-For agents and collaborators working in this repository:
-
-1. **Start here:** `AGENTS.md` (bootloader) and `docs/current-state.md` (current state)
-2. **Skill routing:** `.agents/skills/human-systems-context/SKILL.md`
-3. **Canonical rules:** `.agents/skills/human-systems-context/resources/source/`
-4. **Workflows:** `.agents/skills/human-systems-context/resources/playbooks/`
-5. **Manuscript:** `manuscript/human.md` (canonical for editing)
-
-The local skill is the authoritative source for how to behave when working in this repository.
-
-**Manuscript note:** A mirror copy exists at `.agents/skills/human-systems-context/resources/source/book_work/human.md`. This is a stale snapshot for context loading only. Do not edit it.
-
-## Writing Approach
-
-The manuscript follows specific constraints that preserve its character:
-
-- Plain-language precision
-- Concrete before abstract
-- Observation before interpretation
-- Named actors before "the system"
-- No consultant language, academic display, or false depth
-- Calm, direct, serious, humane tone
-- Narrator must not sound superior
-- Prose before framework
-- Movement before taxonomy
-- Scene before diagnosis
-- Behavior before keyword
-- Judgment before false balance
-
-## Editorial Principle
-
-**The book uses concepts as interpretive tools, not rigid models.** Ideas should emerge through scenes, decisions, consequences, and reflection. Lists and taxonomies are used only when they materially improve comprehension.
-
-The manuscript avoids:
-- Fixed sets of three, four, or five created for memorability
-- Diagnostic checklists presented as frameworks
-- Personality-style categories that sort people into types
-- Workshop-ready summaries that reduce complexity
-- Repeated template structures across chapters
-
-Structural variety is required. Each chapter uses different internal forms: sustained cases, linked scenes, failed interventions examined over time, arguments that deepen through contradiction, personal accounts that broaden into organizational meaning, observation-led essays with one central example.
-
-## Core Themes
-
-### Help and Dependency
-Help that changes systems vs. help that creates dependency. When external capability strengthens internal confidence vs. when it quietly erodes it.
-
-### Modernization In Place
-Why legacy systems are value carriers, not liabilities. Why building elsewhere and "migrating later" creates mountains of handovers.
-
-### Responsibility Seams
-Where ownership lives, where it drifts, and what happens when uncertainty has nowhere to land.
-
-### Governance and Judgment
-When governance supports judgment where work happens vs. when it substitutes for judgment from a distance.
-
-### Learning and Drift
-How learning can move away from the work while delivery continues to look healthy.
-
-### Process: Remedy, Scaffold, Scar Tissue, Theater
-How to tell the difference. When consistency and process need expiry or reassessment.
-
-### Platform and Capability
-Platform engineering as capability-building vs. platform as control mechanism.
-
-## Who Should Read This
-
-- Tech leads who sense that something is off but can't name it
-- Platform teams trying to enable without owning everyone's problems
-- Consultants who want to leave capability behind, not dependency
-- Engineering managers navigating the space between leadership pressure and team reality
-- Anyone who has watched a transformation succeed on paper while the system became harder to move
-
-This book is for people who prefer honesty over comfort and clarity over certainty.
-
-## Working With This Repository
-
-This repository is the canonical source of context for the human-systems stance. It is not a generic prompt collection, not a book-only workspace, and not a personal knowledge base dump.
-
-### For Agents
-
-**Before any work:**
-1. Read `AGENTS.md` (this file)
-2. Read `docs/current-state.md` (current operational state)
-3. Load `.agents/skills/human-systems-context/SKILL.md` for detailed routing
-
-**Determine task class:**
-- Class A: Repository/workflow maintenance (manuscript MUST NOT be edited)
-- Class B: Manuscript diagnosis (read only, not modified)
-- Class C: Bounded editorial pass (exactly one pass active)
-- Class D: Manuscript rewrite (must be explicitly requested)
-- Class E: Publication preparation (separate from developmental editing)
-
-**Place new material according to the change type:**
-- Long-lived stance → `resources/source/core_stance/`
-- Reusable movement pattern → `resources/source/field_patterns/`
-- General writing voice → `resources/source/writing_voice/`
-- Book/manuscript-only rules → `resources/source/book_work/`
-- Distilled project memory → `resources/context/`
-- Repeatable workflow → `resources/playbooks/`
-- Copy-paste integration text → `resources/templates/`
-
-### For Human Collaborators
-
-If you are working on the manuscript, editing, or extending the source context:
-
-1. Read `docs/current-state.md` for current state
-2. Understand which kind of change you are making (skill structure, source update, book work, etc.)
-3. Update supporting documentation before implementation when the change affects agent behavior
-4. Remove stale, duplicated, or misleading context in every branch
-
-## Status
-
-This book is in active editorial development. The manuscript, source context, and working agreements evolve as the thinking evolves.
-
-The repository itself is part of the work — a living system that preserves and evolves reusable context for operating-model reasoning, modernization strategy, enablement, and writing work.
-
-### Manuscript State (as of 2026-06-23)
-
-**Editorial sequence complete.** Manuscript reads as literary organizational nonfiction — continuous prose following the author's recursive thought patterns.
-
-- **Word count:** 9,786 words (+1,397 from original 8,389)
-- **Chapters:** 7 (all revised for continuous prose with developmental recurrence)
-- **Cases:** Maria (Ch1), senior engineer (Ch2), platform team lead (Ch3), principal engineer (Ch4), payments migration + orchestration replacement (Ch5), security vulnerability (Ch6), staff engineer/incident response (Ch7)
-- **Editorial direction:** Prose before framework, movement before taxonomy, scene before diagnosis, proportion over brevity
-
-**Completed passes (14 total):**
-- Passes A-H (8 developmental passes)
-- Targeted Patch (7 bounded corrections)
-- Seam Pass (remove announced drift + legacy analysis)
-- Integration Pass (merge duplicated analyses, remove callbacks)
-- Final Corrective Integration Pass (exact bounded corrections with mandatory validation)
-- Inbox Integration (behavioral systems reasoning woven throughout all chapters)
-
-**Integrated concepts:**
-- Outcomes arrive too late to manage directly
-- Do not over-psychologize — focus on actionable conditions
-- Capability requires more than knowledge (capability/opportunity/motivation)
-- Reinforcement is built into the work
-- Power must be included in the model
-- Behavior can change before belief does
-- Do not accept stated objective uncritically
-- Withdrawal as diagnostic method
-- Change has speed and half-life
-- Participation vs. behavioral control
-
-**Known risks:**
-- Two manuscript copies exist (only `manuscript/human.md` is canonical for editing)
-- Some historical reports contain stale "publication-ready" claims (archived)
-
-**Ready for:** Publication preparation or next editorial cycle as directed
+Agents and collaborators start with `AGENTS.md` and `docs/current-state.md`. The
+operating model is `docs/decisions/002-repository-operating-model-and-source-authority.md`.
+Detailed routing lives in `.agents/skills/human-systems-context/SKILL.md`.
 
 ---
 

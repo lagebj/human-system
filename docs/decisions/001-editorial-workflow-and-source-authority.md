@@ -1,8 +1,32 @@
 # Decision Record: Editorial Workflow and Source Authority
 
 **Date:** 2026-06-18
-**Status:** Active
+**Status:** Superseded (as the repository-wide operating model)
 **Supersedes:** Implicit workflow from EDITING_CHARTER.md and working-session.md
+**Superseded by:** `002-repository-operating-model-and-source-authority.md` (2026-08-31)
+
+---
+
+> **Supersession note (2026-08-31).** ADR 002 replaces this decision as the
+> repository-wide operating and source-authority model. This record described a
+> repository whose primary output was the book and whose default activity was
+> editing it; that is no longer accurate. The repository is now the working home
+> for a wider body of thought, with shorter papers as the near-term testing
+> vehicle and the manuscript preserved as a possible future synthesis.
+>
+> What survives: the **manuscript editing-pass mechanics** below (Isolated Pass
+> Rule, the Pass A–E definitions and table, the manuscript canonical-source
+> policy, and the inbox policy) remain the reference for how a bounded manuscript
+> pass is run once ADR 002 Class 5 (Manuscript Work) is active and a pass is
+> declared.
+>
+> What is replaced: the five-class editorial task model (Classes A–E), the
+> authority hierarchy in Section 1, the repository-wide current-state file rules
+> in Section 4, and the framing of everything under `resources/source/` as
+> "binding". See ADR 002 Sections 2–8.
+>
+> This record is preserved unchanged below for history. Do not read its
+> repository-wide claims as current.
 
 ---
 

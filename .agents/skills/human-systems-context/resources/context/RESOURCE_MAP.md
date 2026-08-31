@@ -2,6 +2,19 @@
 
 This file explains where resources belong and how the skill should be extended.
 
+## Two kinds of authority
+
+Files here are mostly **intellectual context**: current stance, working
+propositions, field observations, and applied patterns. They inform reasoning
+and stay open to revision. They are not operational law and do not gain
+authority from the directory name `source/`. See ADR 002 §2.
+
+The **operational** files are `SKILL.md`, the playbooks, and
+`resources/source/book_work/` (in force only for manuscript work). Prefer the
+words *current stance*, *working proposition*, *field observation*, *applied
+pattern*, and *current conceptual context* for evolving material; reserve
+*binding* / *canonical* for genuinely operational requirements.
+
 ## `SKILL.md`
 
 Purpose:
@@ -19,6 +32,7 @@ Use this for long-lived material that defines the user's stance, identity, princ
 
 Current files:
 
+- `contextual-intervention.md` — current conceptual context for the wider body of thought: "it depends" as a starting point, discovery as intervention, limits of knowing, relationships as living infrastructure, proportionality, falsifiability, and how the thinking relates to established traditions. Provisional working context, not operational law.
 - `personal_alignment.md` — personal context contract around systems, organizations, collaboration, Agile, process theatre, and common-sense operating principles.
 - `who_am_i.md` — narrative professional identity and how the user thinks, works, and shapes systems.
 
@@ -34,7 +48,7 @@ Use this for reusable patterns, movement models, operating models, or conceptual
 
 Current files:
 
-- `trojan_horse_movement_pattern.md` — internal movement pattern for modernization in place, capability transfer, and temporary embedded help.
+- `trojan_horse_movement_pattern.md` — one applied movement pattern for modernization in place, capability transfer, and temporary embedded help. Carries strong internal assumptions and boundary conditions; contextual, not constitutional (see its status note and ADR 002 §2).
 - `four-impulses-of-help.md` — the four impulses that activate when helping (way-driven, tension-absorbing, mission-driven, agency-building), their gifts, traps, and kryptonite.
 
 Add here when a resource defines a repeatable way of seeing or moving through work.
@@ -81,9 +95,9 @@ Use this for repeatable workflows.
 
 Current files:
 
+- `working-session.md` — the coding-agent working-session flow: branch, classify, load smallest context, bounded change, validate, PR.
 - `strategy-response-workflow.md` — operating-model, enablement, vendor, governance, and leadership responses.
 - `technical-strategy-workflow.md` — platform/EMS technical-strategy responses.
-- `coaching-matchboard-workflow.md` — youth football, Matchboard, team planning, and coaching communication.
 - `coding-agent-workflow.md` — prompt structure for coding agents.
 - `writing-voice-workflow.md` — general writing in the user's voice.
 - `book-manuscript-workflow.md` — manuscript drafting/recomposition/export.
