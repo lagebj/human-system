@@ -20,7 +20,7 @@ fi
 
 echo "Starting OpenCode Web"
 echo "Workspace: $workspace"
-echo "Model: glm-5.1:cloud"
+echo "Model: qwen3.5:27b (local Ollama)"
 
 headless_bin="${XDG_RUNTIME_DIR:-/tmp}/human-system-headless-bin"
 mkdir -p "$headless_bin"
