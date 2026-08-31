@@ -35,7 +35,7 @@ manuscript/
 
 1. **`human.md` is the source of truth** — all other files support work on this file
 2. **Never edit `human.md` directly during a pass** — use `drafts/` directories
-3. **One pass at a time** — declare the pass in `docs/working-session.md` before beginning
+3. **One pass at a time** — declare the pass in `docs/current-state.md` before beginning (Class 5 work only; see ADR 002 §4)
 4. **Ledger updates are mandatory** — no pass is complete without updating the Pattern Ledger and Concept Return Log
 5. **Seams are observed, not decided** — chapter boundaries are discovered, not imposed
 
@@ -51,17 +51,18 @@ manuscript/
 | D | Continuity & concept return | No concept restarts |
 | E | Final read integrity | No material changes unless violation |
 
-See `docs/editing-log.md` for completion criteria and templates.
+See `docs/logs/editing-log.md` for completion criteria and templates.
 
 ---
 
 ## Before You Begin
 
-1. Read `docs/working-session.md` to confirm current state
-2. Read `.agents/skills/human-systems-context/resources/source/book_work/writing-working-agreement.md`
-3. Read `.agents/skills/human-systems-context/resources/source/book_work/EDITING_CHARTER.md`
-4. Declare your pass in `docs/working-session.md`
-5. Begin work in the appropriate `drafts/` directory
+1. Confirm Class 5 (Manuscript Work) applies and was explicitly requested (ADR 002 §4)
+2. Read `docs/current-state.md` to confirm current state
+3. Read `.agents/skills/human-systems-context/resources/source/book_work/writing-working-agreement.md`
+4. Read `.agents/skills/human-systems-context/resources/source/book_work/EDITING_CHARTER.md`
+5. Declare your pass in `docs/current-state.md`
+6. Begin work in the appropriate `drafts/` directory
 
 ---
 

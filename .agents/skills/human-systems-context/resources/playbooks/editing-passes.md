@@ -26,8 +26,9 @@ Manuscript output MUST contain ONLY paragraphs. Never include:
 - Editorial commentary or analysis
 
 Editorial metadata belongs in:
-- `docs/working-session.md` (current state)
-- `docs/editing-log.md` (pass records)
+- `docs/current-state.md` (current state; add an "Active pass" line while Class 5 work is running)
+- `docs/logs/editing-log.md` (pass records)
+- `docs/editorial-notes.md` (editorial decision history)
 - `manuscript/notes/pattern-ledger.md` (pattern tracking)
 
 When delegating pass work, instructions must explicitly request "paragraphs only" output.

@@ -10,12 +10,17 @@ How people, teams, organizations, and technical systems change each other throug
 
 Main resources:
 
+- `resources/source/core_stance/contextual-intervention.md` — current conceptual context for the wider body of thought
 - `resources/context/OPERATING_CONTEXT.md`
 - `resources/source/core_stance/personal_alignment.md`
 - `resources/source/core_stance/who_am_i.md`
 
 Key concepts:
 
+- "It depends, therefore identify what it depends upon."
+- Observing a system changes it; discovery is already intervention.
+- The system always contains more reality than the model of it.
+- Relationships are living infrastructure carrying more than information and trust.
 - Help changes the system it enters.
 - Smoothness may be borrowed.
 - Learning accumulates where uncertainty is carried.
@@ -30,13 +35,15 @@ How organizations actually change, how work moves across seams, and how help sho
 
 Main resources:
 
-- `resources/source/field_patterns/trojan_horse_movement_pattern.md`
+- `resources/source/core_stance/contextual-intervention.md`
+- `resources/source/field_patterns/trojan_horse_movement_pattern.md` — one applied pattern with boundary conditions, not the governing theory
 - `resources/source/core_stance/personal_alignment.md`
 - `resources/source/core_stance/who_am_i.md`
 - `resources/context/OPERATING_CONTEXT.md`
 
 Key concepts:
 
+- Enablement is one possible consequence of a good intervention, not a universal law.
 - Modernization in place.
 - Customer-owned capability.
 - Temporary presence, permanent capability.

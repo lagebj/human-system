@@ -1,5 +1,22 @@
 # The Trojan Horse Movement Pattern
 
+> **Status note (2026-08-31).** This is one applied movement pattern that
+> emerged from particular experience with modernization-in-place and embedded
+> enablement. It is intellectual context and prior experience, not operational
+> law and not the governing theory of the wider body of thought (see
+> `resources/source/core_stance/contextual-intervention.md` and
+> `docs/decisions/002-repository-operating-model-and-source-authority.md`).
+>
+> It carries strong internal assumptions and boundary conditions. The
+> "non-negotiables", "alignment clause", and "hard constraints" below are
+> non-negotiable *within the pattern's own frame*; they do not automatically
+> override the current context of a specific system, and they remain open to
+> challenge by evidence and by established theory. Treat prior resemblance to a
+> situation this pattern fits as a source of hypotheses, not an automatic
+> prescription. Load and apply it when enablement or modernization-in-place is
+> genuinely the subject; do not treat it as the constitution behind every
+> question. The document and its history are preserved as written.
+
 ## TL;DR
 
 * **What this is:** A movement pattern to modernize **in place**. A small unit embeds where work is stuck, helps the customer’s teams make safe progress, transfers mental models and practices, then exits. Change is not limited to technology—it can and should include workflows, organization, and decision-making.

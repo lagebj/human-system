@@ -15,19 +15,21 @@ human-systems-context/
     │   ├── DOMAIN_MODEL.md
     │   └── SOURCE_MANIFEST.md
     ├── playbooks/
+    │   ├── working-session.md
     │   ├── strategy-response-workflow.md
     │   ├── technical-strategy-workflow.md
-    │   ├── coaching-matchboard-workflow.md
     │   ├── coding-agent-workflow.md
     │   ├── writing-voice-workflow.md
     │   ├── book-manuscript-workflow.md
     │   └── editing-passes.md
     ├── source/
     │   ├── core_stance/
+    │   │   ├── contextual-intervention.md
     │   │   ├── personal_alignment.md
     │   │   └── who_am_i.md
     │   ├── field_patterns/
-    │   │   └── trojan_horse_movement_pattern.md
+    │   │   ├── trojan_horse_movement_pattern.md
+    │   │   └── four-impulses-of-help.md
     │   ├── writing_voice/
     │   │   └── author-voice-guide.md
     │   └── book_work/
@@ -53,11 +55,18 @@ Then add the contents of `resources/templates/AGENTS_SNIPPET.md` to your global 
 
 `SKILL.md` stays operational. It tells the agent when to activate the skill, which resources to read, and how to behave.
 
-`resources/source/` contains canonical source material. These are the files the agent should treat as source-of-truth documents.
+`resources/source/` contains the stance and conceptual material. Outside
+`book_work/`, treat it as **intellectual context**: it informs reasoning and
+stays open to revision. It is not operational law and does not gain authority
+from the directory name (see ADR 002 §2). `resources/source/book_work/` holds
+manuscript operational rules, in force only during manuscript work.
 
-`resources/context/OPERATING_CONTEXT.md` contains distilled knowledge from the wider project conversation. It is useful but subordinate to canonical source files when they conflict.
+`resources/context/OPERATING_CONTEXT.md` contains distilled knowledge from the
+wider project conversation. It is useful background, subordinate to the source
+files when they conflict.
 
-`resources/playbooks/` contains reusable task workflows. These guide behavior without replacing the source documents.
+`resources/playbooks/` contains reusable task workflows, including
+`working-session.md` for coding-agent sessions.
 
 `resources/templates/` contains copy-paste integration helpers.
 

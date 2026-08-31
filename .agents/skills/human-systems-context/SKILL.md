@@ -1,165 +1,132 @@
 ---
 name: human-systems-context
-description: Use this skill when the task touches operating stance around human systems, enablement, modernization in place, operating-model transformation, platform seams, practical tech leadership, or writing that should preserve their voice. Use book/manuscript resources only when the user explicitly asks about that work.
+description: Use when the task touches the repository's body of thought about understanding and intervening responsibly in human systems when the right action depends on context — including operating-model, modernization-in-place, enablement, platform-seam, practical tech-leadership reasoning, and writing that should preserve the author's voice. Route by ADR 002 task class. Load manuscript resources only when the user explicitly asks for manuscript work.
 ---
 
 # Human Systems Context Skill
 
-This skill gives an agent the working memory needed to preserve actual stance across contexts.
+This skill routes an agent to the smallest sufficient context for the task. It
+does not restate the thinking; it points at the sources that hold it.
 
-It is not primarily a book skill. The manuscript is one expression of the content, not the container for it.
+The repository is the working home for an evolving body of thought about human
+systems, context, intervention, relationships, judgment, abstraction, learning,
+control, and change. The book manuscript is one possible future synthesis, not
+the container for the content. Shorter papers are the near-term testing vehicle.
 
-The skill should help the agent recognize the underlying patterns the user cares about: help that changes systems, learning that moves away from the work, responsibility seams, modernization in place, local judgment, governance pressure, operating-model drift, practical platform ownership, and humane team development.
+Two kinds of authority (ADR 002 §2):
 
-## Activation triggers
+- **Operational** — `AGENTS.md`, `SKILL.md`, `docs/decisions/`,
+  `docs/current-state.md`, the playbooks, and `resources/source/book_work/` when
+  manuscript work is active. These may govern work.
+- **Intellectual** — everything else under `resources/source/` and
+  `resources/context/`. These inform reasoning. They are provisional and open to
+  revision. Do not treat them as binding because of where they are filed.
 
-Use this skill when the request mentions or implies any of the following:
+## Behaviour
 
-- enablement, help, modernization in place, capability transfer, customer independence, or operating-model transformation
-- Agile, DevOps, Team Topologies, OKRs, governance, process theatre, organizational seams, responsibility drift, or decision-making under uncertainty
-- platform engineering, Azure test environments, image factory, vendor delivery, software packaging, Terraform, Ansible, Packer, GitLab, Artifactory, Vault, AD/GPO, Kafka, or deployment automation
-- writing that should sound like the user, preserve their thinking, or avoid generic consultancy language
+- Use the smallest sufficient context. Do not load everything by default. Do not
+  load manuscript resources for non-manuscript work.
+- Preserve the author's stance instead of substituting generic consulting best
+  practice.
+- Treat prior resemblance as a source of hypotheses, not automatic prescription.
+  "It depends, therefore identify what it depends upon."
+- Treat the Trojan Horse Movement Pattern as one applied pattern with boundary
+  conditions, not the governing theory. Do not brand or foreground it unless
+  asked.
+- Preserve tension and uncertainty where the conceptual model is unsettled. Do
+  not manufacture coherence.
+- Ask clarifying questions only when needed to avoid doing the wrong work.
 
-## Source priority
+## Routing by task class (ADR 002 §4)
 
-Use the smallest sufficient set of resources. Do not load everything by default.
+### Class 1 — Repository / Tooling
 
-### For general stance, strategy, critique, or framing
+devcontainer, skills, instructions, automation, repo structure, workflows.
 
-Read in this order:
+1. `docs/current-state.md`
+2. `docs/decisions/002-repository-operating-model-and-source-authority.md`
+3. `resources/playbooks/working-session.md`
+4. `resources/context/RESOURCE_MAP.md` when placing or moving files
 
-1. `resources/context/OPERATING_CONTEXT.md`
-2. `resources/source/core_stance/personal_alignment.md`
-3. `resources/source/core_stance/who_am_i.md`
-4. `resources/source/field_patterns/trojan_horse_movement_pattern.md` when enablement or modernization is involved
-5. `resources/playbooks/strategy-response-workflow.md`
+Manuscript must not be materially edited. Intellectual content changes only when
+directly required.
 
-### For Trojan Horse / enablement / operating-model work
+### Class 2 — Concept Development
 
-Read in this order:
+Capture an observation, develop a proposition, connect concepts, identify a
+contradiction, evolve the body of thought.
 
-1. `resources/source/field_patterns/trojan_horse_movement_pattern.md`
-2. `resources/source/core_stance/personal_alignment.md`
-3. `resources/source/core_stance/who_am_i.md`
-4. `resources/context/OPERATING_CONTEXT.md`
-5. `resources/playbooks/strategy-response-workflow.md`
+1. `resources/source/core_stance/contextual-intervention.md`
+2. `resources/source/core_stance/personal_alignment.md` and `who_am_i.md` when
+   stance or identity is in play
+3. `resources/source/field_patterns/` when the observation is about enablement,
+   modernization-in-place, or the impulse to help
+4. `resources/context/OPERATING_CONTEXT.md` for prior project memory
 
-Important: do not turn the Trojan Horse Movement Pattern into a branded external framework unless the user explicitly asks. Treat it primarily as an internal stance and alignment contract.
+Place new conceptual material per `RESOURCE_MAP.md`. Manuscript untouched unless
+explicitly requested. Manuscript voice is not required.
 
-### For platform / technical strategy work
+### Class 3 — Research / Pressure Testing
 
-Read in this order:
+Compare an idea with established theory, search for counterexamples, find
+boundary conditions, ask what would falsify a claim, separate observation from
+inference.
 
-1. `resources/context/OPERATING_CONTEXT.md` sections on platform engineering, vendor delivery, image factory, AD/GPO, artifact storage, and operating-model transformation
-2. `resources/source/core_stance/personal_alignment.md`
-3. `resources/source/core_stance/who_am_i.md`
-4. `resources/playbooks/technical-strategy-workflow.md`
+1. `resources/source/core_stance/contextual-intervention.md` (see its
+   "Relationship to established traditions" section)
+2. The specific source file holding the claim under test
+3. `resources/playbooks/strategy-response-workflow.md` if the claim is about
+   operating-model or enablement work
 
-Keep responses peer-to-peer, practical, and grounded in responsibility seams. Do not over-prescribe technical solutions when the user is explicitly trying to avoid forcing a solution on platform teams.
+Evidence should be able to challenge the model, not decorate it. No automatic
+manuscript changes.
 
-### For general writing in the user's voice
+### Class 4 — Paper Development
 
-Read in this order:
+Plan, draft, revise, source-check, challenge a narrow paper.
 
-1. `resources/source/writing_voice/author-voice-guide.md`
-2. `resources/context/OPERATING_CONTEXT.md` sections on response style and professional writing
-3. `resources/source/core_stance/who_am_i.md` when personal/professional voice matters
-4. `resources/playbooks/writing-voice-workflow.md`
+1. `resources/source/core_stance/contextual-intervention.md` for current thinking
+2. `resources/source/writing_voice/author-voice-guide.md` for voice
+3. `resources/playbooks/writing-voice-workflow.md`
+4. The source files relevant to the paper's subject
 
-Do not apply the manuscript-only rules unless the user explicitly asks for book/manuscript work.
+Use `author-voice-guide.md` for tone and rhythm, not as a ban on explanation: a
+paper may state propositions directly, explain reasoning, cite literature,
+discuss counterexamples, distinguish observation from hypothesis, and expose
+uncertainty. Do **not** load the manuscript-only Writing Working Agreement,
+Editing Charter, or Pattern Ledger. Development is not publication.
 
-### For manuscript or book work only
+### Class 5 — Manuscript Work
 
-Read in this order:
+Diagnosis, bounded editorial pass, rewrite, or integration into
+`manuscript/human.md`. **Explicit user request required.**
 
 1. `resources/source/writing_voice/author-voice-guide.md`
 2. `resources/source/book_work/writing-working-agreement.md`
-3. `resources/source/book_work/EDITING_CHARTER.md` if editing passes, paragraph operations, or manuscript transformation are requested
-4. `resources/source/book_work/PATTERN_LEDGER.md` if Pass A, de-patterning, repeated structures, or ledger updates are involved
-5. `resources/context/OPERATING_CONTEXT.md` sections on manuscript work and core concepts
-6. `manuscript/human.md` when current manuscript text is needed
-7. `resources/source/book_work/human.md` only as historical context when explicitly needed
-8. `resources/playbooks/book-manuscript-workflow.md` or `resources/playbooks/editing-passes.md` depending on the task
-9. `inbox/` when processing raw captured ideas for integration
+3. `resources/source/book_work/EDITING_CHARTER.md` for a bounded pass
+4. `resources/source/book_work/PATTERN_LEDGER.md` for de-patterning / pass work
+5. `manuscript/human.md` for current text;
+   `resources/source/book_work/human.md` is a stale snapshot, context only
+6. `resources/playbooks/book-manuscript-workflow.md` or
+   `resources/playbooks/editing-passes.md`
+7. ADR 001's Pass A–E table and Isolated Pass Rule for how a declared pass runs
 
-### For inbox processing
+Manuscript prose constraints (spoken continuity, long uneven paragraphs, no
+tidy landings, no "not X but Y", no direct definition of enablement, behaviour
+before abstraction, one pass at a time, never blended) apply **only here**.
 
-When the user requests inbox processing:
+### Class 6 — Publication Preparation
 
-1. Read `inbox/README.md` for inbox workflow
-2. Read each inbox item to be processed
-3. Determine if concept is already present in manuscript (search before integrating)
-4. If present: mark as processed with location reference
-5. If absent and valuable: weave into existing chapters as underlying reasoning, not new framework
-6. Update `inbox/README.md` status table
-7. Update `README.md` manuscript state section if integration occurred
+Copy edit, references, metadata, formatting, publication readiness, website
+preview preparation. Preparation does not grant permission to publish.
 
-Inbox integration should preserve continuous prose style. Do not create new cases, characters, or framework structures. Concepts should serve as reasoning beneath existing stories.
+### Class 7 — Publication
 
-Book-specific constraints are not global constraints. They should not be imposed on work messages, coding prompts, strategy memos, or other communication unless the user asks for that exact voice.
-
-**Canonical manuscript rule:** `manuscript/human.md` is the current manuscript. Do not treat `resources/source/book_work/human.md` as current text.
-
-## How to behave
-
-- Be practical before being comprehensive.
-- Preserve the user's stance instead of replacing it with generic best practice.
-- Ask clarifying questions only when needed to avoid doing the wrong work. If the task is clear enough, proceed.
-- Treat frameworks as optional lenses, not answers.
-- Look for the seam: where responsibility, learning, ownership, or uncertainty is moving.
-- When writing professional messages, keep them direct, human, and usable.
-- When producing coding-agent prompts, be explicit about current state, desired behavior, constraints, acceptance criteria, and regression checks.
-- When a recommendation conflicts with the user's known stance, call out the conflict plainly and explain the trade-off.
-
-## Core operating invariants
-
-- Human systems are not diagrams; they are lived through decisions, habits, fear, relief, and responsibility.
-- Help always changes the system it enters.
-- Smoothness is not automatically health. It may be borrowed from someone absorbing uncertainty elsewhere.
-- Modernization should strengthen the system's ability to act and learn, not create dependency on external help.
-- Tools are context-sensitive decisions, not transformation levers.
-- Processes can be remedy, scaffold, scar tissue, or theatre. They need reassessment.
-- Governance should support judgment where the work happens, not merely substitute for it from a distance.
-- Customer/user/team independence and confidence are stronger success signals than feature throughput.
-- Simplicity, reversibility, and visible trade-offs are usually safer than grand certainty.
-
-## Manuscript invariants
-
-Use these only when the task is explicitly about the manuscript or book prose.
-
-- Spoken continuity overrides written clarity.
-- The manuscript is one continuous walk; chapters are terrain changes, not topics.
-- Long, uneven paragraphs are normal.
-- Short paragraphs are exceptional.
-- Do not create punchlines, tidy landings, or rhetorical closures.
-- Avoid binary contrast patterns such as “not X, but Y”.
-- Do not define enablement directly.
-- Do not turn insight into advice.
-- Behavior must come before abstraction.
-- Editing passes are never blended.
-
-## Editing pass discipline
-
-If the user declares a pass, follow only that pass.
-
-- Pass A: De-patterning / structural refactoring. Must not reduce length. Refactor by expansion and causal embedding, not deletion.
-- Pass B: Causal tightening. Strengthen continuity without adding new ideas or reintroducing banned patterns.
-- Pass C: Language and load balancing. Adjust rhythm and density without simplifying concepts.
-- Pass D: Continuity and concept return. Ensure later text carries earlier weight without restarting concepts.
-- Pass E: Final read integrity. Check for violations; do not materially rewrite unless needed.
-
-If the user asks for a downloadable manuscript artifact, return one complete file in the requested format. Do not provide diffs unless asked.
+Deliberately expose a specific artifact as public website content. Requires an
+explicit instruction naming the artifact. Never inferred from "prepare",
+"finish", "review", or "looks ready".
 
 ## Resource map
 
-See `resources/context/RESOURCE_MAP.md` for what belongs where and how to extend this skill.
-
-## Installation notes
-
-Suggested location:
-
-```text
-~/.agents/skills/human-systems-context/
-```
-
-Copy this entire folder there. Then add the snippet from `resources/templates/AGENTS_SNIPPET.md` to the relevant `AGENTS.md` file if the agent system uses one.
+`resources/context/RESOURCE_MAP.md` — where material belongs and how to extend
+the skill.
