@@ -30,36 +30,57 @@ application.
 3. Add `OLLAMA_API_KEY` as a Codespaces secret for OpenCode Web to start
    automatically
 
+## Environment variables and secrets
+
+The devcontainer loads a gitignored `.env` file at the workspace root
+**automatically on boot**. Copy `.env.example` to `.env` and fill in values:
+
+```bash
+cp .env.example .env
+$EDITOR .env
+```
+
+Values are exported into every terminal, the VS Code environment probe, and the
+`postCreate` / `postStart` lifecycle scripts. The mechanism:
+
+- `.devcontainer/load-dotenv.sh` — sourced helper that exports `KEY=VALUE` lines
+  from `.env` (silent no-op when `.env` is absent).
+- `postCreateCommand` installs a one-line hook into `~/.bashrc`, `~/.profile`,
+  and `/etc/profile.d/99-human-system-dotenv.sh` (idempotent across rebuilds).
+- `postCreate` and `postStart` also source the helper directly.
+
+After editing `.env` in a running container, either open a new terminal or run
+`. .devcontainer/load-dotenv.sh` in the current one.
+
+Recognised keys (see `.env.example`): `OLLAMA_API_KEY`, `GH_TOKEN`,
+`CLAUDE_CODE_OAUTH_TOKEN`.
+
+In **GitHub Codespaces**, `.env` is never present (it is gitignored and never
+pushed); set these as Codespaces secrets instead and the auto-loader no-ops.
+
 ## Authentication
 
 ### GitHub CLI
+
+With `GH_TOKEN` in `.env`, `gh` is authenticated on boot. Otherwise:
 
 ```bash
 gh auth login
 ```
 
-Follow the interactive prompts.
-
 ### Claude Code
 
 Claude Code uses Claude.ai subscription authentication by default. The
 devcontainer's managed settings enforce `forceLoginMethod: "claudeai"` and
-clear any inherited API credentials.
-
-On first use:
-
-```bash
-claude
-```
-
-Follow the interactive authentication flow.
+clear any inherited API credentials. `CLAUDE_CODE_OAUTH_TOKEN` in `.env` is
+picked up automatically; otherwise run `claude` and follow the interactive
+authentication flow.
 
 ### OpenCode
 
-OpenCode requires an `OLLAMA_API_KEY` environment variable:
+OpenCode requires `OLLAMA_API_KEY`:
 
-- **Local devcontainer**: set in a `.env` file (gitignored) or export in your
-  shell
+- **Local devcontainer**: put it in `.env` (loaded on boot)
 - **Codespaces**: add as a GitHub Codespaces secret
 
 ## OpenCode Web

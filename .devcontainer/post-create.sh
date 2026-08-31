@@ -4,6 +4,41 @@ set -Eeuo pipefail
 workspace="${CODESPACE_VSCODE_FOLDER:-$(git rev-parse --show-toplevel 2>/dev/null || pwd)}"
 cd "$workspace"
 
+# Make .env values available to the rest of this script (skill sync, gh checks).
+export HUMAN_SYSTEM_WORKSPACE="$workspace"
+# shellcheck source=load-dotenv.sh
+. .devcontainer/load-dotenv.sh
+
+# Wire .env auto-loading into every future shell in this container. Idempotent:
+# the marker guards against duplicate blocks on rebuilds.
+install_dotenv_hook() {
+  local marker="# >>> human-system dotenv auto-load >>>"
+  local loader="$workspace/.devcontainer/load-dotenv.sh"
+  local block
+  block="$(printf '%s\n[ -f "%s" ] && . "%s"\n# <<< human-system dotenv auto-load <<<\n' \
+    "$marker" "$loader" "$loader")"
+
+  local target
+  for target in "$HOME/.bashrc" "$HOME/.profile"; do
+    [[ -e "$target" ]] || : > "$target"
+    if ! grep -qF "$marker" "$target" 2>/dev/null; then
+      printf '\n%s\n' "$block" >> "$target"
+      echo "[devcontainer] Added .env auto-load hook to $target"
+    fi
+  done
+
+  # Login shells and non-interactive `bash -l` (e.g. some exec sessions).
+  local profiled="/etc/profile.d/99-human-system-dotenv.sh"
+  if [[ ! -f "$profiled" ]] || ! grep -qF "$marker" "$profiled" 2>/dev/null; then
+    printf '%s\n[ -f "%s" ] && . "%s"\n' "$marker" "$loader" "$loader" \
+      | sudo tee "$profiled" >/dev/null
+    sudo chmod 0644 "$profiled"
+    echo "[devcontainer] Installed $profiled"
+  fi
+}
+
+install_dotenv_hook
+
 bash .devcontainer/fix-volume-permissions.sh
 
 echo "[devcontainer] Synchronising OpenCode agent skills..."

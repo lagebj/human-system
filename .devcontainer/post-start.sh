@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
+workspace="${CODESPACE_VSCODE_FOLDER:-$(git rev-parse --show-toplevel 2>/dev/null || pwd)}"
+
+# Refresh .env values for this script (OpenCode Web needs OLLAMA_API_KEY).
+export HUMAN_SYSTEM_WORKSPACE="$workspace"
+# shellcheck source=load-dotenv.sh
+. "$workspace/.devcontainer/load-dotenv.sh"
+
 bash .devcontainer/fix-volume-permissions.sh
 
 state_dir="${XDG_STATE_HOME:-$HOME/.local/state}/human-system"
