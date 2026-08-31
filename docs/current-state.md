@@ -55,8 +55,12 @@ thread.
 - One validator: `bash scripts/validate.sh` (also run by
   `.github/workflows/validate.yml` on PRs to and pushes to `main`).
 - Working-session playbook (`resources/playbooks/working-session.md`).
-- `main` protection: PR required, force-push blocked, deletion blocked. The
-  `validate` status check is intentionally **not** required yet.
+- `main` protection (existing ruleset "default", unchanged): PR required,
+  force-push blocked, deletion blocked, linear history. The `validate` status
+  check is intentionally **not** required yet (ADR 003 §5).
+- Security: Dependabot alerts + dependency graph, Dependabot security fixes, and
+  private vulnerability reporting are enabled. A Dependabot version-update
+  config is deferred (no package manifests). Agent Skills have no auto-updater.
 
 ## Inactive
 

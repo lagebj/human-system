@@ -102,16 +102,36 @@ actions pinned by SHA, no deployment, no Pages.
 ### 5. Prove validation before requiring it
 
 The `validate` status check is **deliberately not required** on `main` yet.
-`main` protection currently requires a PR, blocks force pushes, and blocks
-branch deletion — no required status check, no mandatory second reviewer (this
-repository is maintained by one author with coding agents; a mandatory second
-approval would be process theatre).
 
-Follow-up, after the `validate` workflow has several stable green runs: make the
-`validate` check required on `main` (GitHub → Settings → Rules/Branches →
-`main` ruleset → Require status checks to pass → add `validate`). That is the
-entire remaining infrastructure action. Do not add a required check that has
-not yet proven stable.
+`main` is already protected by the repository ruleset "default" (id `21908174`,
+active, `bypass_actors: []`): pull request required (`required_approving_review_count: 0`),
+force pushes blocked (`non_fast_forward`), branch deletion blocked, linear
+history required. That already matches the intended guardrails — a PR for every
+change, no force pushes, no deletion, and **no** mandatory second approval (this
+repository is maintained by one author with coding agents; a mandatory second
+approval would be process theatre). No change was made to branch protection in
+this programme; it was verified compliant.
+
+Follow-up, after the `validate` workflow has several stable green runs: add a
+`required_status_checks` rule for `validate` to that ruleset (GitHub → Settings
+→ Rules → `default` → Require status checks to pass → add `validate`), or via
+`gh api -X PUT repos/lagebj/human-system/rulesets/21908174` with the rule
+appended. That is the entire remaining infrastructure action. Do not require a
+check that has not yet proven stable.
+
+### 6. Dependency and security baseline
+
+Enabled (GitHub-native, valuable now): Dependabot vulnerability alerts +
+dependency graph, Dependabot automated security fixes, and private
+vulnerability reporting (referenced by `SECURITY.md`).
+
+**Deferred:** a Dependabot *version-update* config (`.github/dependabot.yml`).
+The repository has no package manifests — no `package.json`, `requirements.txt`,
+`go.mod`, etc. The only trackable ecosystem is `github-actions` (two actions,
+pinned by SHA in `.github/workflows/validate.yml`), which is low value and adds
+PR noise; revisit if the workflow set grows. **Agent Skills are never subject
+to Dependabot, Renovate, or any scheduled updater** — they update only through
+`docs/development/agent-skill-update-workflow.md`. Nothing is auto-merged.
 
 ---
 
