@@ -9,6 +9,9 @@ const { title, description = '' } = Astro.props;
 const canonicalURL = Astro.props.canonical 
   ? new URL(Astro.props.canonical, Astro.site)
   : Astro.url;
+
+// Base path for GitHub Pages project site
+const basePath = '/human-system';
 ---
 
 <!doctype html>
@@ -351,11 +354,11 @@ const canonicalURL = Astro.props.canonical
   <body>
     <header class="site-header">
       <div class="container">
-        <a href="/" class="site-title">Human System</a>
+        <a href={basePath} class="site-title">Human System</a>
         <nav class="site-nav">
-          <a href="/">Home</a>
-          <a href="/papers/">Papers</a>
-          <a href="/about/">About</a>
+          <a href={`${basePath}/`}>Home</a>
+          <a href={`${basePath}/papers/`}>Papers</a>
+          <a href={`${basePath}/about/`}>About</a>
         </nav>
       </div>
     </header>
@@ -371,7 +374,7 @@ const canonicalURL = Astro.props.canonical
         <p>
           <a href="https://github.com/lagebj/human-system">Source</a> ·
           <a href="https://github.com/lagebj/human-system/blob/main/LICENSE.md">License</a> ·
-          <a href="https://lagebj.github.io/human-system/about/">About</a>
+          <a href={`${basePath}/about/`}>About</a>
         </p>
         <p>
           Published material licensed under 
