@@ -78,10 +78,22 @@ authentication flow.
 
 ### OpenCode
 
-OpenCode requires `OLLAMA_API_KEY`:
+OpenCode authenticates to Ollama Cloud using `OLLAMA_API_KEY`:
 
 - **Local devcontainer**: put it in `.env` (loaded on boot)
 - **Codespaces**: add as a GitHub Codespaces secret
+
+The project-level `opencode.json` configures the `ollama-cloud` provider with
+`apiKey: "{env:OLLAMA_API_KEY}"`, so no `/connect` step is needed. The
+environment variable is the sole credential source; do not run
+`opencode providers login` for `ollama-cloud` or the `auth.json` credential
+will conflict with the project configuration.
+
+Environment precedence (highest to lowest):
+
+1. Already-exported environment variables (Codespaces secrets, `containerEnv`,
+   explicit shell exports)
+2. Values from `.env` (only fill in variables not already set)
 
 ## OpenCode Web
 
