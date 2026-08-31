@@ -1,0 +1,283 @@
+{
+  "$comment": "AUTHORITATIVE task-class -> skill-activation map for Human System. AGENTS.md is the bootloader that points here; it does not restate this. Task classes mirror ADR 002 §4. Validated by scripts/validate.sh (workflow check). Illustrative YAML in the bootstrap prompt is superseded by this file.",
+  "version": 1,
+  "authoritative": true,
+  "skills": {
+    "human-systems-context": {
+      "kind": "human-system-owned",
+      "source": ".agents/skills/human-systems-context"
+    },
+    "concept-development": {
+      "kind": "human-system-owned",
+      "source": ".agents/skills/concept-development"
+    },
+    "research-pressure-test": {
+      "kind": "human-system-owned",
+      "source": ".agents/skills/research-pressure-test",
+      "wraps": [
+        "research",
+        "grounded-citations"
+      ]
+    },
+    "paper-development": {
+      "kind": "human-system-owned",
+      "source": ".agents/skills/paper-development"
+    },
+    "reader-test": {
+      "kind": "human-system-owned",
+      "source": ".agents/skills/reader-test"
+    },
+    "publication-review": {
+      "kind": "human-system-owned",
+      "source": ".agents/skills/publication-review"
+    },
+    "research": {
+      "kind": "pinned-upstream",
+      "lock": ".devcontainer/agent-skills.lock.json#researcher-agent",
+      "note": "drader/researcher_agent skills/research, CC-BY-NC-4.0"
+    },
+    "grounded-citations": {
+      "kind": "pinned-upstream",
+      "lock": ".devcontainer/agent-skills.lock.json#hermes-agent",
+      "note": "NousResearch/hermes-agent, MIT"
+    },
+    "writing-for-agents": {
+      "kind": "pinned-upstream",
+      "lock": ".devcontainer/agent-skills.lock.json#mattpocock-skills",
+      "note": "mattpocock/skills, MIT — agent-facing operational writing only"
+    },
+    "git-branch-commit-pr": {
+      "kind": "repo-collection",
+      "source": "lagebj/agent-skills"
+    },
+    "adr-governance": {
+      "kind": "repo-collection",
+      "source": "lagebj/agent-skills"
+    }
+  },
+  "manuscript_rules_note": "There is no separate manuscript-writing skill. Manuscript voice and editing-pass rules live inside human-systems-context (its class 5 routing) and resources/source/book_work/. 'load_manuscript_rules' controls whether that routing is engaged. Only manuscript-work engages it.",
+  "task_classes": {
+    "repository-tooling": {
+      "adr002_class": 1,
+      "required": [],
+      "conditional": [
+        {
+          "skill": "writing-for-agents",
+          "when": "authoring or editing agent-facing operational text: AGENTS.md, a SKILL.md, this workflow file, a playbook, a context pointer"
+        },
+        {
+          "skill": "adr-governance",
+          "when": "the change decides durable structure or authority"
+        },
+        {
+          "skill": "git-branch-commit-pr",
+          "when": "delivering the change"
+        }
+      ],
+      "excluded": [
+        "concept-development",
+        "research-pressure-test",
+        "paper-development",
+        "publication-review",
+        "reader-test"
+      ],
+      "load_full_conceptual_context": false,
+      "load_manuscript_rules": false,
+      "requires_explicit_user_intent": false,
+      "manuscript_edits": false,
+      "publication": false
+    },
+    "concept-development": {
+      "adr002_class": 2,
+      "required": [
+        "human-systems-context",
+        "concept-development",
+        "no-such-skill"
+      ],
+      "conditional": [
+        {
+          "skill": "research-pressure-test",
+          "when": "a claim needs collision with evidence or theory before it is recorded"
+        }
+      ],
+      "excluded": [
+        "paper-development",
+        "publication-review",
+        "reader-test"
+      ],
+      "load_full_conceptual_context": true,
+      "load_manuscript_rules": false,
+      "requires_explicit_user_intent": false,
+      "manuscript_edits": false,
+      "publication": false
+    },
+    "research-pressure-testing": {
+      "adr002_class": 3,
+      "required": [
+        "human-systems-context",
+        "research-pressure-test",
+        "research"
+      ],
+      "conditional": [
+        {
+          "skill": "grounded-citations",
+          "when": "external evidence is being gathered"
+        }
+      ],
+      "excluded": [
+        "paper-development",
+        "publication-review"
+      ],
+      "load_full_conceptual_context": true,
+      "load_manuscript_rules": false,
+      "requires_explicit_user_intent": false,
+      "manuscript_edits": false,
+      "publication": false
+    },
+    "paper-development": {
+      "adr002_class": 4,
+      "required": [
+        "human-systems-context",
+        "paper-development"
+      ],
+      "conditional": [
+        {
+          "skill": "research-pressure-test",
+          "when": "load-bearing claims need testing"
+        },
+        {
+          "skill": "research",
+          "when": "literature search or fact-check mechanics are needed"
+        },
+        {
+          "skill": "grounded-citations",
+          "when": "external evidence is being used"
+        },
+        {
+          "skill": "reader-test",
+          "when": "the draft is independently readable"
+        }
+      ],
+      "excluded": [
+        "publication-review"
+      ],
+      "load_full_conceptual_context": true,
+      "load_manuscript_rules": false,
+      "requires_explicit_user_intent": false,
+      "manuscript_edits": false,
+      "publication": false
+    },
+    "manuscript-work": {
+      "adr002_class": 5,
+      "required": [
+        "human-systems-context"
+      ],
+      "conditional": [],
+      "excluded": [
+        "paper-development",
+        "concept-development",
+        "research-pressure-test",
+        "publication-review",
+        "reader-test"
+      ],
+      "load_full_conceptual_context": true,
+      "load_manuscript_rules": true,
+      "requires_explicit_user_intent": true,
+      "manuscript_edits": true,
+      "publication": false
+    },
+    "publication-preparation": {
+      "adr002_class": 6,
+      "required": [
+        "human-systems-context",
+        "publication-review",
+        "reader-test"
+      ],
+      "conditional": [
+        {
+          "skill": "grounded-citations",
+          "when": "the artifact cites external evidence"
+        },
+        {
+          "skill": "research-pressure-test",
+          "when": "a reviewer challenge needs re-testing"
+        },
+        {
+          "skill": "paper-development",
+          "when": "review findings require revision"
+        }
+      ],
+      "excluded": [],
+      "load_full_conceptual_context": true,
+      "load_manuscript_rules": false,
+      "requires_explicit_user_intent": false,
+      "manuscript_edits": false,
+      "publication": false
+    },
+    "publication": {
+      "adr002_class": 7,
+      "required": [
+        "publication-review"
+      ],
+      "conditional": [
+        {
+          "skill": "git-branch-commit-pr",
+          "when": "delivering the publish change"
+        }
+      ],
+      "excluded": [
+        "concept-development",
+        "research-pressure-test"
+      ],
+      "load_full_conceptual_context": false,
+      "load_manuscript_rules": false,
+      "requires_explicit_user_intent": true,
+      "manuscript_edits": false,
+      "publication": true
+    }
+  },
+  "sequences": {
+    "research-backed-paper": [
+      "human-systems-context",
+      "paper-development",
+      "research-pressure-test (when claims require testing)",
+      "grounded-citations (when evidence is gathered)",
+      "paper-development",
+      "reader-test (when independently readable)",
+      "publication-review (publication preparation)",
+      "explicit human publish decision"
+    ]
+  },
+  "wrappers": [
+    {
+      "wrapper": "research-pressure-test",
+      "uses": [
+        "research"
+      ],
+      "optionally_cooperates_with": [
+        "grounded-citations"
+      ],
+      "note": "Normal selection is research-pressure-test; it owns orchestration, upstream research owns generic mechanics."
+    }
+  ],
+  "clean_reader": {
+    "skill": "reader-test",
+    "must_exclude": [
+      "human-systems-context"
+    ],
+    "must_not_inject": [
+      "human-systems-context",
+      "resources/source/**",
+      "resources/context/**",
+      "docs/**",
+      "inbox/**",
+      "manuscript/**"
+    ],
+    "auth_required_for_validation": false,
+    "required_for_devcontainer_startup": false
+  },
+  "explicit_human_intent_gates": [
+    "manuscript-work",
+    "publication"
+  ]
+}

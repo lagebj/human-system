@@ -39,9 +39,14 @@ Two kinds of authority (ADR 002 §2):
 
 ## Routing by task class (ADR 002 §4)
 
+`.agents/workflow.json` is authoritative for which skills each class requires,
+which are conditional, and which are excluded. The sections below say which
+*context files* to read for each class. Load skills per `workflow.json`; read
+sources per here.
+
 ### Class 1 — Repository / Tooling
 
-devcontainer, skills, instructions, automation, repo structure, workflows.
+devcontainer, skills, instructions, automation, repo structure, workflow config.
 
 1. `docs/current-state.md`
 2. `docs/decisions/002-repository-operating-model-and-source-authority.md`

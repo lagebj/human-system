@@ -1,0 +1,43 @@
+# Repository validation. Runs the SAME canonical entrypoint as local
+# development (bash scripts/validate.sh). No policy logic lives in this file.
+# No deployment, no GitHub Pages.
+name: validate
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0 # scripts/lib/check-structure.sh diffs against origin/main
+
+      - name: Set up Python
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: "3.12"
+
+      - name: Install REUSE tool
+        run: pipx install reuse
+
+      - name: Show tool versions
+        run: |
+          jq --version
+          python3 --version
+          reuse --version
+
+      - name: Validate
+        run: bash scripts/validate.sh

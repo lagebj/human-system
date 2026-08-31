@@ -119,13 +119,22 @@ devcontainers (e.g., Matchboard).
 
 Both Claude Code and OpenCode discover the same skills:
 
-1. **Repo-local skills** from `.agents/skills/` (authoritative, committed)
-2. **Externally managed skills** from `addyosmani/agent-skills` and
-   `lagebj/agent-skills` (synchronized, symlinked)
+1. **Repo-local skills** from `.agents/skills/` (authoritative, committed) —
+   `human-systems-context`, `concept-development`, `research-pressure-test`,
+   `paper-development`, `reader-test`, `publication-review`.
+2. **Pinned upstream skills** from `.devcontainer/agent-skills.lock.json` —
+   checked out at exact commit SHAs into
+   `~/.local/share/human-system-agent-skills/pinned/`. Currently `research`
+   (`drader/researcher_agent`), `grounded-citations`
+   (`NousResearch/hermes-agent`), `writing-for-agents` (`mattpocock/skills`).
+   Desired sources: `.devcontainer/agent-skills.json`. Updates only through
+   `docs/development/agent-skill-update-workflow.md` — never automatic.
+3. **Externally managed collections** from `addyosmani/agent-skills` and
+   `lagebj/agent-skills` (synchronized from `main`, symlinked).
 
 The sync script (`sync-agent-skills.sh`) creates symlinks in both
 `~/.config/opencode/skills/` and `.claude/skills/` pointing to the same
-source repositories.
+source checkouts. Symlinks and checkouts are gitignored.
 
 Run parity validation:
 

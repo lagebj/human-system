@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  Human System is one author's evolving body of thought, not a peer-reviewed or
+  formally published work. If you refer to it, please cite this repository at
+  the commit or date you consulted. Individual papers may acquire their own
+  citation identities later.
+title: "Human System"
+abstract: >-
+  A working body of thought about understanding and intervening responsibly in
+  human systems when the right action depends on context, together with the
+  repository tooling that supports its development.
+type: software
+authors:
+  - given-names: Lage
+    family-names: Berger-Brendryen
+    email: lage.berger-brendryen@outlook.com
+repository-code: "https://github.com/lagebj/human-system"
+url: "https://github.com/lagebj/human-system"
+license: MPL-2.0
+license-url: "https://github.com/lagebj/human-system/blob/main/LICENSE.md"
+keywords:
+  - human systems
+  - context
+  - intervention
+  - consulting
+  - organisational learning

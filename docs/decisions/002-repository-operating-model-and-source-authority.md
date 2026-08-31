@@ -232,7 +232,7 @@ delete valuable historical thought merely because it is no longer authoritative.
 ## Implementation evidence
 
 - Pull request: see branch `repo/operating-model-reset`.
-- Validation: `bash scripts/validate-repo.sh`.
+- Validation: `bash scripts/validate.sh`.
 
 ## Supersedes
 

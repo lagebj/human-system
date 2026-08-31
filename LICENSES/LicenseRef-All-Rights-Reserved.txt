@@ -1,0 +1,23 @@
+All rights reserved.
+
+Copyright (c) Lage Berger-Brendryen.
+
+The files that carry this identifier are working intellectual material: the
+book manuscript, working papers, conceptual sources, field notes, inbox
+captures, and unpublished theory development.
+
+No licence is granted. These files are shared in this public repository for
+transparency and continuity of the author's own work, not for reuse. You may
+not copy, modify, distribute, or create derivative works from them without the
+author's prior written permission, except where mandatory exceptions under
+applicable copyright law apply (for example, quotation for criticism or
+review).
+
+If and when a specific piece of intellectual material is deliberately
+published, the author may place that piece under a different licence
+(CC-BY-NC-SA-4.0 is the intended licence for published intellectual material).
+Presence of a file in Git does not constitute publication or a licence grant.
+
+Software and tooling in this repository are covered by MPL-2.0, not by this
+identifier. Third-party material retains its upstream licence. See LICENSE.md
+and REUSE.toml.

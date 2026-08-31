@@ -26,7 +26,7 @@ make bounded change
   ↓
 inspect for stale or contradictory authority near what you touched
   ↓
-validate  (bash scripts/validate-repo.sh; task-specific checks)
+validate  (bash scripts/validate.sh; task-specific checks)
   ↓
 commit + PR  (Conventional Commits; PR states exact validation results)
 ```
@@ -54,4 +54,4 @@ commit + PR  (Conventional Commits; PR states exact validation results)
 - `docs/current-state.md` is still accurate (update only if its subject changed).
 - No manuscript diff unless Class 5 was active and requested.
 - Referenced instruction and source paths resolve.
-- `bash scripts/validate-repo.sh` passes, or the failure is explained.
+- `bash scripts/validate.sh` passes, or the failure is explained.
