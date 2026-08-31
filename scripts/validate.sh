@@ -22,6 +22,7 @@ checks=(
   "Pinned upstream Agent Skills:check-pinned-skills.sh"
   "Licensing / REUSE:check-licensing.sh"
   "Claude / OpenCode parity:check-parity.sh"
+  "Site build and publication boundary:check-site.sh"
 )
 
 # Self-tests (fixtures) run last, out-of-band from the check list.

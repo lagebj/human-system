@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/Base.astro';
+
+const papers = await getCollection('papers');
+
+// Sort by published date (newest first)
+papers.sort((a, b) => {
+  return new Date(b.data.published).getTime() - new Date(a.data.published).getTime();
+});
+---
+
+<BaseLayout 
+  title="Papers" 
+  description="Published papers from Human System — propositions tested through field experience, research, and progressively developed observations."
+>
+  <div class="prose">
+    <h1>Papers</h1>
+    
+    <p>
+      This page lists deliberately published papers from the Human System 
+      body of thought. Each paper tests a specific proposition through 
+      field experience, research, or developed observations.
+    </p>
+    
+    {papers.length === 0 ? (
+      <div class="empty-state">
+        <h2>No papers published yet</h2>
+        <p>
+          Papers are being developed and will appear here when published. 
+          The work deliberately avoids publishing material merely because 
+          it "looks ready". Publication is a deliberate decision, not an 
+          inference.
+        </p>
+        <p>
+          Check back later, or explore the <a href="/about/">About</a> 
+          page to understand the direction of the work.
+        </p>
+      </div>
+    ) : (
+      <ul class="paper-list">
+        {papers.map((paper) => (
+          <li class="paper-item">
+            <h2 class="paper-title">
+              <a href={`/papers/${paper.id}/`}>{paper.data.title}</a>
+            </h2>
+            <p class="paper-description">{paper.data.description}</p>
+            <p class="paper-meta">
+              Published {new Date(paper.data.published).toLocaleDateString('en-GB', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+              })}
+              {paper.data.updated && ` · Updated ${new Date(paper.data.updated).toLocaleDateString('en-GB', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+              })}`}
+            </p>
+            {paper.data.topics && paper.data.topics.length > 0 && (
+              <p class="paper-meta">
+                Topics: {paper.data.topics.join(', ')}
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</BaseLayout>

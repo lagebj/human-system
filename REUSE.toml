@@ -49,3 +49,24 @@ SPDX-License-Identifier = "MPL-2.0"
 path = "manuscript/**"
 SPDX-FileCopyrightText = "2026 Lage Berger-Brendryen"
 SPDX-License-Identifier = "LicenseRef-All-Rights-Reserved"
+
+# --- Rule 4: site software and tooling (Astro site, workflows).
+[[annotations]]
+path = [
+  "site/**",
+  ".github/workflows/deploy-pages.yml",
+]
+SPDX-FileCopyrightText = "2026 Lage Berger-Brendryen"
+SPDX-License-Identifier = "MPL-2.0"
+
+# --- Rule 5: working papers (All Rights Reserved — not published).
+[[annotations]]
+path = "papers/working/**"
+SPDX-FileCopyrightText = "2026 Lage Berger-Brendryen"
+SPDX-License-Identifier = "LicenseRef-All-Rights-Reserved"
+
+# --- Rule 6: published papers (CC-BY-NC-SA-4.0).
+[[annotations]]
+path = "papers/published/**"
+SPDX-FileCopyrightText = "2026 Lage Berger-Brendryen"
+SPDX-License-Identifier = "CC-BY-NC-SA-4.0"

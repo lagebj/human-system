@@ -55,9 +55,13 @@ out where the framing is actually distinctive is future work.
 
 ## A note on "public"
 
-The repository may be public. Being present in Git does not mean any particular
-piece of material has been deliberately published to a public website. No such
-website exists yet.
+The repository is public on GitHub. Being present in the repository does not
+mean a piece of material has been deliberately published to the public website.
+
+The website at `https://lagebj.github.io/human-system/` includes only material
+deliberately placed in `papers/published/`. Working material in `papers/working/`,
+the manuscript, and internal sources remain in the repository but are not
+exposed on the site.
 
 ## Working in this repository
 

@@ -1,0 +1,58 @@
+---
+import BaseLayout from './Base.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  published: string;
+  updated?: string;
+  topics?: string[];
+}
+
+const { title, description, published, updated, topics } = Astro.props;
+
+const publishedDate = new Date(published).toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const updatedDate = updated 
+  ? new Date(updated).toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    })
+  : null;
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="prose">
+    <header class="paper-header">
+      <h1>{title}</h1>
+      <div class="paper-meta-block">
+        <p>
+          Published {publishedDate}
+          {updatedDate && ` · Updated ${updatedDate}`}
+        </p>
+        {topics && topics.length > 0 && (
+          <p>Topics: {topics.join(', ')}</p>
+        )}
+      </div>
+    </header>
+    
+    <slot />
+    
+    <footer class="paper-meta-block">
+      <hr />
+      <p>
+        <small>
+          This paper is licensed under 
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+            Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+          </a>.
+        </small>
+      </p>
+    </footer>
+  </article>
+</BaseLayout>

@@ -1,0 +1,13 @@
+# Astro site generated files
+dist/
+node_modules/
+
+# Astro check output
+dist-check/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
