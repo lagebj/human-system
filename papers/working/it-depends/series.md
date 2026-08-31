@@ -23,27 +23,9 @@ Experience provides pattern recognition and better hypotheses. It does not remov
 
 ## Reasoning Movement
 
-```text
-It depends
-    ↓
-Depends on what?
-    ↓
-Which variables materially change the answer?
-    ↓
-What appears true in this context?
-    ↓
-What can safely be assumed?
-    ↓
-What intervention fits these conditions?
-    ↓
-What happened?
-    ↓
-What did that reveal?
-    ↓
-Update the model
-```
+The core inquiry pattern: it depends → identify what it depends upon → name the variables → distinguish which materially change the answer → state the current best explanation → name assumptions explicitly → act → observe → update.
 
-This is not a framework. It is a recurring pattern of inquiry.
+This is not a framework. It is a recurring pattern of inquiry. The revised Paper 1 expresses this as prose rather than a numbered sequence.
 
 ---
 
@@ -52,6 +34,8 @@ This is not a framework. It is a recurring pattern of inquiry.
 **Provisional title:** *It Depends: What Experience Entitles Us to Assume*
 
 **Central question:** When should experience increase confidence, and when should it increase the quality of our questions?
+
+**Status:** Revised draft complete (2026-08-31). Working material, not publication-ready.
 
 **Current proposition:**
 - Experience provides pattern recognition, better hypotheses, faster orientation, knowledge of recurring failure modes, and sharper questions
@@ -76,8 +60,14 @@ This is not a framework. It is a recurring pattern of inquiry.
 - May absorb "It Depends: Expertise" (likely the same argument)
 - May absorb "The Consultant Is Part of the System" (likely a section, not a separate paper)
 
-**Research needed:**
-- Naturalistic decision making (Klein, Gary)
+**Research needed (unverified claims):**
+- Naturalistic Decision Making (Klein, Gary) — does NDM research support the hypothesis vs. prescription distinction?
+- Deming's System of Profound Knowledge — verify overlap claims, distinguish what Deming establishes vs. what Human System infers
+- Sensemaking (Weick) — verify mutual sensemaking claims
+- Bounded Rationality (Simon) — verify proportionality framing extends bounded rationality
+- Psychological Safety (Edmondson) — verify consultant-specific claims
+- Observer effect in social/organizational systems — locate primary sources
+- Decision theory on evidence thresholds — reversibility/consequence/learning velocity framework
 - Expertise and pattern recognition literature
 - Bounded rationality (Simon)
 - Sensemaking (Weick)

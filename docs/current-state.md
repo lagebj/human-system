@@ -102,10 +102,7 @@ public website. `papers/working/`, `manuscript/`, `inbox/`, `.agents/`, and
 
 ## Active paper development
 
-- **"It Depends" series** — Working draft of Paper 1 exists
-  (`papers/working/it-depends/paper-01-it-depends.md`). Series map and research
-  notes in place. Load-bearing claims identified for pressure-testing. Not for
-  publication.
+- **"It Depends" series** — Paper 1 revised (2026-08-31) to follow the new public-authorship model. Prose now preserves epistemic stance, uses first-person uncertainty, and avoids framework packaging. Research pressure-testing and reader-testing remain incomplete. Series map (`papers/working/it-depends/series.md`) and research notes (`papers/working/it-depends/research.md`) updated. Not for publication.
 
 ## Likely next work
 
@@ -113,8 +110,8 @@ public website. `papers/working/`, `manuscript/`, `inbox/`, `.agents/`, and
   `validate` status check **required** on `main` (ADR 003 §5). That is the only
   remaining bootstrap step.
 - Pressure-test load-bearing claims in Paper 1 using `research-pressure-test`
-  and `grounded-citations` skills.
-- Run `reader-test` on Paper 1 draft (clean context).
+  and `grounded-citations` skills (in progress — literature verification needed).
+- Run `reader-test` on Paper 1 draft (clean context) (pending).
 - Verify GitHub Pages deployment succeeds on merge and the deployed site is
   accessible at `https://lagebj.github.io/human-system/`.
 - Decide whether to continue refining Paper 1 or begin Paper 2 (Best Practice).

@@ -1,7 +1,10 @@
 # Research Notes — "It Depends" Paper 1
 
 **Status:** Working notes — not for publication  
-**Created:** 2026-08-31
+**Created:** 2026-08-31  
+**Last updated:** 2026-08-31 (post-revision)
+
+**Note:** Paper 1 has been revised to follow the new public-authorship model. The prose now preserves epistemic stance, uses first-person where appropriate, and avoids framework packaging. Research pressure-testing remains incomplete — claims below are flagged for verification.
 
 ---
 
@@ -237,3 +240,63 @@
 ---
 
 *Working notes. Not for publication. Update as research progresses.*
+
+---
+
+## Revision Notes (2026-08-31)
+
+### What changed in the thinking
+
+- The core proposition remains intact: experience provides hypotheses, not prescriptions
+- The "it depends → depends on what" movement is preserved but expressed as prose rather than an 8-step numbered framework
+- Uncertainty is more explicitly owned (first-person language in closing sections)
+- Claims that read as universal are now framed as the author's current hypotheses
+
+### What changed only in presentation
+
+- Removed "Abstract" section heading (now opens directly into the scenario)
+- Removed numbered lists where they converted connected reasoning into bullets
+- Removed "Working Propositions" numbering (now plain paragraphs)
+- Removed "Unresolved Questions" bullets (now first-person "I do not yet know" statements)
+- Removed "What Would Change My Mind" heading (folded into closing)
+- Binary contrast patterns reduced but not eliminated (contrast remains where it serves the thought)
+- Section headings simplified; some merged
+
+### Claims downgraded or qualified
+
+- "The consultant changes the system by arriving" — now presented as the author's observation, not universal law
+- "Some relational state is unknowable" — now "I do not yet know which relational states are knowable"
+- "A useful model implies predictions" — retained as hypothesis, flagged for research
+
+### Claims retained at similar confidence
+
+- Experience provides hypotheses, not prescriptions
+- Similarity is not equivalence
+- Act proportionally to reversibility and consequence
+- Allow reality to update the model
+
+### Structural patterns removed
+
+- 8-step numbered "movement" → prose paragraph
+- 7 numbered "Working Propositions" → plain paragraphs
+- 5-bullet "Unresolved Questions" → first-person uncertainty statements
+- 8-bullet "consultant enters" list → prose paragraph
+- 5-bullet "what experience provides" list → prose paragraph
+- Formulaic "weak model / strong model" contrast → retained once, removed elsewhere
+
+### What remains unresolved
+
+- All literature overlap claims need verification against primary sources
+- Novelty vs. synthesis question remains open
+- Boundary conditions for expert pattern recognition not established
+- Reversibility/consequence/learning velocity framework not research-backed
+
+### Reader-test still needed
+
+Paper has not been reader-tested under clean-context conditions. Priority questions:
+- Does the revised prose feel like a person examining something, or like polished AI output?
+- Does the removal of numbered frameworks make the thinking clearer or harder to follow?
+- Do readers notice the first-person uncertainty as honest or as hedging?
+- Which sections still feel framework-like?
+
+---
