@@ -9,7 +9,7 @@ errors=0
 printf '=== Human System Devcontainer Validation ===\n\n'
 
 # 1. Tool versions
-printf '--- Tool Versions ---\n'
+printf '%s\n' '--- Tool Versions ---'
 printf 'Node: %s\n' "$(node --version)"
 printf 'npm: %s\n' "$(npm --version)"
 printf 'git: %s\n' "$(git --version)"
@@ -28,7 +28,7 @@ fi
 printf '\n'
 
 # 2. Non-root user check
-printf '--- User Check ---\n'
+printf '%s\n' '--- User Check ---'
 if [[ "$(id -u)" != "0" ]]; then
   printf '[OK] Running as non-root user: %s (uid %s)\n' "$(id -un)" "$(id -u)"
 else
@@ -39,7 +39,7 @@ fi
 printf '\n'
 
 # 3. Volume ownership check
-printf '--- Volume Ownership ---\n'
+printf '%s\n' '--- Volume Ownership ---'
 for dir in \
   "$HOME/.claude" \
   "$HOME/.config/opencode"
@@ -82,13 +82,13 @@ done
 printf '\n'
 
 # 4. Agent parity validation
-printf '--- Agent Parity ---\n'
+printf '%s\n' '--- Agent Parity ---'
 bash .devcontainer/validate-agent-parity.sh || errors=$((errors + $?))
 
 printf '\n'
 
 # 5. Worktree integrity — no tracked changes introduced by lifecycle
-printf '--- Worktree Integrity ---\n'
+printf '%s\n' '--- Worktree Integrity ---'
 git_status="$(git status --porcelain)"
 if [[ -z "$git_status" ]]; then
   printf '[OK] Git worktree is clean (no tracked changes from lifecycle)\n'
@@ -101,7 +101,7 @@ fi
 printf '\n'
 
 # 6. No secrets in tracked files
-printf '--- Secret Scan ---\n'
+printf '%s\n' '--- Secret Scan ---'
 secret_patterns=(
   'ANTHROPIC_API_KEY=sk-'
   'OLLAMA_API_KEY=sk-'
@@ -110,18 +110,25 @@ secret_patterns=(
   'token=ghp_'
 )
 
+# Exclude this script itself: it defines the patterns above, so scanning it
+# would always self-match.
+secret_hits=0
+scan_files="$(git ls-files | grep -vx '.devcontainer/validate.sh')"
 for pattern in "${secret_patterns[@]}"; do
-  if git ls-files | xargs grep -rl "$pattern" 2>/dev/null | head -1 | grep -q .; then
+  if printf '%s\n' "$scan_files" | xargs -r grep -l -F -e "$pattern" 2>/dev/null | grep -q .; then
     printf '[FAIL] Potential secret found matching pattern: %s\n' "$pattern" >&2
     errors=$((errors + 1))
+    secret_hits=$((secret_hits + 1))
   fi
 done
-printf '[OK] No hardcoded secrets found in tracked files\n'
+if [[ "$secret_hits" -eq 0 ]]; then
+  printf '[OK] No hardcoded secrets found in tracked files\n'
+fi
 
 printf '\n'
 
 # 7. Manuscript untouched
-printf '--- Manuscript Integrity ---\n'
+printf '%s\n' '--- Manuscript Integrity ---'
 manuscript_head="$(git show HEAD:manuscript/human.md 2>/dev/null | sha256sum || echo 'N/A')"
 manuscript_disk="$(sha256sum < manuscript/human.md 2>/dev/null || echo 'N/A')"
 if [[ "$manuscript_head" == "$manuscript_disk" ]]; then
@@ -133,7 +140,7 @@ fi
 printf '\n'
 
 # 8. Mutable state isolation — check that agent config points to Human System scoped paths
-printf '--- State Isolation ---\n'
+printf '%s\n' '--- State Isolation ---'
 claude_config="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
 printf 'Claude config dir: %s\n' "$claude_config"
 
@@ -155,7 +162,7 @@ fi
 printf '\n'
 
 # 9. No application infrastructure
-printf '--- Application Infrastructure Check ---\n'
+printf '%s\n' '--- Application Infrastructure Check ---'
 for pkg in postgresql-client prisma vercel brevo astro; do
   if command -v "$pkg" >/dev/null 2>&1; then
     printf '[FAIL] Application infrastructure found: %s (should not be in this devcontainer)\n' "$pkg" >&2
@@ -163,6 +170,35 @@ for pkg in postgresql-client prisma vercel brevo astro; do
   fi
 done
 printf '[OK] No application infrastructure packages detected\n'
+
+printf '\n'
+
+# 10. Dotenv auto-load
+printf '%s\n' '--- Dotenv Auto-load ---'
+if [[ -f .devcontainer/load-dotenv.sh ]]; then
+  printf '[OK] .devcontainer/load-dotenv.sh present\n'
+else
+  printf '[FAIL] .devcontainer/load-dotenv.sh missing\n' >&2
+  errors=$((errors + 1))
+fi
+
+hook_marker='# >>> human-system dotenv auto-load >>>'
+hook_found=0
+for rc in "$HOME/.bashrc" "$HOME/.profile" /etc/profile.d/99-human-system-dotenv.sh; do
+  if [[ -f "$rc" ]] && grep -qF "$hook_marker" "$rc" 2>/dev/null; then
+    hook_found=1
+    printf '[OK] .env auto-load hook installed in %s\n' "$rc"
+  fi
+done
+if [[ "$hook_found" -eq 0 ]]; then
+  printf '[WARN] .env auto-load hook not found (run post-create.sh)\n' >&2
+fi
+
+if [[ -f .env ]]; then
+  printf '[OK] .env present (local devcontainer)\n'
+else
+  printf '[INFO] no .env file (expected in Codespaces; use Codespaces secrets)\n'
+fi
 
 printf '\n=== Validation Complete ===\n'
 if [[ "$errors" -eq 0 ]]; then
