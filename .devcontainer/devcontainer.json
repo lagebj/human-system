@@ -1,0 +1,58 @@
+{
+  "name": "Human System",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "NODE_VARIANT": "24-bookworm",
+      "OPENCODE_VERSION": "1.18.8"
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "version": "latest"
+    },
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+  },
+  "remoteUser": "node",
+  "hostRequirements": {
+    "cpus": 2,
+    "memory": "4gb",
+    "storage": "16gb"
+  },
+  "forwardPorts": [
+    4096
+  ],
+  "portsAttributes": {
+    "4096": {
+      "label": "OpenCode Web",
+      "onAutoForward": "private"
+    }
+  },
+  "mounts": [
+    "source=human-system-claude-config-${devcontainerId},target=/home/node/.claude,type=volume",
+    "source=human-system-opencode-config-${devcontainerId},target=/home/node/.config/opencode,type=volume"
+  ],
+  "containerEnv": {
+    "CLAUDE_CONFIG_DIR": "/home/node/.claude",
+    "OPENCODE_SERVER_USERNAME": "lagebj",
+    "OLLAMA_MODEL": "glm-5.1:cloud",
+    "OPENCODE_MODEL_CONTEXT": "202752",
+    "OPENCODE_MODEL_OUTPUT": "32768",
+    "ADDY_AGENT_SKILLS_REF": "main",
+    "LAGE_AGENT_SKILLS_REF": "main"
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "postStartCommand": "bash .devcontainer/post-start.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.eol": "\n",
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
