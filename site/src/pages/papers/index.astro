@@ -42,7 +42,7 @@ papers.sort((a, b) => {
         {papers.map((paper) => (
           <li class="paper-item">
             <h2 class="paper-title">
-              <a href={`/papers/${paper.id}/`}>{paper.data.title}</a>
+              <a href={paper.id}>{paper.data.title}</a>
             </h2>
             <p class="paper-description">{paper.data.description}</p>
             <p class="paper-meta">
