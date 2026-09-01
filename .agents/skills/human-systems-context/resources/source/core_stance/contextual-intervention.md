@@ -17,6 +17,16 @@ confidence levels, not as settled results. Where the thinking is unsettled, the
 unsettledness is part of the content. Do not manufacture coherence that has not
 been earned.
 
+**Foundational context:** This document builds from `human-system-foundation.md`.
+That file establishes the basic premises: humans are inside the system, models
+are incomplete by design, human infrastructure carries load, systems react,
+"It depends" begins investigation, experience provides hypotheses not
+prescriptions, apparently irrational variables can be materially real, formal
+and actual authority may differ, and epistemic uncertainty is legitimate.
+
+This document extends those foundations toward understanding context and
+intervention.
+
 ---
 
 ## Subject

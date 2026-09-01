@@ -32,7 +32,8 @@ Use this for long-lived material that defines the user's stance, identity, princ
 
 Current files:
 
-- `contextual-intervention.md` — current conceptual context for the wider body of thought: "it depends" as a starting point, discovery as intervention, limits of knowing, relationships as living infrastructure, proportionality, falsifiability, and how the thinking relates to established traditions. Provisional working context, not operational law.
+- `human-system-foundation.md` — foundational conceptual context: humans are inside the system, models are incomplete by design, human infrastructure carries load, systems react, "It depends" begins investigation, experience provides hypotheses not prescriptions, apparently irrational variables can be materially real, formal and actual authority may differ, epistemic uncertainty is legitimate. Background cognition for all Human System work.
+- `contextual-intervention.md` — extends the foundation toward understanding context and intervention: discovery as intervention, proportionality, falsifiability, relationships as living infrastructure, control and information, friction as method, feedback and revision, enablement, Trojan Horse Movement Pattern. Provisional working context, not operational law.
 - `personal_alignment.md` — personal context contract around systems, organizations, collaboration, Agile, process theatre, and common-sense operating principles.
 - `who_am_i.md` — narrative professional identity and how the user thinks, works, and shapes systems.
 
@@ -61,8 +62,11 @@ Current files:
 
 - `public-language.md` — reader-facing authorship model for public Human System material (papers, essays, notes, web pages). Covers epistemic stance, uncertainty, sentence construction, lists, headings, closure, humour, metaphor, and AI-shaped prose patterns to guard against.
 - `manuscript-voice-guide.md` — manuscript-specific voice for `manuscript/human.md` only. Spoken thinking in motion; does not govern public material.
+- `author-corpus/` — extensive author corpus organized by cognitive surface (reflective, technical, argumentative, explanatory, coaching, meta) with 38 direct user messages. Includes thought trails (8 sequences showing how author develops thought over time), unfinished evidence (authorship-depth-open-question.md), seed files per surface, rejected-ai evidence, and privacy/redaction guidance. Used as evidence for authorship, not as phrase library. Substantial writing retrieves raw idiolect samples + 2–4 thought trails + long-form depth reference.
 
 Add here when a resource affects tone, rhythm, language, or how the user's thinking should sound. Distinguish between general public authorship and manuscript-only constraints.
+
+Corpus retrieval should prefer `author-original` and `direct-user-message` as primary voice evidence, retrieve small relevant subsets for important prose, and avoid numeric style targets or AI detection scores.
 
 ## `resources/source/book_work/`
 

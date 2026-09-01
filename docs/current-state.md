@@ -5,6 +5,9 @@
 **Foundation:** `docs/decisions/003-agent-skill-and-repository-foundation.md` (Accepted)
 **Publication architecture:** `docs/decisions/004-public-site-and-publication-architecture.md` (Proposed)
 **Public authorship:** `docs/decisions/005-public-authorship-and-language-programme.md` (Proposed)
+**Foundational context and living voice:** `docs/decisions/006-foundational-context-and-living-voice.md` (Proposed)
+**Author corpus integration:** `docs/decisions/007-author-corpus-integration.md` (Proposed)
+**Thought trails and depth:** `docs/decisions/008-thought-trails-and-depth-integration.md` (Proposed)
 
 This file is a mandatory read before any work. Keep it short. Update it only
 when its subject changes (ADR 002 §8), not after every conceptual note.
@@ -26,8 +29,14 @@ thread.
   the primary output and is inactive by default.
 - Enablement and the Trojan Horse Movement Pattern are treated as applied
   consequences of the thinking, not its centre.
-- The newer conceptual direction lives in
-  `resources/source/core_stance/contextual-intervention.md`.
+- Foundational Human System context lives in
+  `resources/source/core_stance/human-system-foundation.md` (basic premises) and
+  `resources/source/core_stance/contextual-intervention.md` (extends foundation
+  toward intervention).
+- Public writing permits living voice qualities: thinking-in-motion, emotional
+  presence, tension accumulation, dry humour, occasional sarcasm, contrast,
+  self-correction, unresolved endings. These are permissions, not requirements.
+- **Author corpus architecture (v2.0):** The corpus is evidence used to derive compiled models of author language and thought movement. Normal generation loads `compiled/LANGUAGE_MODEL.md`, `compiled/THOUGHT_MOVEMENT_MODEL.md`, `compiled/CONTRASTIVE_MODEL.md`, and surface profiles instead of retrieving raw historical fragments. This prevents phrase-copying while preserving authentic voice. Raw corpus is used for analysis, compilation, and evaluation only. See `CORPUS_POLICY.md` for retrieval modes.
 
 ## Development environment
 
@@ -95,27 +104,30 @@ public website. `papers/working/`, `manuscript/`, `inbox/`, `.agents/`, and
 - `SKILL.md` and `resources/context/OPERATING_CONTEXT.md` still carry unrelated
   personal domains (youth football, Matchboard) inherited from the broader
   context package; whether they belong in this repository is undecided.
-- No paper exists yet, so the paper-development workflow (Class 4) is untested in
-  practice.
 - Publication architecture is implemented but not yet proven in production (no
   papers published yet, GitHub Pages deployment not yet tested on merge).
 - Public authorship model is newly implemented; existing working papers may
   need remediation to align with `public-language.md`.
+- Living voice permissions are newly added; agents must avoid mechanically
+  inserting humour, hesitation, or unresolved endings.
+- **Compiled author models are newly created (v2.0);** controlled tests (Test A, B, C, D) need to run to verify profile-guided generation resembles held-out author behaviour without copying historical phrases.
+
+## Active paper development
+
+- **"It Depends" series** — Paper 1 re-authoring complete (2026-08-31). Paper now written from Human System foundation: no section headings, continuous prose, first-person presence ("I like the phrase", "I worry", "I am less certain"), visible self-correction, deliberate unresolved ending. Framework packaging removed. Research pressure-testing and reader-testing remain incomplete. Series map and research notes updated. Not for publication.
 
 ## Likely next work
 
 - After the `validate` workflow shows several stable green runs: make the
   `validate` status check **required** on `main` (ADR 003 §5). That is the only
   remaining bootstrap step.
-- Draft the first short paper to test the Class 4 workflow (and, in practice,
-  `research-pressure-test`, `grounded-citations`, `reader-test`).
-- A Class 3 pass mapping `contextual-intervention.md` propositions against
-  established theory.
-- Decide the fate of the inherited non-human-systems domains in the skill.
+- Pressure-test load-bearing claims in Paper 1 using `research-pressure-test`
+  and `grounded-citations` skills (in progress — literature verification needed).
+- Run `reader-test` on Paper 1 draft (clean context) (pending).
 - Verify GitHub Pages deployment succeeds on merge and the deployed site is
   accessible at `https://lagebj.github.io/human-system/`.
-- Run reader-test on Home and About pages in a clean session before or after
-  merge.
+- Decide whether to continue refining Paper 1 or begin Paper 2 (Best Practice).
+- **Run controlled tests for compiled author models:** Test A (new Human System seed), Test B (technical reasoning), Test C (reflective conceptual), Test D (novel topic integrity test). See `compiled/HELD_OUT_EVALUATION.md`.
 
 ---
 
