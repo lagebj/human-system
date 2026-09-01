@@ -113,6 +113,20 @@ Before returning public prose, verify:
 - What do I think the author's own position is?
 - Did any humour or sarcasm alter how I interpreted the author's stance?
 - Does any agent scaffolding remain visible?
+- Has editing made this more certain than the thinking actually is?
+- Has editing made this more orderly than the thinking actually is?
+- Has editing made the author emotionally neutral where the underlying thought is not?
+- Can I still feel someone thinking here?
+- Did a useful hesitation get converted into a clean conclusion?
+- Did the text resolve a tension merely because the section ended?
+- Did I turn connected reasoning into a list?
+- Did I turn uncertainty into repetitive hedging?
+- Did humour arise naturally, or was it inserted to satisfy a voice instruction?
+- Is sarcasm aimed at an absurd condition or at a person?
+- Is contrast carrying a real observation or merely manufacturing a punchline?
+- Has the author disappeared behind institutional language?
+- Is this passage clearer because the thought became clearer, or merely cleaner because the prose was normalized?
+- Has the page become so polished that it no longer feels lived?
 
 ## Relationship to paper-development
 

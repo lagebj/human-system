@@ -5,6 +5,7 @@
 **Foundation:** `docs/decisions/003-agent-skill-and-repository-foundation.md` (Accepted)
 **Publication architecture:** `docs/decisions/004-public-site-and-publication-architecture.md` (Proposed)
 **Public authorship:** `docs/decisions/005-public-authorship-and-language-programme.md` (Proposed)
+**Foundational context and living voice:** `docs/decisions/006-foundational-context-and-living-voice.md` (Proposed)
 
 This file is a mandatory read before any work. Keep it short. Update it only
 when its subject changes (ADR 002 §8), not after every conceptual note.
@@ -26,8 +27,13 @@ thread.
   the primary output and is inactive by default.
 - Enablement and the Trojan Horse Movement Pattern are treated as applied
   consequences of the thinking, not its centre.
-- The newer conceptual direction lives in
-  `resources/source/core_stance/contextual-intervention.md`.
+- Foundational Human System context lives in
+  `resources/source/core_stance/human-system-foundation.md` (basic premises) and
+  `resources/source/core_stance/contextual-intervention.md` (extends foundation
+  toward intervention).
+- Public writing permits living voice qualities: thinking-in-motion, emotional
+  presence, tension accumulation, dry humour, occasional sarcasm, contrast,
+  self-correction, unresolved endings. These are permissions, not requirements.
 
 ## Development environment
 
@@ -99,6 +105,8 @@ public website. `papers/working/`, `manuscript/`, `inbox/`, `.agents/`, and
   papers published yet, GitHub Pages deployment not yet tested on merge).
 - Public authorship model is newly implemented; existing working papers may
   need remediation to align with `public-language.md`.
+- Living voice permissions are newly added; agents must avoid mechanically
+  inserting humour, hesitation, or unresolved endings.
 
 ## Active paper development
 

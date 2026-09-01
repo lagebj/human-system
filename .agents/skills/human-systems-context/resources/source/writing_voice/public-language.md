@@ -272,6 +272,80 @@ This is not:
 
 Different ideas deserve different shapes. Provide heuristics, not a prose assembly line.
 
+## Living voice permissions
+
+Human System writing may be less polished than conventional professional writing.
+
+The prose should not feel as though every thought was completed before writing began.
+
+Allow:
+
+- uneven pacing
+- revisiting an idea
+- small self-corrections
+- partial conclusions
+- repetition where the thought genuinely returns
+- sentences that turn slightly while being written
+- paragraphs that carry uncertainty forward
+- asymmetry
+- occasional rough edges
+
+Do not deliberately add mistakes. Do not fake spontaneity. Do not add random fragments, slang, punctuation, or hesitations to "sound human."
+
+The principle is: do not polish away the fingerprints of thinking.
+
+A reader should sometimes be able to feel that understanding is forming while the text moves. This may include starting from an observation and discovering the abstraction later, questioning the abstraction after naming it, returning to an earlier thought because it no longer feels sufficient, admitting that a neat explanation has started to feel suspicious, or carrying two competing interpretations for a while.
+
+Avoid automatically converting this movement into thesis, three supporting points, counterargument, synthesis, conclusion. That is a valid essay shape sometimes. It should not be the default output shape.
+
+## Emotional presence
+
+Human System argues that feelings are part of systems. Its public prose must therefore not behave as though the author has no feelings.
+
+Allow natural traces of frustration, irritation, affection, amusement, suspicion, discomfort, curiosity, enthusiasm, disappointment, admiration, exasperation, uncertainty.
+
+Emotional language should remain connected to actual thought. Do not turn the author into a dramatic narrator. Do not add emotion merely because a passage feels dry.
+
+The author may say something bothers him. He may admit something makes him uncomfortable. He may find an organisational contradiction absurd. He may be amused by something that is simultaneously serious. That is allowed.
+
+## Emotional tension
+
+Allow emotional tension to build. Do not require each paragraph to introduce discomfort and resolve it immediately.
+
+A contradiction may sit unresolved across several paragraphs. Frustration may accumulate. The reader may feel that something is wrong before the author can quite name what it is. Uncertainty may become uncomfortable.
+
+Release may come later through a concrete observation, a partial insight, a reframing, an admission, an understated humorous line, recognition of the contradiction, a question.
+
+Release is not the same as resolution. Sometimes the tension should remain.
+
+Do not formalise this into setup → tension → escalation → release. That would turn living prose into another content template. The rule is simply: let the emotional shape follow the thought.
+
+## Dry humour
+
+Preserve humour as a natural part of the author's voice. It should usually be dry, restrained, slightly underplayed, contextual, occasional.
+
+Humour may come from noticing absurdity. Examples of the kind of territory where humour may naturally occur: an org chart says one thing while everyone waits for Martin; a governance process exists to determine who is allowed to decide; an organisation creates a transformation board to make change less disruptive; a six-month decision model loses to a bad memory from 2019.
+
+Do not copy these examples into public material automatically. Do not turn the writing into comedy. Do not force a joke into every page. Do not explain the joke.
+
+## Sarcasm and irony
+
+Occasional sarcasm is allowed. Aim it primarily at ideas, systems, bureaucracy, contradictions, performative behaviour, absurd incentives, fashionable certainty. Avoid making individual people the target. People are usually adapting reasonably to conditions around them.
+
+The author may be sharp without positioning himself above everyone else.
+
+## Opposite comparison and contrast
+
+Allow opposite comparison. Allow rhetorical contrast. Allow reversal.
+
+Allow: "The process says X. The system does Y."
+
+Allow: "Everything is working exactly as designed. That may be the problem."
+
+Do not ban `not X, but Y` globally. The problem with those constructions is repetition and artificial insight manufacture, not contrast itself.
+
+Manuscript-specific restrictions remain manuscript-specific. Public writing uses judgment.
+
 ## Final integrity check
 
 Before accepting public prose, ask:
@@ -287,5 +361,33 @@ Before accepting public prose, ask:
 > What do I think the author's own position is?
 
 > Did any humour or sarcasm alter how I interpreted the author's stance?
+
+> Has editing made this more certain than the thinking actually is?
+
+> Has editing made this more orderly than the thinking actually is?
+
+> Has editing made the author emotionally neutral where the underlying thought is not?
+
+> Can I still feel someone thinking here?
+
+> Did a useful hesitation get converted into a clean conclusion?
+
+> Did the text resolve a tension merely because the section ended?
+
+> Did the agent turn connected reasoning into a list?
+
+> Did the agent turn uncertainty into repetitive hedging?
+
+> Did humour arise naturally, or was it inserted to satisfy a voice instruction?
+
+> Is sarcasm aimed at an absurd condition or at a person?
+
+> Is contrast carrying a real observation or merely manufacturing a punchline?
+
+> Has the author disappeared behind institutional language?
+
+> Is this passage clearer because the thought became clearer, or merely cleaner because the prose was normalized?
+
+> Has the page become so polished that it no longer feels lived?
 
 If the text sounds prepared, explanatory, or rhetorically shaped, it is suspect.

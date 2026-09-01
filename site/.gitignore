@@ -11,3 +11,6 @@ dist-check/
 # OS files
 .DS_Store
 Thumbs.db
+
+# Astro runtime
+.astro/

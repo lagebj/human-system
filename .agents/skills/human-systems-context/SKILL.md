@@ -61,12 +61,13 @@ directly required.
 Capture an observation, develop a proposition, connect concepts, identify a
 contradiction, evolve the body of thought.
 
-1. `resources/source/core_stance/contextual-intervention.md`
-2. `resources/source/core_stance/personal_alignment.md` and `who_am_i.md` when
+1. `resources/source/core_stance/human-system-foundation.md` — foundational context (background cognition)
+2. `resources/source/core_stance/contextual-intervention.md` — extends foundation toward intervention
+3. `resources/source/core_stance/personal_alignment.md` and `who_am_i.md` when
    stance or identity is in play
-3. `resources/source/field_patterns/` when the observation is about enablement,
+4. `resources/source/field_patterns/` when the observation is about enablement,
    modernization-in-place, or the impulse to help
-4. `resources/context/OPERATING_CONTEXT.md` for prior project memory
+5. `resources/context/OPERATING_CONTEXT.md` for prior project memory
 
 Place new conceptual material per `RESOURCE_MAP.md`. Manuscript untouched unless
 explicitly requested. Manuscript voice is not required.
@@ -77,10 +78,11 @@ Compare an idea with established theory, search for counterexamples, find
 boundary conditions, ask what would falsify a claim, separate observation from
 inference.
 
-1. `resources/source/core_stance/contextual-intervention.md` (see its
+1. `resources/source/core_stance/human-system-foundation.md` — foundational context (background cognition)
+2. `resources/source/core_stance/contextual-intervention.md` (see its
    "Relationship to established traditions" section)
-2. The specific source file holding the claim under test
-3. `resources/playbooks/strategy-response-workflow.md` if the claim is about
+3. The specific source file holding the claim under test
+4. `resources/playbooks/strategy-response-workflow.md` if the claim is about
    operating-model or enablement work
 
 Evidence should be able to challenge the model, not decorate it. No automatic
@@ -90,12 +92,13 @@ manuscript changes.
 
 Plan, draft, revise, source-check, challenge a narrow paper.
 
-1. `resources/source/core_stance/contextual-intervention.md` for current thinking
-2. `resources/source/writing_voice/public-language.md` for reader-facing authorship
-3. `resources/playbooks/writing-voice-workflow.md` for general voice workflow (not manuscript-specific)
-4. The source files relevant to the paper's subject
+1. `resources/source/core_stance/human-system-foundation.md` — foundational context (background cognition)
+2. `resources/source/core_stance/contextual-intervention.md` for current thinking
+3. `resources/source/writing_voice/public-language.md` for reader-facing authorship
+4. `resources/playbooks/writing-voice-workflow.md` for general voice workflow (not manuscript-specific)
+5. The source files relevant to the paper's subject
 
-Use `public-language.md` for the reader-facing authorship model: epistemic stance, uncertainty, sentence construction, lists, headings, closure. Do **not** load the manuscript-only Manuscript Voice Guide, Writing Working Agreement, Editing Charter, or Pattern Ledger. Development is not publication.
+Use `public-language.md` for the reader-facing authorship model: epistemic stance, uncertainty, sentence construction, lists, headings, closure, living voice permissions (thinking-in-motion, emotional presence, tension, humour, sarcasm, contrast). Do **not** load the manuscript-only Manuscript Voice Guide, Writing Working Agreement, Editing Charter, or Pattern Ledger. Development is not publication.
 
 For reader-facing prose, prefer the `public-writing` skill which orchestrates this capability.
 

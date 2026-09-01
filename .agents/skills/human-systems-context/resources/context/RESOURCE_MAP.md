@@ -32,7 +32,8 @@ Use this for long-lived material that defines the user's stance, identity, princ
 
 Current files:
 
-- `contextual-intervention.md` — current conceptual context for the wider body of thought: "it depends" as a starting point, discovery as intervention, limits of knowing, relationships as living infrastructure, proportionality, falsifiability, and how the thinking relates to established traditions. Provisional working context, not operational law.
+- `human-system-foundation.md` — foundational conceptual context: humans are inside the system, models are incomplete by design, human infrastructure carries load, systems react, "It depends" begins investigation, experience provides hypotheses not prescriptions, apparently irrational variables can be materially real, formal and actual authority may differ, epistemic uncertainty is legitimate. Background cognition for all Human System work.
+- `contextual-intervention.md` — extends the foundation toward understanding context and intervention: discovery as intervention, proportionality, falsifiability, relationships as living infrastructure, control and information, friction as method, feedback and revision, enablement, Trojan Horse Movement Pattern. Provisional working context, not operational law.
 - `personal_alignment.md` — personal context contract around systems, organizations, collaboration, Agile, process theatre, and common-sense operating principles.
 - `who_am_i.md` — narrative professional identity and how the user thinks, works, and shapes systems.
 
