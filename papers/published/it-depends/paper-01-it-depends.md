@@ -1,13 +1,20 @@
-# It Depends: What Experience Entitles Us to Assume
-
-**Status:** Published  
-**Date:** 2026-09-01 (compiled-model rewrite)  
-**Published:** 2026-09-01  
-**Series:** "It Depends" Paper Series
-
+---
+title: "It Depends: What Experience Entitles Us to Assume"
+description: "Experience entitles consultants to better hypotheses, not certainty. The right stance: 'I have seen things that resemble this. Which similarities matter here?'"
+published: 2026-09-01
+topics:
+  - consulting
+  - expertise
+  - uncertainty
+  - organizational change
+  - pattern recognition
 ---
 
-**Editor's note:** This paper has passed publication review (ses_fa356f705ffeXwcbBkMZomMEZn). Literature overlaps with Deming's System of Profound Knowledge and Edmondson's psychological safety research have been verified against primary sources. The NDM extension to organizational consulting remains an untested hypothesis, explicitly acknowledged in the text.
+# It Depends: What Experience Entitles Us to Assume
+
+**Series:** "It Depends" Paper Series
+
+**Editor's note:** This paper has passed publication review. Literature overlaps with Deming's System of Profound Knowledge and Edmondson's psychological safety research have been verified against primary sources. The NDM extension to organizational consulting remains an untested hypothesis, explicitly acknowledged in the text.
 
 ---
 
