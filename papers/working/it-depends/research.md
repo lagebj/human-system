@@ -2,7 +2,7 @@
 
 **Status:** Working notes — not for publication  
 **Created:** 2026-08-31  
-**Last updated:** 2026-08-31 (post-revision)
+**Last updated:** 2026-08-31 (re-authored from Human System foundation)
 
 **Note:** Paper 1 has been revised to follow the new public-authorship model. The prose now preserves epistemic stance, uses first-person where appropriate, and avoids framework packaging. Research pressure-testing remains incomplete — claims below are flagged for verification.
 
@@ -298,5 +298,62 @@ Paper has not been reader-tested under clean-context conditions. Priority questi
 - Does the removal of numbered frameworks make the thinking clearer or harder to follow?
 - Do readers notice the first-person uncertainty as honest or as hedging?
 - Which sections still feel framework-like?
+
+---
+
+---
+
+## Re-authoring Notes (Second Pass)
+
+Paper re-authored more thoroughly from Human System foundation. Key changes:
+
+### Thinking retained
+- Core proposition: experience provides hypotheses, not prescriptions
+- Similarity is not equivalence
+- Proportionality framework (reversibility, consequence, learning velocity)
+- Consultant changes system by arriving
+- Discovery is intervention
+- Model updating based on outcomes
+
+### Thinking changed
+- "Some relational state is unknowable" downgraded to "I do not know yet where the boundary lies"
+- Acknowledged paper may mainly connect existing ideas rather than being novel
+- Added explicit worry about framework abuse ("it depends" as intellectual cover)
+- Overlap with established traditions framed more cautiously
+
+### Representation changed
+- Removed remaining section headings (now flows as continuous prose)
+- Removed numbered lists entirely
+- First-person uncertainty more prominent ("I like the phrase", "I worry", "I am less certain")
+- Self-correction visible ("I need to verify this", "I am increasingly convinced")
+- Emotional presence allowed (frustration with potential abuse, conviction about discovery-as-intervention)
+- Tension accumulates without immediate resolution
+- Ending deliberately unresolved ("That is enough")
+
+### Material removed
+- All section headings
+- "Working Propositions" framing
+- "What Would Change My Mind" as separate section
+- "Unresolved Questions" as list
+- Abstract-like opening
+- Formulaic counterarguments structure
+
+### New uncertainty exposed
+- Boundary of knowable relational state
+- Novelty vs. synthesis question
+- When pattern recognition beats investigation
+- How to balance expertise expectation with humility
+- Risk of framework abuse
+
+### Evidence status
+All literature overlap claims still need primary source verification. Paper explicitly acknowledges this gap.
+
+### Reader-test still needed
+Priority questions:
+- Does first-person presence feel honest or self-indulgent?
+- Does unresolved ending feel intentional or incomplete?
+- Do self-corrections help reader follow thinking or create confusion?
+- Does "I like the phrase" opening work or feel precious?
+- Is tension around framework abuse productive or defensive?
 
 ---

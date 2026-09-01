@@ -110,7 +110,7 @@ public website. `papers/working/`, `manuscript/`, `inbox/`, `.agents/`, and
 
 ## Active paper development
 
-- **"It Depends" series** — Paper 1 revised (2026-08-31) to follow the new public-authorship model. Prose now preserves epistemic stance, uses first-person uncertainty, and avoids framework packaging. Research pressure-testing and reader-testing remain incomplete. Series map (`papers/working/it-depends/series.md`) and research notes (`papers/working/it-depends/research.md`) updated. Not for publication.
+- **"It Depends" series** — Paper 1 re-authoring complete (2026-08-31). Paper now written from Human System foundation: no section headings, continuous prose, first-person presence ("I like the phrase", "I worry", "I am less certain"), visible self-correction, deliberate unresolved ending. Framework packaging removed. Research pressure-testing and reader-testing remain incomplete. Series map and research notes updated. Not for publication.
 
 ## Likely next work
 

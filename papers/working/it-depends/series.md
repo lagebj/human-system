@@ -35,7 +35,7 @@ This is not a framework. It is a recurring pattern of inquiry. The revised Paper
 
 **Central question:** When should experience increase confidence, and when should it increase the quality of our questions?
 
-**Status:** Revised draft complete (2026-08-31). Working material, not publication-ready.
+**Status:** Re-authored from Human System foundation (2026-08-31). No section headings, continuous prose, first-person presence, deliberate unresolved ending. Working material, not publication-ready.
 
 **Current proposition:**
 - Experience provides pattern recognition, better hypotheses, faster orientation, knowledge of recurring failure modes, and sharper questions
@@ -222,3 +222,22 @@ All content under `papers/working/` — structurally excluded from site build.
 - One question per paper
 - Merge overlapping arguments
 - Let content reveal structure
+
+---
+
+## Series Re-authoring Notes (2026-08-31)
+
+Paper 1 re-authored twice:
+1. First pass: removed framework packaging, converted lists to prose
+2. Second pass: removed all section headings, wrote from Human System foundation, allowed thought to move visibly
+
+Key insight: the paper is stronger when it sounds like someone thinking rather than presenting. First-person uncertainty ("I like the phrase", "I worry", "I am less certain") improves epistemic honesty.
+
+Series structure may need revision:
+- Paper 1 now absorbs some territory from planned Paper 2 (Best Practice)
+- "Consultant is part of system" confirmed as section of Paper 1, not separate paper
+- May need explicit paper on "When Standardization Works" to balance contextual argument
+
+Research pressure-testing still needed on all literature overlap claims.
+
+---
