@@ -62,8 +62,11 @@ Current files:
 
 - `public-language.md` — reader-facing authorship model for public Human System material (papers, essays, notes, web pages). Covers epistemic stance, uncertainty, sentence construction, lists, headings, closure, humour, metaphor, and AI-shaped prose patterns to guard against.
 - `manuscript-voice-guide.md` — manuscript-specific voice for `manuscript/human.md` only. Spoken thinking in motion; does not govern public material.
+- `author-corpus/` — extensive author corpus (38 direct user messages) organized by cognitive surface (reflective, technical, argumentative, explanatory, coaching, meta). Used as evidence for authorship, not as phrase library. Includes samples.jsonl, seed files per surface, rejected-ai evidence, and privacy/redaction guidance.
 
 Add here when a resource affects tone, rhythm, language, or how the user's thinking should sound. Distinguish between general public authorship and manuscript-only constraints.
+
+Corpus retrieval should prefer `author-original` and `direct-user-message` as primary voice evidence, retrieve small relevant subsets for important prose, and avoid numeric style targets or AI detection scores.
 
 ## `resources/source/book_work/`
 

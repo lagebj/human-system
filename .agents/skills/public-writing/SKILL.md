@@ -21,11 +21,12 @@ Load `human-systems-context` first for conceptual stance. Use this skill for:
 
 1. **Load the public-language principles** from `resources/source/writing_voice/public-language.md`
 2. **Load relevant Human System conceptual context** for the subject matter
-3. **Preserve epistemic status** — do not manufacture certainty or resolve uncertainty that exists in the source
-4. **Distinguish conceptual content from agent scaffolding** — public material may expose provisional thinking, but not task routing, source-loading instructions, validation implementation details, agent-specific comments, editorial metadata, or internal status bookkeeping
-5. **Author reader-facing prose** — create a representation of the thinking, not a serialization of the agent's internal object model
-6. **Run a final human-language review** using the public-language integrity check
-7. **Route to research/citation/reader-test capabilities** when their triggers apply
+3. **Retrieve relevant author corpus samples** from `resources/source/writing_voice/author-corpus/` for the cognitive surface (reflective, technical, argumentative, explanatory, coaching, meta)
+4. **Preserve epistemic status** — do not manufacture certainty or resolve uncertainty that exists in the source
+5. **Distinguish conceptual content from agent scaffolding** — public material may expose provisional thinking, but not task routing, source-loading instructions, validation implementation details, agent-specific comments, editorial metadata, or internal status bookkeeping
+6. **Author reader-facing prose** — create a representation of the thinking, not a serialization of the agent's internal object model. Prefer human-authored seed + corpus evidence over polished AI draft + style rewrite
+7. **Run a final human-language review** using the public-language integrity check, loading rejected-ai evidence when available
+8. **Route to research/citation/reader-test capabilities** when their triggers apply
 
 ## Do not
 

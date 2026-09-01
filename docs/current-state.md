@@ -6,6 +6,7 @@
 **Publication architecture:** `docs/decisions/004-public-site-and-publication-architecture.md` (Proposed)
 **Public authorship:** `docs/decisions/005-public-authorship-and-language-programme.md` (Proposed)
 **Foundational context and living voice:** `docs/decisions/006-foundational-context-and-living-voice.md` (Proposed)
+**Author corpus integration:** `docs/decisions/007-author-corpus-integration.md` (Proposed)
 
 This file is a mandatory read before any work. Keep it short. Update it only
 when its subject changes (ADR 002 §8), not after every conceptual note.
@@ -34,6 +35,10 @@ thread.
 - Public writing permits living voice qualities: thinking-in-motion, emotional
   presence, tension accumulation, dry humour, occasional sarcasm, contrast,
   self-correction, unresolved endings. These are permissions, not requirements.
+- Author corpus (38 direct user messages) provides evidence for authorship,
+  organized by cognitive surface (reflective, technical, argumentative,
+  explanatory, coaching, meta). Retrieval prefers human seed + corpus evidence
+  over polished AI draft + style rewrite.
 
 ## Development environment
 
