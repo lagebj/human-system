@@ -1,28 +1,42 @@
 # It Depends: What Experience Entitles Us to Assume
 
 **Status:** Working draft — not for publication  
-**Date:** 2026-08-31 (re-authored)  
+**Date:** 2026-08-31 (corpus-backed rewrite)  
 **Series:** "It Depends" Paper Series
+
+---
+
+Everyone hates when a consultant says "it depends." I actually love it. Because it is true.
+
+Decisions depend on a whole lot of factors. It depends on what mood you are in today, it depends on the people in your org, what knowledge they have and do not have, which techs they are familiar with, how much time they have, who decides what (formally or informally), where the market is heading, what you want, what you do not want, who says it, how hard/easy it is, which color it has, what shape it has, what country of origin it has.
+
+So this is why I love the use of "it depends." Because it depends.
 
 ---
 
 A consultant arrives at a new organization. She has seen this before: the legacy system, the team structure, the hesitant stakeholders, the workarounds. Her experience gives her hypotheses, comparisons, warnings. It also creates a specific danger: the silent slide from "I have seen something that resembles this" to "I therefore know what this is."
 
-I keep coming back to what experience actually entitles us to assume.
+I keep coming back to what experience actually entitles us to assume. This is purely my thoughts and even I am not sure about these things myself. They are projections of my thinking and principles and what I believe in, but should never be hard truths.
 
 ---
 
-A consultant does not arrive at an empty organization. She enters history — what was tried before, what failed, what succeeded, what people remember differently. She enters relationships — trust, resentment, admiration, obligation, fear, affection, rivalry, shared history. She enters language — words that mean different things to different people, euphemisms, avoided topics. She enters incentives — what is actually rewarded, which may differ from the formal system. She enters power — who can block things, who can make things happen, who pretends to have influence.
+A consultant does not arrive at an empty organization. Systems are more than technical and org charts. Systems contain humans. They contain feelings, love & hate, relationships, reflexes, experiences, official and unofficial hierarchies, decisions, official and unofficial decision makers, and a lot of other factors.
 
-She enters scars. Previous interventions that went badly. Previous consultants who promised too much.
+She enters history — what was tried before, what failed, what succeeded, what people remember differently. She enters relationships — trust, resentment, admiration, obligation, fear, affection, rivalry, shared history. She enters language — words that mean different things to different people, euphemisms, avoided topics.
 
-She enters workarounds — the real way work gets done, which differs from the documented process. She enters existing theories — explanations people have already developed for what is wrong.
+She enters power — who can block things, who can make things happen, who pretends to have influence. She enters scars. Previous interventions that went badly. Previous consultants who promised too much.
 
-The consultant becomes part of that system immediately. Even discovery changes conditions. Asking a question signals that the answer matters. Meeting with someone signals that their perspective counts. Recommending a change signals that the current state is deficient.
+The consultant becomes part of that system immediately. Even discovery changes conditions. Asking a question signals that the answer matters. The moment you start asking questions, you are part of the system.
 
-A client expects expertise. They have hired someone who has "seen this before." The expectation is reasonable: experience should provide value. But the value experience provides is not certainty. It is pattern recognition. Better hypotheses. Faster orientation. Knowledge of failure modes. Sharper questions.
+---
 
-What experience does not provide is automatic prescription. The danger appears when recognition substitutes for investigation.
+A client expects expertise. They have hired someone who has "seen this before." The expectation is reasonable: experience should provide value. But the value experience provides is not certainty.
+
+Experience should improve the questions, hypotheses, and pattern recognition brought into a situation. Experience does not remove the need to understand the situation.
+
+A useful posture when entering a system: I have seen things that resemble this. Which similarities matter here?
+
+The danger appears when recognition substitutes for investigation.
 
 ---
 
@@ -38,16 +52,6 @@ This is not an argument that patterns are useless. They are not. They are hypoth
 
 ---
 
-I like the phrase "it depends."
-
-Consultants are sometimes mocked for answering questions with this phrase. I do not apologise for it. Because it depends.
-
-Decisions depend on technical architecture, cost, available competence, familiar technologies, available time, market direction. They also depend on formal authority and informal authority. On who asked the question and who answered it. On what people want and what they do not want. On what happened last time. On mood. On fatigue. On trust. On fear. On reputation. On how difficult something feels. On familiarity.
-
-On apparently ridiculous factors that nonetheless change what humans do.
-
-Do not imply all these variables should matter. That distinction is important. Something may materially affect a decision without deserving to affect the decision. Reality is allowed to contain irrational inputs. Understanding a human system means noticing them anyway.
-
 "It depends" can become an excuse for indecision. A consultant who says "it depends" to every question is not being sophisticated. She is avoiding the work.
 
 The stronger formulation: it depends, therefore identify what it depends upon.
@@ -58,7 +62,13 @@ This is not infinite discovery. We often need to act under incomplete knowledge.
 
 ---
 
-Complete understanding is impossible. A human system is too complex, too dynamic, too dependent on hidden relational state. We must act before we know everything.
+I worry sometimes that this whole framework could be abused. "It depends" could become intellectual cover for refusing to commit. Or for rationalising preference as context. These are real dangers. I do not have clean answers for them yet.
+
+Excessive emphasis on context can become an excuse. A consultant who says "every situation is unique" may be avoiding the work of developing useful generalizations. This is a real risk. The "it depends" stance must not become relativism. Some interventions are better supported than others.
+
+---
+
+Complete understanding is impossible. A human system is too complex, too dynamic, too dependent on hidden relational state.
 
 The relevant question: how much discovery is enough?
 
@@ -70,9 +80,7 @@ Consequence. If being wrong would cause significant harm, more evidence is neede
 
 Learning velocity. If we can quickly determine whether we were wrong and adjust, less initial evidence is needed. If we will not know for months whether it worked, more initial evidence is needed.
 
-These factors interact. A reversible, low-consequence decision with fast feedback requires minimal evidence. An irreversible, high-consequence decision with slow feedback requires substantial evidence.
-
-Experience helps here. An experienced practitioner can often estimate reversibility, consequence, and learning velocity more accurately than a novice. But the estimate is still a hypothesis.
+These factors interact. Experience helps here. An experienced practitioner can often estimate reversibility, consequence, and learning velocity more accurately than a novice. But the estimate is still a hypothesis.
 
 ---
 
@@ -84,17 +92,13 @@ She asks questions. The questions signal what matters. People prepare answers. T
 
 She makes recommendations. The recommendations change power dynamics. People who agree with the recommendations gain influence. People who disagree may lose it. Some people will support the recommendations because they came from an expert. Some will oppose them for the same reason.
 
-She may not know which relational state exists. Trust, resentment, fear, ambition. These are not visible in an organizational chart. They are real infrastructure. They determine what happens next.
+People and their feelings and reactions are also infra. Trust, resentment, fear, ambition. These are not visible in an organizational chart. They are real infrastructure. They determine what happens next.
 
-This is not an argument for paralysis. It is an argument for humility. The consultant's intervention changes the conditions from which later behavior emerges. She should expect this and observe it.
-
-I am increasingly convinced that discovery is already intervention. The moment you start asking questions, you are part of the system.
+This is not an argument for paralysis. It is an argument for humility.
 
 ---
 
 A weak model explains every outcome after the fact. A strong model implies predictions that could be wrong.
-
-If the explanation is useful, what should we expect to observe? If we recommend a change, what should happen? If we standardize a process, what should improve? If we increase autonomy, what should change? If we add control, what information should become more or less available?
 
 Unexpected behavior should first be allowed to challenge the explanation rather than automatically being interpreted as organizational failure.
 
@@ -102,15 +106,13 @@ Example: A consultant recommends a change. It fails. The weak explanation: the o
 
 The first explanation preserves the consultant's model and blames the organization. The second allows the model to be updated.
 
-This requires the consultant to have a model that can be wrong. A vague recommendation cannot be falsified. A specific hypothesis can be.
-
 ---
 
 This thinking overlaps several established traditions. I am not claiming novelty where none exists.
 
-Deming's System of Profound Knowledge includes appreciation for a system, knowledge about variation, theory of knowledge, and psychology. The Human System framing overlaps with theory of knowledge — how do we know what we know? It also overlaps with knowledge about variation — not all variation is the same; some is signal, some is noise. Where the consultant-entry perspective may differ: Deming's work emerged from manufacturing and quality improvement. The consultant entering an existing human system faces specific dynamics: the expectation of expertise, the pressure to provide answers, the relational complexity of being an outsider who is expected to understand quickly.
+Deming's System of Profound Knowledge includes appreciation for a system, knowledge about variation, theory of knowledge, and psychology. The Human System framing overlaps with theory of knowledge — how do we know what we know? It also overlaps with knowledge about variation — not all variation is the same; some is signal, some is noise.
 
-Naturalistic Decision Making (Gary Klein) studies how experts make rapid judgments in real-world settings. This research shows that expert pattern recognition is often excellent. The Human System framing does not contradict this. It adds: pattern recognition provides hypotheses, not automatic prescriptions. The expert should use her recognition to investigate efficiently, not to skip investigation.
+Naturalistic Decision Making (Gary Klein) studies how experts make rapid judgments in real-world settings. This research shows that expert pattern recognition is often excellent. The Human System framing does not contradict this. It adds: pattern recognition provides hypotheses, not automatic prescriptions.
 
 I need to verify this against Klein's actual work. The overlap feels real but I may be reading my own framing into it.
 
@@ -118,21 +120,17 @@ Sensemaking (Karl Weick) explores how people create meaning from ambiguous situa
 
 Bounded Rationality (Herbert Simon) recognizes that decision-makers have limited information and cognitive capacity. The "it depends" stance accepts bounded rationality and asks: given that we cannot know everything, how do we act proportionally to what we can know?
 
-Psychological Safety (Amy Edmondson) shows that teams with high psychological safety perform better because they share information more honestly. The consultant who creates safety may get better information. The consultant who triggers defensiveness will get worse information. This affects what she can know.
+Psychological Safety (Amy Edmondson) shows that teams with high psychological safety perform better because they share information more honestly. The consultant who creates safety may get better information. The consultant who triggers defensiveness will get worse information.
 
-The distinctive contribution may be the consultant-entry vantage point: how these dynamics play out when an experienced outsider enters an existing human system with the expectation of providing answers. Or it may be a useful synthesis of existing ideas. I am less concerned with novelty than with whether the framing helps practitioners see something they might otherwise miss.
+The distinctive contribution may be the consultant-entry vantage point. Or it may be a useful synthesis of existing ideas. I am less concerned with novelty than with whether the framing helps practitioners see something they might otherwise miss.
 
 ---
 
 Experts make excellent rapid judgments. Research on naturalistic decision making shows that firefighters, nurses, chess players, and other experts can make accurate judgments in seconds. This is real. The question is whether the conditions that enable rapid expertise apply to organizational consulting. Firefighters face similar situations repeatedly with fast, clear feedback. Organizational interventions often have delayed, ambiguous feedback. The expertise may not transfer.
 
-Some patterns travel safely. Certain practices do work across contexts. Standard operating procedures for safety-critical operations, for example. The question is not whether any patterns travel. The question is which patterns travel, and under what conditions. This requires investigation, not assumption.
+Some patterns travel safely. Certain practices do work across contexts. Standard operating procedures for safety-critical operations, for example. The question is not whether any patterns travel. The question is which patterns travel, and under what conditions.
 
-Excessive emphasis on context can become an excuse. A consultant who says "every situation is unique" may be avoiding the work of developing useful generalizations. This is a real risk. The "it depends" stance must not become relativism. Some interventions are better supported than others. The stance is: investigate what this depends upon, do not assume you already know.
-
-Time pressure requires immediate action. Sometimes there is not time for extended discovery. This is true. The stance is not "always investigate more." The stance is "act proportionally to reversibility, consequence, and learning velocity." Under severe time pressure, act on the best available hypothesis and observe what happens.
-
-I worry sometimes that this whole framework could be abused. "It depends" could become intellectual cover for refusing to commit. Or for rationalising preference as context. These are real dangers. I do not have clean answers for them yet.
+Time pressure requires immediate action. Sometimes there is not time for extended discovery. This is true. The stance is not "always investigate more." The stance is "act proportionally to reversibility, consequence, and learning velocity."
 
 ---
 
@@ -140,19 +138,17 @@ These are current hypotheses, not settled conclusions.
 
 Experience provides hypotheses, not prescriptions. The value of experience is in generating better questions and faster investigation, not in automatic answers.
 
-Similarity is not equivalence. Two situations can resemble each other substantially and differ in ways that matter.
+Similarity is not equivalence.
 
-Act proportionally to reversibility and consequence. Evidence thresholds should vary based on the cost of being wrong and the difficulty of reversing course.
+Act proportionally to reversibility and consequence.
 
-Allow reality to update the model. Unexpected outcomes should first challenge the explanation rather than automatically being interpreted as organizational failure.
+Allow reality to update the model.
 
-The consultant changes the system by arriving. Intervention is not something that happens after discovery. Discovery is already intervention.
+The consultant changes the system by arriving. Discovery is already intervention.
 
-Some relational state is unknowable. Trust, resentment, fear, ambition. These affect outcomes and may not be visible to an observer. I am less certain about this one. Skilled consultants may be able to uncover more relational state than I am allowing. But some may be fundamentally inaccessible. I do not know yet where the boundary lies.
+Some relational state may be fundamentally inaccessible. I am less certain about this one. Skilled consultants may be able to uncover more relational state than I am allowing. I do not know yet where the boundary lies.
 
 A useful model implies predictions. If an explanation cannot be wrong, it cannot be useful.
-
-These propositions would need revision if research shows expert pattern recognition is reliable across significantly different organizational contexts. If best-practice transfer succeeds more often than contextual adaptation in comparable situations. If standardization consistently outperforms local judgment across diverse conditions. If "it depends" provides no actionable guidance beyond "context matters."
 
 ---
 
@@ -160,13 +156,15 @@ I do not yet know how much of this is genuinely distinctive versus restating est
 
 The paper may mainly connect existing ideas in a useful way. That is enough.
 
+We do not need to have answers to everything we present. This is a body of work and a think tank for me. I just believe that there are some important nuances that need sharing, even though I do not always have the answers.
+
 ---
 
-This is a working draft. It is not for publication. It is not cleared for the public website. It is an exploration of a recurring question in my practice.
+This is a working draft. It is not for publication.
 
-**Evidence status:** This draft draws on my experience and established literature. Specific citations need to be registered through the grounded-citations skill. Claims marked as "plausibly overlaps" need verification against primary sources.
+**Evidence status:** Specific citations need verification against primary sources. Claims marked as overlaps need literature review.
 
-**Next steps:** Pressure-test load-bearing claims with research. Register evidence sources. Run reader test (clean context). Revise based on findings.
+**Next steps:** Pressure-test load-bearing claims. Register evidence sources. Run reader test.
 
 ---
 
