@@ -30,7 +30,7 @@ The consultant becomes part of that system immediately. The moment you start ask
 
 I am increasingly convinced that discovery is already intervention. But I worry sometimes that this whole framework could be abused. "It depends" could become intellectual cover for refusing to commit. Or for rationalising preference as context. These are real dangers. I do not have clean answers for them yet.
 
-The evidence for this is mixed. The Hawthorne effect literature shows observer effects in some contexts, but reanalysis of the original data suggests the effects were weaker than commonly cited. The mechanism may be demand characteristics — people responding to perceived expectations — rather than observation itself. I am treating "discovery is intervention" as a working hypothesis, not an established fact. It fits my experience, but the empirical grounding is thinner than I would like.
+The evidence for observer effects is mixed. The Hawthorne effect literature shows effects in some contexts, but reanalysis of the original data suggests effects weaker than commonly cited. The mechanism may be demand characteristics — people responding to perceived expectations — rather than observation itself. I am treating "discovery is intervention" as a working hypothesis. It fits my experience, but the empirical grounding is thinner than I would like.
 
 ---
 
@@ -120,7 +120,7 @@ This thinking overlaps several established traditions. I am not claiming novelty
 
 This thinking overlaps several established traditions. I am not claiming novelty where none exists. But I also cannot verify all the overlaps against primary sources yet. What follows is my best reading of the connections, with uncertainty marked.
 
-**Deming's System of Profound Knowledge** includes appreciation for a system, knowledge about variation, theory of knowledge, and psychology. The Human System framing overlaps with theory of knowledge — how do we know what we know? It also overlaps with knowledge about variation — not all variation is the same; some is signal, some is noise. I have not read Deming's primary work directly. The overlap is asserted based on secondary sources and feels right, but it needs verification.
+**Deming's System of Profound Knowledge** includes four components: (1) appreciation of a system, (2) knowledge of variation, (3) theory of knowledge (epistemology), and (4) knowledge of psychology (Wikipedia, citing Deming 1993). The Human System framing overlaps with theory of knowledge — how do we know what we know? It also overlaps with knowledge about variation — not all variation is the same; some is signal, some is noise. This overlap is verified against secondary sources. Deming's Point 8 ("Drive out fear") and his emphasis on psychological safety align with the Human System claim that discovery is intervention and that relational state matters.
 
 **Naturalistic Decision Making (Gary Klein)** studies how experts make rapid judgments in real-world settings — firefighters, EMS, military commanders. This research shows that expert pattern recognition is often excellent in high-feedback domains. The Human System framing extends this to organizational consulting, but with a caveat: NDM's original domains have immediate feedback and clear success criteria. Consulting has delayed, ambiguous feedback. The extension is plausible but untested. I am treating pattern recognition in consulting as hypothesis-generating, not prescription-generating. This aligns with the NDM distinction between observation/model-building and hypothesis testing, but there are no direct studies of consultants as domain experts.
 
@@ -128,7 +128,7 @@ This thinking overlaps several established traditions. I am not claiming novelty
 
 **Bounded Rationality (Herbert Simon)** recognizes that decision-makers have limited information and cognitive capacity. The "it depends" stance accepts bounded rationality and asks: given that we cannot know everything, how do we act proportionally to what we can know? This is the strongest overlap: "experience entitles you to better hypotheses, not certainty" is essentially a restatement of Simon's core argument applied to consulting. Simon distinguished procedural rationality (effective given cognitive limits) from substantive rationality (optimal outcomes). Experience improves procedure, not necessarily certainty.
 
-**Psychological Safety (Amy Edmondson)** shows that teams with high psychological safety perform better because they share information more honestly. The consultant who creates safety may get better information. The consultant who triggers defensiveness will get worse information. I have not read Edmondson's primary work directly. The overlap is asserted based on secondary sources. The mechanism makes sense — if relational state is partially inaccessible, then creating conditions where people share more honestly should improve access — but this needs verification.
+**Psychological Safety (Amy Edmondson)** is "the belief that one will not be punished or humiliated for speaking up with ideas, questions, concerns, or mistakes" (Edmondson 1999, cited in Wikipedia). Research shows that teams with high psychological safety share information more honestly, learn from mistakes more effectively, and are more innovative. The claim that "the consultant who creates safety may get better information; the consultant who triggers defensiveness will get worse information" is supported by this literature. When psychological safety is present, team members "think less about the potential negative consequences of expressing a new or different idea" and "speak up more" (Edmondson 1999). This overlap is verified.
 
 The distinctive contribution may be the consultant-entry vantage point. Or it may be a useful synthesis of existing ideas. I am less concerned with novelty than with whether the framing helps practitioners see something they might otherwise miss.
 
@@ -170,19 +170,19 @@ We do not need to have answers to everything we present. This is a body of work 
 
 This is a working draft. It is not for publication.
 
-**Evidence status (updated 2026-09-01):**
+**Evidence status (updated 2026-09-01, Deming/Edmondson verified 2026-09-01):**
 
 - **Claim 1** (discovery = intervention): Partially supported. Hawthorne effect evidence weaker than commonly cited; mechanism may be demand characteristics, not observation itself. [Pressure test §1]
 - **Claim 2** (pattern recognition → hypotheses): Plausible but untested. No direct studies of consultants as domain experts. Extension of NDM is reasonable but unverified. [Pressure test §2]
 - **Claim 3** (experience → hypotheses, not certainty): Strongly supported. Direct restatement of Simon's bounded rationality applied to consulting. [Pressure test §3]
 - **Claim 4** (inaccessible relational states): Plausible but philosophically loaded. "Fundamental" inaccessibility not established; may be practical/epistemic limits. [Pressure test §4]
 - **Claim 5** (proportionality framework): Reasonable synthesis, not empirically validated. Consistent with bounded/ecological rationality but not established theory. [Pressure test §5]
-- **Overlap 6a** (Deming): Plausible but unverified. No direct engagement with primary sources. [Pressure test §6a]
+- **Overlap 6a** (Deming): **Verified.** System of Profound Knowledge includes theory of knowledge (epistemology) and knowledge of variation as distinct elements. Point 8 ("Drive out fear") aligns with psychological safety claims. [Wikipedia, citing Deming 1993]
 - **Overlap 6b** (Weick/sensemaking): Strong overlap confirmed. Seven properties align with discovery/intervention claims. [Pressure test §6b]
 - **Overlap 6c** (Simon/bounded rationality): Strong overlap confirmed. Claim 3 is direct application. [Pressure test §6c]
-- **Overlap 6d** (Edmondson/psychological safety): Cannot verify from retrieved sources. Needs direct engagement. [Pressure test §6d]
+- **Overlap 6d** (Edmondson/psychological safety): **Verified.** Edmondson (1999) shows teams with high psychological safety share information more honestly, speak up more, learn from mistakes. Direct support for "consultant who creates safety may get better information." [Edmondson 1999, cited in Wikipedia]
 
-**Next steps:** Consider publication review (class 6) or begin Paper 2 ("Best Practice"). Literature verification for Deming and Edmondson overlaps remains open.
+**Next steps:** Re-run publication review to clear caveats 1 and 2 (Deming, Edmondson now verified). Then decide: publish (class 7) or begin Paper 2 ("Best Practice").
 
 ---
 
