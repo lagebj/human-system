@@ -62,7 +62,7 @@ Current files:
 
 - `public-language.md` — reader-facing authorship model for public Human System material (papers, essays, notes, web pages). Covers epistemic stance, uncertainty, sentence construction, lists, headings, closure, humour, metaphor, and AI-shaped prose patterns to guard against.
 - `manuscript-voice-guide.md` — manuscript-specific voice for `manuscript/human.md` only. Spoken thinking in motion; does not govern public material.
-- `author-corpus/` — extensive author corpus (38 direct user messages) organized by cognitive surface (reflective, technical, argumentative, explanatory, coaching, meta). Used as evidence for authorship, not as phrase library. Includes samples.jsonl, seed files per surface, rejected-ai evidence, and privacy/redaction guidance.
+- `author-corpus/` — extensive author corpus organized by cognitive surface (reflective, technical, argumentative, explanatory, coaching, meta) with 38 direct user messages. Includes thought trails (8 sequences showing how author develops thought over time), unfinished evidence (authorship-depth-open-question.md), seed files per surface, rejected-ai evidence, and privacy/redaction guidance. Used as evidence for authorship, not as phrase library. Substantial writing retrieves raw idiolect samples + 2–4 thought trails + long-form depth reference.
 
 Add here when a resource affects tone, rhythm, language, or how the user's thinking should sound. Distinguish between general public authorship and manuscript-only constraints.
 

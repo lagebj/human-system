@@ -22,11 +22,12 @@ Load `human-systems-context` first for conceptual stance. Use this skill for:
 1. **Load the public-language principles** from `resources/source/writing_voice/public-language.md`
 2. **Load relevant Human System conceptual context** for the subject matter
 3. **Retrieve relevant author corpus samples** from `resources/source/writing_voice/author-corpus/` for the cognitive surface (reflective, technical, argumentative, explanatory, coaching, meta)
-4. **Preserve epistemic status** — do not manufacture certainty or resolve uncertainty that exists in the source
-5. **Distinguish conceptual content from agent scaffolding** — public material may expose provisional thinking, but not task routing, source-loading instructions, validation implementation details, agent-specific comments, editorial metadata, or internal status bookkeeping
-6. **Author reader-facing prose** — create a representation of the thinking, not a serialization of the agent's internal object model. Prefer human-authored seed + corpus evidence over polished AI draft + style rewrite
-7. **Run a final human-language review** using the public-language integrity check, loading rejected-ai evidence when available
-8. **Route to research/citation/reader-test capabilities** when their triggers apply
+4. **For substantial conceptual writing (papers, essays, long-form Human System pages)**: retrieve 2–4 relevant thought trails by topic and cognitive movement similarity, plus a long-form depth reference where appropriate
+5. **Preserve epistemic status** — do not manufacture certainty or resolve uncertainty that exists in the source
+6. **Distinguish conceptual content from agent scaffolding** — public material may expose provisional thinking, but not task routing, source-loading instructions, validation implementation details, agent-specific comments, editorial metadata, or internal status bookkeeping
+7. **Author reader-facing prose** — create a representation of the thinking, not a serialization of the agent's internal object model. Prefer human-authored seed + corpus evidence over polished AI draft + style rewrite. For substantial work, add private pre-draft depth exploration (what sits underneath, what complicates, what examples change it, what another actor sees, what boundary conditions appear, what remains unresolved)
+8. **Run a final human-language review** using the public-language integrity check, loading rejected-ai evidence when available. For substantial work, also check: did the thought change, was context sufficient without chat history, is length excavation/movement or padding, did depth make voice generic, is unresolved ending earned or merely underdeveloped
+9. **Route to research/citation/reader-test capabilities** when their triggers apply
 
 ## Do not
 

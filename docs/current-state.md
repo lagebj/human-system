@@ -7,6 +7,7 @@
 **Public authorship:** `docs/decisions/005-public-authorship-and-language-programme.md` (Proposed)
 **Foundational context and living voice:** `docs/decisions/006-foundational-context-and-living-voice.md` (Proposed)
 **Author corpus integration:** `docs/decisions/007-author-corpus-integration.md` (Proposed)
+**Thought trails and depth:** `docs/decisions/008-thought-trails-and-depth-integration.md` (Proposed)
 
 This file is a mandatory read before any work. Keep it short. Update it only
 when its subject changes (ADR 002 §8), not after every conceptual note.
