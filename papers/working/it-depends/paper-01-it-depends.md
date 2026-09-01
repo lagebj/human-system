@@ -1,7 +1,7 @@
 # It Depends: What Experience Entitles Us to Assume
 
 **Status:** Working draft — not for publication  
-**Date:** 2026-08-31 (corpus-backed rewrite)  
+**Date:** 2026-09-01 (compiled-model rewrite)  
 **Series:** "It Depends" Paper Series
 
 ---
@@ -14,19 +14,21 @@ So this is why I love the use of "it depends." Because it depends.
 
 ---
 
-A consultant arrives at a new organization. She has seen this before: the legacy system, the team structure, the hesitant stakeholders, the workarounds. Her experience gives her hypotheses, comparisons, warnings. It also creates a specific danger: the silent slide from "I have seen something that resembles this" to "I therefore know what this is."
+That opening is my seed for this paper. I am keeping it verbatim. What comes after needs to be genuinely new — not copied from old conversations, not imitated from historical fragments, but built from the thinking itself using the language behaviour I actually exhibit.
 
-I keep coming back to what experience actually entitles us to assume. This is purely my thoughts and even I am not sure about these things myself. They are projections of my thinking and principles and what I believe in, but should never be hard truths.
+The question underneath: what does experience entitle me to assume when I walk into a new organization? Not what it should entitle me to assume in a clean model. What it actually entitles me to assume when I am standing in a room with people who have history, scars, their own theories about what is wrong.
+
+I have seen this before. The legacy system. The team structure that does not match the org chart. The hesitant stakeholders. The workarounds that are more important than the official process. My experience gives me hypotheses, comparisons, warnings. It also creates a specific danger: the silent slide from "I have seen something that resembles this" to "I therefore know what this is."
 
 ---
 
-A consultant does not arrive at an empty organization. Systems are more than technical and org charts. Systems contain humans. They contain feelings, love & hate, relationships, reflexes, experiences, official and unofficial hierarchies, decisions, official and unofficial decision makers, and a lot of other factors.
-
-She enters history — what was tried before, what failed, what succeeded, what people remember differently. She enters relationships — trust, resentment, admiration, obligation, fear, affection, rivalry, shared history. She enters language — words that mean different things to different people, euphemisms, avoided topics.
+A consultant does not arrive at an empty organization. She enters history — what was tried before, what failed, what succeeded, what people remember differently. She enters relationships — trust, resentment, admiration, obligation, fear, affection, rivalry, shared history. She enters language — words that mean different things to different people, euphemisms, avoided topics.
 
 She enters power — who can block things, who can make things happen, who pretends to have influence. She enters scars. Previous interventions that went badly. Previous consultants who promised too much.
 
-The consultant becomes part of that system immediately. Even discovery changes conditions. Asking a question signals that the answer matters. The moment you start asking questions, you are part of the system.
+The consultant becomes part of that system immediately. The moment you start asking questions, you are part of the system. Even discovery changes conditions. Asking a question signals that the answer matters. Meeting with someone signals that their perspective counts. Recommending a change signals that the current state is deficient.
+
+I am increasingly convinced that discovery is already intervention. But I worry sometimes that this whole framework could be abused. "It depends" could become intellectual cover for refusing to commit. Or for rationalising preference as context. These are real dangers. I do not have clean answers for them yet.
 
 ---
 
@@ -60,10 +62,6 @@ This means naming the variables that might matter. Distinguishing which ones mat
 
 This is not infinite discovery. We often need to act under incomplete knowledge. The question is not whether we know enough to be certain. The question is whether we know enough to act, and how we will learn if we were wrong.
 
----
-
-I worry sometimes that this whole framework could be abused. "It depends" could become intellectual cover for refusing to commit. Or for rationalising preference as context. These are real dangers. I do not have clean answers for them yet.
-
 Excessive emphasis on context can become an excuse. A consultant who says "every situation is unique" may be avoiding the work of developing useful generalizations. This is a real risk. The "it depends" stance must not become relativism. Some interventions are better supported than others.
 
 ---
@@ -82,6 +80,8 @@ Learning velocity. If we can quickly determine whether we were wrong and adjust,
 
 These factors interact. Experience helps here. An experienced practitioner can often estimate reversibility, consequence, and learning velocity more accurately than a novice. But the estimate is still a hypothesis.
 
+I do not know yet where the boundary lies between relational state that can be uncovered by skilled consultants and state that is fundamentally inaccessible. I suspect some may be unknowable. But I am less certain about this than I was when I started writing this paper.
+
 ---
 
 A consultant does not merely observe a system. She changes it by arriving.
@@ -92,7 +92,7 @@ She asks questions. The questions signal what matters. People prepare answers. T
 
 She makes recommendations. The recommendations change power dynamics. People who agree with the recommendations gain influence. People who disagree may lose it. Some people will support the recommendations because they came from an expert. Some will oppose them for the same reason.
 
-People and their feelings and reactions are also infra. Trust, resentment, fear, ambition. These are not visible in an organizational chart. They are real infrastructure. They determine what happens next.
+Trust, resentment, fear, ambition. These are not visible in an organizational chart. They are real infrastructure. They determine what happens next.
 
 This is not an argument for paralysis. It is an argument for humility.
 
@@ -105,6 +105,8 @@ Unexpected behavior should first be allowed to challenge the explanation rather 
 Example: A consultant recommends a change. It fails. The weak explanation: the organization resisted change. They were not ready. They did not understand. The strong explanation: my model of the system was incomplete. Something I did not account for caused the failure. What was it?
 
 The first explanation preserves the consultant's model and blames the organization. The second allows the model to be updated.
+
+This requires the consultant to have a model that can be wrong. A vague recommendation cannot be falsified. A specific hypothesis can be.
 
 ---
 
@@ -146,7 +148,7 @@ Allow reality to update the model.
 
 The consultant changes the system by arriving. Discovery is already intervention.
 
-Some relational state may be fundamentally inaccessible. I am less certain about this one. Skilled consultants may be able to uncover more relational state than I am allowing. I do not know yet where the boundary lies.
+Some relational state may be fundamentally inaccessible. I am less certain about this one than I was when I started.
 
 A useful model implies predictions. If an explanation cannot be wrong, it cannot be useful.
 
@@ -164,7 +166,7 @@ This is a working draft. It is not for publication.
 
 **Evidence status:** Specific citations need verification against primary sources. Claims marked as overlaps need literature review.
 
-**Next steps:** Pressure-test load-bearing claims. Register evidence sources. Run reader test.
+**Next steps:** Pressure-test load-bearing claims. Register evidence sources. Run reader test. Run historical-overlap check to verify no corpus contamination.
 
 ---
 

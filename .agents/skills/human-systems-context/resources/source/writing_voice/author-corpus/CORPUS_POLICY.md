@@ -58,17 +58,38 @@ A voice corpus is not a reason to publish private history.
 
 ## Retrieval
 
-Before important reader-facing Human System drafting:
+### Normal generation (reader-facing prose)
+
+For normal reader-facing generation (papers, essays, notes, web pages):
 
 1. identify the surface and cognitive mode;
-2. retrieve several relevant raw samples;
-3. read full stretches;
-4. retrieve relevant rejected-AI evidence where available;
-5. prefer a current author-authored seed for the new piece;
-6. draft from that seed and the conceptual material;
-7. compare the draft against raw evidence before polishing.
+2. **load compiled representations** from `compiled/`:
+   - `LANGUAGE_MODEL.md` (always)
+   - `THOUGHT_MOVEMENT_MODEL.md` (for substantial writing)
+   - `CONTRASTIVE_MODEL.md` (always)
+   - relevant surface profile from `compiled/surfaces/`
+3. prefer a current author-authored seed for the new piece;
+4. draft from that seed, the compiled models, and the conceptual material;
+5. compare the draft against `CONTRASTIVE_MODEL.md` before polishing;
+6. check for historical-overlap before returning.
 
 Do not copy signature phrases to manufacture resemblance.
+
+### Analysis mode (corpus compilation, evaluation, research)
+
+For corpus analysis, profile compilation, evaluation, or explicit author-language research:
+
+1. raw corpus and thought trails may be read directly;
+2. compare generated text against raw corpus for overlap detection;
+3. update compiled profiles where warranted.
+
+Do not use analysis mode for normal generation.
+
+### Exception — current author seed
+
+If the author provides a direct seed for the current artifact (e.g., "People and their feelings and reactions are also infra" for a new paper), that seed may remain available verbatim. Do not paraphrase it merely to avoid overlap.
+
+The rule is: historical corpus language should not leak into new prose merely because it was retrieved. A current artifact seed is different.
 
 ## Growth
 

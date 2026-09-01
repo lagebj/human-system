@@ -21,13 +21,22 @@ Load `human-systems-context` first for conceptual stance. Use this skill for:
 
 1. **Load the public-language principles** from `resources/source/writing_voice/public-language.md`
 2. **Load relevant Human System conceptual context** for the subject matter
-3. **Retrieve relevant author corpus samples** from `resources/source/writing_voice/author-corpus/` for the cognitive surface (reflective, technical, argumentative, explanatory, coaching, meta)
-4. **For substantial conceptual writing (papers, essays, long-form Human System pages)**: retrieve 2–4 relevant thought trails by topic and cognitive movement similarity, plus a long-form depth reference where appropriate
-5. **Preserve epistemic status** — do not manufacture certainty or resolve uncertainty that exists in the source
-6. **Distinguish conceptual content from agent scaffolding** — public material may expose provisional thinking, but not task routing, source-loading instructions, validation implementation details, agent-specific comments, editorial metadata, or internal status bookkeeping
-7. **Author reader-facing prose** — create a representation of the thinking, not a serialization of the agent's internal object model. Prefer human-authored seed + corpus evidence over polished AI draft + style rewrite. For substantial work, add private pre-draft depth exploration (what sits underneath, what complicates, what examples change it, what another actor sees, what boundary conditions appear, what remains unresolved)
-8. **Run a final human-language review** using the public-language integrity check, loading rejected-ai evidence when available. For substantial work, also check: did the thought change, was context sufficient without chat history, is length excavation/movement or padding, did depth make voice generic, is unresolved ending earned or merely underdeveloped
-9. **Route to research/citation/reader-test capabilities** when their triggers apply
+3. **For normal reader-facing generation**: load compiled author representations from `resources/source/writing_voice/author-corpus/compiled/` instead of retrieving raw corpus samples:
+   - `LANGUAGE_MODEL.md` (always)
+   - `THOUGHT_MOVEMENT_MODEL.md` (for substantial writing: papers, essays, long-form pages)
+   - `CONTRASTIVE_MODEL.md` (always)
+   - Relevant surface profile from `compiled/surfaces/` (reflective, technical, argumentative, explanatory)
+4. **Exception — current author seed**: If the artifact begins from a direct author-written seed for this specific work, that seed may remain available verbatim. Do not paraphrase it merely to avoid overlap.
+5. **Raw corpus access modes**:
+   - `analysis`: May read raw corpus and thought trails (used for compiling profiles, updating observations, evaluating drift, corpus research)
+   - `generation`: Must normally not read historical raw fragments (used for essays, papers, pages, reader-facing prose)
+   - `evaluation`: May compare generated text against raw corpus (used for overlap detection, stylistic diagnostics, held-out comparison)
+6. **Preserve epistemic status** — do not manufacture certainty or resolve uncertainty that exists in the source
+7. **Distinguish conceptual content from agent scaffolding** — public material may expose provisional thinking, but not task routing, source-loading instructions, validation implementation details, agent-specific comments, editorial metadata, or internal status bookkeeping
+8. **Author reader-facing prose** — create a representation of the thinking, not a serialization of the agent's internal object model. Apply compiled language behaviour to genuinely new thought. For substantial work, add private pre-draft depth exploration using `THOUGHT_MOVEMENT_MODEL.md` (what sits underneath, what complicates, what examples change it, what another actor sees, what boundary conditions appear, what remains unresolved)
+9. **Run a final human-language review** using the public-language integrity check and `CONTRASTIVE_MODEL.md`. For substantial work, also check: did the thought change, was context sufficient without chat history, is length excavation/movement or padding, did depth make voice generic, is unresolved ending earned or merely underdeveloped
+10. **Check for historical-overlap** — before returning reader-facing prose, verify that distinctive historical corpus sequences have not leaked into generation. See Part XII below.
+11. **Route to research/citation/reader-test capabilities** when their triggers apply
 
 ## Do not
 
@@ -40,6 +49,10 @@ Load `human-systems-context` first for conceptual stance. Use this skill for:
 - expose agent scaffolding in reader-facing prose
 - optimise for content-marketing cadence or SEO
 - impose structural templates (every page needs the same skeleton)
+- retrieve historical raw corpus fragments into normal generation context
+- copy phrases, sentences, or distinctive wording from historical corpus into new prose
+- treat the compiled models as rigid rules (they are observed behaviours with confidence levels)
+- create a "Lage score" or voice classifier (no numeric authorship thresholds)
 
 ## Epistemic calibration
 
@@ -140,6 +153,47 @@ Before returning public prose, verify:
 - reader-testing for independent readability
 
 Use `paper-development` for class 4 (Paper Development) tasks. Use this skill directly for other reader-facing work (class 2 concept development that becomes public, class 6 publication preparation, or ad hoc public notes).
+
+## Historical-overlap detection
+
+Before returning reader-facing prose, check for suspicious reuse of historical corpus wording. This protects against the failure mode where generation copies old phrases rather than learning language behaviour.
+
+### Detection heuristics
+
+Check for:
+
+- Exact n-gram overlap above meaningful length (11+ words)
+- Highly distinctive sentence overlap
+- Unusually long matching word sequences
+- Near-identical sentences if tooling supports them
+
+### Do NOT flag
+
+- Common phrases: "I think", "it depends", "I am not sure"
+- Technical terms and project terminology
+- Ordinary language sequences
+- Current-seed language (if the author provided this seed for this artifact, it is legitimate)
+
+### Response to detected overlap
+
+1. Identify the underlying thought
+2. Identify which historical fragment contaminated generation (if any)
+3. Remove that fragment from generation context if it was incorrectly loaded
+4. Regenerate or re-author the affected passage from the compiled profile
+5. Preserve current-seed language if the overlap is legitimate
+
+Do not automatically synonym-rewrite detected overlap. That would reintroduce artificial prose.
+
+## Held-out evaluation
+
+A small held-out set of author material is reserved for evaluation only (not used for compilation). Use this to test whether profile-guided generation resembles held-out author behaviour without having seen those specific samples during compilation.
+
+Held-out samples:
+- `coach-2026-08-31-belonging` (coaching surface)
+- `mb-2026-08-29-collab-counter` (technical surface)
+- `hs-2026-09-01-infra` (reflective surface)
+- `mb-cross-team-collaboration` (matchboard thought trail)
+- `coach-interest-belonging` (coaching thought trail)
 
 ## Relationship to publication-review
 

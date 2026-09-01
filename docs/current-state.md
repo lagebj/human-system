@@ -36,10 +36,7 @@ thread.
 - Public writing permits living voice qualities: thinking-in-motion, emotional
   presence, tension accumulation, dry humour, occasional sarcasm, contrast,
   self-correction, unresolved endings. These are permissions, not requirements.
-- Author corpus (38 direct user messages) provides evidence for authorship,
-  organized by cognitive surface (reflective, technical, argumentative,
-  explanatory, coaching, meta). Retrieval prefers human seed + corpus evidence
-  over polished AI draft + style rewrite.
+- **Author corpus architecture (v2.0):** The corpus is evidence used to derive compiled models of author language and thought movement. Normal generation loads `compiled/LANGUAGE_MODEL.md`, `compiled/THOUGHT_MOVEMENT_MODEL.md`, `compiled/CONTRASTIVE_MODEL.md`, and surface profiles instead of retrieving raw historical fragments. This prevents phrase-copying while preserving authentic voice. Raw corpus is used for analysis, compilation, and evaluation only. See `CORPUS_POLICY.md` for retrieval modes.
 
 ## Development environment
 
@@ -113,6 +110,7 @@ public website. `papers/working/`, `manuscript/`, `inbox/`, `.agents/`, and
   need remediation to align with `public-language.md`.
 - Living voice permissions are newly added; agents must avoid mechanically
   inserting humour, hesitation, or unresolved endings.
+- **Compiled author models are newly created (v2.0);** controlled tests (Test A, B, C, D) need to run to verify profile-guided generation resembles held-out author behaviour without copying historical phrases.
 
 ## Active paper development
 
@@ -129,6 +127,7 @@ public website. `papers/working/`, `manuscript/`, `inbox/`, `.agents/`, and
 - Verify GitHub Pages deployment succeeds on merge and the deployed site is
   accessible at `https://lagebj.github.io/human-system/`.
 - Decide whether to continue refining Paper 1 or begin Paper 2 (Best Practice).
+- **Run controlled tests for compiled author models:** Test A (new Human System seed), Test B (technical reasoning), Test C (reflective conceptual), Test D (novel topic integrity test). See `compiled/HELD_OUT_EVALUATION.md`.
 
 ---
 
