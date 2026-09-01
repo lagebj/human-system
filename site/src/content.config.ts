@@ -1,8 +1,8 @@
-import { defineCollection, reference } from 'astro:content';
-import { z } from 'astro/zod';
+import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const papers = defineCollection({
-  directory: '../../papers/published',
+  loader: glob({ pattern: '**/paper-*.md', base: '../papers/published' }),
   schema: z.object({
     title: z.string().min(1, 'Title is required'),
     description: z.string().min(1, 'Description is required'),

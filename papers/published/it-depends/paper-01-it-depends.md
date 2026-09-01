@@ -1,7 +1,7 @@
 ---
 title: "It Depends: What Experience Entitles Us to Assume"
 description: "Experience entitles consultants to better hypotheses, not certainty. The right stance: 'I have seen things that resemble this. Which similarities matter here?'"
-published: 2026-09-01
+published: "2026-09-01"
 topics:
   - consulting
   - expertise
